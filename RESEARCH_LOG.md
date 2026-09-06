@@ -75,3 +75,8 @@ P1_events.csv (82,440 rows, 5.2 MB), P1_buoy_key.csv. No Earth Engine calls.
   큰 지역이 영원히 50 %에 못 미친다 → 동일 platform·pass·15분 이내 slice를 **하나의 취득(pass)으로 묶고
   coverage를 합산(min 1.0)**했다. 이는 지표를 의도에 맞추는 수정이며 은폐하지 않는다.
   전 지역 평균 freeze-up O(24 h)는 2019–21 0.28–0.30 → **2022–24 0.015–0.017** → 2025 0.276.
+- **Step 3 (treatment)**: retention = 2022–24 / 2019–21 장면 수. **"kept"(≥0.9) 지역이 하나도 없다** —
+  16개 후보 전부가 최소 15 % 이상을 잃었고 9개가 lost(<0.5), 7개가 intermediate(0.5–0.9)다.
+  최저 Sannikov 0.310, 최고 BeringChukchi 0.846. **즉 사전등록한 DiD의 미처치 대조군이 존재하지 않는다.**
+  S1B 상실은 지역별 자연실험이 아니라 **북극 전역 동시충격**이었다. 후보 대조군(Barents 0.455,
+  Fram 0.471, Baffin 0.508)도 전부 처치를 받았다.

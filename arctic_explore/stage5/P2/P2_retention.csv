@@ -1,0 +1,17 @@
+region,pre_2019_21,during_2022_24,retention,class,post_2025_26
+AKcorr_1,218,170,0.78,intermediate,132
+AKcorr_2,208,171,0.822,intermediate,132
+AKcorr_3,377,256,0.679,intermediate,238
+AKcorr_4,379,256,0.675,intermediate,209
+AKcorr_5,178,118,0.663,intermediate,140
+AKcorr_6,239,115,0.481,lost,157
+BaffinBay,1007,512,0.508,intermediate,657
+Barents_Svalbard,1061,483,0.455,lost,275
+BeringChukchi,266,225,0.846,intermediate,165
+GreenlandSea_Fram,1580,744,0.471,lost,647
+KaraGate,505,221,0.438,lost,211
+LancasterSound,971,416,0.428,lost,453
+LongStrait,307,112,0.365,lost,174
+Sannikov_DmLaptev,300,93,0.31,lost,106
+VictoriaStrait,563,185,0.329,lost,289
+Vilkitsky,300,137,0.457,lost,184
