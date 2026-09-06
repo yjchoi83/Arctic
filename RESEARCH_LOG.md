@@ -157,3 +157,10 @@ P1_events.csv (82,440 rows, 5.2 MB), P1_buoy_key.csv. No Earth Engine calls.
   핵심은 **G2의 강등 규칙** — "위성 수가 아니라 배분"은 **램프업 통제 후에도 적자가 남고 AND 계획 커버리지도
   낮을 때만** 유지하고, 아니면 **"unexplained"로 강등**한다. G3의 수렴사건 정의(면적 ≥100 km², pair별 p10)와
   미관측 기대수 산식도 실행 전에 고정. copernicusmarine 로그인 유효 확인.
+- **P8 step 1 (H9 재검정)**: 자격증명으로 **DTU S1 drift**(`cmems_obs-si_glo_phy-drift-north_my_l4_P1D-m`)를
+  ARCO 지연로딩해 region×season×year 가용성 산출. **H9 지지 — region-year Spearman ρ = 0.711 (p 1.7e-18)**,
+  H_episode3와는 0.736. **지역 내 시간축만 봐도 지역별 ρ 중앙값 0.727**이라 단면 효과가 아니다.
+  가용성은 pre 0.152 → during **0.031(−80 %)** → post 0.033(2025 부분표본). **P7의 "consequence not
+  demonstrated"를 철회한다.** DMI-ASIP L3는 파일당 190 MB·original-files뿐이라 **16일 표본만** 받았고
+  사전등록대로 H9 판정에 쓰지 않았다. MET Norway 차트는 **발행일수가 248/253/251/250일로 불변** —
+  고정 일정 산출물이 전파 지표가 못 된다는 P7의 예고를 실증했고, 역시 H9 근거로 쓰지 않았다.

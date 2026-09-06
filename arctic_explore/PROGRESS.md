@@ -8,4 +8,5 @@
 | P4 OSI SAF hazard record | done | Vilkitsky 유효관측 0건; H8 검정불가/기각 |
 | P5 effective observability | done | E_state winter 0.18-0.28, melt 0.006-0.009 |
 | P6 counterfactual / design | done | H6 지지 15/16; chokepoint 0.8 not attainable |
-| P7 product consequence | done (negative) | H9 미검정 - CMEMS 자격증명 없음 |
+| P7 product consequence | superseded by P8 | H9 지지 rho=0.71 (DTU S1 drift) |
+| P8 gap closing | step 1 done | H9 지지; ASIP 표본만; MET 차트 발행 불변 |
