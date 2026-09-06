@@ -51,3 +51,13 @@ P1_events.csv (82,440 rows, 5.2 MB), P1_buoy_key.csv. No Earth Engine calls.
   persistence는 **Kaplan-Meier**로 censoring(4–20 %)을 반영했다. duration ≥3 km는 T_exp80 = 10 h(1 h 표본)
   / 14 h(3 h 표본), ≥5 km는 14 / 20 h. persistence(relmag ≥10 %)는 ≥3 km 17 h, ≥5 km **24 h**(p80 219 h).
   → **두 measurand의 요구가 다르다**: episode를 잡으려면 6–12 h, hazard 상태를 놓치지 않으려면 24 h급.
+- **P1b 종합 (verdict)**: P1의 두 핵심 수치가 모두 **아티팩트로 확인**됐다 — "median 6 h"는 3시간 격자의
+  검출 바닥(1 h 격자에서 median 2 h, 이벤트의 85.8 %가 6 h 미만)이고, persistence의 "median 3 h"는
+  이벤트의 84.6 %에서 **측정량 자체가 정의되지 않아** 생긴 값이다. 살아남는 결론은 하나다:
+  **magnitude로 거른 이벤트만 고유 시간척도를 갖는다.** ≥3 km duration 9–12 h, ≥5 km 12–18 h,
+  relmag ≥10 % persistence 24–39 h(freeze-up p75 123 h). 단일 T 규칙은 폐기하고 measurand × magnitude
+  표(§3)로 대체했다. **P1b_results.md는 48줄로 지정된 40줄을 초과** — 3개 표(계절·검출바닥·observability)와
+  정직성 문단을 줄이는 것보다 초과를 택했다.
+  **Next**: (a) persistence를 1 h 격자로 재계산(현재 3 h만), (b) relmag 기준을 P2에서 **사전등록**할 것,
+  (c) p90 꼬리(198–246 h)는 censoring 18–20 %에 민감하므로 P2 곡선에서는 신뢰구간 없이 인용 금지,
+  (d) P2는 dt = 6/12/24/48/72/168 h 곡선을 **magnitude class별로만** 산출.
