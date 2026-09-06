@@ -106,3 +106,11 @@ P1_events.csv (82,440 rows, 5.2 MB), P1_buoy_key.csv. No Earth Engine calls.
   **H = E_D[Σ g_i·min(1,D/g_i) / Σ g_i]**. 단순 평균 min(1,D/ḡ)을 쓰면 큰 gap 하나가 숨겨져 낙관 편향이 난다.
   가정 5개(특히 **취득 1회=관측으로 세므로 H는 상한**, **부이 D 분포를 chokepoint에 외삽**)를 명시.
   H8/H6/H9와 설계임계 0.8도 사전 고정. charting layer는 논문 범위에서 제외.
+- **P3 step 1 (feasibility)**: **STOP 미발동** — OSI SAF OSI-405 LR drift(62.5 km, 48 h 변위, 일별)는
+  thredds.met.no에서 **무로그인 200**, 2016–2025 전 월 존재. 반면 **DMI ASIP**
+  (`SEAICE_ARC_PHY_AUTO_L3_MYNRT_011_023`)와 **DTU S1 drift**(`cmems_sat-si_glo_drift_nrt_north_d`)는
+  CMEMS에 **존재하지만 계정이 없어 다운로드 불가**(계정은 만들지 않는다) → **P7의 H9는 정량 검정 자체가 불가**.
+  OSI SAF **SAR 기반 drift는 존재하지 않는다**(OSI-407은 중단, drift_mr은 AVHRR 기반).
+  무계정으로 닿는 유일한 S1 의존 산출물은 **MET Norway ice chart quicklook PNG 아카이브**(1997–2026)뿐이며
+  래스터라 정량 전파검증에 부족하다. ESA **Sentinel-1 Acquisition Segments ZIP 2015–2025** 취득 가능(2026분 없음)
+  → P6-7의 계획 대 실측 비교에 사용. EODMS는 익명 `wes/rapi/search` 200(부분), CHNL은 **연 단위 HTML만**(2024 이후 동결).
