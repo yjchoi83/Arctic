@@ -204,3 +204,8 @@ P1_events.csv (82,440 rows, 5.2 MB), P1_buoy_key.csv. No Earth Engine calls.
   산출물: 25 km 셀 H 지도 6 PNG + GeoTIFF 18장(`data/products/`, 미커밋), 계획 대 실측 막대그래프,
   DTU 가용성 히트맵, 해협 예시 4장. QC contact sheet 19건(`decision` 공란) + baseline 환산 등급을 더한
   `qc_table_p9.csv` — 환산 후 **<1 km 10 · 1–3 km 8 · ≥5 km 1**.
+- **P9 step 5 (paper skeleton)**: `stage5/P9/PAPER_OUTLINE.md` 77줄 — 제목, **초록 251 단어**, 12개 절과 각 절이
+  쓰는 그림·표, **6개 주장 표**(근거 + 본문에 반드시 남길 단서), 그리고 **8개 한계**(부이→해협 외삽, 등급 baseline
+  불일치, 공유 아카이브 의존, KML 계획 대 실측, S1D 램프업, H의 상한 성격, 셀 CI 과소, 작은 사건의 2–4 h 요구).
+  목표 **RSE**, 대안 **CRST**. 제출 전 할 일도 명시(S2 API 키로 novelty 재실행, contact sheet 인간 판독,
+  C3의 미검증 사건을 본문에 둘지 부록으로 옮길지 결정).
