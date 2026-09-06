@@ -45,3 +45,9 @@ P1_events.csv (82,440 rows, 5.2 MB), P1_buoy_key.csv. No Earth Engine calls.
   즉 P1의 "median 6 h"는 **검출 바닥이 맞다**. 다만 **magnitude로 거르면 측정량이 안정된다**:
   mag ≥3 km는 med 9 h(1 h 격자) vs 12 h(3 h 격자)·6 h 미만 9.2 %, mag ≥5 km는 12 h vs 18 h·6 h 미만 2.1 %.
   → **작은 이벤트의 지속시간은 정의되지 않고(표본화율을 따라감), 큰 이벤트만 고유 시간척도를 갖는다.**
+- **Step 3 (observability table)**: 단일 T 규칙을 폐기하고 measurand × magnitude class 표로 대체.
+  "80 %를 bracket하는 revisit"은 정의가 셋이라 셋 다 싣는다 — p20(개별 이벤트를 확실히 잡는 T),
+  **T_exp80**(모집단 기대 포착률 ≥0.8, 설계용 권장값), p80(지시된 문자 그대로의 통계량).
+  persistence는 **Kaplan-Meier**로 censoring(4–20 %)을 반영했다. duration ≥3 km는 T_exp80 = 10 h(1 h 표본)
+  / 14 h(3 h 표본), ≥5 km는 14 / 20 h. persistence(relmag ≥10 %)는 ≥3 km 17 h, ≥5 km **24 h**(p80 219 h).
+  → **두 measurand의 요구가 다르다**: episode를 잡으려면 6–12 h, hazard 상태를 놓치지 않으려면 24 h급.
