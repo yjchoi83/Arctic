@@ -38,3 +38,10 @@ P1_events.csv (82,440 rows, 5.2 MB), P1_buoy_key.csv. No Earth Engine calls.
   거기서는 지속이 길다: med **21 h** / p75 69 h / p90 198 h, censoring 18 %
   (freeze-up med 39 h·p75 123 h, winter 27 h·72 h, melt 12 h·54 h).
   → episode duration(시간 단위)과 hazard-state persistence(수십 시간~일)는 **다른 측정량**이다.
+- **Step 2 (detection floor)**: native fix interval ≤1 h인 부이 **1,111/1,271**(fix 8,399,514)만으로
+  1시간 격자(브래킷 ±1 h)·최소 2 h로 재계산. **이벤트의 85.8 %가 6 h 미만**이고 median은 **6 h → 2 h**로
+  떨어진다(THR 4.706, n=137,786, p90 7 h). 동일 부이 부분집합의 3시간 격자 대조군은 med 6 h·p90 18 h로
+  P1을 재현 → 차이는 부분집합이 아니라 **표본화 간격 자체**가 만든 것이다.
+  즉 P1의 "median 6 h"는 **검출 바닥이 맞다**. 다만 **magnitude로 거르면 측정량이 안정된다**:
+  mag ≥3 km는 med 9 h(1 h 격자) vs 12 h(3 h 격자)·6 h 미만 9.2 %, mag ≥5 km는 12 h vs 18 h·6 h 미만 2.1 %.
+  → **작은 이벤트의 지속시간은 정의되지 않고(표본화율을 따라감), 큰 이벤트만 고유 시간척도를 갖는다.**
