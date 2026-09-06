@@ -10,4 +10,4 @@
 | P6 counterfactual / design | done | H6 지지 15/16; chokepoint 0.8 not attainable |
 | P7 product consequence | superseded by P8 | H9 지지 rho=0.71 (DTU S1 drift) |
 | P8 gap closing | done | H9 지지; 배분 진술 축소 유지; 해협 겨울 추적 작동(성공률 0.51) |
-| P9 consistency/products/paper | step 1 done | 등급 불일치 해소; P8의 '≥3 km 실패' 철회 |
+| P9 consistency/products/paper | steps 1-4 done | H9 임계 민감 robust; 산출물·contact sheet 완료 |
