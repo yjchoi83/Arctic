@@ -6,6 +6,6 @@
 | P2 observation deficit + DiD | done | kept 지역 0개 → DiD 대조군 부재; chokepoint 24 h 요구 상시 미달 |
 | P3 feasibility + H metric | done | H_episode chokepoint 0.097 (2022-24); H_state 0.36 |
 | P4 OSI SAF hazard record | done | Vilkitsky 유효관측 0건; H8 검정불가/기각 |
-| P5 effective observability | in progress | — |
-| P6 counterfactual / design | pending | — |
-| P7 product consequence | pending | — |
+| P5 effective observability | done | E_state winter 0.18-0.28, melt 0.006-0.009 |
+| P6 counterfactual / design | done | H6 지지 15/16; chokepoint 0.8 not attainable |
+| P7 product consequence | done (negative) | H9 미검정 - CMEMS 자격증명 없음 |

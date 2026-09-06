@@ -135,3 +135,14 @@ P1_events.csv (82,440 rows, 5.2 MB), P1_buoy_key.csv. No Earth Engine calls.
   chokepoint winter E_state는 pre 0.258 → during 0.177 → post 0.219. **freeze-up 성공률은 미측정**이라
   낙관 대입(0.47)과 unknown을 병기했고 어느 쪽도 기본값으로 숨기지 않았다. DL 벤치마크(arXiv:2510.26653)는
   **3–5월 pack ice만** 시험했으므로 melt·freeze-up 반박 근거가 될 수 없음을 명시.
+- **P6 (counterfactual/design/recovery)**: **H6 지지 — 16개 중 15개 지역에서 A-only 반사실이 관측 2022–24를
+  10 pp 이내로 재현**(대부분 ±3 pp). 유일 실패는 **Sannikov +12.3 pp**로, 그 해역은 A 단독 기대치보다도 취득이
+  적었다. 설계곡선: 1→2위성 +0.13, 2→3 **+0.05**로 체감하며 **NSR chokepoint는 3위성에서도 최대 0.72로
+  0.8 "not attainable"**(800조합 중 0.8 도달은 16개, 전부 Fram·Barents 등 대형 고위도 상자).
+  **회복적자는 위성 수가 아니라 배분** — 총량은 pre의 88.5 %인데 **Barents 46.6 %·Sannikov 63.5 %·KaraGate 75.1 %·
+  Fram 73.6 %로 유럽·러시아 구획에 부족이 집중**되고 북미·베링은 101–141 %로 이미 초과 회복. ESA scenario
+  교차확인은 URL 해시 미확보로 **수행 못 함**(2026 파일은 애초에 없음) → 판정은 메타데이터 근거 서술로 한정.
+- **P7 (product consequence)**: **H9 미검정 — 기각이 아니라 자료 접근 불가.** DMI-ASIP·DTU S1 drift는 CMEMS에
+  존재하나 자격증명이 없고(계정은 만들지 않음), OSI SAF SAR drift는 **존재하지 않으며**, 무료로 닿는 MET Norway
+  차트 quicklook은 PNG라 정량 지표가 못 된다. **"제품이 영향받지 않았다"로 읽으면 안 된다** — 검사를 못 했다.
+  논문 범위를 observability로 좁힌다. 계정 1개만 있으면 <1 GB로 완료 가능함을 P7에 적어 뒀다.
