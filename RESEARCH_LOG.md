@@ -121,3 +121,11 @@ P1_events.csv (82,440 rows, 5.2 MB), P1_buoy_key.csv. No Earth Engine calls.
   평균은 같으나(0.178 vs 0.169) **512건 중 119건에서 0.05 이상 어긋난다** — 작은 해협은 상자가 과소평가
   (LongStrait +0.042), 큰 상자는 과대평가(Fram −0.046). **셀 부트스트랩 CI가 매우 좁은 것은 정밀도가 아니라
   같은 지역 셀이 궤도를 공유해 독립이 아니기 때문**이며 그렇게 명시했다.
+- **P4 steps 3–4 (OSI SAF hazard record)**: OSI-405 3,043일(2.3 GB) 처리. **NSR chokepoint에 S1-독립 hazard
+  기록이 사실상 없다** — 62.5 km 격자에서 **Vilkitsky는 10년 전체 유효 관측 0건**(전부 land/coast 마스크),
+  divergence 계산가능 비율은 Sannikov 0.1 %·LongStrait 0.3 %·KaraGate 0.0 %이고 유효값 대부분이
+  **interpolated(flag 22)**. **H8은 4개 해협에서 검정 불가**, 유일하게 가능한 Bering–Chukchi 접근로에서는
+  **기각**(2022 0.422 / 2023 0.177 / 2024 0.892 — 0.25 미만은 2023뿐). 기간별 hazard-observed fraction은
+  pre 0.652 → during 0.475 → post 0.677(24 h). QC 퀵룩은 요청 10–15건 대비 **5건**만 성립했고 전부 Long Strait
+  2025다 — Sannikov는 단일 취득은 24 h 내에 있어도 **쌍이 없다**(PLAN 가정 3의 실증). 예산 때문에 40 m 화소
+  crop 대신 **ASF browse JPEG**를 저장했고 auto_note는 UNSCORED로 남겼다(공개 이탈).
