@@ -129,3 +129,9 @@ P1_events.csv (82,440 rows, 5.2 MB), P1_buoy_key.csv. No Earth Engine calls.
   pre 0.652 → during 0.475 → post 0.677(24 h). QC 퀵룩은 요청 10–15건 대비 **5건**만 성립했고 전부 Long Strait
   2025다 — Sannikov는 단일 취득은 24 h 내에 있어도 **쌍이 없다**(PLAN 가정 3의 실증). 예산 때문에 40 m 화소
   crop 대신 **ASF browse JPEG**를 저장했고 auto_note는 UNSCORED로 남겼다(공개 이탈).
+- **P5 (effective observability)**: `E = H × retrieval success`(R1 실측 winter 0.47 / melt 0.02).
+  **H와 E의 간극이 요점** — H_state3는 0.35–0.67이지만 E_state는 winter 0.18–0.28, **melt 0.006–0.009**.
+  즉 **융빙기에는 위성을 더 띄워도 E가 0.01을 못 넘는다**(병목이 관측계획이 아니라 C-band matcher).
+  chokepoint winter E_state는 pre 0.258 → during 0.177 → post 0.219. **freeze-up 성공률은 미측정**이라
+  낙관 대입(0.47)과 unknown을 병기했고 어느 쪽도 기본값으로 숨기지 않았다. DL 벤치마크(arXiv:2510.26653)는
+  **3–5월 pack ice만** 시험했으므로 melt·freeze-up 반박 근거가 될 수 없음을 명시.
