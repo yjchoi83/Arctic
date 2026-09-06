@@ -6,7 +6,7 @@
 | P2 observation deficit + DiD | done | kept 지역 0개 → DiD 대조군 부재; chokepoint 24 h 요구 상시 미달 |
 | P3 feasibility + H metric | done | H_episode chokepoint 0.097 (2022-24); H_state 0.36 |
 | P4 OSI SAF hazard record | done | Vilkitsky 유효관측 0건; H8 검정불가/기각 |
-| P5 effective observability | done | E_state winter 0.18-0.28, melt 0.006-0.009 |
+| P5 effective observability | done (P8 갱신) | freeze-up 성공률 실측 0.394 - 0.47 대입은 19% 과대 |
 | P6 counterfactual / design | done | H6 지지 15/16; chokepoint 0.8 not attainable |
 | P7 product consequence | superseded by P8 | H9 지지 rho=0.71 (DTU S1 drift) |
-| P8 gap closing | steps 1-2 done | H9 지지; 배분 진술 유지(범위 축소) |
+| P8 gap closing | done | H9 지지; 배분 진술 축소 유지; 해협 겨울 추적 작동(성공률 0.51) |
