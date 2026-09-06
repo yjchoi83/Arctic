@@ -114,3 +114,10 @@ P1_events.csv (82,440 rows, 5.2 MB), P1_buoy_key.csv. No Earth Engine calls.
   무계정으로 닿는 유일한 S1 의존 산출물은 **MET Norway ice chart quicklook PNG 아카이브**(1997–2026)뿐이며
   래스터라 정량 전파검증에 부족하다. ESA **Sentinel-1 Acquisition Segments ZIP 2015–2025** 취득 가능(2026분 없음)
   → P6-7의 계획 대 실측 비교에 사용. EODMS는 익명 `wes/rapi/search` 200(부분), CHNL은 **연 단위 HTML만**(2024 이후 동결).
+- **P3 step 2 (H metric)**: 1,771개 25 km 셀 × 2016–2026로 `H = E_D[Σ min(g_i,D)]/Σ g_i` 산출
+  (length-biased 가중을 닫힌형으로 정리; 순진한 구현과 1e-12 이내 일치 확인). **episode(D≈10 h)는 어느 시기에도
+  0.27을 못 넘고, NSR chokepoint는 pre에도 0.20, 2022–24에는 0.097** — 에피소드 위험 10건 중 9건이
+  촬영되지 않았다는 뜻. state(D≈30–45 h)는 0.562 → 0.441 → 0.532(부분 회복). 셀 단위 O(24 h)는 P2 상자값과
+  평균은 같으나(0.178 vs 0.169) **512건 중 119건에서 0.05 이상 어긋난다** — 작은 해협은 상자가 과소평가
+  (LongStrait +0.042), 큰 상자는 과대평가(Fram −0.046). **셀 부트스트랩 CI가 매우 좁은 것은 정밀도가 아니라
+  같은 지역 셀이 궤도를 공유해 독립이 아니기 때문**이며 그렇게 명시했다.
