@@ -1,0 +1,15 @@
+/d/yj_projects/miniforge3/lib/python3.13/site-packages/ee/data.py:335: UserWarning: Your project has exceeded its noncommercial compute quota and is now in restricted mode. Visit https://developers.google.com/earth-engine/guides/noncommercial_tiers#restricted_mode to learn more.
+  warnings.warn(
+grid 194 236 45784
+chart polys 7 land_frac 0.0 RIO uniq [-1.5 -0.4  1.7  2.1]
+/d/yj_projects/miniforge3/lib/python3.13/site-packages/ee/data.py:335: UserWarning: Your project has exceeded its noncommercial compute quota and is now in restricted mode. Visit https://developers.google.com/earth-engine/guides/noncommercial_tiers#restricted_mode to learn more.
+  warnings.warn(
+S1 EW scenes 3 ['S1A_EW_GRDM_1SDH_20251120T005410_20251120T005514_061954_07BF98_8BBB', 'S1A_EW_GRDM_1SDH_20251122T003744_20251122T003848_061983_07C0BE_12F5', 'S1A_EW_GRDM_1SDH_20251122T003848_20251122T003948_061983_07C0BE_A82E']
+sar (286, 300) t 5.2
+sar_valid_frac 0.944 hv_pcts [-31.1 -28.1 -26.4 -23.9 -16. ]
+chart len_km 94.0 cost 340.8 RIO_mean 2.1 RIO_min 2.0999999046325684
+sar len_km 103.9 cost 285.6 RIO_mean 2.82 RIO_min -1.0
+divergence_km mean 6.91 max 10.8
+chart_route_on_SAR: RIO_mean 1.72 RIO_min -2.0 | sar_route_on_CHART: RIO_mean 2.1
+frac_chart_route_in_SAR_highrisk 0.199
+runtime_s 6.1

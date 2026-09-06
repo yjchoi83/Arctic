@@ -1,0 +1,134 @@
+{
+ "ESS_166E_71N": {
+  "2016": {
+   "scenes": 18,
+   "days_covered": 18,
+   "med_gap_h": 95.5,
+   "n_gaps_0.5_3d": 5,
+   "max_gap_d": 7.0
+  },
+  "2017": {
+   "scenes": 60,
+   "days_covered": 55,
+   "med_gap_h": 23.9,
+   "n_gaps_0.5_3d": 54,
+   "max_gap_d": 2.0
+  },
+  "2021": {
+   "scenes": 43,
+   "days_covered": 40,
+   "med_gap_h": 23.9,
+   "n_gaps_0.5_3d": 38,
+   "max_gap_d": 4.0
+  },
+  "2023": {
+   "scenes": 22,
+   "days_covered": 22,
+   "med_gap_h": 47.7,
+   "n_gaps_0.5_3d": 16,
+   "max_gap_d": 8.0
+  },
+  "2024": {
+   "scenes": 25,
+   "days_covered": 25,
+   "med_gap_h": 47.7,
+   "n_gaps_0.5_3d": 19,
+   "max_gap_d": 5.0
+  },
+  "2025": {
+   "scenes": 58,
+   "days_covered": 53,
+   "med_gap_h": 23.9,
+   "n_gaps_0.5_3d": 52,
+   "max_gap_d": 2.0
+  }
+ },
+ "Chukotka_178W_69N": {
+  "2016": {
+   "scenes": 25,
+   "days_covered": 20,
+   "med_gap_h": 72.4,
+   "n_gaps_0.5_3d": 4,
+   "max_gap_d": 5.0
+  },
+  "2017": {
+   "scenes": 30,
+   "days_covered": 25,
+   "med_gap_h": 23.9,
+   "n_gaps_0.5_3d": 20,
+   "max_gap_d": 7.0
+  },
+  "2021": {
+   "scenes": 29,
+   "days_covered": 25,
+   "med_gap_h": 23.9,
+   "n_gaps_0.5_3d": 20,
+   "max_gap_d": 10.0
+  },
+  "2023": {
+   "scenes": 9,
+   "days_covered": 9,
+   "med_gap_h": 144.0,
+   "n_gaps_0.5_3d": 4,
+   "max_gap_d": 10.0
+  },
+  "2024": {
+   "scenes": 10,
+   "days_covered": 10,
+   "med_gap_h": 47.7,
+   "n_gaps_0.5_3d": 5,
+   "max_gap_d": 10.0
+  },
+  "2025": {
+   "scenes": 35,
+   "days_covered": 35,
+   "med_gap_h": 24.7,
+   "n_gaps_0.5_3d": 29,
+   "max_gap_d": 5.0
+  }
+ },
+ "Vilkitsky_104E_77.5N": {
+  "2016": {
+   "scenes": 46,
+   "days_covered": 36,
+   "med_gap_h": 32.8,
+   "n_gaps_0.5_3d": 24,
+   "max_gap_d": 3.0
+  },
+  "2017": {
+   "scenes": 54,
+   "days_covered": 38,
+   "med_gap_h": 24.7,
+   "n_gaps_0.5_3d": 38,
+   "max_gap_d": 3.0
+  },
+  "2021": {
+   "scenes": 16,
+   "days_covered": 11,
+   "med_gap_h": 24.7,
+   "n_gaps_0.5_3d": 4,
+   "max_gap_d": 13.0
+  },
+  "2023": {
+   "scenes": 9,
+   "days_covered": 7,
+   "med_gap_h": 120.1,
+   "n_gaps_0.5_3d": 0,
+   "max_gap_d": 12.0
+  },
+  "2024": {
+   "scenes": 20,
+   "days_covered": 15,
+   "med_gap_h": 47.7,
+   "n_gaps_0.5_3d": 5,
+   "max_gap_d": 7.0
+  },
+  "2025": {
+   "scenes": 22,
+   "days_covered": 18,
+   "med_gap_h": 47.7,
+   "n_gaps_0.5_3d": 9,
+   "max_gap_d": 7.0
+  }
+ }
+}

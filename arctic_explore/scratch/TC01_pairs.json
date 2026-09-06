@@ -1,0 +1,66 @@
+{
+ "ESS_Chukotka": {
+  "2016": {
+   "scenes": 249,
+   "orbits": 20,
+   "pairs_1_3d": 0
+  },
+  "2017": {
+   "scenes": 428,
+   "orbits": 24,
+   "pairs_1_3d": 0
+  },
+  "2021": {
+   "scenes": 321,
+   "orbits": 19,
+   "pairs_1_3d": 0
+  },
+  "2023": {
+   "scenes": 179,
+   "orbits": 16,
+   "pairs_1_3d": 0
+  },
+  "2025": {
+   "scenes": 420,
+   "orbits": 21,
+   "pairs_1_3d": 0
+  },
+  "2024": {
+   "scenes": 206,
+   "orbits": 18,
+   "pairs_1_3d": 0
+  }
+ },
+ "Vilkitsky": {
+  "2016": {
+   "scenes": 279,
+   "orbits": 36,
+   "pairs_1_3d": 0
+  },
+  "2017": {
+   "scenes": 152,
+   "orbits": 17,
+   "pairs_1_3d": 0
+  },
+  "2021": {
+   "scenes": 48,
+   "orbits": 11,
+   "pairs_1_3d": 0
+  },
+  "2023": {
+   "scenes": 26,
+   "orbits": 7,
+   "pairs_1_3d": 0
+  },
+  "2025": {
+   "scenes": 158,
+   "orbits": 19,
+   "pairs_1_3d": 0
+  },
+  "2024": {
+   "scenes": 69,
+   "orbits": 9,
+   "pairs_1_3d": 0
+  }
+ }
+}

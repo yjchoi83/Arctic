@@ -1,0 +1,5 @@
+ESib_Laptev: GCOV 2445 DHDH 218 | <=6h&sameROI 172 | TRUE overlap>=50% 10
+Beaufort_N: GCOV 1722 DHDH 79 | <=6h&sameROI 31 | TRUE overlap>=50% 30
+Kara_N: GCOV 1920 DHDH 372 | <=6h&sameROI 299 | TRUE overlap>=50% 55
+Chukchi: GCOV 647 DHDH 49 | <=6h&sameROI 22 | TRUE overlap>=50% 4
+TOTAL {'nisar_gcov': 6734, 'dhdh': 718, 'time6h_roi': 524, 'true_ovl50': 99}

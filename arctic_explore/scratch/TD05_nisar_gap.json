@@ -1,0 +1,26 @@
+{
+ "Sannikov": {
+  "n_gcov": 219,
+  "n_all": 900,
+  "span": [
+   "2026-07-21",
+   "2026-09-01"
+  ],
+  "med_gap_h": 1.6,
+  "frac_gap_le_72h": 0.99,
+  "frac_gap_le_24h": 0.99,
+  "min_gap_h": 1.6
+ },
+ "Chukchi": {
+  "n_gcov": 248,
+  "n_all": 900,
+  "span": [
+   "2026-07-06",
+   "2026-09-01"
+  ],
+  "med_gap_h": 6.5,
+  "frac_gap_le_72h": 0.99,
+  "frac_gap_le_24h": 0.98,
+  "min_gap_h": 1.6
+ }
+}

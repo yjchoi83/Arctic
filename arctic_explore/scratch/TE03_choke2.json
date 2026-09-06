@@ -1,0 +1,229 @@
+{
+ "Kara_Gate": {
+  "n_gcov": 162,
+  "n_pass": 84,
+  "n_days": 61,
+  "span": [
+   "2026-06-17",
+   "2026-09-01"
+  ],
+  "n_paths": 17,
+  "mainpol": {
+   "['HH', 'HV']": 45,
+   "None": 117
+  },
+  "sidepol": {
+   "['HH', 'HV']": 45,
+   "['VV']": 117
+  },
+  "dir": {
+   "ASCENDING": 122,
+   "DESCENDING": 40
+  },
+  "centerLat": null,
+  "gap_med_d": 0.77,
+  "gap_p90_d": 0.97,
+  "gap_max_d": 14.01,
+  "obs_days_frac": 0.79,
+  "lat_med_h": 123.3,
+  "lat_p90_h": 466.0
+ },
+ "Vilkitsky": {
+  "n_gcov": 268,
+  "n_pass": 139,
+  "n_days": 64,
+  "span": [
+   "2026-06-17",
+   "2026-09-01"
+  ],
+  "n_paths": 27,
+  "mainpol": {
+   "['HH', 'HV']": 78,
+   "None": 189,
+   "['HH']": 1
+  },
+  "sidepol": {
+   "['HH', 'HV']": 78,
+   "['VV']": 189,
+   "['HH']": 1
+  },
+  "dir": {
+   "ASCENDING": 214,
+   "DESCENDING": 54
+  },
+  "centerLat": null,
+  "gap_med_d": 0.07,
+  "gap_p90_d": 0.92,
+  "gap_max_d": 13.94,
+  "obs_days_frac": 0.83,
+  "lat_med_h": 123.1,
+  "lat_p90_h": 468.5
+ },
+ "Sannikov": {
+  "n_gcov": 470,
+  "n_pass": 220,
+  "n_days": 64,
+  "span": [
+   "2026-06-17",
+   "2026-09-01"
+  ],
+  "n_paths": 42,
+  "mainpol": {
+   "None": 415,
+   "['HH', 'HV']": 53,
+   "['HH']": 2
+  },
+  "sidepol": {
+   "['VV']": 415,
+   "['HH', 'HV']": 53,
+   "['HH']": 2
+  },
+  "dir": {
+   "ASCENDING": 415,
+   "DESCENDING": 55
+  },
+  "centerLat": null,
+  "gap_med_d": 0.07,
+  "gap_p90_d": 0.84,
+  "gap_max_d": 13.81,
+  "obs_days_frac": 0.83,
+  "lat_med_h": 123.5,
+  "lat_p90_h": 446.8
+ },
+ "DmitryLaptev": {
+  "n_gcov": 240,
+  "n_pass": 125,
+  "n_days": 63,
+  "span": [
+   "2026-06-17",
+   "2026-09-01"
+  ],
+  "n_paths": 24,
+  "mainpol": {
+   "['HH', 'HV']": 59,
+   "None": 180,
+   "['HH']": 1
+  },
+  "sidepol": {
+   "['HH', 'HV']": 59,
+   "['VV']": 180,
+   "['HH']": 1
+  },
+  "dir": {
+   "ASCENDING": 169,
+   "DESCENDING": 71
+  },
+  "centerLat": null,
+  "gap_med_d": 0.49,
+  "gap_p90_d": 0.84,
+  "gap_max_d": 13.81,
+  "obs_days_frac": 0.82,
+  "lat_med_h": 123.9,
+  "lat_p90_h": 468.8
+ },
+ "Long_Strait": {
+  "n_gcov": 3000,
+  "n_pass": 555,
+  "n_days": 42,
+  "span": [
+   "2026-07-10",
+   "2026-09-02"
+  ],
+  "n_paths": 166,
+  "mainpol": {
+   "['HH']": 493,
+   "['VV']": 476,
+   "None": 1062,
+   "['HH', 'HV']": 969
+  },
+  "sidepol": {
+   "['VV']": 1064,
+   "None": 400,
+   "['HH']": 551,
+   "['HH', 'HV']": 969,
+   "['VH', 'VV']": 16
+  },
+  "dir": {
+   "DESCENDING": 1361,
+   "ASCENDING": 1639
+  },
+  "centerLat": null,
+  "gap_med_d": 0.07,
+  "gap_p90_d": 0.07,
+  "gap_max_d": 13.25,
+  "obs_days_frac": 0.76,
+  "lat_med_h": 94.5,
+  "lat_p90_h": 146.4
+ },
+ "Bering_Strait": {
+  "n_gcov": 310,
+  "n_pass": 96,
+  "n_days": 64,
+  "span": [
+   "2026-06-17",
+   "2026-09-01"
+  ],
+  "n_paths": 18,
+  "mainpol": {
+   "['VV']": 106,
+   "['HH', 'HV']": 117,
+   "None": 29,
+   "['HH']": 58
+  },
+  "sidepol": {
+   "['HH']": 128,
+   "['HH', 'HV']": 117,
+   "None": 42,
+   "['VV']": 23
+  },
+  "dir": {
+   "ASCENDING": 145,
+   "DESCENDING": 165
+  },
+  "centerLat": null,
+  "gap_med_d": 0.7,
+  "gap_p90_d": 0.97,
+  "gap_max_d": 13.67,
+  "obs_days_frac": 0.83,
+  "lat_med_h": 122.4,
+  "lat_p90_h": 483.2
+ },
+ "Barrow_Strait": {
+  "n_gcov": 345,
+  "n_pass": 181,
+  "n_days": 64,
+  "span": [
+   "2026-06-17",
+   "2026-09-02"
+  ],
+  "n_paths": 35,
+  "mainpol": {
+   "None": 269,
+   "['HH', 'HV']": 76
+  },
+  "sidepol": {
+   "['VV']": 269,
+   "['HH', 'HV']": 76
+  },
+  "dir": {
+   "ASCENDING": 263,
+   "DESCENDING": 82
+  },
+  "centerLat": null,
+  "gap_med_d": 0.14,
+  "gap_p90_d": 0.84,
+  "gap_max_d": 13.81,
+  "obs_days_frac": 0.82,
+  "lat_med_h": 123.1,
+  "lat_p90_h": 473.3
+ },
+ "Fram_Svalbard": {
+  "n_gcov": 0
+ },
+ "Lat78_82_Kara": {
+  "n_gcov": 0
+ },
+ "Transpolar_85N": {
+  "n_gcov": 0
+ }
+}

@@ -1,0 +1,41 @@
+{
+"Vilkitsky_2021": {
+"n": 239,
+"by_platform": {
+"Sentinel-1A": 230,
+"Sentinel-1B": 9
+}
+},
+"Vilkitsky_2023": {
+"n": 127,
+"by_platform": {
+"Sentinel-1A": 127
+}
+},
+"Vilkitsky_2025": {
+"n": 296,
+"by_platform": {
+"Sentinel-1A": 237,
+"Sentinel-1C": 59
+}
+},
+"Sannikov_2025": {
+"n": 128,
+"by_platform": {
+"Sentinel-1A": 88,
+"Sentinel-1C": 40
+}
+},
+"Long_Strait_2023": {
+"n": 167,
+"by_platform": {
+"Sentinel-1A": 167
+}
+},
+"NWP_Barrow_2023": {
+"n": 230,
+"by_platform": {
+"Sentinel-1A": 230
+}
+}
+}

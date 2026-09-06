@@ -1,0 +1,54 @@
+{
+ "Sannikov_melt": {
+  "n_scenes": 28,
+  "n_acq": 28,
+  "med_gap_h": 48.5,
+  "frac_gap_le_72h": 0.72,
+  "n_eval": 14,
+  "hh_std_dB_med": 3.81,
+  "hh_std_dB_p25p75": [
+   2.04,
+   5.24
+  ],
+  "hh_mean_dB_med": -14.99
+ },
+ "Sannikov_winter": {
+  "n_scenes": 27,
+  "n_acq": 27,
+  "med_gap_h": 48.5,
+  "frac_gap_le_72h": 0.69,
+  "n_eval": 14,
+  "hh_std_dB_med": 2.14,
+  "hh_std_dB_p25p75": [
+   1.62,
+   3.05
+  ],
+  "hh_mean_dB_med": -15.0
+ },
+ "Chukchi_melt": {
+  "n_scenes": 73,
+  "n_acq": 73,
+  "med_gap_h": 23.8,
+  "frac_gap_le_72h": 0.91,
+  "n_eval": 14,
+  "hh_std_dB_med": 3.34,
+  "hh_std_dB_p25p75": [
+   2.84,
+   3.66
+  ],
+  "hh_mean_dB_med": -15.6
+ },
+ "Chukchi_winter": {
+  "n_scenes": 36,
+  "n_acq": 36,
+  "med_gap_h": 47.7,
+  "frac_gap_le_72h": 0.71,
+  "n_eval": 14,
+  "hh_std_dB_med": 1.45,
+  "hh_std_dB_p25p75": [
+   1.41,
+   1.54
+  ],
+  "hh_mean_dB_med": -15.69
+ }
+}

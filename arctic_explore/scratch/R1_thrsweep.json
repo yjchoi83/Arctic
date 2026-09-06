@@ -1,0 +1,44 @@
+[
+ {
+  "thr": 15,
+  "season": "melt",
+  "valid": 844,
+  "succ": 16,
+  "rate": 0.019
+ },
+ {
+  "thr": 15,
+  "season": "winter",
+  "valid": 4520,
+  "succ": 2116,
+  "rate": 0.4681
+ },
+ {
+  "thr": 30,
+  "season": "melt",
+  "valid": 492,
+  "succ": 8,
+  "rate": 0.0163
+ },
+ {
+  "thr": 30,
+  "season": "winter",
+  "valid": 4520,
+  "succ": 2116,
+  "rate": 0.4681
+ },
+ {
+  "thr": 50,
+  "season": "melt",
+  "valid": 217,
+  "succ": 0,
+  "rate": 0.0
+ },
+ {
+  "thr": 50,
+  "season": "winter",
+  "valid": 4520,
+  "succ": 2116,
+  "rate": 0.4681
+ }
+]

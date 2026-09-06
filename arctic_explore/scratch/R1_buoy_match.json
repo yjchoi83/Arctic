@@ -1,0 +1,92 @@
+[
+ {
+  "season": "melt",
+  "pair": "20240810->20240812",
+  "buoy": "300534065161800",
+  "buoy_disp_km": 14.3,
+  "n_nodes_10km": 0,
+  "n_succ": 0,
+  "vec_err_km": null
+ },
+ {
+  "season": "melt",
+  "pair": "20240810->20240812",
+  "buoy": "300534064266590",
+  "buoy_disp_km": 23.26,
+  "n_nodes_10km": 0,
+  "n_succ": 0,
+  "vec_err_km": null
+ },
+ {
+  "season": "melt",
+  "pair": "20240812->20240813",
+  "buoy": "300534065161800",
+  "buoy_disp_km": 2.47,
+  "n_nodes_10km": 0,
+  "n_succ": 0,
+  "vec_err_km": null
+ },
+ {
+  "season": "melt",
+  "pair": "20240812->20240813",
+  "buoy": "300534064266590",
+  "buoy_disp_km": 5.74,
+  "n_nodes_10km": 0,
+  "n_succ": 0,
+  "vec_err_km": null
+ },
+ {
+  "season": "melt",
+  "pair": "20240810->20240813",
+  "buoy": "300534065161800",
+  "buoy_disp_km": 16.09,
+  "n_nodes_10km": 0,
+  "n_succ": 0,
+  "vec_err_km": null
+ },
+ {
+  "season": "melt",
+  "pair": "20240810->20240813",
+  "buoy": "300534064266590",
+  "buoy_disp_km": 28.99,
+  "n_nodes_10km": 0,
+  "n_succ": 0,
+  "vec_err_km": null
+ },
+ {
+  "season": "winter",
+  "pair": "20240212->20240214",
+  "buoy": "300534063449630",
+  "buoy_disp_km": 12.53,
+  "n_nodes_10km": 14,
+  "n_succ": 7,
+  "vec_err_km": 24.72
+ },
+ {
+  "season": "winter",
+  "pair": "20240214->20240215",
+  "buoy": "300534063449630",
+  "buoy_disp_km": 20.28,
+  "n_nodes_10km": 0,
+  "n_succ": 0,
+  "vec_err_km": null
+ },
+ {
+  "season": "winter",
+  "pair": "20240212->20240215",
+  "buoy": "300534063449630",
+  "buoy_disp_km": 8.01,
+  "n_nodes_10km": 0,
+  "n_succ": 0,
+  "vec_err_km": null
+ },
+ {
+  "season": "winter",
+  "pair": "20240226->20240227",
+  "buoy": "300534063449630",
+  "buoy_disp_km": 10.16,
+  "n_nodes_10km": 0,
+  "n_succ": 0,
+  "vec_err_km": null
+ }
+]

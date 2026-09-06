@@ -1,0 +1,247 @@
+{
+ "Kara_Gate": {
+  "n_all": 673,
+  "n_gcov": 162,
+  "levels": {
+   "SME2": 146,
+   "GUNW": 31,
+   "GSLC": 162,
+   "GCOV": 162,
+   "RUNW": 3,
+   "RSLC": 162,
+   "RIFG": 3,
+   "GOFF": 2,
+   "ROFF": 2
+  },
+  "pol": {
+   "None": 162
+  },
+  "n_frames_gcov": 162,
+  "n_distinct_pass": 84,
+  "span": [
+   "2026-06-17",
+   "2026-09-01"
+  ],
+  "pass_gap_median_d": 0.77,
+  "pass_gap_min_d": 0.27,
+  "pass_gap_p90_d": 0.97,
+  "n_paths": 17,
+  "latency_h_median": 123.0,
+  "latency_h_p10_p90": [
+   48.0,
+   465.1
+  ]
+ },
+ "Vilkitsky": {
+  "n_all": 1123,
+  "n_gcov": 268,
+  "levels": {
+   "SME2": 266,
+   "GUNW": 53,
+   "GSLC": 268,
+   "GCOV": 268,
+   "RSLC": 268
+  },
+  "pol": {
+   "None": 268
+  },
+  "n_frames_gcov": 268,
+  "n_distinct_pass": 139,
+  "span": [
+   "2026-06-17",
+   "2026-09-01"
+  ],
+  "pass_gap_median_d": 0.07,
+  "pass_gap_min_d": 0.07,
+  "pass_gap_p90_d": 0.92,
+  "n_paths": 27,
+  "latency_h_median": 123.0,
+  "latency_h_p10_p90": [
+   50.0,
+   468.0
+  ]
+ },
+ "Sannikov": {
+  "n_all": 1200,
+  "n_gcov": 293,
+  "levels": {
+   "SME2": 286,
+   "GSLC": 294,
+   "GCOV": 293,
+   "RSLC": 296,
+   "GUNW": 31
+  },
+  "pol": {
+   "None": 293
+  },
+  "n_frames_gcov": 293,
+  "n_distinct_pass": 137,
+  "span": [
+   "2026-07-10",
+   "2026-09-01"
+  ],
+  "pass_gap_median_d": 0.07,
+  "pass_gap_min_d": 0.07,
+  "pass_gap_p90_d": 0.84,
+  "n_paths": 42,
+  "latency_h_median": 88.0,
+  "latency_h_p10_p90": [
+   44.0,
+   147.0
+  ]
+ },
+ "DmitryLaptev": {
+  "n_all": 998,
+  "n_gcov": 240,
+  "levels": {
+   "SME2": 240,
+   "GUNW": 36,
+   "GSLC": 240,
+   "GCOV": 240,
+   "RSLC": 242
+  },
+  "pol": {
+   "None": 240
+  },
+  "n_frames_gcov": 240,
+  "n_distinct_pass": 125,
+  "span": [
+   "2026-06-17",
+   "2026-09-01"
+  ],
+  "pass_gap_median_d": 0.49,
+  "pass_gap_min_d": 0.14,
+  "pass_gap_p90_d": 0.84,
+  "n_paths": 24,
+  "latency_h_median": 123.0,
+  "latency_h_p10_p90": [
+   48.9,
+   468.0
+  ]
+ },
+ "Long_Strait": {
+  "n_all": 1200,
+  "n_gcov": 239,
+  "levels": {
+   "SME2": 180,
+   "GSLC": 236,
+   "GCOV": 239,
+   "RSLC": 273,
+   "GUNW": 112,
+   "RUNW": 41,
+   "RIFG": 41,
+   "GOFF": 39,
+   "ROFF": 39
+  },
+  "pol": {
+   "None": 239
+  },
+  "n_frames_gcov": 239,
+  "n_distinct_pass": 49,
+  "span": [
+   "2026-08-29",
+   "2026-09-02"
+  ],
+  "pass_gap_median_d": 0.07,
+  "pass_gap_min_d": 0.06,
+  "pass_gap_p90_d": 0.08,
+  "n_paths": 49,
+  "latency_h_median": 46.0,
+  "latency_h_p10_p90": [
+   42.0,
+   51.0
+  ]
+ },
+ "Bering_Strait": {
+  "n_all": 1200,
+  "n_gcov": 282,
+  "levels": {
+   "SME2": 280,
+   "GSLC": 282,
+   "GCOV": 282,
+   "RSLC": 283,
+   "GUNW": 73
+  },
+  "pol": {
+   "None": 282
+  },
+  "n_frames_gcov": 282,
+  "n_distinct_pass": 89,
+  "span": [
+   "2026-06-21",
+   "2026-09-01"
+  ],
+  "pass_gap_median_d": 0.7,
+  "pass_gap_min_d": 0.27,
+  "pass_gap_p90_d": 0.97,
+  "n_paths": 18,
+  "latency_h_median": 117.0,
+  "latency_h_p10_p90": [
+   46.1,
+   296.7
+  ]
+ },
+ "Barrow_Strait": {
+  "n_all": 1200,
+  "n_gcov": 252,
+  "levels": {
+   "SME2": 252,
+   "GSLC": 254,
+   "GCOV": 252,
+   "RSLC": 259,
+   "GUNW": 55,
+   "GOFF": 32,
+   "RUNW": 32,
+   "ROFF": 32,
+   "RIFG": 32
+  },
+  "pol": {
+   "None": 252
+  },
+  "n_frames_gcov": 252,
+  "n_distinct_pass": 132,
+  "span": [
+   "2026-07-04",
+   "2026-09-02"
+  ],
+  "pass_gap_median_d": 0.14,
+  "pass_gap_min_d": 0.07,
+  "pass_gap_p90_d": 0.84,
+  "n_paths": 35,
+  "latency_h_median": 97.0,
+  "latency_h_p10_p90": [
+   46.1,
+   171.0
+  ]
+ },
+ "Transpolar_85N": {
+  "n_all": 0,
+  "n_gcov": 0,
+  "levels": {},
+  "pol": {},
+  "n_frames_gcov": 0,
+  "n_distinct_pass": 0,
+  "span": null,
+  "pass_gap_median_d": null,
+  "pass_gap_min_d": null,
+  "pass_gap_p90_d": null,
+  "n_paths": 0,
+  "latency_h_median": null,
+  "latency_h_p10_p90": null
+ },
+ "Fram_Svalbard": {
+  "n_all": 0,
+  "n_gcov": 0,
+  "levels": {},
+  "pol": {},
+  "n_frames_gcov": 0,
+  "n_distinct_pass": 0,
+  "span": null,
+  "pass_gap_median_d": null,
+  "pass_gap_min_d": null,
+  "pass_gap_p90_d": null,
+  "n_paths": 0,
+  "latency_h_median": null,
+  "latency_h_p10_p90": null
+ }
+}

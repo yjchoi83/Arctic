@@ -1,0 +1,16 @@
+{
+ "melt": {
+  "n_buoys": 5,
+  "n_samples": 4468,
+  "med_km_48h": 19.58,
+  "p90_km": 47.81,
+  "p95_km": 59.48
+ },
+ "winter": {
+  "n_buoys": 5,
+  "n_samples": 7662,
+  "med_km_48h": 11.08,
+  "p90_km": 24.1,
+  "p95_km": 31.29
+ }
+}
