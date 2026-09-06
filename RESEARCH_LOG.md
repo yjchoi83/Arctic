@@ -61,3 +61,10 @@ P1_events.csv (82,440 rows, 5.2 MB), P1_buoy_key.csv. No Earth Engine calls.
   **Next**: (a) persistence를 1 h 격자로 재계산(현재 3 h만), (b) relmag 기준을 P2에서 **사전등록**할 것,
   (c) p90 꼬리(198–246 h)는 censoring 18–20 %에 민감하므로 P2 곡선에서는 신뢰구간 없이 인용 금지,
   (d) P2는 dt = 6/12/24/48/72/168 h 곡선을 **magnitude class별로만** 산출.
+
+### ARC-P2 progress
+- **Step 0 (PLAN + 라벨 오류)**: 브리프의 "40 NWP segments from Stage 2"를 열어 보니 좌표가
+  (−168.75, 65.75) → (−159.5, 71.34), 즉 **Bering–Chukchi–Point Barrow 알래스카 회랑**이고
+  **Northwest Passage가 아니다**(Stage 2가 NOAA NOS 미국 측량자료를 쓰면서 "NWP"로 오명명). 지시대로
+  6 sector로 집계하되 `AKcorr_*`로 개명하고, BeringChukchi와 **공간 중복**을 명시하며, 빠진 진짜 NWP를
+  메우려 CAA 2개 지역(Lancaster Sound, Victoria Strait)을 "브리프 외 추가"로 넣는다. PLAN.md 사전등록 완료.
