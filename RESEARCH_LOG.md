@@ -146,3 +146,8 @@ P1_events.csv (82,440 rows, 5.2 MB), P1_buoy_key.csv. No Earth Engine calls.
   존재하나 자격증명이 없고(계정은 만들지 않음), OSI SAF SAR drift는 **존재하지 않으며**, 무료로 닿는 MET Norway
   차트 quicklook은 PNG라 정량 지표가 못 된다. **"제품이 영향받지 않았다"로 읽으면 안 된다** — 검사를 못 했다.
   논문 범위를 observability로 좁힌다. 계정 1개만 있으면 <1 GB로 완료 가능함을 P7에 적어 뒀다.
+- **BATCH 종합**: 논문 진술 6개 확정. (1) chokepoint는 **손실 이전에도** 요구 미달(H_episode 0.200, O12는 688셀
+  전부 미충족). (2) 손실이 격차를 벌림(H_episode 0.200 → 0.097). (3) 2022–24 hazard-observed fraction은
+  **4개 해협에서 측정 불가**, Bering–Chukchi에서 H8 기각. (4) 회복 88.5 %, 부족은 **유럽·러시아 구획 편중**
+  → 계획 문제. (5) 최소 위성 수 **not attainable**. (6) 산출물 영향 **미검정**(자격증명).
+  예산 집행 2.3 GB / 5 GB, EECU 무시 수준. **P8은 시작하지 않았다.**
