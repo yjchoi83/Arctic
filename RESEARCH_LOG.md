@@ -99,3 +99,10 @@ P1_events.csv (82,440 rows, 5.2 MB), P1_buoy_key.csv. No Earth Engine calls.
   측정량을 지역 간 DiD가 아니라 **전역 관측능력의 시계열 붕괴·복구**로 재정의할 것.
   (b) chokepoint가 애초에 요구 미달이라는 사실이 TE01보다 강한 결과일 수 있다 — 우선순위 재검토.
   (c) O(dt)의 상자 의존성을 실제 해협 폴리곤으로 교체해 (c)를 확정할 것.
+
+### ARC-P3…P7 batch
+- **PLAN 고정**: `stage5/PLAN.md`에 H 지표 유도를 사전등록. 핵심은 **length-biased gap weighting** —
+  위험 발생시각이 계절에 균등분포면 gap i에 떨어질 확률이 g_i에 비례하므로
+  **H = E_D[Σ g_i·min(1,D/g_i) / Σ g_i]**. 단순 평균 min(1,D/ḡ)을 쓰면 큰 gap 하나가 숨겨져 낙관 편향이 난다.
+  가정 5개(특히 **취득 1회=관측으로 세므로 H는 상한**, **부이 D 분포를 chokepoint에 외삽**)를 명시.
+  H8/H6/H9와 설계임계 0.8도 사전 고정. charting layer는 논문 범위에서 제외.
