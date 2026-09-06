@@ -68,3 +68,10 @@ P1_events.csv (82,440 rows, 5.2 MB), P1_buoy_key.csv. No Earth Engine calls.
   **Northwest Passage가 아니다**(Stage 2가 NOAA NOS 미국 측량자료를 쓰면서 "NWP"로 오명명). 지시대로
   6 sector로 집계하되 `AKcorr_*`로 개명하고, BeringChukchi와 **공간 중복**을 명시하며, 빠진 진짜 NWP를
   메우려 CAA 2개 지역(Lancaster Sound, Victoria Strait)을 "브리프 외 추가"로 넣는다. PLAN.md 사전등록 완료.
+- **Steps 1–2 (regions, metrics)**: GEE `COPERNICUS/S1_GRD` 메타데이터만으로 16개 지역 × 2016–2026 취득
+  176 region-year를 추출(EW+IW, 장면당 `area(scene∩region)/area(region)` 계산). 실행 시간 총 ~6분,
+  EECU 사용은 예산 12 h 대비 무시할 수준. 688개 region×season×year 셀 산출(부분 계절 16셀 flag).
+  **PLAN §2에서 한 가지 이탈을 공개한다**: GRD는 한 pass가 여러 slice로 쪼개져 slice 단위 coverage로는
+  큰 지역이 영원히 50 %에 못 미친다 → 동일 platform·pass·15분 이내 slice를 **하나의 취득(pass)으로 묶고
+  coverage를 합산(min 1.0)**했다. 이는 지표를 의도에 맞추는 수정이며 은폐하지 않는다.
+  전 지역 평균 freeze-up O(24 h)는 2019–21 0.28–0.30 → **2022–24 0.015–0.017** → 2025 0.276.
