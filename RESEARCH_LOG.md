@@ -187,3 +187,14 @@ P1_events.csv (82,440 rows, 5.2 MB), P1_buoy_key.csv. No Earth Engine calls.
   DTU는 S1 파생이라 독립 검증이 아니며, 검출 사건이 전부 <3 km라 ≥3 km 실증은 실패했다.
   **BATCH_SUMMARY는 53줄로 원래 40줄 상한을 초과** — "살아남은 단서를 전부 유지"하라는 지시를 우선했다.
   누적 다운로드 ≈14.3 GB(P8 상한 25 GB 내). **P9 이후는 시작하지 않았다.**
+
+### ARC-P9
+- **P9 step 1 (등급 재조정)**: 두 지표가 **baseline만 다르다**는 해석적 관계(`mag_S1/mag_buoy = √area/L`)를 확인.
+  실측 비율 **0.248**(√area median 12.2 km vs 부이 L median 49.4 km) → P8 사건을 환산하면 median 0.28 → **1.13 km**.
+  20개 window의 벡터장에 **가상 부이쌍 240,949개**(20–100 km)를 놓고 P1b의 rate 임계를 적용하니
+  **0.50 %가 통과, 그 폐합량 median 5.88 km = ≥5 km class**(Vilkitsky winter 1.86 %). →
+  **P8 step 3의 "≥3 km 실증 실패"를 철회한다** — 실패한 것은 물리가 아니라 S1쪽 사건 정의(면적을 baseline으로
+  써 등급을 4배 축소)였다. 역방향으로 P1b 사건의 수렴률은 median 0.125/day vs S1 해협 0.020/day로
+  **강도는 여전히 6–9배 약하고**, S1의 24–48 h window가 1–3 h 에피소드를 시간평균한다는 한계가 남는다.
+  등급별 H 재산출: **1–3 km class는 during 0.029(97 % 미관측)**, ≥5 km는 0.121. 1–3 km 지속시간이 **2–4 h**라
+  **12 h 요구선보다 3–6배 짧은 재방문**이 필요하다.
