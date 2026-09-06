@@ -29,3 +29,12 @@ P1_events.csv (82,440 rows, 5.2 MB), P1_buoy_key.csv. No Earth Engine calls.
 재실행해 6 h 미만이 실재하는지 확인.
 (4) 보간 잡음 검증: 브래킷을 ±3 h → ±1 h로 좁혀 짧고 작은 이벤트가 살아남는지 확인.
 (5) Laptev/ESS 겨울(n=17)은 어떤 결론도 지지하지 못한다 — 해당 해역 결론은 P2에서 유보.
+
+### ARC-P1b progress
+- **Step 1 (persistence)**: 82,439 이벤트에 대해 event 종료 후 separation이 pre-event 값의 90 %까지
+  회복하는 시간 측정(전체 censoring 3.9 %). **결정적 문제 발견 — 이벤트의 84.6 %는 종료 시점에 이미
+  90 % 이상**이다(magnitude가 pre-event separation의 10 % 미만). 이들에게 persistence는 정의되지 않으며
+  median 3 h는 3시간 격자의 바닥값일 뿐이다. **relmag ≥ 10 %인 15.4 %(n=11,295)에서만 측정량이 성립**하고,
+  거기서는 지속이 길다: med **21 h** / p75 69 h / p90 198 h, censoring 18 %
+  (freeze-up med 39 h·p75 123 h, winter 27 h·72 h, melt 12 h·54 h).
+  → episode duration(시간 단위)과 hazard-state persistence(수십 시간~일)는 **다른 측정량**이다.
