@@ -87,3 +87,15 @@ P1_events.csv (82,440 rows, 5.2 MB), P1_buoy_key.csv. No Earth Engine calls.
   O(12 h)는 전 기간·전 지역에서 ≤0.016이라 DiD 0.4 pp [−2.4, 4.3]로 무의미하다(요구가 애초에 충족된 적 없음).
   **설계 위협 명시**: 용량 그룹이 위도·기저관측력과 공선(retention vs lat rho −0.556 p .025;
   vs pre-O24 rho −0.461 p .073)이고 pre 수준이 0.393 vs 0.117로 달라 평행추세 가정이 성립하지 않는다.
+- **Step 5 + 종합 (verdict)**: 요구 오버레이가 가장 강한 결과를 냈다. **12 h episode 요구는 688셀 전부에서
+  한 번도 충족된 적이 없고**(O12 최댓값 0.278, coverage 임계 0.3에서도 0.356) → **Sentinel-1 단독으로는
+  P1b의 episode 요구가 원리적으로 도달 불가**다. 24 h 요구는 16개 중 **4개 지역만** 충족한 적이 있고
+  (Fram·Lancaster·Barents·Baffin), **2022–24는 전 지역 0셀**이다. 그리고 **NSR chokepoint 5곳은 어느 해에도
+  24 h를 충족한 적이 없다**(pre O24: Vilkitsky 0.061·Sannikov 0.048·LongStrait 0.084·KaraGate 0.312·
+  BeringChukchi 0.002) — **운용상 가장 중요한 해협들은 S1B 상실 이전에도 요구를 만족한 적이 없다.**
+  민감도(coverage 0.3/0.5/0.7)에서 kept 0개·O12<0.5·chokepoint 미달 세 결론 모두 불변.
+  **P2_results.md는 61줄로 지정된 60줄을 1줄 초과.**
+  **Next(P3 착수 전 결정 필요)**: (a) TE01의 "자연실험" 프레이밍은 대조군 부재로 성립하지 않는다 —
+  측정량을 지역 간 DiD가 아니라 **전역 관측능력의 시계열 붕괴·복구**로 재정의할 것.
+  (b) chokepoint가 애초에 요구 미달이라는 사실이 TE01보다 강한 결과일 수 있다 — 우선순위 재검토.
+  (c) O(dt)의 상자 의존성을 실제 해협 폴리곤으로 교체해 (c)를 확정할 것.
