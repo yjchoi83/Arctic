@@ -14,7 +14,8 @@ script); "stage5" and "results" paths are committed. Package column gives the AR
 | 5 | `paper/figures/fig05_planned_vs_acquired.png` | `scratch/P9/planned_vs_acquired.csv` ← `scratch/P8/planned_vs.csv` + `scratch/P2/P2_tables.csv` | same | P8, P2 |
 | 6 | `paper/figures/fig06_dtu_availability.png` | `scratch/P8/dtu_availability.csv` | same | P8 |
 | 7 | `paper/figures/fig07_virtual_pairs.png` | `scratch/P9/virtual_pairs_all.csv.gz` | same | P9 |
-| 8 | `paper/figures/fig08_strait_examples.png` | `results/P8/quicklooks/E00{1,2}_*, E0{10,11}_*` | same | P8 |
+| 8 | `paper/figures/fig08_strait_examples.png` | `results/P8/quicklooks/E00{1,2}_*, E0{10,11}_*`; caption edge-audit values from `results/P9/edge_audit.csv` = `paper/edge_audit.csv` | same | P8, P11 |
+|   | **[P12-6]** panel-order centroid distances to overlap boundary: E002 18.9, E001 76.7, E011 46.0, E010 32.4 km; frac of nodes within 5 km = 0.000 for all four | | | P12 |
 | A1 | `paper/figures/figA1_contact_sheet.png` | `results/P8/quicklooks/*`, `results/P9/qc_table_p9.csv` | same | P8, P9 |
 
 ## Tables

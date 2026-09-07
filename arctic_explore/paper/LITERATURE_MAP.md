@@ -146,7 +146,7 @@ Every key resolves to an entry in `paper/references.bib`. Verification route is 
 | `chen2024mmseaice` | 2024 | The Cryosphere | The winning AutoICE entry; the concrete state of the art for SIC/SoD/floe-size retrieval from Sentinel-1. |
 | `huang2024deeplearning` | 2024 | Remote Sensing of Environment | Deep-learning ice-type classification in the Beaufort Sea; contemporary retrieval performance. |
 | `muckenhuber2016opensource` | 2016 | The Cryosphere | The open feature-tracking baseline that DL drift methods are measured against, and the drift retrieval used operationally on S1. |
-| `opticalflow2025benchmark` | 2025 | arXiv preprint | Optical-flow baselines relevant to dense sea-ice drift estimation. |
+| `martin2025opticalflow` | 2025 | arXiv preprint (2510.26653) | Martin & Gallego: benchmark of 48 deep-learning optical-flow models on RADARSAT-2 ScanSAR ice imagery against GNSS buoys; best models reach 300-400 m endpoint error. Cited in §5.2 as the development that could change the melt-season retrieval picture. |
 | `stokholm2024autoice` | 2024 | The Cryosphere | The reference community benchmark for automated sea-ice mapping; defines the accuracy ceiling current DL methods reach. |
 | `taleghan2025icefmbench` | 2025 | Proceedings of the 1st ACM SIGSPATIAL Intern | Foundation-model transferability to SAR sea-ice segmentation; shows generic RS foundation models degrade on polar EW data. |
 | `zhao2023deeplearning` | 2023 | IEEE Journal of Selected Topics in Applied E | Deep-learning sea-ice classification from Sentinel-1 and AMSR-2; context for retrieval methods beyond feature tracking. |
