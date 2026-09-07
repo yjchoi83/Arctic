@@ -143,7 +143,9 @@ script); "stage5" and "results" paths are committed. Package column gives the AR
 | **[P12-3]** E ranges quoted in §5.2 and §6.6 | winter 0.236–0.345, freeze-up 0.171–0.238, melt 0.006–0.008 | `scratch/P11/E_table.csv` (= Table 7) | P11, P12 |
 | **[P12-3]** superseded (§5.2 was 0.18–0.28 winter / 0.006–0.009 melt; §6.6 was “order 0.2 winter, 0.01 melt”) | both now read the Table 7 min–max across periods | — | P10 |
 | freeze-up retrieval success | 0.392 (0.47 assumption ~19 % high) | `scratch/P8/pair_summary.csv` | P8 |
-| chokepoint H by class (Table 3b) | see Table 3b | `scratch/P9/H_by_class_cells.csv` | P9 |
+| **[P12-consistency]** chokepoint H by class (Table 3b) | ≥1 km 0.090/0.044/0.079; 1–3 km 0.063/0.030/0.056; ≥3 km 0.200/0.097/0.176; ≥5 km 0.257/0.127/0.228 | `scratch/P9/H_by_class_cells.csv`, re-aggregated cells → region-season-year → period (45/45/25 units) | P9, P12 |
+| **[P12-consistency]** superseded (was 0.081/0.042/0.073, 0.057/0.029/0.051, 0.181/0.093/0.161, 0.233/0.121/0.208) | those were **cell-weighted** means, so Sannikov's 109 cells pulled the ≥3 km row to 0.181 against Table 3's 0.200 for the identical quantity; Table 3b now uses Table 3's two-stage unweighted aggregation and the ≥3 km row matches exactly | — | P9 |
+| **[P12-consistency]** 1–3 km chokepoint H during the gap, quoted in §5.2 and §6.8 | 0.030 (was 0.029) | same | P12 |
 | Laptev/ESS winter buoy events | 17, from 8 pairs and 14 buoys | `stage5/P1/P1_hazard_windows.md` §2 | P1 |
 | central Arctic share of events | 55 % | same | P1 |
 
