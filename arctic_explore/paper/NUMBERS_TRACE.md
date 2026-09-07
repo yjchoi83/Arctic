@@ -179,3 +179,13 @@ Matcher, node-acceptance, pair-selection and event-definition parameters now liv
 `scratch/P2/p2_{fetch,metrics,did}.py` (P2), `scratch/P3/p3_{fetch_geom,cellacq,H,agg}.py` (P3),
 `scratch/P4/{dl,p4_div2,p4_hof}.py` (P4), `scratch/P6/p6_ose.py` (P6),
 `scratch/P8/p8_{dtu,plans,process}.py` (P8), `scratch/P9/p9_{reconcile,Hsmall,dtu_daily}.py` (P9).
+
+## [P12-8, P12-9] Literature audits
+
+| Audit | Result | File |
+|---|---|---|
+| 9c, re-verify all 76 references against authenticated Semantic Scholar | 63 clean, 10 flagged and all resolved in favour of the bibliography, 3 not indexed; **one real defect** — truncated title on `karvonen2022baltic`, fixed | `scratch/P12/REF_VERIFY.md`, `scratch/P12/ref_verify.json` |
+| 9a, novelty re-search, 21 queries over the three framing claims | **no paper overlaps a core claim**; nearest works are sampling-resolution, mission-status and task-planning papers, all now cited or explained | `scratch/P12/NOVELTY.md`, `scratch/P12/novelty_raw.json` |
+| 9b, cluster 8 strict gap-quantification | two strict papers added: `geiger2001resolution`, `covington2022bridging`; cluster 8 goes 3 → 5 and meets its target strictly; bibliography 76 → 78 | same |
+| 8, do Fu et al. 2016 and Wulf/Wuite support their sentences | **Fu et al. 2016 yes** (Bayesian besetting-probability model for the Northeast Passage, supports the besetting clause). **Wulf/Wuite no** — OpenAlex abstracts show three Sentinel-1-derived product records that span the 2021 discontinuity but do not document consequences of missing imagery; the §1 sentence was rewritten to claim only that, and the two strict gap papers above now carry the mechanism claim | `scratch/P12/NOVELTY.md` |
+

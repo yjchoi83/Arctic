@@ -96,10 +96,12 @@ Every key resolves to an entry in `paper/references.bib`. Verification route is 
 | `sumata2015uncertainty` | 2015 | Journal of Geophysical Research: Oceans | Uses high-resolution SAR as the reference to bound low-resolution PM drift error — exactly the SAR-vs-PM comparison this paper extends. |
 
 ## Cluster 8 — Observation gaps propagating into products
-*Cited in: 1 Introduction; 4.6 Results; 6.3 Limitations*  ·  **3 verified**
+*Cited in: 1 Introduction; 4.6 Results; 6.3 Limitations*  ·  **5 verified** (2 strict gap-quantification + 3 product records)
 
 | key | year | venue | relevance |
 |---|---|---|---|
+| `geiger2001resolution` | 2001 | Solid Mechanics and Its Applications (Springer) | **[P12] strict gap-quantification.** Quantifies how temporal and spatial sampling resolution propagates into derived sea-ice drift and deformation — the mechanism this paper measures with H. Cited in §1 as the established form of the claim. |
+| `covington2022bridging` | 2022 | J. Adv. Modeling Earth Systems | **[P12] strict gap-quantification.** Quantifies gaps in a Lagrangian ice-floe observation record caused by atmospheric obscuration and recovers the missing floe dynamics; the closest existing treatment of observation gaps as a measurable deficit. Cited in §1. |
 | `wuite2026velocity` | 2026 | Remote Sensing of Environment | Decade-long Sentinel-1 polar ice-velocity record built from repeat-pass SAR, spanning the Sentinel-1B failure; stands in for the requested InSAR acqui |
 | `wulf2024panarctic` | 2024 | The Cryosphere | The pan-Arctic SIC seed: a SAR+PM product whose SAR component is limited by where Sentinel-1 actually acquires. |
 | `wulf2026decade` | 2026 | Remote Sensing of Environment | The DMI-ASIP decade paper: a ten-year Sentinel-1 SIC record spanning the Sentinel-1B loss, i.e. the downstream product this study's gaps propagate int |

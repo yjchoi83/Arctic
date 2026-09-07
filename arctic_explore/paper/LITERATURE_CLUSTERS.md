@@ -8,7 +8,7 @@ resolved in favour of the bibliography, 3 not indexed, and one real defect corre
 `karvonen2022baltic`). See `scratch/P12/REF_VERIFY.md`. Raw responses are cached under `scratch/P12/s2cache/`
 and the earlier unauthenticated attempts under `scratch/s2cache/`. Nothing here rests on an unverified identifier.
 
-**Total verified: 76** against a target of 45. Per-cluster detail is in `scratch/P11/clusters_1_4.md`,
+**[P12] Total verified: 78** against a target of 45 (76 plus the two cluster-8 additions below). Per-cluster detail is in `scratch/P11/clusters_1_4.md`,
 `clusters_5_8.md` and `clusters_9_12.md`; the section mapping is in `paper/LITERATURE_MAP.md`.
 
 | Cluster | Topic | Target | Verified | Status |
@@ -20,7 +20,7 @@ and the earlier unauthenticated attempts under `scratch/s2cache/`. Nothing here 
 | 5 | Navigation hazards, pressured ice, besetting, Polar Code | 5-6 | **7** | met |
 | 6 | Observing-system experiments and network design | 4-5 | **5** | met |
 | 7 | Passive-microwave drift products and coastal limits | 3-4 | **4** | met |
-| 8 | Observation gaps propagating into products | 3 | **3** | met |
+| 8 | Observation gaps propagating into products | 3 | **5** | met, **strictly** |
 | 9 | Length-biased sampling and censored durations | 2-3 | **5** | met |
 | 10 | Arctic shipping traffic and policy | 3-4 | **5** | met |
 | 11 | Melt-season, noise-floor and incidence-angle limits of C-band | 3 | **6** | met |
@@ -48,8 +48,14 @@ The ESA **Sentinel-1B end-of-mission announcement** could not be verified as a c
 phrasing tried and **no DOI was invented**; the constellation-gap statement rests instead on the observed
 acquisition record and on `potin2019copernicus`. The **Kubat et al. 2016** seed is a conference paper
 covering the Canadian Arctic and sub-Arctic generally, not a Hudson Strait journal article. **Ice-FMBench**
-is dated 2025, not 2026. The **InSAR acquisition-gap** seed for cluster 8 could not be found; that cluster
-reaches its target of three only by counting a Sentinel-1 decade-scale velocity product paper, and if a
-strict gap-quantification claim is required the cluster should be read as **verified 2**. Grey literature
+is dated 2025, not 2026. **[P12] The cluster-8 shortfall is closed.** The re-search with an authenticated Semantic Scholar key
+(21 queries, `scratch/P12/novelty.py`) found two strict gap-quantification papers that the earlier
+Crossref-and-arXiv pass had missed: `geiger2001resolution`, which quantifies how temporal and spatial
+sampling propagates into derived drift and deformation, and `covington2022bridging`, which quantifies gaps
+in a Lagrangian ice-floe record and recovers the missing dynamics. Both are added. `wuite2026velocity`,
+`wulf2024panarctic` and `wulf2026decade` are retained but no longer carry the cluster's strict claim: their
+abstracts were re-read in P12 and none documents the consequences of missing imagery, so the §1 sentence
+citing them was rewritten to say only what they do — span the 2021 discontinuity as product records.
+The original **InSAR acquisition-gap** seed was still not found and **no DOI was invented**. Grey literature
 (IMO POLARIS circular, CHNL statistics, Bellona report) is recorded by live-retrieved URL and marked as such.
 The two books (Feller, Cox) carry ISBNs read from OpenLibrary rather than DOIs.
