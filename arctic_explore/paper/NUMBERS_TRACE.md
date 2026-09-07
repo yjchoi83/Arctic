@@ -89,7 +89,11 @@ script); "stage5" and "results" paths are committed. Package column gives the AR
 |---|---|---|---|
 | aggregate scene rate vs pre | 88.5 % | `scratch/P2/P2_tables.csv` | P2, P6 |
 | ramp-up-controlled EUR / NAM | 77.4 % / 121.1 % | `stage5/P8/P8_step2_plans.md` §2 | P8 |
-| planned EUR / NAM | 86.4 % / 122.3 % | `scratch/P8/planned_vs.csv` | P8 |
+| **[P11-A6]** planned EUR / NAM, 2025 vs pre | 87.1 % / 123.4 % | `scratch/P11/planned_with_gap.csv` | P11 |
+| **[P11-A6]** planned EUR / NAM, gap years 2022-24 vs pre | 49.8 % / 62.0 % | same | P11 |
+| **[P11-A6]** Barents planned, gap / 2025 | 42.7 % / 56.8 % | same | P11 |
+| **[P11-A6]** Sannikov planned, gap / 2025 | 36.7 % / 89.5 % | same | P11 |
+| **[P11-A6]** superseded (was 86.4 % / 122.3 %) | recomputed after adding S1A 2022-24 plan archives | — | P8 |
 | Barents planned / acquired | 56.0 % / 38.3 % | same, `stage5/P8/P8_step2_plans.md` | P8 |
 | Vilkitsky planned / acquired | 146 % / 156.1 % | same | P8 |
 | S1C routine onset | 2025-04 | `scratch/P8/monthly_platform.csv` | P8 |

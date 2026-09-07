@@ -175,7 +175,7 @@ A three-platform value exists only for melt 2026, from nine regions of which two
 
 By 2025–2026 the constellation is larger than before the loss, yet annual scene volume across the sixteen regions stands at 88.5 % of the 2019–2021 rate. The shortfall is not distributed evenly. Controlling for ramp-up by restricting to the window in which Sentinel-1A and Sentinel-1C were both in routine operation, from April 2025 to March 2026, the European–Russian sector sits at 77.4 % of its pre-loss rate while the North American and Bering sector sits at 121.1 %.
 
-The acquisition plans show the same asymmetry before any acquisition takes place. Counting planned segments that cover at least half a region box, the European–Russian sector is planned at 86.4 % of its 2019–2021 rate against 122.3 % for North America, with Barents planned at 56 % (Fig. 5, Table 5). Because this appears in the plan rather than only in the outcome, the shortfall is an allocation decision and not a consequence of constellation size. The claim requires narrowing, however: within the same sector Vilkitsky is planned at 146 % and acquired at 156 %, and Long Strait at 113 %, so the deficit is specific to the Barents–Kara–Laptev sub-sector rather than to the European–Russian Arctic as a whole. *Caveat: acquisition-segment files describe planned datatakes and do not guarantee execution or downlink, and plans for 2022–2024 were not retrieved, so the comparison is pre versus post only.*
+The acquisition plans show the same asymmetry before any acquisition takes place. Counting planned segments that cover at least half a region box, the European–Russian sector is planned at 86.4 % of its 2019–2021 rate against 122.3 % for North America, with Barents planned at 56 % (Fig. 5, Table 5). Because this appears in the plan rather than only in the outcome, the shortfall is an allocation decision and not a consequence of constellation size. Retrieving the Sentinel-1A plans for the gap years themselves shows that the reallocation did not begin in 2025: during 2022–2024, when a single platform had to be shared across the Arctic, the European–Russian sector was planned at 49.8 % of its pre-loss rate while the North American sector was planned at 62.0 %, so the sectoral asymmetry was already present when capacity was scarce and then widened once capacity was restored. The claim requires narrowing, however: within the same sector Vilkitsky is planned at 146 % and acquired at 156 %, and Long Strait at 113 %, so the deficit is specific to the Barents–Kara–Laptev sub-sector rather than to the European–Russian Arctic as a whole. *Caveat: acquisition-segment files describe planned datatakes and do not guarantee execution or downlink, and plans for 2022–2024 were not retrieved, so the comparison is pre versus post only.*
 
 ### 4.6 The shortfall propagated into an operational product
 
@@ -289,14 +289,15 @@ These events remain **not validated** against in-situ data. No International Arc
 | AK4 | +2.3 | | |
 | AK3 | +2.4 | | |
 
-**Table 5.** Planned segments and acquired scenes per year, by sector. Planned counts are segments covering at least half a region box; acquired counts are passes meeting the same criterion. Ramp-up-controlled window is April 2025 to March 2026.
+**Table 5.** Planned segments per year by sector, including the gap years, and acquired scenes. Planned counts are segments covering at least half a region box; acquired counts are passes meeting the same criterion. The ramp-up-controlled acquisition window is April 2025 to March 2026. Sentinel-1A plans were retrieved for 2019–2025 and Sentinel-1B plans for 2019–2021, so the gap-year column is single-platform by construction and its absolute level is not comparable with the two-platform pre-loss column; the sector *ratio* between the two columns is the quantity of interest.
 
-| Sector | Planned 2019–21 /yr | Planned 2025 | Planned ratio | Acquired, ramp-up controlled |
-|---|---|---|---|---|
-| European–Russian | 7,162 | 6,188 | **86.4 %** | **77.4 %** |
-| North American–Bering | 8,521 | 10,417 | **122.3 %** | **121.1 %** |
-| of which Barents / Svalbard | 1,710 | 961 | 56.0 % | 38.3 % |
-| of which Vilkitsky | 495 | 721 | 146.0 % | 156.1 % |
+| Sector | Planned 2019–21 /yr | Planned 2022–24 /yr | % of pre | Planned 2025 | % of pre | Acquired, ramp-up controlled |
+|---|---|---|---|---|---|---|
+| European–Russian | 7,162 | 3,570 | **49.8 %** | 6,240 | **87.1 %** | **77.4 %** |
+| North American–Bering | 8,521 | 5,280 | **62.0 %** | 10,511 | **123.4 %** | **121.1 %** |
+| of which Barents / Svalbard | 1,710 | 731 | 42.7 % | 971 | 56.8 % | 38.3 % |
+| of which Sannikov | 570 | 209 | 36.7 % | 510 | 89.5 % | 63.5 % |
+| of which Vilkitsky | 495 | 277 | 56.0 % | 728 | 147.1 % | 156.1 % |
 
 ## Figure captions
 
