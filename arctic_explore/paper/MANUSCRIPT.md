@@ -228,3 +228,114 @@ Adding satellites will not close the chokepoint gap. The marginal gain per platf
 Twenty Sentinel-1 pairs at Vilkitsky, Sannikov and Long Strait in freeze-up and winter 2019–2021 were processed with the matcher described in Section 3.4 of the companion methods, and connected regions of divergence below the tenth percentile of each pair's distribution, with area of at least 100 km², were extracted as candidate events. Nineteen were found, all in winter, thirteen at Sannikov and six at Vilkitsky, with a median area of 150 km² and a maximum of 700 km².
 
 These events are **not validated**. No International Arctic Buoy Programme buoy lay within 100 km of any of the nineteen, even after relaxing the temporal bracket to ±12 h, so no in-situ comparison was possible. They are presented as a contact sheet in Fig. A1 for human adjudication, with the decision column of the accompanying table left blank, and no result in the main text depends on them. Their magnitudes, expressed on the buoy baseline as described in Section 3.3, place ten below 1 km, eight between 1 and 3 km and one at or above 5 km. The main-text evidence that strait convergence of navigable magnitude exists in the SAR fields rests instead on the virtual buoy-pair analysis of Section 4.3, which does not depend on the connected-component event definition.
+
+## Tables referenced in Section 4
+
+**Table 3.** Observability by period, for the ≥ 3 km magnitude class. Cell-level means, unweighted over cells; the three main seasons only.
+
+| Group | Period | H_episode | H_state |
+|---|---|---|---|
+| All sixteen regions | pre 2019–21 | 0.267 | 0.562 |
+| All sixteen regions | during 2022–24 | 0.151 | 0.441 |
+| All sixteen regions | post 2025–26 | 0.245 | 0.532 |
+| NSR chokepoints | pre 2019–21 | 0.200 | 0.504 |
+| NSR chokepoints | during 2022–24 | 0.097 | 0.363 |
+| NSR chokepoints | post 2025–26 | 0.176 | 0.467 |
+
+**Table 3b.** Observability by magnitude class at the chokepoints, H_episode, cell-level means. Durations from the one-hourly buoy subset.
+
+| Class | pre 2019–21 | during 2022–24 | post 2025–26 |
+|---|---|---|---|
+| ≥ 1 km | 0.081 | 0.042 | 0.073 |
+| 1–3 km | 0.057 | 0.029 | 0.051 |
+| ≥ 3 km | 0.181 | 0.093 | 0.161 |
+| ≥ 5 km | 0.233 | 0.121 | 0.208 |
+
+**Table 4.** Observing system experiment. Sentinel-1A-only counterfactual built from 2019–2021 against observed 2022–2024 H_state, by region, in percentage points. Positive means the counterfactual exceeds the observation.
+
+| Region | Difference (pp) | Region | Difference (pp) |
+|---|---|---|---|
+| Greenland Sea / Fram | +0.2 | Victoria Strait | +2.7 |
+| Barents / Svalbard | +0.8 | AK6 | +2.8 |
+| Vilkitsky | −0.3 | AK2 | +2.8 |
+| Long Strait | −1.4 | AK1 | +2.9 |
+| Baffin Bay | −2.6 | Bering–Chukchi | +2.9 |
+| AK5 | +2.2 | Kara Gate | +5.6 |
+| Lancaster Sound | +2.2 | **Sannikov** | **+12.3** |
+| AK4 | +2.3 | | |
+| AK3 | +2.4 | | |
+
+**Table 5.** Planned segments and acquired scenes per year, by sector. Planned counts are segments covering at least half a region box; acquired counts are passes meeting the same criterion. Ramp-up-controlled window is April 2025 to March 2026.
+
+| Sector | Planned 2019–21 /yr | Planned 2025 | Planned ratio | Acquired, ramp-up controlled |
+|---|---|---|---|---|
+| European–Russian | 7,162 | 6,188 | **86.4 %** | **77.4 %** |
+| North American–Bering | 8,521 | 10,417 | **122.3 %** | **121.1 %** |
+| of which Barents / Svalbard | 1,710 | 961 | 56.0 % | 38.3 % |
+| of which Vilkitsky | 495 | 721 | 146.0 % | 156.1 % |
+
+## Figure captions
+
+**Figure 1.** Construction of the observability metric H. (a) A sequence of acquisitions defines gaps g_i; a hazard of duration D is caught if it overlaps at least one acquisition. (b) H as a function of D for three single fixed gaps and for the length-biased mixture of the gaps in panel (a), showing that the mixture is controlled by the longest gaps at small D. `fig01_H_schematic.png`
+
+**Figure 2.** Hazard timescales measured from buoy pairs, independent of Sentinel-1. (a) Cumulative distribution of convergence episode duration by magnitude class, from the one-hourly buoy subset; the dashed line marks the 12 h episode requirement. (b) Cumulative distribution of hazard-state persistence for events whose magnitude is at least 10 % of the pre-event separation; the dashed line marks the 24 h state requirement. `fig02_hazard_timescales.png`
+
+**Figure 3.** H per 25 km cell on the EPSG:3413 grid, for the ≥ 3 km magnitude class, by season (rows) and period (columns). Northern Sea Route chokepoints are labelled. Colour runs from 0 to 1, where 1 means every hazard is caught. Two panels are provided, for H_state and for H_episode. `fig03_H_state3_maps.png`, `fig03_H_episode3_maps.png`
+
+**Figure 4.** Constellation design curve. Mean H_state against number of platforms, for all regions and for the Northern Sea Route chokepoints, with error bars showing the standard deviation across region-season-year combinations. The dashed line marks the 0.8 requirement, which the chokepoints do not reach at any platform count observed. `fig04_design_curve.png`
+
+**Figure 5.** European Space Agency planned acquisition segments against acquired scenes, per region, before and after the constellation gap, on a logarithmic axis. Regions are grouped by sector. `fig05_planned_vs_acquired.png`
+
+**Figure 6.** Availability of the DTU Sentinel-1 drift product per region-year, defined as the fraction of days with at least 5 % valid pixels. Cyan lines mark the loss of Sentinel-1B and the entry of Sentinel-1C into routine operations. `fig06_dtu_availability.png`
+
+**Figure 7.** Strait drift fields expressed in the buoy-pair metric. Exceedance of window closure for 240,949 virtual buoy pairs at 20–100 km separation, unconditionally and after applying the buoy rate threshold; dashed and dotted lines mark 3 km and 5 km. `fig07_virtual_pairs.png`
+
+**Figure 8.** Four examples of strait convergence, two at Vilkitsky and two at Sannikov, showing before and after Extra Wide HH imagery with the divergence field overlaid. `fig08_strait_examples.png`
+
+**Figure A1.** Contact sheet of the nineteen candidate strait convergence events, for human adjudication; the decision column of the accompanying table is left blank. `figA1_contact_sheet.png`
+
+## References
+
+Verified in this work by retrieval of the digital object identifier or arXiv identifier during the literature phase; entries marked [V] were confirmed, and remaining citations required by the argument are marked [CITATION NEEDED] pending an authenticated Semantic Scholar pass.
+
+Korosov, A.A., Rampal, P., 2017. A combining approach to sea-ice drift retrieval from Sentinel-1 SAR. Remote Sensing 9, 258. https://doi.org/10.3390/rs9030258 [V]
+
+Lavergne, T., et al., 2023. A low-resolution sea-ice drift climate data record. Earth System Science Data 15, 5807. https://doi.org/10.5194/essd-15-5807-2023 [V]
+
+Kortum, K., et al., 2025. Sea-ice freeboard from HV-intensity CDF matching. The Cryosphere 19, 4701. https://doi.org/10.5194/tc-19-4701-2025 [V]
+
+Deep-learning optical flow benchmark on RADARSAT-2 ScanSAR sea-ice imagery, 2025. arXiv:2510.26653 [V]
+
+Community challenge for image-derived observation of sea-ice drift and deformation, 2026. https://doi.org/10.5194/egusphere-2026-4668 [V]
+
+Wind-informed Bayesian classification of L-band SAR imagery for sea ice and open water separation, 2026. https://doi.org/10.5194/egusphere-2026-4775 [V]
+
+Sea-ice classification and POLARIS-based risk-informed route analysis in the Bering Strait using Sentinel-1 SAR and SVM, 2026. Sustainability 18, 7414. https://doi.org/10.3390/su18147414 [V]
+
+Assessment of thermal noise impact on sea-ice classification using Sentinel-1 images and U-Net, 2024. IET Conference Proceedings. https://doi.org/10.1049/icp.2024.1598 [V]
+
+Incidence angle dependency and seasonal evolution of L- and C-band SAR backscatter over landfast sea ice, 2024. Annals of Glaciology. https://doi.org/10.1017/aog.2024.30 [V]
+
+Arctic sea-ice leads detected using Sentinel-1B SAR imagery, 2024. Remote Sensing of Environment 305, 114193. https://doi.org/10.1016/j.rse.2024.114193 [V]
+
+High-resolution sea-ice concentration from Sentinel-1, 2024. The Cryosphere 18, 5277. https://doi.org/10.5194/tc-18-5277-2024 [V]
+
+Integrating regional ice charts and Copernicus sea-ice products for navigation risk in Alaskan waters, 2025. arXiv:2512.11083 [V]
+
+Estimation of sea-ice drift and concentration during melt season using C-band dual-polarimetric Sentinel-1 data, 2024. Remote Sensing Applications: Society and Environment. https://doi.org/10.1016/j.rsase.2023.101104 [V metadata only; full text not retrieved]
+
+Bahr, F., Mahoney, A.R., Eicken, H., 2024. Landfast sea-ice breakup dates for 38 Alaskan communities. Environmental Research Letters 19. https://doi.org/10.1088/1748-9326/ad1c7b [V]
+
+International Hydrographic Review, 2025. Satellite-derived bathymetry and shoal detection at Canadian Arctic grounding sites. https://doi.org/10.58440/ihr-31-2-a13 [V]
+
+Inter- and intra-analyst ice-edge assessment, 2023. figshare. https://doi.org/10.6084/m9.figshare.22312648 [V]
+
+[CITATION NEEDED] — Sentinel-1 mission and Extra Wide swath instrument description.
+[CITATION NEEDED] — Polar Code and POLARIS risk-index methodology.
+[CITATION NEEDED] — prior treatments of satellite constellation observing system experiments in the cryosphere.
+[CITATION NEEDED] — Northern Sea Route traffic statistics for the study period.
+[CITATION NEEDED] — length-biased sampling of renewal intervals, standard reference.
+
+### Data availability
+
+Sentinel-1 metadata via the Copernicus programme; International Arctic Buoy Programme Level 1 archive; EUMETSAT OSI SAF product OSI-405; Copernicus Marine datasets `cmems_obs-si_glo_phy-drift-north_my_l4_P1D-m` and `cmems_obs-si_arc_phy_my_l3_P1D`; European Space Agency acquisition-segment archives from the Copernicus SentiWiki document library; Norwegian Meteorological Institute ice-chart quicklook archive. Derived tables and figure-generating code accompany this manuscript; gridded H products are available as GeoTIFF on request.
