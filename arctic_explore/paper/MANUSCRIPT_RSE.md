@@ -1,3 +1,7 @@
+<!-- GENERATED FILE. Source of record is paper/MANUSCRIPT.md; this copy differs from it
+     only in carrying a rendered reference list in place of the References prose.
+     Rebuild: python3 scratch/P13/make_rse.py   (built 2026-09-07) -->
+
 # Hazard-timescale observability of Arctic shipping chokepoints: what Sentinel-1 could and could not see
 
 **Target journal: Remote Sensing of Environment. Fallback: Cold Regions Science and Technology.**
@@ -348,9 +352,161 @@ These events remain **not validated** against in-situ data. No International Arc
 
 **Figure A1.** Contact sheet of the nineteen candidate strait convergence events, for human adjudication; the decision column of the accompanying table is left blank. `figA1_contact_sheet.png`
 
-
 ## References
 
+Aksenov, Y., Popova, E.E., Yool, A., Nurser, A.J.G., Williams, T.D., Bertino, L., Bergh, J., 2017. On the future navigability of Arctic sea routes: High-resolution projections of the Arctic Ocean and sea ice. Marine Policy 75, 300–317. https://doi.org/10.1016/j.marpol.2015.12.027
+
+Alkaee Taleghan, S., Karimzadeh, M., Barrett, A.P., Meier, W.N., Banaei-Kashani, F., 2025. Ice-FMBench: A Foundation Model Benchmark for Sea Ice Type Segmentation. In: Proceedings of the 1st ACM SIGSPATIAL International Workshop on Polar Data Science. pp. 1–10. https://doi.org/10.1145/3764922.3771202
+
+Bhattacharjee, S., Garg, R.D., 2024. Estimation of sea ice drift and concentration during melt season using C-band dual-polarimetric Sentinel-1 data. Remote Sensing Applications: Society and Environment 33, 101104. https://doi.org/10.1016/j.rsase.2023.101104
+
+Bouillon, S., Rampal, P., 2015. On producing sea ice deformation data sets from SAR-derived sea ice motion. The Cryosphere 9, 663–673. https://doi.org/10.5194/tc-9-663-2015
+
+Boukabara, S.-A., Garrett, K., Kumar, V.K., 2016. Potential Gaps in the Satellite Observing System Coverage: Assessment of Impact on NOAA's Numerical Weather Prediction Overall Skills. Monthly Weather Review 144, 2547–2563. https://doi.org/10.1175/mwr-d-16-0013.1
+
+Chen, X., Patel, M., Pena Cantu, F.J., Park, J., Noa Turnes, J., Xu, L., Scott, K.A., Clausi, D.A., 2024. MMSeaIce: a collection of techniques for improving sea ice mapping with a multi-task model. The Cryosphere 18, 1621–1632. https://doi.org/10.5194/tc-18-1621-2024
+
+Cheng, A., Casati, B., Tivy, A., Zagon, T., Lemieux, J.-F., Tremblay, L.B., 2020. Accuracy and inter-analyst agreement of visually estimated sea ice concentrations in Canadian Ice Service ice charts using single-polarization RADARSAT-2. The Cryosphere 14, 1289–1310. https://doi.org/10.5194/tc-14-1289-2020
+
+Covington, J., Chen, N., Wilhelmus, M.M., 2022. Bridging Gaps in the Climate Observation Network: A Physics-Based Nonlinear Dynamical Interpolation of Lagrangian Ice Floe Measurements via Data-Driven Stochastic Models. Journal of Advances in Modeling Earth Systems 14, e2022MS003218. https://doi.org/10.1029/2022MS003218
+
+Cox, D.R., 1962. Renewal Theory. Methuen / Chapman & Hall. ISBN 041220570X / 9780412205705.
+
+Dabboor, M., Geldsetzer, T., 2014. Towards sea ice classification using simulated RADARSAT Constellation Mission compact polarimetric SAR imagery. Remote Sensing of Environment 140, 189–195. https://doi.org/10.1016/j.rse.2013.08.035
+
+Dai, Y., Li, X.-M., Yuan, H., 2026. Pan-Arctic winter sea ice classification using Sentinel-1 dual-polarized SAR images. Remote Sensing of Environment 333, 115140. https://doi.org/10.1016/j.rse.2025.115140
+
+Demchev, D., Volkov, V., Kazakov, E., Alcantarilla, P.F., Sandven, S., Khmeleva, V., 2017. Sea Ice Drift Tracking From Sequential SAR Images Using Accelerated-KAZE Features. IEEE Transactions on Geoscience and Remote Sensing 55, 5174–5184. https://doi.org/10.1109/tgrs.2017.2703084
+
+Dierking, W., 2013. Sea Ice Monitoring by Synthetic Aperture Radar. Oceanography 26. https://doi.org/10.5670/oceanog.2013.33
+
+Eguíluz, V.M., Fernández-Gracia, J., Irigoien, X., Duarte, C.M., 2016. A quantitative assessment of Arctic shipping in 2010–2014. Scientific Reports 6, 30682. https://doi.org/10.1038/srep30682
+
+Eriksson, P.B., Vainio, J., Tollman, N., Jokiniemi, A., Arola, A., Mäkynen, M., Karvonen, J., Kangas, A., 2025. The Finnish Ice Service, its sea-ice monitoring of the Baltic Sea and operational concept. Frontiers in Marine Science 12, 1561461. https://doi.org/10.3389/fmars.2025.1561461
+
+Evans, B., Faul, A., Fleming, A., Vaughan, D.G., Hosking, J.S., 2023. Unsupervised machine learning detection of iceberg populations within sea ice from dual-polarisation SAR imagery. Remote Sensing of Environment 297, 113780. https://doi.org/10.1016/j.rse.2023.113780
+
+Feller, W., 1971. An Introduction to Probability Theory and Its Applications, Vol. II. Wiley. ISBN 0471257095 / 9780471257097.
+
+Foundation, B., 2025. The Northern Sea Route: Russia's industrial and political expansion, its environmental costs, and Arctic shipping risks. https://bellona.org/publication/the-northern-sea-route  [grey literature, no DOI]
+
+Fu, S., Zhang, D., Montewka, J., Yan, X., Zio, E., 2016. Towards a probabilistic model for predicting ship besetting in ice in Arctic waters. Reliability Engineering & System Safety 155, 124–136. https://doi.org/10.1016/j.ress.2016.06.010
+
+Geiger, C.A., Drinkwater, M.R., 2001. Impact of Temporal-Spatio Resolution on Sea-Ice Drift and Deformation. In: Scaling Laws in Ice Mechanics and Ice Dynamics (Solid Mechanics and Its Applications). Springer Netherlands, pp. 407–416. https://doi.org/10.1007/978-94-015-9735-7_34
+
+Geudtner, D., Tossaint, M., Davidson, M., Torres, R., 2021. Copernicus Sentinel-1 Next Generation Mission. In: Proc. IGARSS 2021. pp. 874–876. https://doi.org/10.1109/igarss47720.2021.9554226
+
+Gunnarsson, B., 2021. Recent ship traffic and developing shipping trends on the Northern Sea Route—Policy implications for future arctic shipping. Marine Policy 124, 104369. https://doi.org/10.1016/j.marpol.2020.104369
+
+Hollands, T., Linow, S., Dierking, W., 2015. Reliability Measures for Sea Ice Motion Retrieval From Synthetic Aperture Radar Images. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing 8, 67–75. https://doi.org/10.1109/jstars.2014.2340572
+
+Howell, S.E.L., Brady, M., Komarov, A.S., 2022. Generating large-scale sea ice motion from Sentinel-1 and the RADARSAT Constellation Mission using the Environment and Climate Change Canada automated sea ice tracking system. The Cryosphere 16, 1125–1139. https://doi.org/10.5194/tc-16-1125-2022
+
+Huang, Y., Ren, Y., Li, X., 2024. Deep learning techniques for enhanced sea-ice types classification in the Beaufort Sea via SAR imagery. Remote Sensing of Environment 308, 114204. https://doi.org/10.1016/j.rse.2024.114204
+
+Hutchings, J.K., Hibler, W.D., 2008. Small-scale sea ice deformation in the Beaufort Sea seasonal ice zone. Journal of Geophysical Research: Oceans 113, 2006JC003971. https://doi.org/10.1029/2006jc003971
+
+Hutchings, J.K., Roberts, A., Geiger, C.A., Richter-Menge, J., 2011. Spatial and temporal characterization of sea-ice deformation. Annals of Glaciology 52, 360–368. https://doi.org/10.3189/172756411795931769
+
+Itkin, P., 2025. Novel methods to study sea ice deformation, linear kinematic features and coherent dynamic clusters from imaging remote sensing data. The Cryosphere 19, 1135–1151. https://doi.org/10.5194/tc-19-1135-2025
+
+Kaminski, T., Kauker, F., Eicken, H., Karcher, M., 2015. Exploring the utility of quantitative network design in evaluating Arctic sea ice thickness sampling strategies. The Cryosphere 9, 1721–1733. https://doi.org/10.5194/tc-9-1721-2015
+
+Kaminski, T., Kauker, F., Toudal Pedersen, L., Voßbeck, M., Haak, H., Niederdrenk, L., Hendricks, S., Ricker, R., Karcher, M., Eicken, H., Gråbak, O., 2018. Arctic Mission Benefit Analysis: impact of sea ice thickness, freeboard, and snow depth products on sea ice forecast performance. The Cryosphere 12, 2569–2594. https://doi.org/10.5194/tc-12-2569-2018
+
+Kaplan, E.L., Meier, P., 1958. Nonparametric Estimation from Incomplete Observations. Journal of the American Statistical Association 53, 457–481. https://doi.org/10.1080/01621459.1958.10501452
+
+Karvonen, J., 2022. Baltic Sea Ice Concentration Estimation From C-Band Dual-Polarized SAR Imagery by Image Segmentation and Convolutional Neural Networks. IEEE Transactions on Geoscience and Remote Sensing 60, 1–11. https://doi.org/10.1109/tgrs.2021.3097885
+
+Komarov, A.S., Barber, D.G., 2014. Sea Ice Motion Tracking From Sequential Dual-Polarization RADARSAT-2 Images. IEEE Transactions on Geoscience and Remote Sensing 52, 121–136. https://doi.org/10.1109/tgrs.2012.2236845
+
+Komarov, A.S., Buehner, M., 2019. Detection of First-Year and Multi-Year Sea Ice from Dual-Polarization SAR Images Under Cold Conditions. IEEE Transactions on Geoscience and Remote Sensing 57, 9109–9123. https://doi.org/10.1109/tgrs.2019.2924868
+
+Korosov, A., Rampal, P., 2017. A Combination of Feature Tracking and Pattern Matching with Optimal Parametrization for Sea Ice Drift Retrieval from SAR Data. Remote Sensing 9, 258. https://doi.org/10.3390/rs9030258
+
+Korosov, A., Demchev, D., Miranda, N., Franceschi, N., Park, J.-W., 2022. Thermal Denoising of Cross-Polarized Sentinel-1 Data in Interferometric and Extra Wide Swath Modes. IEEE Transactions on Geoscience and Remote Sensing 60, 1–11. https://doi.org/10.1109/TGRS.2021.3131036
+
+Kotovirta, V., Jalonen, R., Axell, L., Riska, K., Berglund, R., 2009. A system for route optimization in ice-covered waters. Cold Regions Science and Technology 55, 52–62. https://doi.org/10.1016/j.coldregions.2008.07.003
+
+Kubat, I., Watson, D., Sayed, M., 2016. Ice Compression Risks to Shipping Over Canadian Arctic and Sub-Arctic Zones. In: Arctic Technology Conference (OTC), proceedings-article. https://doi.org/10.4043/27348-ms
+
+Langland, R.H., Baker, N.L., 2004. Estimation of observation impact using the NRL atmospheric variational data assimilation adjoint system. Tellus A: Dynamic Meteorology and Oceanography 56, 189. https://doi.org/10.3402/tellusa.v56i3.14413
+
+Lavergne, T., Eastwood, S., Teffah, Z., Schyberg, H., Breivik, L.‐., 2010. Sea ice motion from low-resolution satellite sensors: An alternative method and its validation in the Arctic. Journal of Geophysical Research: Oceans 115, 2009JC005958. https://doi.org/10.1029/2009JC005958
+
+Lavergne, T., Down, E., 2023. A climate data record of year-round global sea-ice drift from the EUMETSAT Ocean and Sea Ice Satellite Application Facility (OSI SAF). Earth System Science Data 15, 5807–5834. https://doi.org/10.5194/essd-15-5807-2023
+
+Lee, P.Q., Xu, L., Clausi, D.A., 2020. Sentinel-1 additive noise removal from cross-polarization extra-wide TOPSAR with dynamic least-squares. Remote Sensing of Environment 248, 111982. https://doi.org/10.1016/j.rse.2020.111982
+
+Lehtiranta, J., Siiriä, S., Karvonen, J., 2015. Comparing C- and L-band SAR images for sea ice motion estimation. The Cryosphere 9, 357–366. https://doi.org/10.5194/tc-9-357-2015
+
+Lehtola, V., Montewka, J., Goerlandt, F., Guinness, R., Lensu, M., 2019. Finding safe and efficient shipping routes in ice-covered waters: A framework and a model. Cold Regions Science and Technology 165, 102795. https://doi.org/10.1016/j.coldregions.2019.102795
+
+Leigh, S., Zhijie Wang, Clausi, D.A., 2014. Automated Ice–Water Classification Using Dual Polarization SAR Satellite Imagery. IEEE Transactions on Geoscience and Remote Sensing 52, 5529–5539. https://doi.org/10.1109/tgrs.2013.2290231
+
+Lensu, M., Goerlandt, F., 2019. Big maritime data for the Baltic Sea with a focus on the winter navigation system. Marine Policy 104, 53–65. https://doi.org/10.1016/j.marpol.2019.02.038
+
+Lohse, J., Doulgeris, A.P., Dierking, W., 2020. Mapping sea-ice types from Sentinel-1 considering the surface-type dependent effect of incidence angle. Annals of Glaciology 61, 260–270. https://doi.org/10.1017/aog.2020.45
+
+Lyu, H., Huang, W., Mahdianpari, M., 2022. A Meta-Analysis of Sea Ice Monitoring Using Spaceborne Polarimetric SAR: Advances in the Last Decade. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing 15, 6158–6179. https://doi.org/10.1109/jstars.2022.3194324
+
+Marsan, D., Stern, H., Lindsay, R., Weiss, J., 2004. Scale Dependence and Localization of the Deformation of Arctic Sea Ice. Physical Review Letters 93, 178501. https://doi.org/10.1103/physrevlett.93.178501
+
+Martin, D., Gallego, J., 2025. Towards Reliable Sea Ice Drift Estimation in the Arctic: Deep Learning Optical Flow on RADARSAT-2. arXiv preprint arXiv:2510.26653}, archivePrefix = {arXiv. https://doi.org/10.48550/arXiv.2510.26653
+
+Melia, N., Haines, K., Hawkins, E., 2016. Sea ice decline and 21st century trans-Arctic shipping routes. Geophysical Research Letters 43, 9720–9728. https://doi.org/10.1002/2016GL069315
+
+Meyer, F.J., Mahoney, A.R., Eicken, H., Denny, C.L., Druckenmiller, H.C., Hendricks, S., 2011. Mapping arctic landfast ice extent using L-band synthetic aperture radar interferometry. Remote Sensing of Environment 115, 3029–3043. https://doi.org/10.1016/j.rse.2011.06.006
+
+Muckenhuber, S., Korosov, A.A., Sandven, S., 2016. Open-source feature-tracking algorithm for sea ice drift retrieval from Sentinel-1 SAR imagery. The Cryosphere 10, 913–925. https://doi.org/10.5194/tc-10-913-2016
+
+Muckenhuber, S., Sandven, S., 2017. Open-source sea ice drift algorithm for Sentinel-1 SAR imagery using a combination of feature tracking and pattern matching. The Cryosphere 11, 1835–1850. https://doi.org/10.5194/tc-11-1835-2017
+
+Oikkonen, A., Haapala, J., Lensu, M., Karvonen, J., Itkin, P., 2017. Small-scale sea ice deformation during N-ICE2015: From compact pack ice to marginal ice zone. Journal of Geophysical Research: Oceans 122, 5105–5120. https://doi.org/10.1002/2016jc012387
+
+Organization, I.M., 2016. Guidance on Methodologies for Assessing Operational Capabilities and Limitations in Ice (POLARIS), MSC.1/Circ.1519. IMO circular.  [grey literature, no DOI]
+
+Park, J.-W., Korosov, A.A., Babiker, M., Sandven, S., Won, J.-S., 2018. Efficient Thermal Noise Removal for Sentinel-1 TOPSAR Cross-Polarization Channel. IEEE Transactions on Geoscience and Remote Sensing 56, 1555–1565. https://doi.org/10.1109/TGRS.2017.2765248
+
+Potin, P., Rosich, B., Miranda, N., Grimont, P., Shurmer, I., O'Connell, A., Krassenburg, M., Gratadour, J.-B., 2019. Copernicus Sentinel-1 Constellation Mission Operations Status. In: Proc. IGARSS 2019. pp. 5385–5388. https://doi.org/10.1109/igarss.2019.8898949
+
+Qiu, Y., Li, X.-M., 2022. Retrieval of Sea Ice Drift From the Central Arctic to the Fram Strait Based on Sequential Sentinel-1 SAR Data. IEEE Transactions on Geoscience and Remote Sensing 60, 1–14. https://doi.org/10.1109/tgrs.2022.3226223
+
+Rampal, P., Weiss, J., Marsan, D., Lindsay, R., Stern, H., 2008. Scaling properties of sea ice deformation from buoy dispersion analysis. Journal of Geophysical Research: Oceans 113, 2007JC004143. https://doi.org/10.1029/2007jc004143
+
+Shokr, M., Dabboor, M., 2023. Polarimetric SAR Applications of Sea Ice: A Review. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing 16, 6627–6641. https://doi.org/10.1109/jstars.2023.3295735
+
+Singha, S., Johansson, A.M., Doulgeris, A.P., 2021. Robustness of SAR Sea Ice Type Classification Across Incidence Angles and Seasons at L-Band. IEEE Transactions on Geoscience and Remote Sensing 59, 9941–9952. https://doi.org/10.1109/tgrs.2020.3035029
+
+Stern, H.L., Lindsay, R.W., 2009. Spatial scaling of Arctic sea ice deformation. Journal of Geophysical Research: Oceans 114, 2009JC005380. https://doi.org/10.1029/2009jc005380
+
+Stokholm, A., Buus-Hinkler, J., Wulf, T., Korosov, A., Saldo, R., Pedersen, L.T., Arthurs, D., Dragan, I., Modica, I., Pedro, J., Debien, A., Chen, X., Patel, M., Cantu, F.J.P., Turnes, J.N., Park, J., Xu, L., Scott, K.A., Clausi, D.A., Fang, Y., Jiang, M., Taleghanidoozdoozan, S., Brubacher, N.C., Soleymani, A., Gousseau, Z., Smaczny, M., Kowalski, P., Komorowski, J., Rijlaarsdam, D., van Rijn, J.N., Jakobsen, J., Rogers, M.S.J., Hughes, N., Zagon, T., Solberg, R., Longépé, N., Kreiner, M.B., 2024. The AutoICE Challenge. The Cryosphere 18, 3471–3494. https://doi.org/10.5194/tc-18-3471-2024
+
+Sumata, H., Lavergne, T., Girard‐Ardhuin, F., Kimura, N., Tschudi, M.A., Kauker, F., Karcher, M., Gerdes, R., 2014. An intercomparison of Arctic ice drift products to deduce uncertainty estimates. Journal of Geophysical Research: Oceans 119, 4887–4921. https://doi.org/10.1002/2013JC009724
+
+Sumata, H., Kwok, R., Gerdes, R., Kauker, F., Karcher, M., 2015. Uncertainty of Arctic summer ice drift assessed by high-resolution SAR data. Journal of Geophysical Research: Oceans 120, 5285–5301. https://doi.org/10.1002/2015jc010810
+
+Torres, R., Snoeij, P., Geudtner, D., Bibby, D., Davidson, M., Attema, E., Potin, P., Rommen, B., Floury, N., Brown, M., Traver, I.N., Deghaye, P., Duesmann, B., Rosich, B., Miranda, N., Bruno, C., L'Abbate, M., Croci, R., Pietropaolo, A., Huchler, M., Rostan, F., 2012. GMES Sentinel-1 mission. Remote Sensing of Environment 120, 9–24. https://doi.org/10.1016/j.rse.2011.05.028
+
+Torres, R., Lokas, S., Di Cosimo, G., Geudtner, D., Bibby, D., 2017. Sentinel 1 evolution: Sentinel-1C and -1D models. In: Proc. IGARSS 2017. pp. 5549–5550. https://doi.org/10.1109/igarss.2017.8128261
+
+Turnbull, B.W., 1976. The Empirical Distribution Function with Arbitrarily Grouped, Censored and Truncated Data. Journal of the Royal Statistical Society Series B: Statistical Methodology 38, 290–295. https://doi.org/10.1111/j.2517-6161.1976.tb01597.x
+
+VARDI, Y., 1989. Multiplicative censoring, renewal processes, deconvolution and decreasing density: Nonparametric estimation. Biometrika 76, 751–761. https://doi.org/10.1093/biomet/76.4.751
+
+Wuite, J., Nagler, T., Hetzenecker, M., Rott, H., 2026. Ten years of polar ice velocity mapping using Copernicus Sentinel-1. Remote Sensing of Environment 332, 115092. https://doi.org/10.1016/j.rse.2025.115092
+
+Wulf, T., Buus-Hinkler, J., Singha, S., Shi, H., Kreiner, M.B., 2024. Pan-Arctic sea ice concentration from SAR and passive microwave. The Cryosphere 18, 5277–5300. https://doi.org/10.5194/tc-18-5277-2024
+
+Wulf, T., Buus-Hinkler, J., Singha, S., Dasgupta, N., Athanasiadis, A., Kreiner, M.B., 2026. A decade of sea ice concentration retrieved from Sentinel-1. Remote Sensing of Environment 337, 115252. https://doi.org/10.1016/j.rse.2026.115252
+
+Yang, Y., Xie, T., Sun, C., Wang, C., Li, J., Zhang, X., 2024. Improvement of Sea Ice Drift Extraction Based on Feature Tracking from C-SAR/01 Imagery. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing 17, 10237–10251. https://doi.org/10.1109/jstars.2024.3403919
+
+Zakhvatkina, N., Smirnov, V., Bychkova, I., 2019. Satellite SAR Data-based Sea Ice Classification: An Overview. Geosciences 9, 152. https://doi.org/10.3390/geosciences9040152
+
+Zhao, L., Xie, T., Perrie, W., Yang, J., 2023. Deep-Learning-Based Sea Ice Classification With Sentinel-1 and AMSR-2 Data. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing 16, 5514–5525. https://doi.org/10.1109/jstars.2023.3285857
+
+### Bibliography provenance
 All in-text citations resolve to keys in `paper/references.bib`, which holds **76 entries, every one verified
 in-session** by retrieval of its DOI through Crossref, by OpenLibrary for the two books, by arXiv for the one
 preprint, or by a live URL check for the two grey-literature items (the IMO POLARIS circular and the Bellona
@@ -374,5 +530,4 @@ Cluster composition, per-cluster targets and the section in which each cluster i
 are in `paper/build.md`.
 
 ### Data availability
-
 Sentinel-1 metadata via the Copernicus programme; International Arctic Buoy Programme Level 1 archive; EUMETSAT OSI SAF product OSI-405; Copernicus Marine datasets `cmems_obs-si_glo_phy-drift-north_my_l4_P1D-m` and `cmems_obs-si_arc_phy_my_l3_P1D`; European Space Agency acquisition-segment archives from the Copernicus SentiWiki document library; Norwegian Meteorological Institute ice-chart quicklook archive. Derived tables, figure-generating code, the full analysis pipeline and a per-number provenance trace are in the project repository at https://github.com/yjchoi83/Arctic (directories `arctic_explore/stage5`, `arctic_explore/paper` and `arctic_explore/results`). Gridded H products are held as GeoTIFF in `data/products` and are available on request. Supplementary Table S1, giving the full pair-processing and matcher parameters of Section 3.6, is in `paper/SUPPLEMENTARY.md`.

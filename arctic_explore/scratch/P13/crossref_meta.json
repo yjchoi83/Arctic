@@ -1,0 +1,2193 @@
+{
+ "10.1016/j.rse.2013.08.035": {
+  "authors": [
+   {
+    "family": "Dabboor",
+    "given": "M."
+   },
+   {
+    "family": "Geldsetzer",
+    "given": "T."
+   }
+  ],
+  "container": "Remote Sensing of Environment",
+  "volume": "140",
+  "issue": "",
+  "page": "189-195",
+  "article": "",
+  "publisher": "Elsevier BV",
+  "type": "journal-article",
+  "issued": 2014,
+  "title": "Towards sea ice classification using simulated RADARSAT Constellation Mission compact polarimetric SAR imagery"
+ },
+ "10.1109/igarss47720.2021.9554226": {
+  "authors": [
+   {
+    "family": "Geudtner",
+    "given": "Dirk"
+   },
+   {
+    "family": "Tossaint",
+    "given": "Michel"
+   },
+   {
+    "family": "Davidson",
+    "given": "Malcolm"
+   },
+   {
+    "family": "Torres",
+    "given": "Ramon"
+   }
+  ],
+  "container": "2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS",
+  "volume": "",
+  "issue": "",
+  "page": "874-876",
+  "article": "",
+  "publisher": "IEEE",
+  "type": "proceedings-article",
+  "issued": 2021,
+  "title": "Copernicus Sentinel-1 Next Generation Mission"
+ },
+ "10.1109/igarss.2019.8898949": {
+  "authors": [
+   {
+    "family": "Potin",
+    "given": "Pierre"
+   },
+   {
+    "family": "Rosich",
+    "given": "Betlem"
+   },
+   {
+    "family": "Miranda",
+    "given": "Nuno"
+   },
+   {
+    "family": "Grimont",
+    "given": "Patrick"
+   },
+   {
+    "family": "Shurmer",
+    "given": "Ian"
+   },
+   {
+    "family": "O'Connell",
+    "given": "Alistair"
+   },
+   {
+    "family": "Krassenburg",
+    "given": "Mike"
+   },
+   {
+    "family": "Gratadour",
+    "given": "Jean-Baptiste"
+   }
+  ],
+  "container": "IGARSS 2019 - 2019 IEEE International Geoscience and Remote Sensing Symposium",
+  "volume": "",
+  "issue": "",
+  "page": "5385-5388",
+  "article": "",
+  "publisher": "IEEE",
+  "type": "proceedings-article",
+  "issued": 2019,
+  "title": "Copernicus Sentinel-1 Constellation Mission Operations Status"
+ },
+ "10.1016/j.rse.2011.05.028": {
+  "authors": [
+   {
+    "family": "Torres",
+    "given": "Ramon"
+   },
+   {
+    "family": "Snoeij",
+    "given": "Paul"
+   },
+   {
+    "family": "Geudtner",
+    "given": "Dirk"
+   },
+   {
+    "family": "Bibby",
+    "given": "David"
+   },
+   {
+    "family": "Davidson",
+    "given": "Malcolm"
+   },
+   {
+    "family": "Attema",
+    "given": "Evert"
+   },
+   {
+    "family": "Potin",
+    "given": "Pierre"
+   },
+   {
+    "family": "Rommen",
+    "given": "Bj\u00d6rn"
+   },
+   {
+    "family": "Floury",
+    "given": "Nicolas"
+   },
+   {
+    "family": "Brown",
+    "given": "Mike"
+   },
+   {
+    "family": "Traver",
+    "given": "Ignacio Navas"
+   },
+   {
+    "family": "Deghaye",
+    "given": "Patrick"
+   },
+   {
+    "family": "Duesmann",
+    "given": "Berthyl"
+   },
+   {
+    "family": "Rosich",
+    "given": "Betlem"
+   },
+   {
+    "family": "Miranda",
+    "given": "Nuno"
+   },
+   {
+    "family": "Bruno",
+    "given": "Claudio"
+   },
+   {
+    "family": "L'Abbate",
+    "given": "Michelangelo"
+   },
+   {
+    "family": "Croci",
+    "given": "Renato"
+   },
+   {
+    "family": "Pietropaolo",
+    "given": "Andrea"
+   },
+   {
+    "family": "Huchler",
+    "given": "Markus"
+   },
+   {
+    "family": "Rostan",
+    "given": "Friedhelm"
+   }
+  ],
+  "container": "Remote Sensing of Environment",
+  "volume": "120",
+  "issue": "",
+  "page": "9-24",
+  "article": "",
+  "publisher": "Elsevier BV",
+  "type": "journal-article",
+  "issued": 2012,
+  "title": "GMES Sentinel-1 mission"
+ },
+ "10.1109/igarss.2017.8128261": {
+  "authors": [
+   {
+    "family": "Torres",
+    "given": "Ramon"
+   },
+   {
+    "family": "Lokas",
+    "given": "Svein"
+   },
+   {
+    "family": "Di Cosimo",
+    "given": "Gianluigi"
+   },
+   {
+    "family": "Geudtner",
+    "given": "Dirk"
+   },
+   {
+    "family": "Bibby",
+    "given": "David"
+   }
+  ],
+  "container": "2017 IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
+  "volume": "",
+  "issue": "",
+  "page": "5549-5550",
+  "article": "",
+  "publisher": "IEEE",
+  "type": "proceedings-article",
+  "issued": 2017,
+  "title": "Sentinel 1 evolution: Sentinel-1C and -1D models"
+ },
+ "10.5194/tc-14-1289-2020": {
+  "authors": [
+   {
+    "family": "Cheng",
+    "given": "Angela"
+   },
+   {
+    "family": "Casati",
+    "given": "Barbara"
+   },
+   {
+    "family": "Tivy",
+    "given": "Adrienne"
+   },
+   {
+    "family": "Zagon",
+    "given": "Tom"
+   },
+   {
+    "family": "Lemieux",
+    "given": "Jean-Fran\u00e7ois"
+   },
+   {
+    "family": "Tremblay",
+    "given": "L. Bruno"
+   }
+  ],
+  "container": "The Cryosphere",
+  "volume": "14",
+  "issue": "4",
+  "page": "1289-1310",
+  "article": "",
+  "publisher": "Copernicus GmbH",
+  "type": "journal-article",
+  "issued": 2020,
+  "title": "Accuracy and inter-analyst agreement of visually estimated sea ice concentrations in Canadian Ice Service ice charts using single-polarization RADARSAT-2"
+ },
+ "10.1016/j.rse.2025.115140": {
+  "authors": [
+   {
+    "family": "Dai",
+    "given": "Yan"
+   },
+   {
+    "family": "Li",
+    "given": "Xiao-Ming"
+   },
+   {
+    "family": "Yuan",
+    "given": "Haotian"
+   }
+  ],
+  "container": "Remote Sensing of Environment",
+  "volume": "333",
+  "issue": "",
+  "page": "115140",
+  "article": "115140",
+  "publisher": "Elsevier BV",
+  "type": "journal-article",
+  "issued": 2026,
+  "title": "Pan-Arctic winter sea ice classification using Sentinel-1 dual-polarized SAR images"
+ },
+ "10.5670/oceanog.2013.33": {
+  "authors": [
+   {
+    "family": "Dierking",
+    "given": "Wolfgang"
+   }
+  ],
+  "container": "Oceanography",
+  "volume": "26",
+  "issue": "2",
+  "page": "",
+  "article": "",
+  "publisher": "The Oceanography Society",
+  "type": "journal-article",
+  "issued": 2013,
+  "title": "Sea Ice Monitoring by Synthetic Aperture Radar"
+ },
+ "10.3389/fmars.2025.1561461": {
+  "authors": [
+   {
+    "family": "Eriksson",
+    "given": "Patrick B."
+   },
+   {
+    "family": "Vainio",
+    "given": "Jouni"
+   },
+   {
+    "family": "Tollman",
+    "given": "Niko"
+   },
+   {
+    "family": "Jokiniemi",
+    "given": "Anni"
+   },
+   {
+    "family": "Arola",
+    "given": "Aleksi"
+   },
+   {
+    "family": "M\u00e4kynen",
+    "given": "Marko"
+   },
+   {
+    "family": "Karvonen",
+    "given": "Juha"
+   },
+   {
+    "family": "Kangas",
+    "given": "Antti"
+   }
+  ],
+  "container": "Frontiers in Marine Science",
+  "volume": "12",
+  "issue": "",
+  "page": "",
+  "article": "1561461",
+  "publisher": "Frontiers Media SA",
+  "type": "journal-article",
+  "issued": 2025,
+  "title": "The Finnish Ice Service, its sea-ice monitoring of the Baltic Sea and operational concept"
+ },
+ "10.1016/j.rse.2023.113780": {
+  "authors": [
+   {
+    "family": "Evans",
+    "given": "Ben"
+   },
+   {
+    "family": "Faul",
+    "given": "Anita"
+   },
+   {
+    "family": "Fleming",
+    "given": "Andrew"
+   },
+   {
+    "family": "Vaughan",
+    "given": "David G."
+   },
+   {
+    "family": "Hosking",
+    "given": "J. Scott"
+   }
+  ],
+  "container": "Remote Sensing of Environment",
+  "volume": "297",
+  "issue": "",
+  "page": "113780",
+  "article": "113780",
+  "publisher": "Elsevier BV",
+  "type": "journal-article",
+  "issued": 2023,
+  "title": "Unsupervised machine learning detection of iceberg populations within sea ice from dual-polarisation SAR imagery"
+ },
+ "10.1109/tgrs.2021.3097885": {
+  "authors": [
+   {
+    "family": "Karvonen",
+    "given": "Juha"
+   }
+  ],
+  "container": "IEEE Transactions on Geoscience and Remote Sensing",
+  "volume": "60",
+  "issue": "",
+  "page": "1-11",
+  "article": "",
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "type": "journal-article",
+  "issued": 2022,
+  "title": "Baltic Sea Ice Concentration Estimation From C-Band Dual-Polarized SAR Imagery by Image Segmentation and Convolutional Neural Networks"
+ },
+ "10.1109/tgrs.2019.2924868": {
+  "authors": [
+   {
+    "family": "Komarov",
+    "given": "Alexander S."
+   },
+   {
+    "family": "Buehner",
+    "given": "Mark"
+   }
+  ],
+  "container": "IEEE Transactions on Geoscience and Remote Sensing",
+  "volume": "57",
+  "issue": "11",
+  "page": "9109-9123",
+  "article": "",
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "type": "journal-article",
+  "issued": 2019,
+  "title": "Detection of First-Year and Multi-Year Sea Ice from Dual-Polarization SAR Images Under Cold Conditions"
+ },
+ "10.1109/tgrs.2013.2290231": {
+  "authors": [
+   {
+    "family": "Leigh",
+    "given": "Steven"
+   },
+   {
+    "family": "Zhijie Wang",
+    "given": ""
+   },
+   {
+    "family": "Clausi",
+    "given": "David A."
+   }
+  ],
+  "container": "IEEE Transactions on Geoscience and Remote Sensing",
+  "volume": "52",
+  "issue": "9",
+  "page": "5529-5539",
+  "article": "",
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "type": "journal-article",
+  "issued": 2014,
+  "title": "Automated Ice\u2013Water Classification Using Dual Polarization SAR Satellite Imagery"
+ },
+ "10.1017/aog.2020.45": {
+  "authors": [
+   {
+    "family": "Lohse",
+    "given": "Johannes"
+   },
+   {
+    "family": "Doulgeris",
+    "given": "Anthony P."
+   },
+   {
+    "family": "Dierking",
+    "given": "Wolfgang"
+   }
+  ],
+  "container": "Annals of Glaciology",
+  "volume": "61",
+  "issue": "83",
+  "page": "260-270",
+  "article": "",
+  "publisher": "Cambridge University Press (CUP)",
+  "type": "journal-article",
+  "issued": 2020,
+  "title": "Mapping sea-ice types from Sentinel-1 considering the surface-type dependent effect of incidence angle"
+ },
+ "10.1109/jstars.2022.3194324": {
+  "authors": [
+   {
+    "family": "Lyu",
+    "given": "Hangyu"
+   },
+   {
+    "family": "Huang",
+    "given": "Weimin"
+   },
+   {
+    "family": "Mahdianpari",
+    "given": "Masoud"
+   }
+  ],
+  "container": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+  "volume": "15",
+  "issue": "",
+  "page": "6158-6179",
+  "article": "",
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "type": "journal-article",
+  "issued": 2022,
+  "title": "A Meta-Analysis of Sea Ice Monitoring Using Spaceborne Polarimetric SAR: Advances in the Last Decade"
+ },
+ "10.1109/jstars.2023.3295735": {
+  "authors": [
+   {
+    "family": "Shokr",
+    "given": "Mohammed"
+   },
+   {
+    "family": "Dabboor",
+    "given": "Mohammed"
+   }
+  ],
+  "container": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+  "volume": "16",
+  "issue": "",
+  "page": "6627-6641",
+  "article": "",
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "type": "journal-article",
+  "issued": 2023,
+  "title": "Polarimetric SAR Applications of Sea Ice: A Review"
+ },
+ "10.3390/geosciences9040152": {
+  "authors": [
+   {
+    "family": "Zakhvatkina",
+    "given": "Natalia"
+   },
+   {
+    "family": "Smirnov",
+    "given": "Vladimir"
+   },
+   {
+    "family": "Bychkova",
+    "given": "Irina"
+   }
+  ],
+  "container": "Geosciences",
+  "volume": "9",
+  "issue": "4",
+  "page": "152",
+  "article": "",
+  "publisher": "MDPI AG",
+  "type": "journal-article",
+  "issued": 2019,
+  "title": "Satellite SAR Data-based Sea Ice Classification: An Overview"
+ },
+ "10.1109/tgrs.2017.2703084": {
+  "authors": [
+   {
+    "family": "Demchev",
+    "given": "Denis"
+   },
+   {
+    "family": "Volkov",
+    "given": "Vladimir"
+   },
+   {
+    "family": "Kazakov",
+    "given": "Eduard"
+   },
+   {
+    "family": "Alcantarilla",
+    "given": "Pablo F."
+   },
+   {
+    "family": "Sandven",
+    "given": "Stein"
+   },
+   {
+    "family": "Khmeleva",
+    "given": "Viktoriya"
+   }
+  ],
+  "container": "IEEE Transactions on Geoscience and Remote Sensing",
+  "volume": "55",
+  "issue": "9",
+  "page": "5174-5184",
+  "article": "",
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "type": "journal-article",
+  "issued": 2017,
+  "title": "Sea Ice Drift Tracking From Sequential SAR Images Using Accelerated-KAZE Features"
+ },
+ "10.1109/jstars.2014.2340572": {
+  "authors": [
+   {
+    "family": "Hollands",
+    "given": "Thomas"
+   },
+   {
+    "family": "Linow",
+    "given": "Stefanie"
+   },
+   {
+    "family": "Dierking",
+    "given": "Wolfgang"
+   }
+  ],
+  "container": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+  "volume": "8",
+  "issue": "1",
+  "page": "67-75",
+  "article": "",
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "type": "journal-article",
+  "issued": 2015,
+  "title": "Reliability Measures for Sea Ice Motion Retrieval From Synthetic Aperture Radar Images"
+ },
+ "10.5194/tc-16-1125-2022": {
+  "authors": [
+   {
+    "family": "Howell",
+    "given": "Stephen E. L."
+   },
+   {
+    "family": "Brady",
+    "given": "Mike"
+   },
+   {
+    "family": "Komarov",
+    "given": "Alexander S."
+   }
+  ],
+  "container": "The Cryosphere",
+  "volume": "16",
+  "issue": "3",
+  "page": "1125-1139",
+  "article": "",
+  "publisher": "Copernicus GmbH",
+  "type": "journal-article",
+  "issued": 2022,
+  "title": "Generating large-scale sea ice motion from Sentinel-1 and the RADARSAT Constellation Mission using the Environment and Climate Change Canada automated sea ice tracking system"
+ },
+ "10.1109/tgrs.2012.2236845": {
+  "authors": [
+   {
+    "family": "Komarov",
+    "given": "Alexander S."
+   },
+   {
+    "family": "Barber",
+    "given": "David G."
+   }
+  ],
+  "container": "IEEE Transactions on Geoscience and Remote Sensing",
+  "volume": "52",
+  "issue": "1",
+  "page": "121-136",
+  "article": "",
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "type": "journal-article",
+  "issued": 2014,
+  "title": "Sea Ice Motion Tracking From Sequential Dual-Polarization RADARSAT-2 Images"
+ },
+ "10.3390/rs9030258": {
+  "authors": [
+   {
+    "family": "Korosov",
+    "given": "Anton"
+   },
+   {
+    "family": "Rampal",
+    "given": "Pierre"
+   }
+  ],
+  "container": "Remote Sensing",
+  "volume": "9",
+  "issue": "3",
+  "page": "258",
+  "article": "",
+  "publisher": "MDPI AG",
+  "type": "journal-article",
+  "issued": 2017,
+  "title": "A Combination of Feature Tracking and Pattern Matching with Optimal Parametrization for Sea Ice Drift Retrieval from SAR Data"
+ },
+ "10.5194/tc-9-357-2015": {
+  "authors": [
+   {
+    "family": "Lehtiranta",
+    "given": "J."
+   },
+   {
+    "family": "Siiri\u00e4",
+    "given": "S."
+   },
+   {
+    "family": "Karvonen",
+    "given": "J."
+   }
+  ],
+  "container": "The Cryosphere",
+  "volume": "9",
+  "issue": "1",
+  "page": "357-366",
+  "article": "",
+  "publisher": "Copernicus GmbH",
+  "type": "journal-article",
+  "issued": 2015,
+  "title": "Comparing C- and L-band SAR images for sea ice motion estimation"
+ },
+ "10.5194/tc-11-1835-2017": {
+  "authors": [
+   {
+    "family": "Muckenhuber",
+    "given": "Stefan"
+   },
+   {
+    "family": "Sandven",
+    "given": "Stein"
+   }
+  ],
+  "container": "The Cryosphere",
+  "volume": "11",
+  "issue": "4",
+  "page": "1835-1850",
+  "article": "",
+  "publisher": "Copernicus GmbH",
+  "type": "journal-article",
+  "issued": 2017,
+  "title": "Open-source sea ice drift algorithm for Sentinel-1 SAR imagery using a combination of feature tracking and pattern matching"
+ },
+ "10.1109/tgrs.2022.3226223": {
+  "authors": [
+   {
+    "family": "Qiu",
+    "given": "Yujia"
+   },
+   {
+    "family": "Li",
+    "given": "Xiao-Ming"
+   }
+  ],
+  "container": "IEEE Transactions on Geoscience and Remote Sensing",
+  "volume": "60",
+  "issue": "",
+  "page": "1-14",
+  "article": "",
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "type": "journal-article",
+  "issued": 2022,
+  "title": "Retrieval of Sea Ice Drift From the Central Arctic to the Fram Strait Based on Sequential Sentinel-1 SAR Data"
+ },
+ "10.1109/jstars.2024.3403919": {
+  "authors": [
+   {
+    "family": "Yang",
+    "given": "Yanli"
+   },
+   {
+    "family": "Xie",
+    "given": "Tao"
+   },
+   {
+    "family": "Sun",
+    "given": "Chengzhi"
+   },
+   {
+    "family": "Wang",
+    "given": "Chao"
+   },
+   {
+    "family": "Li",
+    "given": "Jian"
+   },
+   {
+    "family": "Zhang",
+    "given": "Xuehong"
+   }
+  ],
+  "container": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+  "volume": "17",
+  "issue": "",
+  "page": "10237-10251",
+  "article": "",
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "type": "journal-article",
+  "issued": 2024,
+  "title": "Improvement of Sea Ice Drift Extraction Based on Feature Tracking from C-SAR/01 Imagery"
+ },
+ "10.5194/tc-9-663-2015": {
+  "authors": [
+   {
+    "family": "Bouillon",
+    "given": "S."
+   },
+   {
+    "family": "Rampal",
+    "given": "P."
+   }
+  ],
+  "container": "The Cryosphere",
+  "volume": "9",
+  "issue": "2",
+  "page": "663-673",
+  "article": "",
+  "publisher": "Copernicus GmbH",
+  "type": "journal-article",
+  "issued": 2015,
+  "title": "On producing sea ice deformation data sets from SAR-derived sea ice motion"
+ },
+ "10.1029/2006jc003971": {
+  "authors": [
+   {
+    "family": "Hutchings",
+    "given": "J. K."
+   },
+   {
+    "family": "Hibler",
+    "given": "W. D."
+   }
+  ],
+  "container": "Journal of Geophysical Research: Oceans",
+  "volume": "113",
+  "issue": "C8",
+  "page": "",
+  "article": "2006JC003971",
+  "publisher": "American Geophysical Union (AGU)",
+  "type": "journal-article",
+  "issued": 2008,
+  "title": "Small\u2010scale sea ice deformation in the Beaufort Sea seasonal ice zone"
+ },
+ "10.3189/172756411795931769": {
+  "authors": [
+   {
+    "family": "Hutchings",
+    "given": "Jennifer K."
+   },
+   {
+    "family": "Roberts",
+    "given": "Andrew"
+   },
+   {
+    "family": "Geiger",
+    "given": "Cathleen A."
+   },
+   {
+    "family": "Richter-Menge",
+    "given": "Jacqueline"
+   }
+  ],
+  "container": "Annals of Glaciology",
+  "volume": "52",
+  "issue": "57",
+  "page": "360-368",
+  "article": "",
+  "publisher": "International Glaciological Society",
+  "type": "journal-article",
+  "issued": 2011,
+  "title": "Spatial and temporal characterization of sea-ice deformation"
+ },
+ "10.5194/tc-19-1135-2025": {
+  "authors": [
+   {
+    "family": "Itkin",
+    "given": "Polona"
+   }
+  ],
+  "container": "The Cryosphere",
+  "volume": "19",
+  "issue": "3",
+  "page": "1135-1151",
+  "article": "",
+  "publisher": "Copernicus GmbH",
+  "type": "journal-article",
+  "issued": 2025,
+  "title": "Novel methods to study sea ice deformation, linear kinematic features and coherent dynamic clusters from imaging remote sensing data"
+ },
+ "10.1103/physrevlett.93.178501": {
+  "authors": [
+   {
+    "family": "Marsan",
+    "given": "David"
+   },
+   {
+    "family": "Stern",
+    "given": "Harry"
+   },
+   {
+    "family": "Lindsay",
+    "given": "Ron"
+   },
+   {
+    "family": "Weiss",
+    "given": "J\u00e9r\u00f4me"
+   }
+  ],
+  "container": "Physical Review Letters",
+  "volume": "93",
+  "issue": "17",
+  "page": "",
+  "article": "178501",
+  "publisher": "American Physical Society (APS)",
+  "type": "journal-article",
+  "issued": 2004,
+  "title": "Scale Dependence and Localization of the Deformation of Arctic Sea Ice"
+ },
+ "10.1002/2016jc012387": {
+  "authors": [
+   {
+    "family": "Oikkonen",
+    "given": "Annu"
+   },
+   {
+    "family": "Haapala",
+    "given": "Jari"
+   },
+   {
+    "family": "Lensu",
+    "given": "Mikko"
+   },
+   {
+    "family": "Karvonen",
+    "given": "Juha"
+   },
+   {
+    "family": "Itkin",
+    "given": "Polona"
+   }
+  ],
+  "container": "Journal of Geophysical Research: Oceans",
+  "volume": "122",
+  "issue": "6",
+  "page": "5105-5120",
+  "article": "",
+  "publisher": "American Geophysical Union (AGU)",
+  "type": "journal-article",
+  "issued": 2017,
+  "title": "Small\u2010scale sea ice deformation during <scp>N\u2010ICE</scp>2015: From compact pack ice to marginal ice zone"
+ },
+ "10.1029/2007jc004143": {
+  "authors": [
+   {
+    "family": "Rampal",
+    "given": "P."
+   },
+   {
+    "family": "Weiss",
+    "given": "J."
+   },
+   {
+    "family": "Marsan",
+    "given": "D."
+   },
+   {
+    "family": "Lindsay",
+    "given": "R."
+   },
+   {
+    "family": "Stern",
+    "given": "H."
+   }
+  ],
+  "container": "Journal of Geophysical Research: Oceans",
+  "volume": "113",
+  "issue": "C3",
+  "page": "",
+  "article": "2007JC004143",
+  "publisher": "American Geophysical Union (AGU)",
+  "type": "journal-article",
+  "issued": 2008,
+  "title": "Scaling properties of sea ice deformation from buoy dispersion analysis"
+ },
+ "10.1029/2009jc005380": {
+  "authors": [
+   {
+    "family": "Stern",
+    "given": "H. L."
+   },
+   {
+    "family": "Lindsay",
+    "given": "R. W."
+   }
+  ],
+  "container": "Journal of Geophysical Research: Oceans",
+  "volume": "114",
+  "issue": "C10",
+  "page": "",
+  "article": "2009JC005380",
+  "publisher": "American Geophysical Union (AGU)",
+  "type": "journal-article",
+  "issued": 2009,
+  "title": "Spatial scaling of Arctic sea ice deformation"
+ },
+ "10.1016/j.marpol.2015.12.027": {
+  "authors": [
+   {
+    "family": "Aksenov",
+    "given": "Yevgeny"
+   },
+   {
+    "family": "Popova",
+    "given": "Ekaterina E."
+   },
+   {
+    "family": "Yool",
+    "given": "Andrew"
+   },
+   {
+    "family": "Nurser",
+    "given": "A.J. George"
+   },
+   {
+    "family": "Williams",
+    "given": "Timothy D."
+   },
+   {
+    "family": "Bertino",
+    "given": "Laurent"
+   },
+   {
+    "family": "Bergh",
+    "given": "Jon"
+   }
+  ],
+  "container": "Marine Policy",
+  "volume": "75",
+  "issue": "",
+  "page": "300-317",
+  "article": "",
+  "publisher": "Elsevier BV",
+  "type": "journal-article",
+  "issued": 2017,
+  "title": "On the future navigability of Arctic sea routes:\u00a0High-resolution projections of the Arctic Ocean and sea ice"
+ },
+ "10.1016/j.ress.2016.06.010": {
+  "authors": [
+   {
+    "family": "Fu",
+    "given": "Shanshan"
+   },
+   {
+    "family": "Zhang",
+    "given": "Di"
+   },
+   {
+    "family": "Montewka",
+    "given": "Jakub"
+   },
+   {
+    "family": "Yan",
+    "given": "Xinping"
+   },
+   {
+    "family": "Zio",
+    "given": "Enrico"
+   }
+  ],
+  "container": "Reliability Engineering &amp; System Safety",
+  "volume": "155",
+  "issue": "",
+  "page": "124-136",
+  "article": "",
+  "publisher": "Elsevier BV",
+  "type": "journal-article",
+  "issued": 2016,
+  "title": "Towards a probabilistic model for predicting ship besetting in ice in Arctic waters"
+ },
+ "10.1016/j.coldregions.2008.07.003": {
+  "authors": [
+   {
+    "family": "Kotovirta",
+    "given": "Ville"
+   },
+   {
+    "family": "Jalonen",
+    "given": "Risto"
+   },
+   {
+    "family": "Axell",
+    "given": "Lars"
+   },
+   {
+    "family": "Riska",
+    "given": "Kaj"
+   },
+   {
+    "family": "Berglund",
+    "given": "Robin"
+   }
+  ],
+  "container": "Cold Regions Science and Technology",
+  "volume": "55",
+  "issue": "1",
+  "page": "52-62",
+  "article": "",
+  "publisher": "Elsevier BV",
+  "type": "journal-article",
+  "issued": 2009,
+  "title": "A system for route optimization in ice-covered waters"
+ },
+ "10.4043/27348-ms": {
+  "authors": [
+   {
+    "family": "Kubat",
+    "given": "Ivana"
+   },
+   {
+    "family": "Watson",
+    "given": "David"
+   },
+   {
+    "family": "Sayed",
+    "given": "Mohamed"
+   }
+  ],
+  "container": "Arctic Technology Conference",
+  "volume": "",
+  "issue": "",
+  "page": "",
+  "article": "OTC-27348-MS",
+  "publisher": "OTC",
+  "type": "proceedings-article",
+  "issued": 2016,
+  "title": "Ice Compression Risks to Shipping Over Canadian Arctic and Sub-Arctic Zones"
+ },
+ "10.1016/j.coldregions.2019.102795": {
+  "authors": [
+   {
+    "family": "Lehtola",
+    "given": "Ville"
+   },
+   {
+    "family": "Montewka",
+    "given": "Jakub"
+   },
+   {
+    "family": "Goerlandt",
+    "given": "Floris"
+   },
+   {
+    "family": "Guinness",
+    "given": "Robert"
+   },
+   {
+    "family": "Lensu",
+    "given": "Mikko"
+   }
+  ],
+  "container": "Cold Regions Science and Technology",
+  "volume": "165",
+  "issue": "",
+  "page": "102795",
+  "article": "102795",
+  "publisher": "Elsevier BV",
+  "type": "journal-article",
+  "issued": 2019,
+  "title": "Finding safe and efficient shipping routes in ice-covered waters: A framework and a model"
+ },
+ "10.1016/j.marpol.2019.02.038": {
+  "authors": [
+   {
+    "family": "Lensu",
+    "given": "Mikko"
+   },
+   {
+    "family": "Goerlandt",
+    "given": "Floris"
+   }
+  ],
+  "container": "Marine Policy",
+  "volume": "104",
+  "issue": "",
+  "page": "53-65",
+  "article": "",
+  "publisher": "Elsevier BV",
+  "type": "journal-article",
+  "issued": 2019,
+  "title": "Big maritime data for the Baltic Sea with a focus on the winter navigation system"
+ },
+ "10.1175/mwr-d-16-0013.1": {
+  "authors": [
+   {
+    "family": "Boukabara",
+    "given": "Sid-Ahmed"
+   },
+   {
+    "family": "Garrett",
+    "given": "Kevin"
+   },
+   {
+    "family": "Kumar",
+    "given": "V. Krishna"
+   }
+  ],
+  "container": "Monthly Weather Review",
+  "volume": "144",
+  "issue": "7",
+  "page": "2547-2563",
+  "article": "",
+  "publisher": "American Meteorological Society",
+  "type": "journal-article",
+  "issued": 2016,
+  "title": "Potential Gaps in the Satellite Observing System Coverage: Assessment of Impact on NOAA\u2019s Numerical Weather Prediction Overall Skills"
+ },
+ "10.5194/tc-9-1721-2015": {
+  "authors": [
+   {
+    "family": "Kaminski",
+    "given": "T."
+   },
+   {
+    "family": "Kauker",
+    "given": "F."
+   },
+   {
+    "family": "Eicken",
+    "given": "H."
+   },
+   {
+    "family": "Karcher",
+    "given": "M."
+   }
+  ],
+  "container": "The Cryosphere",
+  "volume": "9",
+  "issue": "4",
+  "page": "1721-1733",
+  "article": "",
+  "publisher": "Copernicus GmbH",
+  "type": "journal-article",
+  "issued": 2015,
+  "title": "Exploring the utility of quantitative network design in evaluating Arctic sea ice thickness sampling strategies"
+ },
+ "10.5194/tc-12-2569-2018": {
+  "authors": [
+   {
+    "family": "Kaminski",
+    "given": "Thomas"
+   },
+   {
+    "family": "Kauker",
+    "given": "Frank"
+   },
+   {
+    "family": "Toudal Pedersen",
+    "given": "Leif"
+   },
+   {
+    "family": "Vo\u00dfbeck",
+    "given": "Michael"
+   },
+   {
+    "family": "Haak",
+    "given": "Helmuth"
+   },
+   {
+    "family": "Niederdrenk",
+    "given": "Laura"
+   },
+   {
+    "family": "Hendricks",
+    "given": "Stefan"
+   },
+   {
+    "family": "Ricker",
+    "given": "Robert"
+   },
+   {
+    "family": "Karcher",
+    "given": "Michael"
+   },
+   {
+    "family": "Eicken",
+    "given": "Hajo"
+   },
+   {
+    "family": "Gr\u00e5bak",
+    "given": "Ola"
+   }
+  ],
+  "container": "The Cryosphere",
+  "volume": "12",
+  "issue": "8",
+  "page": "2569-2594",
+  "article": "",
+  "publisher": "Copernicus GmbH",
+  "type": "journal-article",
+  "issued": 2018,
+  "title": "Arctic Mission Benefit Analysis: impact of sea ice thickness, freeboard, and snow depth products on sea ice forecast performance"
+ },
+ "10.3402/tellusa.v56i3.14413": {
+  "authors": [
+   {
+    "family": "Langland",
+    "given": "Rolf H."
+   },
+   {
+    "family": "Baker",
+    "given": "Nancy L."
+   }
+  ],
+  "container": "Tellus A: Dynamic Meteorology and Oceanography",
+  "volume": "56",
+  "issue": "3",
+  "page": "189",
+  "article": "",
+  "publisher": "Stockholm University Press",
+  "type": "journal-article",
+  "issued": 2004,
+  "title": "Estimation of observation impact using the NRL atmospheric variational\n                        data assimilation adjoint system"
+ },
+ "10.1029/2009JC005958": {
+  "authors": [
+   {
+    "family": "Lavergne",
+    "given": "T."
+   },
+   {
+    "family": "Eastwood",
+    "given": "S."
+   },
+   {
+    "family": "Teffah",
+    "given": "Z."
+   },
+   {
+    "family": "Schyberg",
+    "given": "H."
+   },
+   {
+    "family": "Breivik",
+    "given": "L.\u2010A."
+   }
+  ],
+  "container": "Journal of Geophysical Research: Oceans",
+  "volume": "115",
+  "issue": "C10",
+  "page": "",
+  "article": "2009JC005958",
+  "publisher": "American Geophysical Union (AGU)",
+  "type": "journal-article",
+  "issued": 2010,
+  "title": "Sea ice motion from low\u2010resolution satellite sensors: An alternative method and its validation in the Arctic"
+ },
+ "10.5194/essd-15-5807-2023": {
+  "authors": [
+   {
+    "family": "Lavergne",
+    "given": "Thomas"
+   },
+   {
+    "family": "Down",
+    "given": "Emily"
+   }
+  ],
+  "container": "Earth System Science Data",
+  "volume": "15",
+  "issue": "12",
+  "page": "5807-5834",
+  "article": "",
+  "publisher": "Copernicus GmbH",
+  "type": "journal-article",
+  "issued": 2023,
+  "title": "A climate data record of year-round global sea-ice drift from the EUMETSAT Ocean and Sea Ice Satellite Application Facility (OSI SAF)"
+ },
+ "10.1002/2013JC009724": {
+  "authors": [
+   {
+    "family": "Sumata",
+    "given": "Hiroshi"
+   },
+   {
+    "family": "Lavergne",
+    "given": "Thomas"
+   },
+   {
+    "family": "Girard\u2010Ardhuin",
+    "given": "Fanny"
+   },
+   {
+    "family": "Kimura",
+    "given": "Noriaki"
+   },
+   {
+    "family": "Tschudi",
+    "given": "Mark A."
+   },
+   {
+    "family": "Kauker",
+    "given": "Frank"
+   },
+   {
+    "family": "Karcher",
+    "given": "Michael"
+   },
+   {
+    "family": "Gerdes",
+    "given": "R\u00fcdiger"
+   }
+  ],
+  "container": "Journal of Geophysical Research: Oceans",
+  "volume": "119",
+  "issue": "8",
+  "page": "4887-4921",
+  "article": "",
+  "publisher": "American Geophysical Union (AGU)",
+  "type": "journal-article",
+  "issued": 2014,
+  "title": "An intercomparison of <scp>A</scp>rctic ice drift products to deduce uncertainty estimates"
+ },
+ "10.1002/2015jc010810": {
+  "authors": [
+   {
+    "family": "Sumata",
+    "given": "Hiroshi"
+   },
+   {
+    "family": "Kwok",
+    "given": "Ronald"
+   },
+   {
+    "family": "Gerdes",
+    "given": "R\u00fcdiger"
+   },
+   {
+    "family": "Kauker",
+    "given": "Frank"
+   },
+   {
+    "family": "Karcher",
+    "given": "Michael"
+   }
+  ],
+  "container": "Journal of Geophysical Research: Oceans",
+  "volume": "120",
+  "issue": "8",
+  "page": "5285-5301",
+  "article": "",
+  "publisher": "American Geophysical Union (AGU)",
+  "type": "journal-article",
+  "issued": 2015,
+  "title": "Uncertainty of <scp>A</scp>rctic summer ice drift assessed by high\u2010resolution SAR data"
+ },
+ "10.1007/978-94-015-9735-7_34": {
+  "authors": [
+   {
+    "family": "Geiger",
+    "given": "Cathleen A."
+   },
+   {
+    "family": "Drinkwater",
+    "given": "Mark R."
+   }
+  ],
+  "container": "Solid Mechanics and Its Applications",
+  "volume": "",
+  "issue": "",
+  "page": "407-416",
+  "article": "",
+  "publisher": "Springer Netherlands",
+  "type": "book-chapter",
+  "issued": 2001,
+  "title": "Impact of Temporal-Spatio Resolution on Sea-Ice Drift and Deformation"
+ },
+ "10.1029/2022MS003218": {
+  "authors": [
+   {
+    "family": "Covington",
+    "given": "Jeffrey"
+   },
+   {
+    "family": "Chen",
+    "given": "Nan"
+   },
+   {
+    "family": "Wilhelmus",
+    "given": "Monica M."
+   }
+  ],
+  "container": "Journal of Advances in Modeling Earth Systems",
+  "volume": "14",
+  "issue": "9",
+  "page": "",
+  "article": "e2022MS003218",
+  "publisher": "American Geophysical Union (AGU)",
+  "type": "journal-article",
+  "issued": 2022,
+  "title": "Bridging Gaps in the Climate Observation Network: A Physics\u2010Based Nonlinear Dynamical Interpolation of Lagrangian Ice Floe Measurements via Data\u2010Driven Stochastic Models"
+ },
+ "10.1016/j.rse.2025.115092": {
+  "authors": [
+   {
+    "family": "Wuite",
+    "given": "J."
+   },
+   {
+    "family": "Nagler",
+    "given": "T."
+   },
+   {
+    "family": "Hetzenecker",
+    "given": "M."
+   },
+   {
+    "family": "Rott",
+    "given": "H."
+   }
+  ],
+  "container": "Remote Sensing of Environment",
+  "volume": "332",
+  "issue": "",
+  "page": "115092",
+  "article": "115092",
+  "publisher": "Elsevier BV",
+  "type": "journal-article",
+  "issued": 2026,
+  "title": "Ten years of polar ice velocity mapping using Copernicus Sentinel-1"
+ },
+ "10.5194/tc-18-5277-2024": {
+  "authors": [
+   {
+    "family": "Wulf",
+    "given": "Tore"
+   },
+   {
+    "family": "Buus-Hinkler",
+    "given": "J\u00f8rgen"
+   },
+   {
+    "family": "Singha",
+    "given": "Suman"
+   },
+   {
+    "family": "Shi",
+    "given": "Hoyeon"
+   },
+   {
+    "family": "Kreiner",
+    "given": "Matilde Brandt"
+   }
+  ],
+  "container": "The Cryosphere",
+  "volume": "18",
+  "issue": "11",
+  "page": "5277-5300",
+  "article": "",
+  "publisher": "Copernicus GmbH",
+  "type": "journal-article",
+  "issued": 2024,
+  "title": "Pan-Arctic sea ice concentration from SAR and passive microwave"
+ },
+ "10.1016/j.rse.2026.115252": {
+  "authors": [
+   {
+    "family": "Wulf",
+    "given": "Tore"
+   },
+   {
+    "family": "Buus-Hinkler",
+    "given": "J\u00f8rgen"
+   },
+   {
+    "family": "Singha",
+    "given": "Suman"
+   },
+   {
+    "family": "Dasgupta",
+    "given": "Nishka"
+   },
+   {
+    "family": "Athanasiadis",
+    "given": "Athanasios"
+   },
+   {
+    "family": "Kreiner",
+    "given": "Matilde Brandt"
+   }
+  ],
+  "container": "Remote Sensing of Environment",
+  "volume": "337",
+  "issue": "",
+  "page": "115252",
+  "article": "115252",
+  "publisher": "Elsevier BV",
+  "type": "journal-article",
+  "issued": 2026,
+  "title": "A decade of sea ice concentration retrieved from sentinel-1"
+ },
+ "10.1080/01621459.1958.10501452": {
+  "authors": [
+   {
+    "family": "Kaplan",
+    "given": "E. L."
+   },
+   {
+    "family": "Meier",
+    "given": "Paul"
+   }
+  ],
+  "container": "Journal of the American Statistical Association",
+  "volume": "53",
+  "issue": "282",
+  "page": "457-481",
+  "article": "",
+  "publisher": "Informa UK Limited",
+  "type": "journal-article",
+  "issued": 1958,
+  "title": "Nonparametric Estimation from Incomplete Observations"
+ },
+ "10.1111/j.2517-6161.1976.tb01597.x": {
+  "authors": [
+   {
+    "family": "Turnbull",
+    "given": "Bruce W."
+   }
+  ],
+  "container": "Journal of the Royal Statistical Society Series B: Statistical Methodology",
+  "volume": "38",
+  "issue": "3",
+  "page": "290-295",
+  "article": "",
+  "publisher": "Oxford University Press (OUP)",
+  "type": "journal-article",
+  "issued": 1976,
+  "title": "The Empirical Distribution Function with Arbitrarily Grouped, Censored and Truncated Data"
+ },
+ "10.1093/biomet/76.4.751": {
+  "authors": [
+   {
+    "family": "VARDI",
+    "given": "Y."
+   }
+  ],
+  "container": "Biometrika",
+  "volume": "76",
+  "issue": "4",
+  "page": "751-761",
+  "article": "",
+  "publisher": "Oxford University Press (OUP)",
+  "type": "journal-article",
+  "issued": 1989,
+  "title": "Multiplicative censoring, renewal processes, deconvolution and decreasing density: Nonparametric estimation"
+ },
+ "10.1038/srep30682": {
+  "authors": [
+   {
+    "family": "Egu\u00edluz",
+    "given": "Victor M."
+   },
+   {
+    "family": "Fern\u00e1ndez-Gracia",
+    "given": "Juan"
+   },
+   {
+    "family": "Irigoien",
+    "given": "Xabier"
+   },
+   {
+    "family": "Duarte",
+    "given": "Carlos M."
+   }
+  ],
+  "container": "Scientific Reports",
+  "volume": "6",
+  "issue": "1",
+  "page": "",
+  "article": "30682",
+  "publisher": "Springer Science and Business Media LLC",
+  "type": "journal-article",
+  "issued": 2016,
+  "title": "A quantitative assessment of Arctic shipping in 2010\u20132014"
+ },
+ "10.1016/j.marpol.2020.104369": {
+  "authors": [
+   {
+    "family": "Gunnarsson",
+    "given": "Bj\u00f6rn"
+   }
+  ],
+  "container": "Marine Policy",
+  "volume": "124",
+  "issue": "",
+  "page": "104369",
+  "article": "104369",
+  "publisher": "Elsevier BV",
+  "type": "journal-article",
+  "issued": 2021,
+  "title": "Recent ship traffic and developing shipping trends on the Northern Sea Route\u2014Policy implications for future arctic shipping"
+ },
+ "10.1002/2016GL069315": {
+  "authors": [
+   {
+    "family": "Melia",
+    "given": "N."
+   },
+   {
+    "family": "Haines",
+    "given": "K."
+   },
+   {
+    "family": "Hawkins",
+    "given": "E."
+   }
+  ],
+  "container": "Geophysical Research Letters",
+  "volume": "43",
+  "issue": "18",
+  "page": "9720-9728",
+  "article": "",
+  "publisher": "American Geophysical Union (AGU)",
+  "type": "journal-article",
+  "issued": 2016,
+  "title": "Sea ice decline and 21st century trans\u2010Arctic shipping routes"
+ },
+ "10.1016/j.rsase.2023.101104": {
+  "authors": [
+   {
+    "family": "Bhattacharjee",
+    "given": "Shubham"
+   },
+   {
+    "family": "Garg",
+    "given": "Rahul Dev"
+   }
+  ],
+  "container": "Remote Sensing Applications: Society and Environment",
+  "volume": "33",
+  "issue": "",
+  "page": "101104",
+  "article": "101104",
+  "publisher": "Elsevier BV",
+  "type": "journal-article",
+  "issued": 2024,
+  "title": "Estimation of sea ice drift and concentration during melt season using C-band dual-polarimetric Sentinel-1 data"
+ },
+ "10.1109/TGRS.2021.3131036": {
+  "authors": [
+   {
+    "family": "Korosov",
+    "given": "Anton"
+   },
+   {
+    "family": "Demchev",
+    "given": "Denis"
+   },
+   {
+    "family": "Miranda",
+    "given": "Nuno"
+   },
+   {
+    "family": "Franceschi",
+    "given": "Niccolo"
+   },
+   {
+    "family": "Park",
+    "given": "Jeong-Won"
+   }
+  ],
+  "container": "IEEE Transactions on Geoscience and Remote Sensing",
+  "volume": "60",
+  "issue": "",
+  "page": "1-11",
+  "article": "",
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "type": "journal-article",
+  "issued": 2022,
+  "title": "Thermal Denoising of Cross-Polarized Sentinel-1 Data in Interferometric and Extra Wide Swath Modes"
+ },
+ "10.1016/j.rse.2020.111982": {
+  "authors": [
+   {
+    "family": "Lee",
+    "given": "Peter Q."
+   },
+   {
+    "family": "Xu",
+    "given": "Linlin"
+   },
+   {
+    "family": "Clausi",
+    "given": "David A."
+   }
+  ],
+  "container": "Remote Sensing of Environment",
+  "volume": "248",
+  "issue": "",
+  "page": "111982",
+  "article": "111982",
+  "publisher": "Elsevier BV",
+  "type": "journal-article",
+  "issued": 2020,
+  "title": "Sentinel-1 additive noise removal from cross-polarization extra-wide TOPSAR with dynamic least-squares"
+ },
+ "10.1016/j.rse.2011.06.006": {
+  "authors": [
+   {
+    "family": "Meyer",
+    "given": "Franz J."
+   },
+   {
+    "family": "Mahoney",
+    "given": "Andrew R."
+   },
+   {
+    "family": "Eicken",
+    "given": "Hajo"
+   },
+   {
+    "family": "Denny",
+    "given": "Casey L."
+   },
+   {
+    "family": "Druckenmiller",
+    "given": "Hyunjin C."
+   },
+   {
+    "family": "Hendricks",
+    "given": "Stefan"
+   }
+  ],
+  "container": "Remote Sensing of Environment",
+  "volume": "115",
+  "issue": "12",
+  "page": "3029-3043",
+  "article": "",
+  "publisher": "Elsevier BV",
+  "type": "journal-article",
+  "issued": 2011,
+  "title": "Mapping arctic landfast ice extent using L-band synthetic aperture radar interferometry"
+ },
+ "10.1109/TGRS.2017.2765248": {
+  "authors": [
+   {
+    "family": "Park",
+    "given": "Jeong-Won"
+   },
+   {
+    "family": "Korosov",
+    "given": "Anton A."
+   },
+   {
+    "family": "Babiker",
+    "given": "Mohamed"
+   },
+   {
+    "family": "Sandven",
+    "given": "Stein"
+   },
+   {
+    "family": "Won",
+    "given": "Joong-Sun"
+   }
+  ],
+  "container": "IEEE Transactions on Geoscience and Remote Sensing",
+  "volume": "56",
+  "issue": "3",
+  "page": "1555-1565",
+  "article": "",
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "type": "journal-article",
+  "issued": 2018,
+  "title": "Efficient Thermal Noise Removal for Sentinel-1 TOPSAR Cross-Polarization Channel"
+ },
+ "10.1109/tgrs.2020.3035029": {
+  "authors": [
+   {
+    "family": "Singha",
+    "given": "Suman"
+   },
+   {
+    "family": "Johansson",
+    "given": "A. Malin"
+   },
+   {
+    "family": "Doulgeris",
+    "given": "Anthony P."
+   }
+  ],
+  "container": "IEEE Transactions on Geoscience and Remote Sensing",
+  "volume": "59",
+  "issue": "12",
+  "page": "9941-9952",
+  "article": "",
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "type": "journal-article",
+  "issued": 2021,
+  "title": "Robustness of SAR Sea Ice Type Classification Across Incidence Angles and Seasons at L-Band"
+ },
+ "10.5194/tc-18-1621-2024": {
+  "authors": [
+   {
+    "family": "Chen",
+    "given": "Xinwei"
+   },
+   {
+    "family": "Patel",
+    "given": "Muhammed"
+   },
+   {
+    "family": "Pena Cantu",
+    "given": "Fernando J."
+   },
+   {
+    "family": "Park",
+    "given": "Jinman"
+   },
+   {
+    "family": "Noa Turnes",
+    "given": "Javier"
+   },
+   {
+    "family": "Xu",
+    "given": "Linlin"
+   },
+   {
+    "family": "Scott",
+    "given": "K. Andrea"
+   },
+   {
+    "family": "Clausi",
+    "given": "David A."
+   }
+  ],
+  "container": "The Cryosphere",
+  "volume": "18",
+  "issue": "4",
+  "page": "1621-1632",
+  "article": "",
+  "publisher": "Copernicus GmbH",
+  "type": "journal-article",
+  "issued": 2024,
+  "title": "MMSeaIce: a collection of techniques for improving sea ice mapping with a multi-task model"
+ },
+ "10.1016/j.rse.2024.114204": {
+  "authors": [
+   {
+    "family": "Huang",
+    "given": "Yan"
+   },
+   {
+    "family": "Ren",
+    "given": "Yibin"
+   },
+   {
+    "family": "Li",
+    "given": "Xiaofeng"
+   }
+  ],
+  "container": "Remote Sensing of Environment",
+  "volume": "308",
+  "issue": "",
+  "page": "114204",
+  "article": "114204",
+  "publisher": "Elsevier BV",
+  "type": "journal-article",
+  "issued": 2024,
+  "title": "Deep learning techniques for enhanced sea-ice types classification in the Beaufort Sea via SAR imagery"
+ },
+ "10.5194/tc-10-913-2016": {
+  "authors": [
+   {
+    "family": "Muckenhuber",
+    "given": "Stefan"
+   },
+   {
+    "family": "Korosov",
+    "given": "Anton Andreevich"
+   },
+   {
+    "family": "Sandven",
+    "given": "Stein"
+   }
+  ],
+  "container": "The Cryosphere",
+  "volume": "10",
+  "issue": "2",
+  "page": "913-925",
+  "article": "",
+  "publisher": "Copernicus GmbH",
+  "type": "journal-article",
+  "issued": 2016,
+  "title": "Open-source feature-tracking algorithm for sea ice drift retrieval from Sentinel-1 SAR imagery"
+ },
+ "10.5194/tc-18-3471-2024": {
+  "authors": [
+   {
+    "family": "Stokholm",
+    "given": "Andreas"
+   },
+   {
+    "family": "Buus-Hinkler",
+    "given": "J\u00f8rgen"
+   },
+   {
+    "family": "Wulf",
+    "given": "Tore"
+   },
+   {
+    "family": "Korosov",
+    "given": "Anton"
+   },
+   {
+    "family": "Saldo",
+    "given": "Roberto"
+   },
+   {
+    "family": "Pedersen",
+    "given": "Leif Toudal"
+   },
+   {
+    "family": "Arthurs",
+    "given": "David"
+   },
+   {
+    "family": "Dragan",
+    "given": "Ionut"
+   },
+   {
+    "family": "Modica",
+    "given": "Iacopo"
+   },
+   {
+    "family": "Pedro",
+    "given": "Juan"
+   },
+   {
+    "family": "Debien",
+    "given": "Annekatrien"
+   },
+   {
+    "family": "Chen",
+    "given": "Xinwei"
+   },
+   {
+    "family": "Patel",
+    "given": "Muhammed"
+   },
+   {
+    "family": "Cantu",
+    "given": "Fernando Jose Pena"
+   },
+   {
+    "family": "Turnes",
+    "given": "Javier Noa"
+   },
+   {
+    "family": "Park",
+    "given": "Jinman"
+   },
+   {
+    "family": "Xu",
+    "given": "Linlin"
+   },
+   {
+    "family": "Scott",
+    "given": "Katharine Andrea"
+   },
+   {
+    "family": "Clausi",
+    "given": "David Anthony"
+   },
+   {
+    "family": "Fang",
+    "given": "Yuan"
+   },
+   {
+    "family": "Jiang",
+    "given": "Mingzhe"
+   },
+   {
+    "family": "Taleghanidoozdoozan",
+    "given": "Saeid"
+   },
+   {
+    "family": "Brubacher",
+    "given": "Neil Curtis"
+   },
+   {
+    "family": "Soleymani",
+    "given": "Armina"
+   },
+   {
+    "family": "Gousseau",
+    "given": "Zacharie"
+   },
+   {
+    "family": "Smaczny",
+    "given": "Micha\u0142"
+   },
+   {
+    "family": "Kowalski",
+    "given": "Patryk"
+   },
+   {
+    "family": "Komorowski",
+    "given": "Jacek"
+   },
+   {
+    "family": "Rijlaarsdam",
+    "given": "David"
+   },
+   {
+    "family": "van Rijn",
+    "given": "Jan Nicolaas"
+   },
+   {
+    "family": "Jakobsen",
+    "given": "Jens"
+   },
+   {
+    "family": "Rogers",
+    "given": "Martin Samuel James"
+   },
+   {
+    "family": "Hughes",
+    "given": "Nick"
+   },
+   {
+    "family": "Zagon",
+    "given": "Tom"
+   },
+   {
+    "family": "Solberg",
+    "given": "Rune"
+   },
+   {
+    "family": "Long\u00e9p\u00e9",
+    "given": "Nicolas"
+   },
+   {
+    "family": "Kreiner",
+    "given": "Matilde Brandt"
+   }
+  ],
+  "container": "The Cryosphere",
+  "volume": "18",
+  "issue": "8",
+  "page": "3471-3494",
+  "article": "",
+  "publisher": "Copernicus GmbH",
+  "type": "journal-article",
+  "issued": 2024,
+  "title": "The AutoICE Challenge"
+ },
+ "10.1145/3764922.3771202": {
+  "authors": [
+   {
+    "family": "Alkaee Taleghan",
+    "given": "Samira"
+   },
+   {
+    "family": "Karimzadeh",
+    "given": "Morteza"
+   },
+   {
+    "family": "Barrett",
+    "given": "Andrew P."
+   },
+   {
+    "family": "Meier",
+    "given": "Walter N"
+   },
+   {
+    "family": "Banaei-Kashani",
+    "given": "Farnoush"
+   }
+  ],
+  "container": "Proceedings of the 1st ACM SIGSPATIAL International Workshop on Polar Data Science",
+  "volume": "",
+  "issue": "",
+  "page": "1-10",
+  "article": "",
+  "publisher": "ACM",
+  "type": "proceedings-article",
+  "issued": 2025,
+  "title": "Ice-FMBench A Foundation Model Benchmark for Sea Ice Type Segmentation"
+ },
+ "10.1109/jstars.2023.3285857": {
+  "authors": [
+   {
+    "family": "Zhao",
+    "given": "Li"
+   },
+   {
+    "family": "Xie",
+    "given": "Tao"
+   },
+   {
+    "family": "Perrie",
+    "given": "William"
+   },
+   {
+    "family": "Yang",
+    "given": "Jingsong"
+   }
+  ],
+  "container": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+  "volume": "16",
+  "issue": "",
+  "page": "5514-5525",
+  "article": "",
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "type": "journal-article",
+  "issued": 2023,
+  "title": "Deep-Learning-Based Sea Ice Classification With Sentinel-1 and AMSR-2 Data"
+ }
+}

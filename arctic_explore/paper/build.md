@@ -47,13 +47,13 @@ citations throughout because the primary target is RSE.
 
 | Venue | Count |
 |---|---|
-| other journals | 15 |
+| other journals | 14 |
 | The Cryosphere | 13 |
 | Remote Sensing of Environment | 9 |
 | IEEE Trans. Geosci. Remote Sens. | 9 |
 | J. Geophys. Res. Oceans | 7 |
 | IEEE J. Sel. Top. Appl. Earth Obs. | 5 |
-| Marine Policy | 4 |
+| Marine Policy | 3 |
 | IGARSS (conference) | 3 |
 | MDPI journals | 2 |
 | Annals / J. Glaciology | 2 |
@@ -62,7 +62,7 @@ citations throughout because the primary target is RSE.
 | books and chapters (Feller, Cox, Geiger and Drinkwater) | 3 |
 | Earth Syst. Sci. Data | 1 |
 | Geophys. Res. Lett. | 1 |
-| **Total** | **78** |
+| **Total** | **76** |
 
 Targets set for this bibliography were: Remote Sensing of Environment >= 8, IEEE TGRS >= 6, IEEE JSTARS >= 4,
 The Cryosphere >= 6, at most 5 MDPI items, and at least 45 verified references overall. All are met.

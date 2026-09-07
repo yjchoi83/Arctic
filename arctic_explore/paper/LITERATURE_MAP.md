@@ -80,7 +80,7 @@ Every key resolves to an entry in `paper/references.bib`. Verification route is 
 | key | year | venue | relevance |
 |---|---|---|---|
 | `boukabara2016gaps` | 2016 | Monthly Weather Review | An explicit OSE on a *satellite coverage gap* — the closest meteorological analogue to the Sentinel-1B loss experiment. |
-| `howell2022motion` | 2022 | The Cryosphere | Multi-constellation SAR revisit in practice: quantifies how combining S1 and RCM changes pan-Arctic drift-retrieval coverage. |
+| `howell2022generating` | 2022 | The Cryosphere | *(same work as the cluster-3 entry; **[P13-5]** the duplicate key `howell2022motion` carried an identical DOI and title and was removed.)* Multi-constellation SAR revisit in practice: quantifies how combining S1 and RCM changes pan-Arctic drift-retrieval coverage. |
 | `kaminski2015network` | 2015 | The Cryosphere | Quantitative network design applied to Arctic sea ice: the methodological precedent for scoring an observing network rather than a single sensor. |
 | `kaminski2018mission` | 2018 | The Cryosphere | Mission-benefit analysis linking observation availability to forecast skill — the value-of-observation argument this paper makes for SAR. |
 | `langland2004impact` | 2004 | Tellus A: Dynamic Meteorology and Oceanograp | The classical NWP adjoint observation-impact reference; the OSE/FSO lineage the sea-ice observability metric borrows from. |
@@ -122,7 +122,7 @@ Every key resolves to an entry in `paper/references.bib`. Verification route is 
 
 | key | year | venue | relevance |
 |---|---|---|---|
-| `aksenov2017future` | 2017 | Marine Policy | Projects the seasonal navigability window, setting the melt-season period over which C-band observability limits bite hardest. |
+| `aksenov2017navigability` | 2017 | Marine Policy | *(same work as the cluster-5 entry; **[P13-5]** the duplicate key `aksenov2017future` carried an identical DOI and title and was removed.)* Projects the seasonal navigability window, setting the melt-season period over which C-band observability limits bite hardest. |
 | `bellona2025nsr` | 2025 | GREY LITERATURE — no DOI | Recent NSR traffic composition, including unflagged/AIS-dark vessels — the case for SAR-based rather than AIS-based monitoring. |
 | `eguiluz2016quantitative` | 2016 | Scientific Reports | AIS-derived quantification of pan-Arctic vessel activity; the traffic-density baseline against which observability gaps are weighted. |
 | `gunnarsson2021recent` | 2021 | Marine Policy | Establishes where and when NSR traffic actually concentrates, motivating the choke-point regions in which SAR observability matters. |

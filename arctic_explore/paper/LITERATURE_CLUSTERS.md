@@ -8,7 +8,11 @@ resolved in favour of the bibliography, 3 not indexed, and one real defect corre
 `karvonen2022baltic`). See `scratch/P12/REF_VERIFY.md`. Raw responses are cached under `scratch/P12/s2cache/`
 and the earlier unauthenticated attempts under `scratch/s2cache/`. Nothing here rests on an unverified identifier.
 
-**[P12] Total verified: 78** against a target of 45 (76 plus the two cluster-8 additions below). Per-cluster detail is in `scratch/P11/clusters_1_4.md`,
+**[P13] Total verified: 76 distinct works** against a target of 45. P12 added two cluster-8 entries (78); P13's
+reference rendering then found two duplicate keys — `howell2022motion` duplicated `howell2022generating` and
+`aksenov2017future` duplicated `aksenov2017navigability`, identical DOIs and titles in both cases — and removed
+them, so the file holds 76 entries for 76 distinct works. Clusters 6 and 10 keep their coverage through the
+retained key, which is now noted as serving two clusters. Per-cluster detail is in `scratch/P11/clusters_1_4.md`,
 `clusters_5_8.md` and `clusters_9_12.md`; the section mapping is in `paper/LITERATURE_MAP.md`.
 
 | Cluster | Topic | Target | Verified | Status |
@@ -18,11 +22,11 @@ and the earlier unauthenticated attempts under `scratch/s2cache/`. Nothing here 
 | 3 | Sea-ice drift retrieval from SAR | 5-6 | **9** | met |
 | 4 | Sea-ice deformation and buoy-based statistics | 5-6 | **8** | met |
 | 5 | Navigation hazards, pressured ice, besetting, Polar Code | 5-6 | **7** | met |
-| 6 | Observing-system experiments and network design | 4-5 | **5** | met |
+| 6 | Observing-system experiments and network design | 4-5 | **5** | met (one shared with cluster 3) |
 | 7 | Passive-microwave drift products and coastal limits | 3-4 | **4** | met |
 | 8 | Observation gaps propagating into products | 3 | **5** | met, **strictly** |
 | 9 | Length-biased sampling and censored durations | 2-3 | **5** | met |
-| 10 | Arctic shipping traffic and policy | 3-4 | **5** | met |
+| 10 | Arctic shipping traffic and policy | 3-4 | **5** | met (one shared with cluster 5) |
 | 11 | Melt-season, noise-floor and incidence-angle limits of C-band | 3 | **6** | met |
 | 12 | Deep-learning sea-ice classification and drift | 3 | **7** | met |
 
