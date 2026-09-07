@@ -1,0 +1,20 @@
+event,region,season,year,date,dt_h,area_km2,conv_per_day,magnitude_km,mag_class,n_success,success_rate,buoy,decision,auto_note
+E001,Vilkitsky,winter,2019,2019-01-05,23.8,125.0,0.0443,0.49,<3km,797,0.655,none within 100 km (+-12 h),,divergence-threshold detection; not visually scored
+E002,Vilkitsky,winter,2019,2019-01-05,23.8,125.0,0.1248,1.39,<3km,797,0.655,none within 100 km (+-12 h),,divergence-threshold detection; not visually scored
+E003,Sannikov_DmLaptev,winter,2019,2019-01-01,23.9,100.0,0.0201,0.2,<3km,2593,0.846,none within 100 km (+-12 h),,divergence-threshold detection; not visually scored
+E004,Sannikov_DmLaptev,winter,2019,2019-01-01,23.9,700.0,0.0251,0.66,<3km,2593,0.846,none within 100 km (+-12 h),,divergence-threshold detection; not visually scored
+E005,Sannikov_DmLaptev,winter,2019,2019-01-01,23.9,400.0,0.0201,0.4,<3km,2593,0.846,none within 100 km (+-12 h),,divergence-threshold detection; not visually scored
+E006,Vilkitsky,winter,2019,2019-01-17,23.8,100.0,0.0201,0.2,<3km,1007,0.827,none within 100 km (+-12 h),,divergence-threshold detection; not visually scored
+E007,Vilkitsky,winter,2019,2019-01-17,23.8,225.0,0.0201,0.3,<3km,1007,0.827,none within 100 km (+-12 h),,divergence-threshold detection; not visually scored
+E008,Vilkitsky,winter,2019,2019-01-17,23.8,100.0,0.0252,0.25,<3km,1007,0.827,none within 100 km (+-12 h),,divergence-threshold detection; not visually scored
+E009,Vilkitsky,winter,2019,2019-01-17,23.8,325.0,0.0217,0.39,<3km,1007,0.827,none within 100 km (+-12 h),,divergence-threshold detection; not visually scored
+E010,Sannikov_DmLaptev,winter,2019,2019-01-13,23.9,400.0,0.0251,0.5,<3km,2659,0.868,none within 100 km (+-12 h),,divergence-threshold detection; not visually scored
+E011,Sannikov_DmLaptev,winter,2019,2019-01-13,23.9,100.0,0.0251,0.25,<3km,2659,0.868,none within 100 km (+-12 h),,divergence-threshold detection; not visually scored
+E012,Sannikov_DmLaptev,winter,2019,2019-01-13,23.9,450.0,0.0212,0.45,<3km,2659,0.868,none within 100 km (+-12 h),,divergence-threshold detection; not visually scored
+E013,Sannikov_DmLaptev,winter,2019,2019-01-13,23.9,100.0,0.0201,0.2,<3km,2659,0.868,none within 100 km (+-12 h),,divergence-threshold detection; not visually scored
+E014,Sannikov_DmLaptev,winter,2019,2019-01-13,23.9,125.0,0.0201,0.22,<3km,2659,0.868,none within 100 km (+-12 h),,divergence-threshold detection; not visually scored
+E015,Sannikov_DmLaptev,winter,2019,2019-01-13,23.9,125.0,0.0201,0.22,<3km,2659,0.868,none within 100 km (+-12 h),,divergence-threshold detection; not visually scored
+E016,Sannikov_DmLaptev,winter,2019,2019-01-13,23.9,150.0,0.0201,0.24,<3km,2659,0.868,none within 100 km (+-12 h),,divergence-threshold detection; not visually scored
+E017,Sannikov_DmLaptev,winter,2019,2019-01-13,23.9,150.0,0.0201,0.24,<3km,2659,0.868,none within 100 km (+-12 h),,divergence-threshold detection; not visually scored
+E018,Sannikov_DmLaptev,winter,2019,2019-01-13,23.9,200.0,0.0201,0.28,<3km,2659,0.868,none within 100 km (+-12 h),,divergence-threshold detection; not visually scored
+E019,Sannikov_DmLaptev,winter,2021,2021-03-24,47.7,300.0,0.0101,0.35,<3km,766,0.622,none within 100 km (+-12 h),,divergence-threshold detection; not visually scored
