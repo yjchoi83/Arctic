@@ -198,3 +198,23 @@ Matcher, node-acceptance, pair-selection and event-definition parameters now liv
 | 9b, cluster 8 strict gap-quantification | two strict papers added: `geiger2001resolution`, `covington2022bridging`; cluster 8 goes 3 → 5 and meets its target strictly; bibliography 76 → 78 | same |
 | 8, do Fu et al. 2016 and Wulf/Wuite support their sentences | **Fu et al. 2016 yes** (Bayesian besetting-probability model for the Northeast Passage, supports the besetting clause). **Wulf/Wuite no** — OpenAlex abstracts show three Sentinel-1-derived product records that span the 2021 discontinuity but do not document consequences of missing imagery; the §1 sentence was rewritten to claim only that, and the two strict gap papers above now carry the mechanism claim | `scratch/P12/NOVELTY.md` |
 
+## [P13-1] The chokepoint group, verified
+
+`CH = [Vilkitsky, Sannikov_DmLaptev, LongStrait, KaraGate, BeringChukchi]` — five regions, the definition used
+identically in `scratch/P3/p3_agg.py:21`, `scratch/P9/p9_Hsmall.py:28` and `scratch/P9/p10_figs.py:17`.
+Every chokepoint number in the manuscript was recomputed on that group in P13 and matches.
+
+| Number | Value on the five-region group | Four straits only (not used) |
+|---|---|---|
+| main-season units | **160** = 5 × 3 × 11 − 5 (2026 freeze-up outside the record) | 128 |
+| units per period, pre / during / post | **45 / 45 / 25** (post = 5 × 3 in 2025 + 5 × 2 in 2026) | 36 / 36 / 20 |
+| H_episode3 pre / during / post | **0.1998 / 0.0974 / 0.1756** → 0.200 / 0.097 / 0.176 | 0.2069 / … |
+| H_state3 pre / during / post | **0.5043 / 0.3631 / 0.4670** → 0.504 / 0.363 / 0.467 | 0.5106 / … |
+| units with H_episode ≥ 0.8 | 0 of 160 | 0 of 128 |
+| units with H_state ≥ 0.8 | 0 of 160; max 0.793 at Kara Gate | 0 of 128 |
+| design-curve chokepoint means, Table 3b, Table 7 | all on the five-region group | — |
+
+Source `scratch/P3/P3_region_season_year.csv`, `scratch/P9/H_by_class_cells.csv`, `scratch/P11/ose_region_valid.csv`.
+No value changed; the group is now stated in §2.1, in the Table 1 note, in the Table 3 and Table 3b captions and
+at the first chokepoint count in §4.1.
+
