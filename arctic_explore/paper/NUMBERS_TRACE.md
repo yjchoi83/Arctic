@@ -65,6 +65,10 @@ script); "stage5" and "results" paths are committed. Package column gives the AR
 | closure of those pairs, median / p90 / max | 5.88 / 6.94 / 10.63 km | same | P9 |
 | Vilkitsky winter pass fraction | 1.86 % | `scratch/P9/virtual_pair_stats.csv` | P9 |
 | events with a buoy within 100 km | 0 of 19 | `results/P9/qc_table_p9.csv` | P8, P9 |
+| **[P11-A2]** events flagged EDGE_SUSPECT | 0 of 19 | `results/P9/edge_audit.csv` | P11 |
+| **[P11-A2]** centroid distance to overlap boundary | 18.9-135.5 km | same | P11 |
+| **[P11-A2]** share of nodes within 5 km of the boundary | 0.000 for all 19 | same | P11 |
+| **[P11-A2]** events per pair | 19 events from 5 pairs; 9 from one Sannikov pair | same | P11 |
 
 ### C4 — the gap is explained by satellite count (§4.4)
 | Number | Value | Source | Package |
