@@ -5,24 +5,48 @@ script); "stage5" and "results" paths are committed. Package column gives the AR
 
 ## Figures
 
-**[P12] Figures renumbered to first-citation order.** Figures 4-8 were out of order: the §4.3 panels were
-labelled 7 and 8 while the §4.4-4.6 panels were labelled 4-6. Mapping applied to labels, in-text references,
-PNG file names and `scratch/P9/p10_figs.py`: old 7→4, 8→5, 4→6, 5→7, 6→8. Content is unchanged.
+**[P14] All figures rebuilt for submission.** 300 dpi; width exactly 90 mm (single column) or 190 mm
+(double column); one font family, DejaVu Sans for text and mathtext; every text element ≥ 7 pt at print
+size; viridis for H; RdBu for divergence with negative, that is convergent, in red. `scratch/P14/figstyle.py`
+asserts the saved pixel width and refuses any figure containing text below 7 pt, so the constraints are
+mechanical rather than editorial. Per-file sizes and the old → new numbering map are in
+`paper/figures/FIGURE_LIST.md`. **No plotted value changed in P14**; the underlying tables are the same
+ones listed below.
+
+Renumbering: Figure 4 is new (the H heatmap, §4.2), so 4→5, 5→6, 6→7, 7→8, 8→9; the former H_state
+panels of Figure 3 became Supplementary Figure S1. Figures 1, 2 and A1 keep their numbers.
 
 | Figure | File | Produced from | Script | Package |
 |---|---|---|---|---|
-| 1 | `paper/figures/fig01_H_schematic.png` | synthetic illustration only, no data | `scratch/P9/p10_figs.py` | P10 |
-| 2 | `paper/figures/fig02_hazard_timescales.png` | `scratch/P3/step2t_native1h.npz`, `scratch/P1b/events_persist.csv` | same | P1b, P3 |
-| 3 | `paper/figures/fig03_H_maps.png` — **[P13-2]** the two former PNGs `fig03_H_state3_maps.png` and `fig03_H_episode3_maps.png` merged into one figure with panel groups (a) H_state and (b) H_episode, shared colour scale, chokepoints labelled by two-letter code. Data, colour map and normalisation unchanged; no value changed. | `scratch/P3/P3_cells.csv` | `scratch/P9/p10_figs.py` (fig-3 block rewritten), reproduced standalone by `scratch/P13/p13_fig03.py` | P3, P13 |
-| 4 (was 7) | `paper/figures/fig04_virtual_pairs.png` | `scratch/P9/virtual_pairs_all.csv.gz` | same | P9 |
-| 5 (was 8) | `paper/figures/fig05_strait_examples.png` | `results/P8/quicklooks/E00{1,2}_*, E0{10,11}_*`; caption edge-audit values from `results/P9/edge_audit.csv` = `paper/edge_audit.csv` | same | P8, P11 |
-| 6 (was 4) | `paper/figures/fig06_design_curve.png` | `scratch/P6/ose_region.csv`, `scratch/P11/ose_region_valid.csv` | same | P6, P11 |
-| 7 (was 5) | `paper/figures/fig07_planned_vs_acquired.png` | `scratch/P9/planned_vs_acquired.csv` ← `scratch/P8/planned_vs.csv` + `scratch/P2/P2_tables.csv` | same | P8, P2 |
-| 8 (was 6) | `paper/figures/fig08_dtu_availability.png` | `scratch/P8/dtu_availability.csv` | same | P8 |
-| A1 | `paper/figures/figA1_contact_sheet.png` | `results/P8/quicklooks/*`, `results/P9/qc_table_p9.csv` | same | P8, P9 |
+| 1 | `fig01_H_schematic.png` | synthetic illustration only, no data | `scratch/P14/f01.py` | P14 |
+| 2 | `fig02_hazard_timescales.png` | `scratch/P3/step2t_native1h.npz`, `scratch/P1b/events_persist.csv` | `scratch/P14/f02.py` | P1b, P3, P14 |
+| 3(a) | `fig03a_overview.png` | `scratch/P2/regions.py`, `scratch/P3/cells.py`, Natural Earth 50 m (`scratch/P14/ne/`) | `scratch/P14/f03a.py` | P2, P3, P14 |
+| 3(b) | `fig03b_H_episode_maps.png` | `scratch/P3/P3_cells.csv` | `scratch/P14/f03b.py` | P3, P14 |
+| 3(c) | `fig03c_chokepoint_strip.png` | `scratch/P3/P3_cells.csv`; panel means from `scratch/P3/P3_region_season_year.csv` | `scratch/P14/f03c.py` | P3, P14 |
+| 4 | `fig04_H_heatmap.png` | `scratch/P3/P3_region_season_year.csv` | `scratch/P14/f04.py` | P3, P14 |
+| 5 | `fig05_virtual_pairs.png` | `scratch/P9/virtual_pairs_all.csv.gz` | `scratch/P14/f05.py` | P9, P14 |
+| 6 | `fig06_strait_examples.png` | `scratch/P14/fields/pair{01,09}.npz` ← `scratch/P8/s1/*.zip` + `scratch/P9/fields/`; edge-audit values from `paper/edge_audit.csv` | `scratch/P14/p14_fields.py`, `f06.py`, `straitpanel.py` | P8, P9, P11, P14 |
+| 7 | `fig07_design_curve.png` | `scratch/P11/ose_region_valid.csv` | `scratch/P14/f07.py` | P6, P11, P14 |
+| 8 | `fig08_planned_vs_acquired.png` | `scratch/P11/planned_with_gap.csv` (planned, incl. gap years = Table 5), `scratch/P9/planned_vs_acquired.csv` (acquired) | `scratch/P14/f08.py` | P8, P9, P11, P14 |
+| 9 | `fig09_dtu_availability.png` | `scratch/P8/dtu_availability.csv` | `scratch/P14/f09.py` | P8, P14 |
+| A1 | `figA1_contact_sheet.png` | `scratch/P14/fields/pair{01,03,07,09,15}.npz`, `paper/edge_audit.csv`, `results/P9/qc_table_p9.csv` | `scratch/P14/fA1.py` | P8, P9, P11, P14 |
+| S1 | `figS1_H_state_maps.png` | `scratch/P3/P3_cells.csv` | `scratch/P14/f03b.py --state` | P3, P14 |
 
-**[P12-6]** Figure 5 caption edge-audit values, panel order: centroid distance to the overlap boundary
-E002 18.9, E001 76.7, E011 46.0, E010 32.4 km; fraction of nodes within 5 km of it 0.000 for all four.
+**[P14-5, P14-8]** `scratch/P14/p14_fields.py` re-derives the divergence fields, the connected-component
+labels and the two-scene footprint overlap for the five event-bearing pairs, using the P8 and P11
+definitions unchanged. It reproduces the nineteen events with the same identifiers, the same pair
+assignment and the same overlap areas — 63,673 / 129,396 / 63,685 / 129,376 / 107,982 km² for pairs
+1, 3, 7, 9, 15 — which match `paper/edge_audit.csv` exactly. Component mean divergences printed on
+Figure 6: E002 −0.125, E001 −0.044, E011 −0.025, E010 −0.025 d⁻¹.
+
+**[P14-2]** The 2 h left-censoring floor drawn on Figure 2(a) is 2 × the one-hourly sampling interval.
+Verified from `scratch/P3/step2t_native1h.npz`: minimum duration 2.0 h in every magnitude class, and
+for the 1–3 km class 54.8 % of 54,653 events sit on the floor with a median of exactly 2 h.
+
+**[P14-3]** Figure 3(c) panel means, from `scratch/P3/P3_region_season_year.csv`, pre / during / post:
+Kara Gate 0.301 / 0.143 / 0.233; Vilkitsky 0.135 / 0.081 / 0.152; Sannikov 0.153 / 0.055 / 0.096;
+Long Strait 0.239 / 0.096 / 0.219; Bering–Chukchi 0.171 / 0.111 / 0.178. Their unweighted mean over
+region-season-year units is the chokepoint column of Table 3, 0.200 / 0.097 / 0.176.
 
 ## Tables
 

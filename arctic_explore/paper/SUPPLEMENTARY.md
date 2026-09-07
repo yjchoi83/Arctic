@@ -2,6 +2,15 @@
 
 Companion to `paper/MANUSCRIPT.md`. Provenance for every value is in `paper/NUMBERS_TRACE.md`.
 
+## Supplementary Figure S1. H_state maps
+
+**Figure S1.** H_state per 25 km cell on EPSG:3413, for the ≥ 3 km magnitude class, by season (rows)
+and period (columns), on the same Natural Earth 50 m coastline, land fill and graticule as Figure 3(b),
+with the five-region chokepoint group outlined. Colour is viridis from 0 to 1, where 1 means every
+hazard is caught, and the 0.8 requirement is marked on the scale. This is the state-metric companion to
+the main-text H_episode maps of Figure 3(b); the two are also tabulated cell by cell in Figure 4.
+`figS1_H_state_maps.png`
+
 ## Supplementary Table S1. Sentinel-1 pair-processing and matcher parameters
 
 Parameters of the two-stage ice-motion matcher of Section 3.6, and of the pair selection and event
