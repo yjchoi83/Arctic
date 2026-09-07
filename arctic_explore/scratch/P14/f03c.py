@@ -34,7 +34,7 @@ A = A[A.region.isin(M.CH)].copy(); A["per"] = A.year.map(per); A = A[A.per.notna
 MEAN = A.groupby(["region", "per"]).H_episode3.mean().to_dict()
 
 SIDE = M.CELL / 1e3
-L, RGT, TOPM, CB = 0.150, 0.015, 0.098, 0.105
+L, RGT, TOPM, CB = 0.150, 0.015, 0.108, 0.105
 pw = (1 - L - RGT) / 3
 asp = float(np.mean([(d - c) / (b - a) for r in M.CH
                      for (a, b), (c, d) in [M.region_extent(r, 30)]]))
@@ -78,9 +78,9 @@ cb = fig.colorbar(ScalarMappable(norm=F.H_NORM, cmap=F.H_CMAP), cax=cax,
                   orientation="horizontal")
 cb.set_ticks([0, 0.2, 0.4, 0.6, 0.8, 1.0]); cb.ax.tick_params(labelsize=7)
 cb.set_label("$H_{episode}$, $\\geq$ 3 km class", fontsize=7.5, labelpad=2)
-fig.text(0.008, 1 - 0.062,
+fig.text(0.008, 0.996,
          "(c)  chokepoint group at large scale. The number in\n"
          "       each panel is that region's mean for the period,\n"
          "       seasons pooled.",
-         fontsize=7.5, fontweight="bold", va="bottom", ha="left", linespacing=1.4)
+         fontsize=7.5, fontweight="bold", va="top", ha="left", linespacing=1.4)
 F.save(fig, "fig03c_chokepoint_strip.png", F.W1)
