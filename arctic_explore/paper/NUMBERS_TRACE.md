@@ -37,7 +37,14 @@ script); "stage5" and "results" paths are committed. Package column gives the AR
 | max O(12 h) over the record | 0.278 | same | P2 |
 | cells with O(12 h) ≥ 0.5 | 0 | same | P2 |
 | chokepoint H_episode / H_state, pre | 0.200 / 0.504 | `scratch/P3/P3_region_season_year.csv` | P3 |
-| regions ever meeting the 24 h criterion | 4, none a chokepoint | `stage5/P2/P2_results.md` §3 | P2 |
+| **[P12-5]** units with H_episode ≥ 0.8 (≥ 3 km) | 0 of 512 overall; 0 of 160 chokepoint | `scratch/P3/P3_region_season_year.csv` | P12 |
+| **[P12-5]** max H_episode (≥ 3 km) | 0.640 overall; 0.467 chokepoint | same | P12 |
+| **[P12-5]** units with H_state ≥ 0.8 (≥ 3 km) | 25 of 512 overall (Greenland/Fram 13, Baffin 5, Barents 4, Lancaster 3); 0 of 160 chokepoint | same | P12 |
+| **[P12-5]** max H_state (≥ 3 km) at chokepoints | 0.793 (Kara Gate) | same | P12 |
+| **[P12-5]** "24 h criterion reached in four regions" = **O(24 h) ≥ 0.8** | 38 of 512 main-season units, in those same four regions; 0 chokepoint units; chokepoint max O(24 h) 0.475 | `scratch/P2/P2_tables.csv`, `stage5/P2/P2_results.md` §3 | P2, P12 |
+| **[P12-5]** max O(12 h) | 0.278 over the 512 main-season units; 0.320 over all 688 (Baffin Bay 2026 shoulder) | `scratch/P2/P2_tables.csv` | P2, P12 |
+| **[P12-5]** superseded (was "maximum over the whole record is 0.278") | 0.278 is the main-season maximum; the all-688 maximum is 0.320 | — | P2 |
+| **[P12-5]** unit denominators | H is defined on the 512 main-season units; O(Δt) on all 688 including shoulder | same | P12 |
 | episode / state requirement (12 h, 24 h) | derived from Table 2 medians | `stage5/P1b/P1b_results.md` §3 | P1b |
 
 ### C2 — the gap widened an existing deficit (§4.2)
