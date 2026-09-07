@@ -195,12 +195,12 @@ Direct processing of Sentinel-1 pairs reverses the apparent picture. Twenty pair
 
 Expressing those fields in the buoy-pair metric closes the loop. Sampling 240,949 virtual buoy pairs at 20–100 km separation on the twenty fields, and applying the buoy rate threshold so that the selection matches as well as the measurement, 0.50 % of pairs qualify and their median closure is 5.88 km, with a ninetieth percentile of 6.94 km and a maximum of 10.63 km (Fig. 7). Strait convergence of the magnitude the buoy record describes is therefore present in the SAR fields, concentrated at Vilkitsky in winter where 1.86 % of virtual pairs qualify. *Caveat: the nineteen individual events detected by the connected-component procedure are unvalidated, since no buoy lay within 100 km of any of them; they are reported in Appendix A and no inference rests on them.*
 
+**Figure 7.** Strait drift fields expressed in the buoy-pair metric. Exceedance of window closure for 240,949 virtual buoy pairs at 20–100 km separation, unconditionally and after applying the buoy rate threshold; dashed and dotted lines mark 3 km and 5 km. `fig07_virtual_pairs.png`
+
+
 Four of the retrieved divergence fields are shown in Fig. 8.
 
 **Figure 8.** Retrieved divergence fields at two straits, for four of the nineteen candidate convergence components of Appendix A: E002 and E001 at Vilkitsky on 5 January 2019, 125 km² each, and E011 and E010 at Sannikov on 13 January 2019, 100 and 400 km². Each panel shows the before and after Extra Wide HH scenes with the divergence field retrieved by the Section 3.6 matcher overlaid; the delineated component is the connected region falling below the tenth percentile of that pair's own divergence distribution, which is a relative and not an absolute strain threshold. *Edge audit:* all four components pass the overlap-boundary test of Appendix A, with centroid distances to the boundary of the two-scene overlap of 18.9, 76.7, 46.0 and 32.4 km in panel order and no constituent node within 5 km of that boundary, so none is a boundary artifact. The components are unvalidated against in-situ data and no main-text result depends on them. `fig08_strait_examples.png`
-
-
-**Figure 7.** Strait drift fields expressed in the buoy-pair metric. Exceedance of window closure for 240,949 virtual buoy pairs at 20–100 km separation, unconditionally and after applying the buoy rate threshold; dashed and dotted lines mark 3 km and 5 km. `fig07_virtual_pairs.png`
 
 
 ### 4.4 The gap is explained by satellite count
