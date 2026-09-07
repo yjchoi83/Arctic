@@ -26,3 +26,5 @@ line of text along the bottom states the conclusion: "the requirement was alread
 and the recovery is a planning decision, not a procurement one". Colour must be a single sequential ramp for
 H plus one accent for the requirement line, legible in greyscale and colour-blind safe; no red-green pairing,
 and no element smaller than 8 pt at the printed width.
+
+The specification above is realised as `paper/figures/graphical_abstract.png`, exactly 1600 × 900 px, built by `scratch/P13/p13_graphical_abstract.py`. The script asserts the output pixel dimensions, that every text element lies inside the canvas, and that no two text elements overlap. Colour is viridis for H plus a single accent (#d95f02) for the requirement line and the pre-loss rate; smallest text is 8.5 pt. The three period means read 0.200, 0.097 and 0.176, recomputed from `scratch/P3/P3_cells.csv` in the script and equal to the chokepoint column of Table 3. Per the specification the four NSR straits are marked (KG, VS, SD, LS); the Bering–Chukchi cells are drawn but unlabelled, and the mean is captioned as the five-region group mean of Section 2.1 so the number is not misread as a four-strait figure.

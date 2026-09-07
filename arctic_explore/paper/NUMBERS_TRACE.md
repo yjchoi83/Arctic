@@ -265,3 +265,17 @@ Also corrected in the References prose: the grey-literature list said **three** 
 transit statistics", but no CHNL entry exists in the bibliography and never did. It now says **two** — the IMO
 POLARIS circular and the Bellona report — which is what `references.bib` contains.
 
+## [P13-7] Graphical abstract
+
+`paper/figures/graphical_abstract.png`, 1600 × 900 px, from `scratch/P13/p13_graphical_abstract.py`.
+Every number on it is taken from a committed source and none is new:
+
+| Element | Value | Source |
+|---|---|---|
+| H_episode per 25 km cell, three periods | as plotted | `scratch/P3/P3_cells.csv`, seasons pooled within period |
+| chokepoint group means | **0.200 / 0.097 / 0.176** | recomputed in-script; equals the H_episode column of Table 3 |
+| requirement line | H ≥ 0.8 | §3.2 |
+| observing-system experiment | 15 of 16 regions within 10 pp | Table 4 |
+| planned coverage, 2025 against 2019–21 | 87.1 % / 123.4 % | Table 5 |
+| closed form | H = Σ min(g_i, D) / Σ g_i | §3.1 |
+
