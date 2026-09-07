@@ -71,11 +71,14 @@ script); "stage5" and "results" paths are committed. Package column gives the AR
 |---|---|---|---|
 | regions within 10 pp | 15 of 16 | `scratch/P6/ose_region.csv` | P6 |
 | Sannikov exception | +12.3 pp | same | P6 |
-| design curve, all regions, 1/2/3 platforms | 0.431 / 0.563 / 0.527 | same | P6 |
-| design curve, chokepoints | 0.372 / 0.505 / 0.459 | same | P6 |
-| combinations reaching 0.8 | 16 of 800 | same | P6 |
-| chokepoint maximum | 0.718 | same | P6 |
-| marginal gain 1→2, 2→3 | +0.13, +0.05 | same | P6 |
+| **[P11-A1]** admissible combinations after season-matching | 650 of 800 (150 dropped) | `scratch/P11/ose_region_valid.csv` | P11 |
+| **[P11-A1]** all regions 1→2, freeze-up / winter / melt | 0.525→0.662 / 0.454→0.598 / 0.351→0.451 | same | P11 |
+| **[P11-A1]** chokepoints 1→2, freeze-up / winter / melt | 0.450→0.586 / 0.388→0.527 / 0.287→0.386 | same | P11 |
+| **[P11-A1]** season-mean gain 1→2, all / chokepoints | +0.127 / +0.125 | same | P11 |
+| **[P11-A1]** combinations reaching 0.8 | 15 of 650 | same | P11 |
+| chokepoint maximum | 0.718 | same | P6, P11 |
+| **[P11-A1]** 3-platform, melt 2026 only, all / chokepoints | 0.511 (n=9) / 0.429 (n=2) | same | P11 |
+| **[P11-A1]** superseded values (were: 0.431/0.563/0.527, 0.372/0.505/0.459, 16 of 800, gain 0.13→0.05) | withdrawn: pooled seasons and included inadmissible 3-platform rows | — | P10 |
 
 ### C5 — the recovery shortfall is allocation (§4.5)
 | Number | Value | Source | Package |
