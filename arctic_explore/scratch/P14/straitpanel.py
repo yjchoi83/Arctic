@@ -52,7 +52,7 @@ def _node_extent(d):
 
 
 def panel(ax, d, event, box=None, thumb=True, scalebar=True, title=None,
-          grat_lon=2, grat_lat=0.5, label_fs=7):
+          grat_lon=2, grat_lat=0.5, label_fs=7, thumb_rect=(0.700, 0.688, 0.288, 0.288)):
     """Draw one event panel on ax. `event` is an id such as 'E010'."""
     if box is None:
         box = crop_box(d)
@@ -108,7 +108,7 @@ def panel(ax, d, event, box=None, thumb=True, scalebar=True, title=None,
                 path_effects=[pe.withStroke(linewidth=1.8, foreground="white")])
 
     if thumb:
-        ins = ax.inset_axes([0.700, 0.688, 0.288, 0.288], zorder=10)
+        ins = ax.inset_axes(list(thumb_rect), zorder=10)
         ins.set_facecolor("white")
         ma = np.isfinite(A)
         alo, ahi = np.percentile(A[ma], [2, 98]) if ma.sum() > 100 else (-25, 5)
