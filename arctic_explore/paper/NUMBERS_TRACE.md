@@ -94,8 +94,11 @@ script); "stage5" and "results" paths are committed. Package column gives the AR
 | **[P11-A6]** Barents planned, gap / 2025 | 42.7 % / 56.8 % | same | P11 |
 | **[P11-A6]** Sannikov planned, gap / 2025 | 36.7 % / 89.5 % | same | P11 |
 | **[P11-A6]** superseded (was 86.4 % / 122.3 %) | recomputed after adding S1A 2022-24 plan archives | — | P8 |
-| Barents planned / acquired | 56.0 % / 38.3 % | same, `stage5/P8/P8_step2_plans.md` | P8 |
-| Vilkitsky planned / acquired | 146 % / 156.1 % | same | P8 |
+| **[P12-1]** Barents planned / acquired, 2025 | 56.8 % / 38.3 % | `scratch/P11/planned_with_gap.csv`, `stage5/P8/P8_step2_plans.md` | P11, P8 |
+| **[P12-1]** Vilkitsky planned / acquired, 2025 | 147.1 % / 156.1 % | same | P11, P8 |
+| **[P12-1]** Long Strait planned, 2025 | 102.9 % | `scratch/P11/planned_with_gap.csv` | P11 |
+| **[P12-1]** superseded in text (were: 86.4 % / 122.3 % EUR/NAM; Barents 56 %; Vilkitsky 146 %; Long Strait 113 %) | text now matches Table 5 and `planned_with_gap.csv` everywhere (abstract, §4.5, §7) | — | P8/P10 |
+| **[P12-1]** rounding note | Vilkitsky 2025 ratio is 147.1 % from the rounded pre-loss rate of 495 segments/yr printed in Table 5, 147.2 % from the unrounded 494.67; the table value is used throughout | `scratch/P11/planned_with_gap.csv` | P12 |
 | S1C routine onset | 2025-04 | `scratch/P8/monthly_platform.csv` | P8 |
 | S1D first data | 2026-04 | same | P8 |
 
