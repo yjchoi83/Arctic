@@ -67,6 +67,23 @@ citations throughout because the primary target is RSE.
 Targets set for this bibliography were: Remote Sensing of Environment >= 8, IEEE TGRS >= 6, IEEE JSTARS >= 4,
 The Cryosphere >= 6, at most 5 MDPI items, and at least 45 verified references overall. All are met.
 
+## Submission items
+
+| Item | File | Requirement |
+|---|---|---|
+| Highlights | `HIGHLIGHTS.md` | 5 bullets, ≤ 85 characters each including spaces; verified in-file |
+| Graphical abstract | specification in `HIGHLIGHTS.md` | single landscape panel, ≥ 1600 × 900 px, TIFF or EPS at submission |
+| Supplementary material | `SUPPLEMENTARY.md` | Supplementary Table S1, the Section 3.6 matcher parameters; cited from §3.6 and Data availability |
+| Word count | see `NUMBERS_TRACE.md` §"Word budget and trims" | main text ≤ 9,500 words excluding headings, tables, figure captions and back matter |
+
+Highlights and the supplementary table are separate uploads in the Elsevier system and must not be pasted into
+`MANUSCRIPT.md`. To re-check the highlight character limit:
+
+    python3 - <<'EOF'
+    for l in open("HIGHLIGHTS.md"):
+        if l.startswith("- "): print(len(l[2:].rstrip()), l.rstrip())
+    EOF
+
 ## Figures
 
 All figures are PNG at 150 dpi in `figures/`. For submission they should be regenerated as vector or 300 dpi
