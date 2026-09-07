@@ -89,6 +89,11 @@ Highlights and the supplementary table are separate uploads in the Elsevier syst
 
 ## Figures
 
-All figures are PNG at 150 dpi in `figures/`. For submission they should be regenerated as vector or 300 dpi
-raster by editing `savefig.dpi` in `scratch/P9/p10_figs.py` and rerunning it; the script rebuilds every figure
-from the committed result tables.
+All figures are PNG at **300 dpi**, width exactly **90 mm** or **190 mm**, one font family, all text
+≥ 7 pt at print size. Per-file sizes, the caption first sentences and the P14 old → new numbering map
+are in `figures/FIGURE_LIST.md`; regeneration commands are listed there too. The former
+`scratch/P9/p10_figs.py` is superseded for figures by `scratch/P14/f*.py`.
+
+Figure 3 is supplied as three files, `fig03a_overview.png`, `fig03b_H_episode_maps.png` and
+`fig03c_chokepoint_strip.png`, to be typeset as panels (a), (b) and (c) of one figure. Supplementary
+Figure S1 and Supplementary Table S1 go in `SUPPLEMENTARY.md` as separate uploads.
