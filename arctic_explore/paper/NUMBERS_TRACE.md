@@ -147,6 +147,21 @@ script); "stage5" and "results" paths are committed. Package column gives the AR
 | Laptev/ESS winter buoy events | 17, from 8 pairs and 14 buoys | `stage5/P1/P1_hazard_windows.md` §2 | P1 |
 | central Arctic share of events | 55 % | same | P1 |
 
+## [P12-7] Word budget and trims
+
+| Item | Before | After |
+|---|---|---|
+| Abstract | 293 | **250** |
+| §3.6 (matcher parameters → Supplementary Table S1) | 611 | 449 |
+| §4.7 (Bering explanation → two sentences) | 449 | 415 |
+| §5.4 (halved) | 358 body | **197 body** |
+| Main text, excluding headings, tables, figure captions and back matter | 9,561 | **9,170** |
+| Including headings | 9,753 | **9,362** |
+| Whole file, including 735 words of tables, 858 of figure captions and 280 of back matter | 11,626 | 11,235 |
+
+Matcher, node-acceptance, pair-selection and event-definition parameters now live in `paper/SUPPLEMENTARY.md`
+(Supplementary Table S1); values are unchanged, only relocated.
+
 ## Regeneration
 
 `python3 scratch/P9/p10_figs.py` rebuilds every figure in `paper/figures/`. Upstream working data are rebuilt by
