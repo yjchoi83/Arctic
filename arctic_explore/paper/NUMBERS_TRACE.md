@@ -159,27 +159,31 @@ E002 18.9, E001 76.7, E011 46.0, E010 32.4 km; fraction of nodes within 5 km of 
 
 ## [P12-7] Word budget and trims
 
-| Item | Before | After |
-|---|---|---|
-| Abstract | 293 | **250** |
-| §3.6 (matcher parameters → Supplementary Table S1) | 611 | 449 |
-| §4.7 (Bering explanation → two sentences) | 449 | 415 |
-| §5.4 (halved) | 358 body | **197 body** |
-| §4.6 caveat (OSI SAF / ice-chart duplication folded into §6.3) | 91 | 58 |
-| **Main text** — excluding headings, tables, figure captions and back matter | 9,561 | **9,288** |
-| Main text including headings | 9,753 | **9,480** |
-| Whole file, including 735 words of tables, 897 of figure captions and 375 of back matter | 11,626 | 11,487 |
+| Item | P11 | after P12 | after P13 |
+|---|---|---|---|
+| Abstract | 293 | 250 | **249** |
+| **Main text** — excluding headings, tables, figure captions and back matter | 9,561 | 9,288 | **9,306** |
+| Main text including headings | 9,753 | 9,480 | **9,497** |
+| Tables | 735 | 735 | 735 |
+| Figure captions | 858 | 897 | 1,045 |
+| Back matter (References prose, Data availability) | 280 | 375 | 449 |
+| Whole file | 11,626 | 11,487 | 11,726 |
 
-Both main-text measures are under the 9,500 target. The whole-file figure is above it and is reported for
-completeness: journal counts for Remote Sensing of Environment exclude tables, figure captions, references
-and data-availability text, which is the definition used for the two rows in bold.
+Both main-text measures stay under the 9,500 target. Journal counts for Remote Sensing of Environment
+exclude tables, figure captions, references and data-availability text, which is the definition used for the
+bold row.
 
-Offsetting additions in this package, all deliberate: §4.1 restated in H terms with unit counts (+180),
-§1 Wulf/Wuite sentence rewritten with the two new cluster-8 citations (+55), Figure 5 caption extended with
-the edge audit (+39), Table 3b caption extended with the aggregation note (+30).
+P13 added words to the main text for item 1 (the chokepoint-group definition in §2.1 and §4.1, +110) and to
+the captions and back matter (Figure 3's merged caption, the Table 1 and Table 3/3b group notes, the Data
+availability deposit sentence). To hold the heading-inclusive measure under 9,500, five passages that
+restated something already stated elsewhere were compressed, with **no value altered**: the §4.1 group
+gloss became a pointer to §2.1; the §3.1 bootstrap caveat became a pointer to §6.7; the §5.2 third-platform
+sentence became a pointer to §4.4; §6.5 dropped its closing restatement of the Fig. 6 caption; and the §4.6
+within-region correlation sentence and the §4.3 retrieval sentence were tightened, both keeping their numbers
+(0.727 and the twenty-pair result).
 
-Matcher, node-acceptance, pair-selection and event-definition parameters now live in `paper/SUPPLEMENTARY.md`
-(Supplementary Table S1); values are unchanged, only relocated.
+§3.6's matcher, node-acceptance, pair-selection and event-definition parameters live in
+`paper/SUPPLEMENTARY.md` (Supplementary Table S1); values are unchanged, only relocated.
 
 ## Regeneration
 
