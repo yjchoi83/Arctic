@@ -186,12 +186,12 @@ region-season-year units is the chokepoint column of Table 3, 0.200 / 0.097 / 0.
 | Item | P11 | after P12 | after P13 |
 |---|---|---|---|
 | Abstract | 293 | 250 | **249** |
-| **Main text** — excluding headings, tables, figure captions and back matter | 9,561 | 9,288 | **9,306** |
-| Main text including headings | 9,753 | 9,480 | **9,497** |
+| **Main text** — excluding headings, tables, figure captions and back matter | 9,561 | 9,288 | **9,307** |
+| Main text including headings | 9,753 | 9,480 | **9,498** |
 | Tables | 735 | 735 | 735 |
-| Figure captions | 858 | 897 | 1,045 |
+| Figure captions | 858 | 897 | 1,593 |
 | Back matter (References prose, Data availability) | 280 | 375 | 449 |
-| Whole file | 11,626 | 11,487 | 11,726 |
+| Whole file | 11,626 | 11,487 | 12,275 |
 
 Both main-text measures stay under the 9,500 target. Journal counts for Remote Sensing of Environment
 exclude tables, figure captions, references and data-availability text, which is the definition used for the
@@ -306,4 +306,16 @@ Every number on it is taken from a committed source and none is new:
 | observing-system experiment | 15 of 16 regions within 10 pp | Table 4 |
 | planned coverage, 2025 against 2019–21 | 87.1 % / 123.4 % | Table 5 |
 | closed form | H = Σ min(g_i, D) / Σ g_i | §3.1 |
+
+**[P14] Word budget after the figure rework.** Figure captions grew from 1,045 to 1,593 words, because
+Figures 3, 6, 8, 9 and A1 now state their own construction — crop, colour scale, graticule, scale bar,
+censoring floor, gap-year caveat. Captions are excluded from the Remote Sensing of Environment count.
+Main text rose by the §4.2 sentence citing the new Figure 4 and was brought back under 9,500 by
+shortening three restatements, with no value altered: the §4.2 Figure 4 pointer, the §4.1
+"reported conventionally" clause and the §4.4 closing sentence, which §5.1 already makes.
+
+A claim drafted for the §4.2 Figure 4 pointer — that every chokepoint-group region falls below every
+contrast region — was **tested and withdrawn**: it holds in six of the nine season-period cells but
+fails in all three gap-period cells, where Kara Gate (0.163 / 0.165 / 0.100) exceeds Victoria Strait
+(0.134 / 0.153 / 0.089). The sentence now only points at the figure.
 
