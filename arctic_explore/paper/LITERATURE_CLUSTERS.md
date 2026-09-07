@@ -1,10 +1,12 @@
 # LITERATURE_CLUSTERS — targets, seeds, and what was verified
 
 Verification route: **Crossref** for all journal and conference items, **OpenLibrary** for the two books,
-**arXiv** for preprints, and a live URL check for grey literature. **Semantic Scholar was not usable**:
-`$S2_API_KEY` is unset in the analysis environment and the unauthenticated `graph/v1/paper/search`
-endpoint returned HTTP 429 on every attempt, including after 2 s / 4 s / 8 s exponential backoff.
-All raw responses are cached under `scratch/s2cache/`. Nothing here rests on an unverified identifier.
+**arXiv** for preprints, and a live URL check for grey literature. **[P12] Semantic Scholar is now usable**:
+`$S2_API_KEY` is set, and all 76 entries were re-verified through the authenticated
+`graph/v1/paper` endpoints at one request per second with exponential backoff — 63 clean, 10 flagged and all
+resolved in favour of the bibliography, 3 not indexed, and one real defect corrected (a truncated title on
+`karvonen2022baltic`). See `scratch/P12/REF_VERIFY.md`. Raw responses are cached under `scratch/P12/s2cache/`
+and the earlier unauthenticated attempts under `scratch/s2cache/`. Nothing here rests on an unverified identifier.
 
 **Total verified: 76** against a target of 45. Per-cluster detail is in `scratch/P11/clusters_1_4.md`,
 `clusters_5_8.md` and `clusters_9_12.md`; the section mapping is in `paper/LITERATURE_MAP.md`.
