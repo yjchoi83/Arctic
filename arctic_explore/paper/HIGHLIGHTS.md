@@ -3,7 +3,7 @@
 Five bullets, Elsevier format: maximum 85 characters each including spaces.
 
 - H gives the chance a convergence hazard overlaps a Sentinel-1 acquisition
-- Chokepoints never reached H >= 0.8: 0 of 160 region-season-years, both metrics
+- Chokepoints never reached H >= 0.8: 0 of 160 units for episode and state requirements
 - The 2022-24 collapse is platform count alone in 15 of 16 Arctic regions
 - The 2025-26 shortfall is allocation: plans 87.1% Europe-Russia vs 123.4% America
 - DTU Sentinel-1 drift availability tracks H across region-years, Spearman 0.711
