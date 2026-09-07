@@ -1,6 +1,4 @@
-<!-- ARC-P10 manuscript draft. Working title; final title to be decided after full draft review. -->
-
-# Hazard-timescale observability of Arctic shipping chokepoints: two periods, two mechanisms in the Sentinel-1 record
+# Hazard-timescale observability of Arctic shipping chokepoints: what Sentinel-1 could and could not see
 
 **Target journal: Remote Sensing of Environment. Fallback: Cold Regions Science and Technology.**
 
