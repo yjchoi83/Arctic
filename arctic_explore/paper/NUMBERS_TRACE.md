@@ -90,6 +90,8 @@ script); "stage5" and "results" paths are committed. Package column gives the AR
 | **[P11-A1]** combinations reaching 0.8 | 15 of 650 | same | P11 |
 | chokepoint maximum | 0.718 | same | P6, P11 |
 | **[P11-A1]** 3-platform, melt 2026 only, all / chokepoints | 0.511 (n=9) / 0.429 (n=2) | same | P11 |
+| **[P12-consistency]** matched melt-2026 comparison, same nine regions | 1 / 2 / 3 platforms = 0.373 / 0.441 / 0.511 all; 0.293 / 0.353 / 0.429 at the two chokepoints in that set | `scratch/P11/ose_region_valid.csv` | P12 |
+| **[P12-consistency]** superseded (§4.4 compared the melt-2026 3-platform value against 0.451 and 0.386) | those are melt-season 2-platform means pooled over all years and all sixteen regions, not the same window or region set; replaced by the matched 0.441 / 0.353 | — | P10 |
 | **[P11-A1]** superseded values (were: 0.431/0.563/0.527, 0.372/0.505/0.459, 16 of 800, gain 0.13→0.05) | withdrawn: pooled seasons and included inadmissible 3-platform rows | — | P10 |
 
 ### C5 — the recovery shortfall is allocation (§4.5)
