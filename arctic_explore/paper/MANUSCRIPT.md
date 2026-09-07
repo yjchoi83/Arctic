@@ -81,6 +81,9 @@ where the second equality follows from g·min(1, D/g) = min(g, D) and is what ma
 
 We evaluate this exactly by sorting the gaps, forming their cumulative sum and using a binary search over the duration sample, which agrees with a direct evaluation of the defining expression to within 10⁻¹². Figure 1 illustrates the construction: panel (a) shows an acquisition sequence with a hazard of duration D, and panel (b) shows H as a function of D for single fixed gaps and for the length-biased mixture, making clear that the mixture is dominated by the longest gaps at small D.
 
+**Figure 1.** Construction of the observability metric H. (a) A sequence of acquisitions defines gaps g_i; a hazard of duration D is caught if it overlaps at least one acquisition. (b) H as a function of D for three single fixed gaps and for the length-biased mixture of the gaps in panel (a), showing that the mixture is controlled by the longest gaps at small D. `fig01_H_schematic.png`
+
+
 Two distinct hazard quantities are used. H_episode uses the duration of a convergence episode, the interval over which the closure rate exceeds a threshold. H_state uses the persistence of the resulting hazard state, the time until the geometry relaxes back towards its pre-event configuration. The two answer different operational questions, the first being whether the event itself is witnessed and the second whether a ship approaching afterwards can still be warned.
 
 Four assumptions are made explicit because each has a direction of failure. First, hazard occurrence and acquisition planning are assumed independent; the Sentinel-1 background mission follows a fixed plan, so this is largely defensible, but any seasonal replanning correlated with ice conditions would bias H upward. Second, the duration distributions are transferred from the buoy network to the chokepoints, which is extrapolation and is treated as a limitation in Section 6. Third, a single acquisition inside the hazard window is counted as an observation, whereas drift retrieval requires a pair, so H is an upper bound on the probability of an actionable retrieval; Section 5 multiplies H by a measured retrieval success rate to obtain an effective value. Fourth, gaps are truncated at season boundaries and no credit is given before the first or after the last acquisition of a season.
@@ -98,6 +101,9 @@ Cell-level values are aggregated to region, season and year by unweighted averag
 Hazard timescales were measured from buoy pairs rather than from SAR, so that the duration distribution entering H is independent of the acquisition record whose adequacy is being judged. All buoy pairs separated by 20–100 km with overlapping records were formed, giving 9,884 pairs, and the separation time series s(t) computed for each contiguous run of at least eight three-hourly epochs within the separation band. The convergence rate is r(t) = [s(t+Δ) − s(t)]/Δ. A single threshold was fixed once, before any event was counted, as the ninetieth percentile of the magnitude of all negative rates pooled across every pair and epoch, giving 2.954 km d⁻¹ at three-hourly sampling and 4.706 km d⁻¹ at one-hourly sampling. An event is a maximal run of consecutive intervals with r below the negative of that threshold, lasting at least two intervals. Event magnitude is the total separation decrease, and event duration is the run length.
 
 Two properties of this definition matter downstream. It is left-censored at twice the sampling interval, so at three-hourly sampling 55.9 % of events have the minimum possible duration of six hours and the median duration is a detection floor rather than a central tendency. Re-running on the one-hourly subset moves the median from 6 h to 2 h and places 85.8 % of events below the six-hour floor of the coarser sampling, confirming that the coarse median is an artefact. Magnitude filtering stabilises it: pooled across seasons, events of at least 3 km have a median duration of 9 h at one-hourly sampling against 12 h at three-hourly, and events of at least 5 km 12 h against 18 h. The season-resolved medians for the one-hourly subset, which are the values that enter H and are listed in Table 2, are 12, 8 and 9 h for the ≥ 3 km class in winter, melt and freeze-up respectively; the pooled figure of 9 h and the winter figure of 12 h are therefore different statistics of the same distribution and not a discrepancy. All durations entering H are therefore taken from the one-hourly subset and stratified by magnitude class and season, as summarised in Table 2.
+
+**Figure 2.** Hazard timescales measured from buoy pairs, independent of Sentinel-1. (a) Cumulative distribution of convergence episode duration by magnitude class, from the one-hourly buoy subset; the dashed line marks the 12 h episode requirement. (b) Cumulative distribution of hazard-state persistence for events whose magnitude is at least 10 % of the pre-event separation; the dashed line marks the 24 h state requirement. `fig02_hazard_timescales.png`
+
 
 The requirement against which observability is judged follows from these distributions rather than from an assumed service level. For a revisit interval T, an event of duration D is bracketed with certainty when D ≥ T, so the interval that brackets a fraction q of events is the (1 − q) quantile of the duration distribution; we denote by T_exp80 the largest T for which the expected fraction bracketed, E_D[min(1, D/T)], is at least 0.8, which is the population analogue and the value we quote. Applied to the ≥ 3 km class this gives approximately 12 h for episodes and 24 h for the hazard state, and these are the figures used throughout as the episode and state requirements. Correspondingly, a region-season-year unit is said to **meet the requirement when H ≥ 0.8**, that is when at least four fifths of hazards of the stated class are caught; the same 0.8 is used as the design target in Section 4.4. Both the requirement interval and the 0.8 criterion are therefore properties of the measured hazard population and not of an operator's specification, a point returned to in Section 6.
 
@@ -149,9 +155,33 @@ Taking the buoy record at face value, an episode-scale hazard of at least 3 km l
 
 The cell-level metric tells the same story in the currency of hazards rather than of time. Before the loss of Sentinel-1B, chokepoint H_episode for the 3 km class stood at 0.200 and H_state at 0.504 (Fig. 3). Four in five episode-scale convergence events at the chokepoints were therefore already going unseen in 2019–2021, a period with two satellites operating normally. This is the central negative result of the paper, and it is not a consequence of the constellation gap. *Caveat: the 12 h and 24 h requirements are derived from the buoy duration distribution rather than from an operator's stated need, so they express what would be needed to catch the measured hazards, not a service specification agreed with an ice service.*
 
+**Figure 3.** H per 25 km cell on the EPSG:3413 grid, for the ≥ 3 km magnitude class, by season (rows) and period (columns). Northern Sea Route chokepoints are labelled. Colour runs from 0 to 1, where 1 means every hazard is caught. Two panels are provided, for H_state and for H_episode. `fig03_H_state3_maps.png`, `fig03_H_episode3_maps.png`
+
+
 ### 4.2 The 2022–2024 gap widened an existing deficit
 
 Between 2022 and 2024 chokepoint H_episode fell from 0.200 to 0.097 and H_state from 0.504 to 0.363; across all sixteen regions H_episode fell from 0.267 to 0.151 and H_state from 0.562 to 0.441 (Fig. 3, Table 3). At the chokepoints this means that roughly nine in ten episode-scale hazards went unobserved during the gap, against four in five before it.
+
+**Table 3.** Observability by period, for the ≥ 3 km magnitude class. Cell-level means, unweighted over cells; the three main seasons only.
+
+| Group | Period | H_episode | H_state |
+|---|---|---|---|
+| All sixteen regions | pre 2019–21 | 0.267 | 0.562 |
+| All sixteen regions | during 2022–24 | 0.151 | 0.441 |
+| All sixteen regions | post 2025–26 | 0.245 | 0.532 |
+| NSR chokepoints | pre 2019–21 | 0.200 | 0.504 |
+| NSR chokepoints | during 2022–24 | 0.097 | 0.363 |
+| NSR chokepoints | post 2025–26 | 0.176 | 0.467 |
+
+**Table 3b.** Observability by magnitude class at the chokepoints, H_episode, cell-level means. Durations from the one-hourly buoy subset.
+
+| Class | pre 2019–21 | during 2022–24 | post 2025–26 |
+|---|---|---|---|
+| ≥ 1 km | 0.081 | 0.042 | 0.073 |
+| 1–3 km | 0.057 | 0.029 | 0.051 |
+| ≥ 3 km | 0.181 | 0.093 | 0.161 |
+| ≥ 5 km | 0.233 | 0.121 | 0.208 |
+
 
 An attempt to express this as a difference-in-differences between treated and untreated regions fails at the first step, and the failure is itself informative. Defining treatment as a retention ratio below 0.5, where retention is the 2022–2024 scene count divided by the 2019–2021 count, nine of sixteen regions are treated and seven are intermediate, but **no region has a retention of 0.9 or above**. The lowest is Sannikov at 0.310 and the highest Bering–Chukchi at 0.846. The loss was an Arctic-wide simultaneous shock and there is no untreated control, so the pre-registered contrast cannot be constructed. A post hoc dose-response comparison between the lost and intermediate groups gives −25.7 percentage points on H_state with a bootstrap interval of −49.9 to +0.6, which includes zero, and the two groups differ systematically in latitude and in baseline observability, so parallel trends is not plausible. *Caveat: no causal estimate of the gap's effect is available from a between-region design; the counterfactual of Section 4.4 is the appropriate instrument instead.*
 
@@ -163,11 +193,37 @@ Direct processing of Sentinel-1 pairs reverses the apparent picture. Twenty pair
 
 Expressing those fields in the buoy-pair metric closes the loop. Sampling 240,949 virtual buoy pairs at 20–100 km separation on the twenty fields, and applying the buoy rate threshold so that the selection matches as well as the measurement, 0.50 % of pairs qualify and their median closure is 5.88 km, with a ninetieth percentile of 6.94 km and a maximum of 10.63 km (Fig. 7). Strait convergence of the magnitude the buoy record describes is therefore present in the SAR fields, concentrated at Vilkitsky in winter where 1.86 % of virtual pairs qualify. *Caveat: the nineteen individual events detected by the connected-component procedure are unvalidated, since no buoy lay within 100 km of any of them; they are reported in Appendix A and no inference rests on them.*
 
+Four representative fields are shown in Fig. 8.
+
+**Figure 8.** Four examples of strait convergence, two at Vilkitsky and two at Sannikov, showing before and after Extra Wide HH imagery with the divergence field overlaid. `fig08_strait_examples.png`
+
+
+**Figure 7.** Strait drift fields expressed in the buoy-pair metric. Exceedance of window closure for 240,949 virtual buoy pairs at 20–100 km separation, unconditionally and after applying the buoy rate threshold; dashed and dotted lines mark 3 km and 5 km. `fig07_virtual_pairs.png`
+
+
 ### 4.4 The gap is explained by satellite count
 
 Deleting Sentinel-1B from the 2019–2021 record and recomputing H_state reproduces the observed 2022–2024 values to within 10 percentage points in **fifteen of sixteen regions**, with most differences inside ±3 points: Fram +0.2, Barents +0.8, Vilkitsky −0.3, Long Strait −1.4 and Baffin −2.6 (Table 4). The single failure is Sannikov at +12.3 points, where the observed acquisition rate during the gap was lower than a single-platform constellation would predict. The collapse of 2022–2024 is thus almost entirely a platform-count phenomenon, and no appeal to changed tasking is needed to explain it.
 
+**Table 4.** Observing system experiment. Sentinel-1A-only counterfactual built from 2019–2021 against observed 2022–2024 H_state, by region, in percentage points. Positive means the counterfactual exceeds the observation.
+
+| Region | Difference (pp) | Region | Difference (pp) |
+|---|---|---|---|
+| Greenland Sea / Fram | +0.2 | Victoria Strait | +2.7 |
+| Barents / Svalbard | +0.8 | AK6 | +2.8 |
+| Vilkitsky | −0.3 | AK2 | +2.8 |
+| Long Strait | −1.4 | AK1 | +2.9 |
+| Baffin Bay | −2.6 | Bering–Chukchi | +2.9 |
+| AK5 | +2.2 | Kara Gate | +5.6 |
+| Lancaster Sound | +2.2 | **Sannikov** | **+12.3** |
+| AK4 | +2.3 | | |
+| AK3 | +2.4 | | |
+
+
 The design curve shows why adding platforms does not resolve the chokepoint deficit (Fig. 4). Because platform availability differs by season, combinations are compared only within matched season windows, and a combination is admitted only when every platform in it actually acquired in that season; this removes 150 of 800 nominal combinations, including all apparent three-platform values outside melt 2026. Averaged over all regions, H_state rises from 0.525 with one platform to 0.662 with two in freeze-up, from 0.454 to 0.598 in winter, and from 0.351 to 0.451 in melt. At the chokepoints the corresponding pairs are 0.450 to 0.586, 0.388 to 0.527 and 0.287 to 0.386. The marginal gain of the second platform is therefore 0.10 to 0.14 depending on season, with a season-mean of 0.127 across all regions and 0.125 at the chokepoints. Only 15 of 650 admissible region-season-year-combination units reach 0.8, all of them in large high-latitude regions, and the chokepoint maximum over every admissible combination is 0.718.
+
+**Figure 4.** Constellation design curve within matched season windows. Mean H_state against number of platforms, for all regions and for the Northern Sea Route chokepoints, with error bars showing the standard deviation across region-year combinations; a combination is admitted only when every platform in it acquired in that season. Filled markers are fully sampled; the hollow marker is the three-platform value, which exists only for melt 2026 (nine regions, two of them chokepoints) and is provisional. The dashed line marks the 0.8 requirement. `fig04_design_curve.png`
+
 
 A three-platform value exists only for melt 2026, from nine regions of which two are chokepoints, and is plotted as a hollow provisional point in Fig. 4. In that single window it stands at 0.511 against 0.451 for two platforms across all regions, and 0.429 against 0.386 at the chokepoints. We deliberately draw no marginal-gain conclusion from it: one season, one year, and a platform still ramping up cannot support a statement about the third satellite's contribution. *Caveat: platform count is confounded with orbital plane in this design, and Sentinel-1D had six months of data with no established plateau at the time of analysis.*
 
@@ -177,9 +233,26 @@ By 2025–2026 the constellation is larger than before the loss, yet annual scen
 
 The acquisition plans show the same asymmetry before any acquisition takes place. Counting planned segments that cover at least half a region box, the European–Russian sector is planned at 86.4 % of its 2019–2021 rate against 122.3 % for North America, with Barents planned at 56 % (Fig. 5, Table 5). Because this appears in the plan rather than only in the outcome, the shortfall is an allocation decision and not a consequence of constellation size. Retrieving the Sentinel-1A plans for the gap years themselves shows that the reallocation did not begin in 2025: during 2022–2024, when a single platform had to be shared across the Arctic, the European–Russian sector was planned at 49.8 % of its pre-loss rate while the North American sector was planned at 62.0 %, so the sectoral asymmetry was already present when capacity was scarce and then widened once capacity was restored. The claim requires narrowing, however: within the same sector Vilkitsky is planned at 146 % and acquired at 156 %, and Long Strait at 113 %, so the deficit is specific to the Barents–Kara–Laptev sub-sector rather than to the European–Russian Arctic as a whole. *Caveat: acquisition-segment files describe planned datatakes and do not guarantee execution or downlink, and plans for 2022–2024 were not retrieved, so the comparison is pre versus post only.*
 
+**Table 5.** Planned segments per year by sector, including the gap years, and acquired scenes. Planned counts are segments covering at least half a region box; acquired counts are passes meeting the same criterion. The ramp-up-controlled acquisition window is April 2025 to March 2026. Sentinel-1A plans were retrieved for 2019–2025 and Sentinel-1B plans for 2019–2021, so the gap-year column is single-platform by construction and its absolute level is not comparable with the two-platform pre-loss column; the sector *ratio* between the two columns is the quantity of interest.
+
+| Sector | Planned 2019–21 /yr | Planned 2022–24 /yr | % of pre | Planned 2025 | % of pre | Acquired, ramp-up controlled |
+|---|---|---|---|---|---|---|
+| European–Russian | 7,162 | 3,570 | **49.8 %** | 6,240 | **87.1 %** | **77.4 %** |
+| North American–Bering | 8,521 | 5,280 | **62.0 %** | 10,511 | **123.4 %** | **121.1 %** |
+| of which Barents / Svalbard | 1,710 | 731 | 42.7 % | 971 | 56.8 % | 38.3 % |
+| of which Sannikov | 570 | 209 | 36.7 % | 510 | 89.5 % | 63.5 % |
+| of which Vilkitsky | 495 | 277 | 56.0 % | 728 | 147.1 % | 156.1 % |
+
+
+**Figure 5.** European Space Agency planned acquisition segments against acquired scenes, per region, before and after the constellation gap, on a logarithmic axis. Regions are grouped by sector. `fig05_planned_vs_acquired.png`
+
+
 ### 4.6 The shortfall propagated into an operational product
 
 Availability of the DTU Sentinel-1 drift product, defined as the fraction of days on which at least 5 % of a region's pixels carry a valid vector, correlates with H_state across region-years at a Spearman coefficient of **0.711** (p = 1.7 × 10⁻¹⁸, n = 112), and with H_episode at 0.736 (Fig. 6). The relationship is not merely a cross-sectional contrast between well- and poorly-observed regions: computing the correlation along the time axis within each region separately gives a median of 0.727 across the sixteen regions. Product availability fell from 0.152 before the loss to 0.031 during it, a decline of 80 %, and stood at 0.033 in the partial 2025 sample. Varying the validity threshold to 2 % and 10 % gives correlations of 0.714 and 0.659, so the result is robust to that choice (Table 6).
+
+**Figure 6.** Availability of the DTU Sentinel-1 drift product per region-year, defined as the fraction of days with at least 5 % valid pixels. Cyan lines mark the loss of Sentinel-1B and the entry of Sentinel-1C into routine operations. `fig06_dtu_availability.png`
+
 
 *Caveat, which must accompany every statement of this result: the DTU product is itself derived from Sentinel-1. The correlation therefore relates two quantities computed from the same archive and is not independent confirmation. No Sentinel-1-independent product was reachable for this test: the OSI SAF low-resolution drift product is derived from passive-microwave and scatterometer sensors, and no Sentinel-1-based OSI SAF drift product exists, and the Norwegian ice-chart archive is issued on a fixed weekday schedule, with 248, 253, 251 and 250 issuance days in 2019, 2021, 2023 and 2025 respectively, unchanged through the gap.*
 
@@ -277,71 +350,8 @@ Twenty Sentinel-1 pairs at Vilkitsky, Sannikov and Long Strait in freeze-up and 
 
 These events remain **not validated** against in-situ data. No International Arctic Buoy Programme buoy lay within 100 km of any of the nineteen, even after relaxing the temporal bracket to ±12 h, so no comparison was possible. They are presented as a contact sheet in Fig. A1 for human adjudication, with the decision column of the accompanying table left blank, and no result in the main text depends on them. Their magnitudes, expressed on the buoy baseline as described in Section 3.3, place ten below 1 km, eight between 1 and 3 km and one at or above 5 km. The main-text evidence that strait convergence of navigable magnitude exists in the SAR fields rests instead on the virtual buoy-pair analysis of Section 4.3, which does not depend on the connected-component event definition.
 
-## Tables referenced in Section 4
-
-**Table 3.** Observability by period, for the ≥ 3 km magnitude class. Cell-level means, unweighted over cells; the three main seasons only.
-
-| Group | Period | H_episode | H_state |
-|---|---|---|---|
-| All sixteen regions | pre 2019–21 | 0.267 | 0.562 |
-| All sixteen regions | during 2022–24 | 0.151 | 0.441 |
-| All sixteen regions | post 2025–26 | 0.245 | 0.532 |
-| NSR chokepoints | pre 2019–21 | 0.200 | 0.504 |
-| NSR chokepoints | during 2022–24 | 0.097 | 0.363 |
-| NSR chokepoints | post 2025–26 | 0.176 | 0.467 |
-
-**Table 3b.** Observability by magnitude class at the chokepoints, H_episode, cell-level means. Durations from the one-hourly buoy subset.
-
-| Class | pre 2019–21 | during 2022–24 | post 2025–26 |
-|---|---|---|---|
-| ≥ 1 km | 0.081 | 0.042 | 0.073 |
-| 1–3 km | 0.057 | 0.029 | 0.051 |
-| ≥ 3 km | 0.181 | 0.093 | 0.161 |
-| ≥ 5 km | 0.233 | 0.121 | 0.208 |
-
-**Table 4.** Observing system experiment. Sentinel-1A-only counterfactual built from 2019–2021 against observed 2022–2024 H_state, by region, in percentage points. Positive means the counterfactual exceeds the observation.
-
-| Region | Difference (pp) | Region | Difference (pp) |
-|---|---|---|---|
-| Greenland Sea / Fram | +0.2 | Victoria Strait | +2.7 |
-| Barents / Svalbard | +0.8 | AK6 | +2.8 |
-| Vilkitsky | −0.3 | AK2 | +2.8 |
-| Long Strait | −1.4 | AK1 | +2.9 |
-| Baffin Bay | −2.6 | Bering–Chukchi | +2.9 |
-| AK5 | +2.2 | Kara Gate | +5.6 |
-| Lancaster Sound | +2.2 | **Sannikov** | **+12.3** |
-| AK4 | +2.3 | | |
-| AK3 | +2.4 | | |
-
-**Table 5.** Planned segments per year by sector, including the gap years, and acquired scenes. Planned counts are segments covering at least half a region box; acquired counts are passes meeting the same criterion. The ramp-up-controlled acquisition window is April 2025 to March 2026. Sentinel-1A plans were retrieved for 2019–2025 and Sentinel-1B plans for 2019–2021, so the gap-year column is single-platform by construction and its absolute level is not comparable with the two-platform pre-loss column; the sector *ratio* between the two columns is the quantity of interest.
-
-| Sector | Planned 2019–21 /yr | Planned 2022–24 /yr | % of pre | Planned 2025 | % of pre | Acquired, ramp-up controlled |
-|---|---|---|---|---|---|---|
-| European–Russian | 7,162 | 3,570 | **49.8 %** | 6,240 | **87.1 %** | **77.4 %** |
-| North American–Bering | 8,521 | 5,280 | **62.0 %** | 10,511 | **123.4 %** | **121.1 %** |
-| of which Barents / Svalbard | 1,710 | 731 | 42.7 % | 971 | 56.8 % | 38.3 % |
-| of which Sannikov | 570 | 209 | 36.7 % | 510 | 89.5 % | 63.5 % |
-| of which Vilkitsky | 495 | 277 | 56.0 % | 728 | 147.1 % | 156.1 % |
-
-## Figure captions
-
-**Figure 1.** Construction of the observability metric H. (a) A sequence of acquisitions defines gaps g_i; a hazard of duration D is caught if it overlaps at least one acquisition. (b) H as a function of D for three single fixed gaps and for the length-biased mixture of the gaps in panel (a), showing that the mixture is controlled by the longest gaps at small D. `fig01_H_schematic.png`
-
-**Figure 2.** Hazard timescales measured from buoy pairs, independent of Sentinel-1. (a) Cumulative distribution of convergence episode duration by magnitude class, from the one-hourly buoy subset; the dashed line marks the 12 h episode requirement. (b) Cumulative distribution of hazard-state persistence for events whose magnitude is at least 10 % of the pre-event separation; the dashed line marks the 24 h state requirement. `fig02_hazard_timescales.png`
-
-**Figure 3.** H per 25 km cell on the EPSG:3413 grid, for the ≥ 3 km magnitude class, by season (rows) and period (columns). Northern Sea Route chokepoints are labelled. Colour runs from 0 to 1, where 1 means every hazard is caught. Two panels are provided, for H_state and for H_episode. `fig03_H_state3_maps.png`, `fig03_H_episode3_maps.png`
-
-**Figure 4.** Constellation design curve within matched season windows. Mean H_state against number of platforms, for all regions and for the Northern Sea Route chokepoints, with error bars showing the standard deviation across region-year combinations; a combination is admitted only when every platform in it acquired in that season. Filled markers are fully sampled; the hollow marker is the three-platform value, which exists only for melt 2026 (nine regions, two of them chokepoints) and is provisional. The dashed line marks the 0.8 requirement. `fig04_design_curve.png`
-
-**Figure 5.** European Space Agency planned acquisition segments against acquired scenes, per region, before and after the constellation gap, on a logarithmic axis. Regions are grouped by sector. `fig05_planned_vs_acquired.png`
-
-**Figure 6.** Availability of the DTU Sentinel-1 drift product per region-year, defined as the fraction of days with at least 5 % valid pixels. Cyan lines mark the loss of Sentinel-1B and the entry of Sentinel-1C into routine operations. `fig06_dtu_availability.png`
-
-**Figure 7.** Strait drift fields expressed in the buoy-pair metric. Exceedance of window closure for 240,949 virtual buoy pairs at 20–100 km separation, unconditionally and after applying the buoy rate threshold; dashed and dotted lines mark 3 km and 5 km. `fig07_virtual_pairs.png`
-
-**Figure 8.** Four examples of strait convergence, two at Vilkitsky and two at Sannikov, showing before and after Extra Wide HH imagery with the divergence field overlaid. `fig08_strait_examples.png`
-
 **Figure A1.** Contact sheet of the nineteen candidate strait convergence events, for human adjudication; the decision column of the accompanying table is left blank. `figA1_contact_sheet.png`
+
 
 ## References
 
@@ -387,4 +397,4 @@ Inter- and intra-analyst ice-edge assessment, 2023. figshare. https://doi.org/10
 
 ### Data availability
 
-Sentinel-1 metadata via the Copernicus programme; International Arctic Buoy Programme Level 1 archive; EUMETSAT OSI SAF product OSI-405; Copernicus Marine datasets `cmems_obs-si_glo_phy-drift-north_my_l4_P1D-m` and `cmems_obs-si_arc_phy_my_l3_P1D`; European Space Agency acquisition-segment archives from the Copernicus SentiWiki document library; Norwegian Meteorological Institute ice-chart quicklook archive. Derived tables and figure-generating code accompany this manuscript; gridded H products are available as GeoTIFF on request.
+Sentinel-1 metadata via the Copernicus programme; International Arctic Buoy Programme Level 1 archive; EUMETSAT OSI SAF product OSI-405; Copernicus Marine datasets `cmems_obs-si_glo_phy-drift-north_my_l4_P1D-m` and `cmems_obs-si_arc_phy_my_l3_P1D`; European Space Agency acquisition-segment archives from the Copernicus SentiWiki document library; Norwegian Meteorological Institute ice-chart quicklook archive. Derived tables, figure-generating code, the full analysis pipeline and a per-number provenance trace are in the project repository at https://github.com/yjchoi83/Arctic (directories `arctic_explore/stage5`, `arctic_explore/paper` and `arctic_explore/results`). Gridded H products are held as GeoTIFF in `data/products` and are available on request.
