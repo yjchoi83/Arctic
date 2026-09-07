@@ -209,3 +209,11 @@ P1_events.csv (82,440 rows, 5.2 MB), P1_buoy_key.csv. No Earth Engine calls.
   불일치, 공유 아카이브 의존, KML 계획 대 실측, S1D 램프업, H의 상한 성격, 셀 CI 과소, 작은 사건의 2–4 h 요구).
   목표 **RSE**, 대안 **CRST**. 제출 전 할 일도 명시(S2 API 키로 novelty 재실행, contact sheet 인간 판독,
   C3의 미검증 사건을 본문에 둘지 부록으로 옮길지 결정).
+- **P10 (원고 초안)**: `paper/MANUSCRIPT.md` — 참고문헌 제외 **8,086 단어**(목표 7,000–8,500), 초록 251 단어,
+  번호 절 구성·산문 내 불릿 없음(RSE 형식). 제목은 **working title**로 표기(최종본은 전체 검토 후 결정).
+  지시대로 **19개 미검증 사건을 Appendix A로 이동**하고 본문에는 20/20 retrieval 결과와 가상 부이쌍 폐합
+  (0.50 % 통과, median 5.88 km)만 남겼다. **두 기간·두 기제**를 §5.1로 명시 — 2022–24는 OSE(15/16 지역 10 pp 이내)로
+  위성 수, 2025–26은 계획 문서(EUR 86.4 % vs NAM 122.3 %)로 배분. 그림 10장을 일관 스타일로 재생성
+  (`paper/figures/`, EPSG:3413, H 0–1 컬러바, chokepoint 라벨). **NUMBERS_TRACE.md 127줄**로 모든 그림·표·
+  주장 C1–C6의 수치를 CSV와 P-패키지에 매핑했고, 재생성 명령도 기록. 참고문헌은 **[V] 검증본 16건**만 싣고
+  나머지는 **[CITATION NEEDED]** 5건으로 남겼다(사용자의 Semantic Scholar 패스용).

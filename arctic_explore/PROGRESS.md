@@ -11,3 +11,4 @@
 | P7 product consequence | superseded by P8 | H9 지지 rho=0.71 (DTU S1 drift) |
 | P8 gap closing | done | H9 지지; 배분 진술 축소 유지; 해협 겨울 추적 작동(성공률 0.51) |
 | P9 consistency/products/paper | done | PAPER_OUTLINE 완성 (RSE 목표, CRST 대안) |
+| P10 manuscript draft | done | MANUSCRIPT.md 8,086 words + 10 figures + NUMBERS_TRACE |
