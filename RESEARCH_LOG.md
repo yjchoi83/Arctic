@@ -217,3 +217,44 @@ P1_events.csv (82,440 rows, 5.2 MB), P1_buoy_key.csv. No Earth Engine calls.
   (`paper/figures/`, EPSG:3413, H 0–1 컬러바, chokepoint 라벨). **NUMBERS_TRACE.md 127줄**로 모든 그림·표·
   주장 C1–C6의 수치를 CSV와 P-패키지에 매핑했고, 재생성 명령도 기록. 참고문헌은 **[V] 검증본 16건**만 싣고
   나머지는 **[CITATION NEEDED]** 5건으로 남겼다(사용자의 Semantic Scholar 패스용).
+
+### ARC-P12 — 일관성·분량·투고물
+- **plan ratio 전파(1)**: P11에서 S1A 2022–24 계획 아카이브를 추가해 재산출한 값이 Table 5에만 반영돼
+  있었다. 본문 3곳(초록·§4.5·§7)을 **86.4 % → 87.1 %**, **122.3 % → 123.4 %**로 고치고, §4.5의
+  **Barents 56 % → 56.8 %**, **Vilkitsky 146 % → 147.1 %**(취득 156 % → 156.1 %)도 맞췄다.
+  덤으로 **Long Strait 113 % → 102.9 %** — `planned_with_gap.csv`와 어긋난 값이었다.
+- **gap-year 단서 교체(2)**: "2022–24 계획은 회수하지 못했다"는 §4.5·§6.4의 단서를 삭제하고,
+  **회수한 gap-year 계획은 S1A 단독이므로 절대량은 2위성 기간과 비교 불가, 섹터 간 비율만 비교 가능**이라는
+  실제 제약으로 바꿨다. Table 5 각주가 이미 말하던 내용을 본문이 부정하고 있었다.
+- **H 언어로 요구 재진술(5)**: **met = H ≥ 0.8**을 명시하고 실제 도달 수를 세었다 —
+  **H_episode ≥ 0.8: 512 units 중 0, chokepoint 160 units 중 0**(최대 0.640 / 0.467);
+  **H_state ≥ 0.8: 512 중 25**(Greenland/Fram 13 · Baffin 5 · Barents 4 · Lancaster 3),
+  **chokepoint 0**(최대 0.793 Kara Gate). "4개 지역이 24 h 요구 충족"이 **O(24 h) ≥ 0.8**을 뜻함을 명기
+  (main-season 512 중 38 units). O(12 h) 최대치도 정정: **0.278은 main season, 전체 688에서는 0.320**.
+- **[중요] Table 3b 집계 불일치**: ≥3 km 행이 0.181/0.093/0.161인데 Table 3의 같은 양은 0.200/0.097/0.176.
+  원인은 **Table 3b가 셀 가중 평균**이라 Sannikov(109셀)가 값을 끌어내린 것. Table 3와 동일한 2단계
+  비가중 평균으로 재집계해 **0.200/0.097/0.176로 일치**시켰고 전 등급을 갱신(1–3 km는 0.029 → **0.030**).
+- **[중요] §4.4 3위성 비교가 like-for-like가 아니었다**: melt 2026 3위성 0.511을 melt 계절 전체·16지역의
+  2위성 평균 0.451과 비교하고 있었다. **동일 window·동일 9지역**으로 맞추면 1/2/3위성 = **0.373/0.441/0.511**
+  (해협 2곳 0.293/0.353/0.429). 본문 교체.
+- **그림 번호 정합**: 인용 순서가 1,2,3,7,8,4,5,6이었다. **7→4, 8→5, 4→6, 5→7, 6→8**로 재번호하고
+  라벨·본문 참조·PNG 파일명·`p10_figs.py`·NUMBERS_TRACE를 모두 갱신. Fig. 5 캡션은 **divergence field +
+  edge audit**(중심거리 18.9/76.7/46.0/32.4 km, 5 km 내 노드 0)로 다시 썼다.
+- **분량(7)**: 초록 **250 단어**(≤250), §5.4 358 → **197**, §3.6 matcher 파라미터를
+  **`paper/SUPPLEMENTARY.md` Supplementary Table S1**으로 이관, §4.7 Bering 설명 2문장.
+  **본문 9,561 → 9,288 단어**(표·캡션·후미 제외), 헤딩 포함 9,480. 파일 전체는 11,487.
+- **S2_API_KEY는 설정되어 있었다(9)** — P9~P11의 "키 없음" 기록은 이 환경에서 더 이상 사실이 아니다.
+  - **9c 76건 재검증**: 63 clean · 10 flag · 3 미색인. flag 10건은 **전부 서지 쪽이 옳다**(6건은 S2가
+    Copernicus discussion-paper/online-first 연도를 기록, Crossref `issued`로 확정; 2권 책과 Kaplan–Meier는
+    S2 색인 결함; 1건은 저자 문자열 분할). **실제 결함 1건**: `karvonen2022baltic` 제목이 잘려 있었다 → 복원.
+  - **9a novelty 21 쿼리**: **핵심 주장과 겹치는 논문 없음**. 최근접은 Geiger & Drinkwater(2001,
+    샘플링 해상도 → drift/deformation), Kaminski(이미 인용), Sentinel-1 mission-status/task-planning 계열.
+    관측계획을 취득 아카이브와 대조해 지역 배분 비대칭을 드러낸 연구는 색인에 없다.
+  - **9b cluster 8**: "strict 기준으로는 verified 2"라던 공백을 닫았다 — **`geiger2001resolution`**과
+    **`covington2022bridging`** 추가로 cluster 8이 3 → **5**, 서지 76 → **78**.
+- **[중요] 인용 근거 감사(8)**: `fu2016besetting`은 문장을 **지지한다**(Northeast Passage besetting BBN 모델).
+  **Wulf/Wuite 3건은 지지하지 않는다** — OpenAlex 초록으로 확인한 결과 셋 다 2021 불연속을 *지나가는*
+  Sentinel-1 파생 산출물 기록이고, **누락 영상의 하류 영향을 문서화하지 않는다**. §1 문장을 그 사실만
+  말하도록 다시 쓰고, 기제 주장은 새로 넣은 strict 2건이 지게 했다.
+- **투고물(10)**: `paper/HIGHLIGHTS.md` — 5불릿(73·78·71·80·78자, 전부 ≤85) + graphical abstract 1문단 명세.
+  `paper/build.md`에 submission items 표 추가.
