@@ -25,7 +25,7 @@ MIN_PT = 7.0
 
 H_CMAP = "viridis"
 H_NORM = Normalize(0, 1)
-DIV_CMAP = "RdBu_r"        # diverging, colour-blind safe, no red-green pairing
+DIV_CMAP = "RdBu"          # diverging, colour-blind safe; low = convergence = red
 ACCENT = "#d95f02"         # single accent: requirement lines, hazards
 GREY = "0.35"
 

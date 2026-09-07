@@ -48,13 +48,13 @@ def graticule(xlim, ylim, dlon=30, dlat=5, n=400):
     """Meridian and parallel segments (in km) inside the axes window."""
     xmin, xmax = min(xlim), max(xlim); ymin, ymax = min(ylim), max(ylim)
     segs = []
-    for lon in range(-180, 180, dlon):
+    for lon in np.arange(-180, 180, dlon):
         la = np.linspace(40, 89.5, n)
-        x, y = FWD.transform(np.full(n, lon, float), la)
+        x, y = FWD.transform(np.full(n, float(lon)), la)
         segs.append(("lon", lon, x / 1e3, y / 1e3))
-    for lat in range(45, 90, dlat):
+    for lat in np.arange(45, 90, dlat):
         lo = np.linspace(-180, 180, 4 * n)
-        x, y = FWD.transform(lo, np.full(4 * n, lat, float))
+        x, y = FWD.transform(lo, np.full(4 * n, float(lat)))
         segs.append(("lat", lat, x / 1e3, y / 1e3))
     keep = []
     for kind, val, x, y in segs:
