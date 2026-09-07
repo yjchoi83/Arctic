@@ -64,3 +64,56 @@ Sentinel-1 pixel data were read only for the physical demonstration of Section 4
 | Lancaster Sound | 81 | contrast |
 | Victoria Strait | 161 | contrast |
 | **Total** | **1,771** | |
+
+## 3. Methods
+
+### 3.1 The observability metric H
+
+Consider a cell, a season and a year, and let the qualifying acquisitions in that window occur at times t₁ < t₂ < … < tₙ, defining gaps gᵢ = tᵢ₊₁ − tᵢ. Let a hazard occur with duration D, and assume that its onset time is uniformly distributed over the season. Under that assumption the onset falls inside gap i with probability proportional to gᵢ rather than uniformly across gaps, because long gaps present more opportunity for an onset to land in them; this is the standard length-biasing of interval sampling and it is the reason the metric cannot be built from a mean revisit interval. Given an onset inside a gap of length g, the hazard overlaps at least one acquisition with probability min(1, D/g), since the hazard is seen unless it both begins and ends strictly inside the gap.
+
+Combining these gives the probability that a randomly occurring hazard of duration D is caught,
+
+  H(D) = Σᵢ gᵢ · min(1, D/gᵢ) / Σᵢ gᵢ = Σᵢ min(gᵢ, D) / Σᵢ gᵢ,
+
+where the second equality follows from g·min(1, D/g) = min(g, D) and is what makes the metric cheap to evaluate. Averaging over the empirical duration distribution yields
+
+  H = E_D [ Σᵢ min(gᵢ, D) ] / Σᵢ gᵢ.
+
+We evaluate this exactly by sorting the gaps, forming their cumulative sum and using a binary search over the duration sample, which agrees with a direct evaluation of the defining expression to within 10⁻¹². Figure 1 illustrates the construction: panel (a) shows an acquisition sequence with a hazard of duration D, and panel (b) shows H as a function of D for single fixed gaps and for the length-biased mixture, making clear that the mixture is dominated by the longest gaps at small D.
+
+Two distinct hazard quantities are used. H_episode uses the duration of a convergence episode, the interval over which the closure rate exceeds a threshold. H_state uses the persistence of the resulting hazard state, the time until the geometry relaxes back towards its pre-event configuration. The two answer different operational questions, the first being whether the event itself is witnessed and the second whether a ship approaching afterwards can still be warned.
+
+Four assumptions are made explicit because each has a direction of failure. First, hazard occurrence and acquisition planning are assumed independent; the Sentinel-1 background mission follows a fixed plan, so this is largely defensible, but any seasonal replanning correlated with ice conditions would bias H upward. Second, the duration distributions are transferred from the buoy network to the chokepoints, which is extrapolation and is treated as a limitation in Section 6. Third, a single acquisition inside the hazard window is counted as an observation, whereas drift retrieval requires a pair, so H is an upper bound on the probability of an actionable retrieval; Section 5 multiplies H by a measured retrieval success rate to obtain an effective value. Fourth, gaps are truncated at season boundaries and no credit is given before the first or after the last acquisition of a season.
+
+Cell-level values are aggregated to region, season and year by unweighted averaging over cells, and uncertainty is expressed by a block bootstrap over cells with 1,000 draws. We report those intervals but do not interpret them as sampling uncertainty, because cells within a region share satellite orbits and are therefore far from independent; the intervals are consequently much narrower than the true uncertainty.
+
+### 3.2 Buoy convergence events
+
+Hazard timescales were measured from buoy pairs rather than from SAR, so that the duration distribution entering H is independent of the acquisition record whose adequacy is being judged. All buoy pairs separated by 20–100 km with overlapping records were formed, giving 9,884 pairs, and the separation time series s(t) computed for each contiguous run of at least eight three-hourly epochs within the separation band. The convergence rate is r(t) = [s(t+Δ) − s(t)]/Δ. A single threshold was fixed once, before any event was counted, as the ninetieth percentile of the magnitude of all negative rates pooled across every pair and epoch, giving 2.954 km d⁻¹ at three-hourly sampling and 4.706 km d⁻¹ at one-hourly sampling. An event is a maximal run of consecutive intervals with r below the negative of that threshold, lasting at least two intervals. Event magnitude is the total separation decrease, and event duration is the run length.
+
+Two properties of this definition matter downstream. It is left-censored at twice the sampling interval, so at three-hourly sampling 55.9 % of events have the minimum possible duration of six hours and the median duration is a detection floor rather than a central tendency. Re-running on the one-hourly subset moves the median from 6 h to 2 h and places 85.8 % of events below the six-hour floor of the coarser sampling, confirming that the coarse median is an artefact. Magnitude filtering stabilises it: for events of at least 3 km the median duration is 9 h at one-hourly sampling against 12 h at three-hourly, and for at least 5 km it is 12 h against 18 h. All durations entering H are therefore taken from the one-hourly subset and stratified by magnitude class and season, as summarised in Table 2.
+
+Hazard-state persistence was defined as the time from event end until the separation recovers to 90 % of its pre-event value, with runs that end before recovery treated as right-censored and handled by a Kaplan–Meier estimator. This measurand is undefined for events whose magnitude is less than a tenth of the pre-event separation, because such events never drop below the recovery threshold; that describes 84.6 % of all events, so persistence statistics are reported only for the remaining 15.4 %.
+
+**Table 2.** Hazard timescales by magnitude class, from the one-hourly buoy subset (episode) and the three-hourly archive with relative magnitude of at least 10 % (persistence). Median hours.
+
+| Class | Episode, winter | Episode, melt | Episode, freeze-up | Persistence, winter | Persistence, melt | Persistence, freeze-up |
+|---|---|---|---|---|---|---|
+| 1–3 km | 2 | 4 | 4 | — | — | — |
+| ≥ 3 km | 12 | 8 | 9 | 24 | — | — |
+| ≥ 5 km | 14 | 11 | 15 | 33 | 9 | 30 |
+| all, relmag ≥ 10 % | — | — | — | 27 | 12 | 39 |
+
+### 3.3 Reconciling the buoy and SAR magnitude scales
+
+Convergence measured from a SAR drift field and convergence measured between two buoys are not the same number even when they describe the same deformation, because they use different baselines. A SAR event defined as a connected region of divergence below a threshold has a natural length scale equal to the square root of its area, whereas a buoy pair has the baseline of its separation. For a given strain the two magnitudes are therefore related by the ratio of those baselines, and in our data the median square root of event area is 12.2 km against a median buoy separation of 49.4 km, a factor of 0.248. Comparing the two directly without correction understates SAR magnitudes fourfold.
+
+To place both on a common footing, virtual buoy pairs were constructed on the SAR drift fields. Node pairs separated by 20–100 km, the same band used for the real buoys, were sampled from each field, and the change in their separation over the acquisition interval was computed from the retrieved displacements. This yields, for each SAR window, a distribution of closures directly comparable with the buoy event magnitudes, and it permits the buoy rate threshold to be applied to SAR-derived pairs so that the two samples are selected in the same way as well as measured in the same way.
+
+### 3.4 Observing system experiment
+
+The counterfactual removes platforms rather than scenes. For each cell, season and year the acquisition series was rebuilt from the subset of passes belonging to a nominated combination of platforms, and H recomputed on the resulting gaps. Because 2022–2024 was a single-platform period, the pre-registered comparison is between the Sentinel-1A-only counterfactual constructed from 2019–2021 and the observed 2022–2024 values, region by region. Using the best-matching platform per region would be a post hoc selection and is reported only as a sensitivity. Design curves were formed by evaluating every platform combination available in each period, giving one-, two- and three-platform values.
+
+### 3.5 Acquisition plan parsing
+
+Planned segments were extracted from the Keyhole Markup Language archives by parsing each placemark for satellite identifier, datatake identifier, mode, observation start time and footprint ring. Because successive mission-plan files overlap in validity, segments were deduplicated on the triple of satellite, datatake identifier and observation start time. Footprint rings were projected to EPSG:3413 and a segment was credited to a region when it covered at least half the region box, the same rule applied to acquired scenes so that planned and acquired counts are commensurable. The ramp-up of new platforms was determined from the archive itself, by taking the first month in which a platform's monthly scene count reached 80 % of the median of its last six months.
