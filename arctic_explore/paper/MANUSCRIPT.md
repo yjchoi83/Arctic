@@ -46,7 +46,7 @@ Availability of a Sentinel-1-dependent operational product was assessed using th
 
 Planned coverage was reconstructed from the European Space Agency acquisition-segment archives published in the Copernicus SentiWiki document library, comprising Sentinel-1A for 2019, 2020, 2021 and 2025, Sentinel-1B for 2019, 2020 and 2021, and Sentinel-1C for 2025. Each archive contains Keyhole Markup Language files listing planned datatake segments with satellite identifier, mode, observation start and stop times, orbit numbers and a footprint ring.
 
-Sentinel-1 pixel data were read only for the physical demonstration of Section 4.5, comprising forty Extra Wide ground-range-detected scenes forming twenty pairs, totalling 9.2 GB.
+Sentinel-1 pixel data were read only for the physical demonstration of Section 4.3, processed as described in Section 3.6, comprising forty Extra Wide ground-range-detected scenes forming twenty pairs, totalling 9.2 GB.
 
 **Table 1.** Regions, cell counts and role. Cells are 25 km on EPSG:3413.
 
