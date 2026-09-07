@@ -13,7 +13,7 @@ PNG file names and `scratch/P9/p10_figs.py`: old 7→4, 8→5, 4→6, 5→7, 6�
 |---|---|---|---|---|
 | 1 | `paper/figures/fig01_H_schematic.png` | synthetic illustration only, no data | `scratch/P9/p10_figs.py` | P10 |
 | 2 | `paper/figures/fig02_hazard_timescales.png` | `scratch/P3/step2t_native1h.npz`, `scratch/P1b/events_persist.csv` | same | P1b, P3 |
-| 3 | `paper/figures/fig03_H_state3_maps.png`, `fig03_H_episode3_maps.png` | `scratch/P3/P3_cells.csv` | same | P3 |
+| 3 | `paper/figures/fig03_H_maps.png` — **[P13-2]** the two former PNGs `fig03_H_state3_maps.png` and `fig03_H_episode3_maps.png` merged into one figure with panel groups (a) H_state and (b) H_episode, shared colour scale, chokepoints labelled by two-letter code. Data, colour map and normalisation unchanged; no value changed. | `scratch/P3/P3_cells.csv` | `scratch/P9/p10_figs.py` (fig-3 block rewritten), reproduced standalone by `scratch/P13/p13_fig03.py` | P3, P13 |
 | 4 (was 7) | `paper/figures/fig04_virtual_pairs.png` | `scratch/P9/virtual_pairs_all.csv.gz` | same | P9 |
 | 5 (was 8) | `paper/figures/fig05_strait_examples.png` | `results/P8/quicklooks/E00{1,2}_*, E0{10,11}_*`; caption edge-audit values from `results/P9/edge_audit.csv` = `paper/edge_audit.csv` | same | P8, P11 |
 | 6 (was 4) | `paper/figures/fig06_design_curve.png` | `scratch/P6/ose_region.csv`, `scratch/P11/ose_region_valid.csv` | same | P6, P11 |

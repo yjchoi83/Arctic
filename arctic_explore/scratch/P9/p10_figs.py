@@ -1,6 +1,7 @@
 import numpy as np, pandas as pd, os, sys, glob, datetime as dt
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt, matplotlib.image as mpimg
+import matplotlib.patheffects as pe
 from matplotlib.colors import Normalize
 sys.path.insert(0,"scratch/P3"); sys.path.insert(0,"scratch/P2")
 from cells import region_cells, CELL
@@ -65,22 +66,37 @@ C["per"]=C.year.map(per); C=C[C.per.notna()]
 XY={(r,k):v for r,cl in RC.items() for k,v in enumerate(cl)}
 C["x"]=[XY[(r,k)][0] for r,k in zip(C.region,C.cell)]; C["y"]=[XY[(r,k)][1] for r,k in zip(C.region,C.cell)]
 CENT={r:(np.mean([a for a,b in cl])+CELL/2,np.mean([b for a,b in cl])+CELL/2) for r,cl in RC.items()}
-for col,lab in (("H_state3","$H_{state}$ (>=3 km)"),("H_episode3","$H_{episode}$ (>=3 km)")):
-    fig,axes=plt.subplots(3,3,figsize=(8.4,8.0))
-    for i,season in enumerate(("freeze-up","winter","melt")):
-        for j,p in enumerate(("pre 2019-21","during 2022-24","post 2025-26")):
-            ax=axes[i,j]
-            g=C[(C.season==season)&(C.per==p)].groupby(["region","cell","x","y"],as_index=False)[col].mean()
+# [P13-2] one figure with panel groups (a) H_state and (b) H_episode, replacing the two separate PNGs.
+# Two-letter chokepoint codes: full names clipped at the axes edge once the panels shrank.
+CODE={"KaraGate":"KG","Vilkitsky":"VS","Sannikov_DmLaptev":"SD","LongStrait":"LS","BeringChukchi":"BC"}
+CODEKEY="chokepoints: KG Kara Gate, VS Vilkitsky, SD Sannikov/Dmitry Laptev, LS Long Strait, BC Bering-Chukchi"
+SEASONS=("freeze-up","winter","melt"); PERIODS=("pre 2019-21","during 2022-24","post 2025-26")
+GROUPS=(("H_state3",r"(a)  $H_{\rm state}$"),("H_episode3",r"(b)  $H_{\rm episode}$"))
+fig=plt.figure(figsize=(13.4,7.4))
+gs=fig.add_gridspec(3,7,width_ratios=[1,1,1,0.18,1,1,1],wspace=0.06,hspace=0.06,
+                    left=0.045,right=0.90,top=0.845,bottom=0.03)
+sc=None
+for gi,(col,glab) in enumerate(GROUPS):
+    c0=0 if gi==0 else 4
+    for i,season in enumerate(SEASONS):
+        for j,pr in enumerate(PERIODS):
+            ax=fig.add_subplot(gs[i,c0+j])
+            g=C[(C.season==season)&(C.per==pr)].groupby(["region","cell","x","y"],as_index=False)[col].mean()
             sc=ax.scatter(g.x/1e3,g.y/1e3,c=g[col],s=2.2,cmap=CMAP,norm=NORM,marker="s",linewidths=0)
             for r,(cx,cy) in CENT.items():
-                if r in CH: ax.text(cx/1e3,cy/1e3,SHORT[r],fontsize=4.6,ha="center",va="center",
-                                    color="w",weight="bold",zorder=5)
+                if r in CH: ax.text(cx/1e3,cy/1e3,CODE[r],fontsize=6.0,ha="center",va="center",
+                                    color="w",weight="bold",zorder=5,
+                                    path_effects=[pe.withStroke(linewidth=1.1,foreground="0.15")])
             ax.set_aspect("equal"); ax.set_xticks([]); ax.set_yticks([])
-            if i==0: ax.set_title(p,fontsize=8)
-            if j==0: ax.set_ylabel(season,fontsize=8)
-    cb=fig.colorbar(sc,ax=axes,fraction=0.020,pad=0.01); cb.set_label(lab+"   (1.0 = every hazard caught)",fontsize=7.5)
-    fig.suptitle(f"{lab} per 25 km cell, EPSG:3413 (chokepoints labelled)",fontsize=10)
-    fig.savefig(f"{OUT}/fig03_{col}_maps.png",bbox_inches="tight"); plt.close(fig)
+            if i==0: ax.set_title(pr,fontsize=8)
+            if j==0 and gi==0: ax.set_ylabel(season,fontsize=8)
+    x0=gs[0,c0].get_position(fig).x0; x1=gs[0,c0+2].get_position(fig).x1
+    fig.text((x0+x1)/2,0.888,glab+r"  ($\geq$ 3 km class)",ha="center",va="bottom",fontsize=11,weight="bold")
+cax=fig.add_axes([0.915,0.10,0.013,0.70])
+cb=fig.colorbar(sc,cax=cax); cb.set_label("H   (1.0 = every hazard caught)",fontsize=8)
+fig.suptitle("H per 25 km cell, EPSG:3413; rows are seasons, columns are periods",fontsize=10,y=0.985)
+fig.text(0.5,0.955,CODEKEY,ha="center",va="top",fontsize=7.5,color="0.25")
+fig.savefig(f"{OUT}/fig03_H_maps.png",bbox_inches="tight"); plt.close(fig)
 print("fig3 ok",flush=True)
 
 # ---- Fig 4: design curve ----
