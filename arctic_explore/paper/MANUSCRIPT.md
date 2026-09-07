@@ -95,14 +95,17 @@ Two properties of this definition matter downstream. It is left-censored at twic
 
 Hazard-state persistence was defined as the time from event end until the separation recovers to 90 % of its pre-event value, with runs that end before recovery treated as right-censored and handled by a Kaplan–Meier estimator. This measurand is undefined for events whose magnitude is less than a tenth of the pre-event separation, because such events never drop below the recovery threshold; that describes 84.6 % of all events, so persistence statistics are reported only for the remaining 15.4 %.
 
-**Table 2.** Hazard timescales by magnitude class, from the one-hourly buoy subset (episode) and the three-hourly archive with relative magnitude of at least 10 % (persistence). Median hours.
+**Table 2.** Hazard timescales. Episode durations are from the one-hourly buoy subset, stratified by magnitude class and season. Persistence is from the three-hourly archive restricted to events whose magnitude is at least 10 % of the pre-event separation, and is reported by class pooled over seasons and by season pooled over classes, because the class-by-season cells are not all populated. Median hours.
 
-| Class | Episode, winter | Episode, melt | Episode, freeze-up | Persistence, winter | Persistence, melt | Persistence, freeze-up |
-|---|---|---|---|---|---|---|
-| 1–3 km | 2 | 4 | 4 | — | — | — |
-| ≥ 3 km | 12 | 8 | 9 | 24 | — | — |
-| ≥ 5 km | 14 | 11 | 15 | 33 | 9 | 30 |
-| all, relmag ≥ 10 % | — | — | — | 27 | 12 | 39 |
+| Stratum | Winter | Melt | Freeze-up | Pooled |
+|---|---|---|---|---|
+| Episode, 1–3 km | 2 | 4 | 4 | — |
+| Episode, ≥ 3 km | 12 | 8 | 9 | — |
+| Episode, ≥ 5 km | 14 | 11 | 15 | — |
+| Persistence, ≥ 1 km | — | — | — | 21 |
+| Persistence, ≥ 3 km | — | — | — | 24 |
+| Persistence, ≥ 5 km | — | — | — | 33 |
+| Persistence, all classes | 27 | 12 | 39 | 21 |
 
 ### 3.3 Reconciling the buoy and SAR magnitude scales
 
@@ -117,3 +120,51 @@ The counterfactual removes platforms rather than scenes. For each cell, season a
 ### 3.5 Acquisition plan parsing
 
 Planned segments were extracted from the Keyhole Markup Language archives by parsing each placemark for satellite identifier, datatake identifier, mode, observation start time and footprint ring. Because successive mission-plan files overlap in validity, segments were deduplicated on the triple of satellite, datatake identifier and observation start time. Footprint rings were projected to EPSG:3413 and a segment was credited to a region when it covered at least half the region box, the same rule applied to acquired scenes so that planned and acquired counts are commensurable. The ramp-up of new platforms was determined from the archive itself, by taking the first month in which a platform's monthly scene count reached 80 % of the median of its last six months.
+
+## 4. Results
+
+### 4.1 The requirement was never met at the chokepoints
+
+Taking the buoy record at face value, an episode-scale hazard of at least 3 km lasts a median of 8–12 h depending on season and the resulting hazard state persists for a median of 24 h, which implies revisit requirements of 12 h and 24 h respectively if a large majority of hazards is to be bracketed. Neither was met. Across 688 region-season-year cells, of which 512 fall in the three main seasons, the fraction of season time covered by an acquisition pair separated by 12 h or less never reached 0.5, and its maximum over the whole record is 0.278. The 24 h criterion was reached in only four regions in any year, all of them large high-latitude boxes, and in none of the Northern Sea Route chokepoints in any year of the record.
+
+The cell-level metric tells the same story in the currency of hazards rather than of time. Before the loss of Sentinel-1B, chokepoint H_episode for the 3 km class stood at 0.200 and H_state at 0.504 (Fig. 3). Four in five episode-scale convergence events at the chokepoints were therefore already going unseen in 2019–2021, a period with two satellites operating normally. This is the central negative result of the paper, and it is not a consequence of the constellation gap. *Caveat: the 12 h and 24 h requirements are derived from the buoy duration distribution rather than from an operator's stated need, so they express what would be needed to catch the measured hazards, not a service specification agreed with an ice service.*
+
+### 4.2 The 2022–2024 gap widened an existing deficit
+
+Between 2022 and 2024 chokepoint H_episode fell from 0.200 to 0.097 and H_state from 0.504 to 0.363; across all sixteen regions H_episode fell from 0.267 to 0.151 and H_state from 0.562 to 0.441 (Fig. 3, Table 3). At the chokepoints this means that roughly nine in ten episode-scale hazards went unobserved during the gap, against four in five before it.
+
+An attempt to express this as a difference-in-differences between treated and untreated regions fails at the first step, and the failure is itself informative. Defining treatment as a retention ratio below 0.5, where retention is the 2022–2024 scene count divided by the 2019–2021 count, nine of sixteen regions are treated and seven are intermediate, but **no region has a retention of 0.9 or above**. The lowest is Sannikov at 0.310 and the highest Bering–Chukchi at 0.846. The loss was an Arctic-wide simultaneous shock and there is no untreated control, so the pre-registered contrast cannot be constructed. A post hoc dose-response comparison between the lost and intermediate groups gives −25.7 percentage points on H_state with a bootstrap interval of −49.9 to +0.6, which includes zero, and the two groups differ systematically in latitude and in baseline observability, so parallel trends is not plausible. *Caveat: no causal estimate of the gap's effect is available from a between-region design; the counterfactual of Section 4.4 is the appropriate instrument instead.*
+
+### 4.3 Chokepoint hazards are real and Sentinel-1 can retrieve them
+
+The low-resolution drift product cannot be used to establish whether chokepoint convergence occurs. On the 62.5 km OSI-405 grid, Vilkitsky Strait yields **no valid retrieval at all** across 76,075 point-days in ten years, being classified as land or coast throughout; Sannikov, Long Strait and Kara Gate yield a divergence value on 0.1 %, 0.3 % and 0.0 % of point-days respectively, and most of those valid values are flagged as interpolated rather than measured. Only the Bering–Chukchi approach, at 6.8 %, supports a time series. There the fraction of convergence days with a Sentinel-1 acquisition within 24 h was 0.422 in 2022, 0.177 in 2023 and 0.892 in 2024, so the pre-registered expectation that this fraction would remain below 0.25 in every year of the gap is rejected.
+
+Direct processing of Sentinel-1 pairs reverses the apparent picture. Twenty pairs at Vilkitsky, Sannikov and Long Strait in freeze-up and winter of 2019–2021, matched with a feature-tracking and normalised cross-correlation scheme, produced at least thirty valid vectors in **all twenty cases**, with a mean success rate of 0.510, ranging from 0.377 to 0.419 in freeze-up and 0.484 to 0.779 in winter. Where the coarse product sees nothing, Sentinel-1 itself yields thousands of drift vectors in the same straits. The hazards are not unobservable; the low-resolution product simply cannot resolve them.
+
+Expressing those fields in the buoy-pair metric closes the loop. Sampling 240,949 virtual buoy pairs at 20–100 km separation on the twenty fields, and applying the buoy rate threshold so that the selection matches as well as the measurement, 0.50 % of pairs qualify and their median closure is 5.88 km, with a ninetieth percentile of 6.94 km and a maximum of 10.63 km (Fig. 7). Strait convergence of the magnitude the buoy record describes is therefore present in the SAR fields, concentrated at Vilkitsky in winter where 1.86 % of virtual pairs qualify. *Caveat: the nineteen individual events detected by the connected-component procedure are unvalidated, since no buoy lay within 100 km of any of them; they are reported in Appendix A and no inference rests on them.*
+
+### 4.4 The gap is explained by satellite count
+
+Deleting Sentinel-1B from the 2019–2021 record and recomputing H_state reproduces the observed 2022–2024 values to within 10 percentage points in **fifteen of sixteen regions**, with most differences inside ±3 points: Fram +0.2, Barents +0.8, Vilkitsky −0.3, Long Strait −1.4 and Baffin −2.6 (Table 4). The single failure is Sannikov at +12.3 points, where the observed acquisition rate during the gap was lower than a single-platform constellation would predict. The collapse of 2022–2024 is thus almost entirely a platform-count phenomenon, and no appeal to changed tasking is needed to explain it.
+
+The design curve shows why adding platforms does not resolve the chokepoint deficit (Fig. 4). Averaged over all regions, H_state is 0.431 with one platform, 0.563 with two and 0.527 with three in the post-loss configuration; at the chokepoints the corresponding values are 0.372, 0.505 and 0.459. Only 16 of 800 region-season-year-combination values reach 0.8, all of them in large high-latitude regions, and the chokepoint maximum over every combination observed is 0.718. The marginal gain falls from 0.13 for the second platform to 0.05 for the third. *Caveat: platform count is confounded with orbital plane in this design, and Sentinel-1C and Sentinel-1D were still ramping up, so the three-platform values do not represent a mature three-satellite constellation.*
+
+### 4.5 The recovery shortfall is explained by allocation
+
+By 2025–2026 the constellation is larger than before the loss, yet annual scene volume across the sixteen regions stands at 88.5 % of the 2019–2021 rate. The shortfall is not distributed evenly. Controlling for ramp-up by restricting to the window in which Sentinel-1A and Sentinel-1C were both in routine operation, from April 2025 to March 2026, the European–Russian sector sits at 77.4 % of its pre-loss rate while the North American and Bering sector sits at 121.1 %.
+
+The acquisition plans show the same asymmetry before any acquisition takes place. Counting planned segments that cover at least half a region box, the European–Russian sector is planned at 86.4 % of its 2019–2021 rate against 122.3 % for North America, with Barents planned at 56 % (Fig. 5, Table 5). Because this appears in the plan rather than only in the outcome, the shortfall is an allocation decision and not a consequence of constellation size. The claim requires narrowing, however: within the same sector Vilkitsky is planned at 146 % and acquired at 156 %, and Long Strait at 113 %, so the deficit is specific to the Barents–Kara–Laptev sub-sector rather than to the European–Russian Arctic as a whole. *Caveat: acquisition-segment files describe planned datatakes and do not guarantee execution or downlink, and plans for 2022–2024 were not retrieved, so the comparison is pre versus post only.*
+
+### 4.6 The shortfall propagated into an operational product
+
+Availability of the DTU Sentinel-1 drift product, defined as the fraction of days on which at least 5 % of a region's pixels carry a valid vector, correlates with H_state across region-years at a Spearman coefficient of **0.711** (p = 1.7 × 10⁻¹⁸, n = 112), and with H_episode at 0.736 (Fig. 6). The relationship is not merely a cross-sectional contrast between well- and poorly-observed regions: computing the correlation along the time axis within each region separately gives a median of 0.727 across the sixteen regions. Product availability fell from 0.152 before the loss to 0.031 during it, a decline of 80 %, and stood at 0.033 in the partial 2025 sample. Varying the validity threshold to 2 % and 10 % gives correlations of 0.714 and 0.659, so the result is robust to that choice (Table 6).
+
+*Caveat, which must accompany every statement of this result: the DTU product is itself derived from Sentinel-1. The correlation therefore relates two quantities computed from the same archive and is not independent confirmation. No Sentinel-1-independent product was reachable for this test: the OSI SAF SAR-based drift product does not exist, having been discontinued, and the Norwegian ice-chart archive is issued on a fixed schedule, with 248, 253, 251 and 250 issuance days in 2019, 2021, 2023 and 2025 respectively, unchanged through the gap.*
+
+**Table 6.** Sensitivity of the product-consequence result to the validity threshold. Region-years, n = 112.
+
+| Valid-pixel threshold | ρ with H_state | p | ρ with H_episode | Within-region median ρ | Mean availability |
+|---|---|---|---|---|---|
+| ≥ 2 % | 0.714 | 9.6 × 10⁻¹⁹ | 0.741 | 0.673 | 0.104 |
+| ≥ 5 % | 0.711 | 1.7 × 10⁻¹⁸ | 0.736 | 0.727 | 0.083 |
+| ≥ 10 % | 0.659 | 2.8 × 10⁻¹⁵ | 0.683 | 0.816 | 0.062 |
