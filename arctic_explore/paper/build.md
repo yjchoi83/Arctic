@@ -47,15 +47,15 @@ citations throughout because the primary target is RSE.
 
 | Venue | Count |
 |---|---|
-| other journals | 16 |
+| other journals | 14 |
 | The Cryosphere | 13 |
 | Remote Sensing of Environment | 9 |
+| IEEE Trans. Geosci. Remote Sens. | 9 |
 | J. Geophys. Res. Oceans | 7 |
-| IEEE Trans. Geosci. Remote Sens. | 6 |
 | IEEE J. Sel. Top. Appl. Earth Obs. | 5 |
 | Marine Policy | 4 |
 | IGARSS (conference) | 3 |
-| MDPI journals | 3 |
+| MDPI journals | 2 |
 | Annals / J. Glaciology | 2 |
 | grey literature | 2 |
 | Cold Reg. Sci. Technol. | 2 |
