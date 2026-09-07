@@ -23,27 +23,28 @@ for s1, s2, yr, raw in cits:
         unres.append(raw)
 assert not unres, f"UNRESOLVED CITATIONS: {sorted(set(unres))}"
 
-head, _, tail = src.partition("## References")
-prose, _, dataavail = tail.partition("### Data availability")
+
+# Back matter in P15 order: Data availability is its own top-level section before References,
+# and References carries only the rendered list. The verification memo now lives in SUPPLEMENTARY.md.
+head, _, tail = src.partition("## Data availability")
+dataavail, _, refnote = tail.partition("## References")
 
 listing = "\n\n".join(render(e) for e in entries)
 built = datetime.date.today().isoformat()
 out = f"""<!-- GENERATED FILE. Source of record is paper/MANUSCRIPT.md; this copy differs from it
-     only in carrying a rendered reference list in place of the References prose.
+     only in carrying a rendered reference list in place of the References pointer.
      Rebuild: python3 scratch/P13/make_rse.py   (built {built}) -->
 
 {head.rstrip()}
 
+## Data availability
+
+{dataavail.strip()}
+
 ## References
 
 {listing}
-
-### Bibliography provenance
-{prose.strip()}
-
-### Data availability
-{dataavail.strip()}
 """
 (PAPER / "MANUSCRIPT_RSE.md").write_text(out)
-print(f"wrote paper/MANUSCRIPT_RSE.md — {len(entries)} references, "
+print(f"wrote paper/MANUSCRIPT_RSE.md - {len(entries)} references, "
       f"{len(cits)} in-text citation instances, 0 unresolved")

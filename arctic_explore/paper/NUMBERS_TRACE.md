@@ -186,12 +186,12 @@ region-season-year units is the chokepoint column of Table 3, 0.200 / 0.097 / 0.
 | Item | P11 | after P12 | after P13 |
 |---|---|---|---|
 | Abstract | 293 | 250 | **249** |
-| **Main text** — excluding headings, tables, figure captions and back matter | 9,561 | 9,288 | **9,307** |
-| Main text including headings | 9,753 | 9,480 | **9,498** |
+| **Main text** — excluding headings, tables, figure captions and back matter | 9,561 | 9,288 | **9,308** |
+| Main text including headings | 9,753 | 9,480 | **9,500** |
 | Tables | 735 | 735 | 735 |
-| Figure captions | 858 | 897 | 1,593 |
-| Back matter (References prose, Data availability) | 280 | 375 | 449 |
-| Whole file | 11,626 | 11,487 | 12,275 |
+| Figure captions | 858 | 897 | 1,629 |
+| Back matter (Data availability, References pointer) | 280 | 375 | 207 |
+| Whole file | 11,626 | 11,487 | 12,071 |
 
 Both main-text measures stay under the 9,500 target. Journal counts for Remote Sensing of Environment
 exclude tables, figure captions, references and data-availability text, which is the definition used for the
@@ -318,4 +318,19 @@ A claim drafted for the §4.2 Figure 4 pointer — that every chokepoint-group r
 contrast region — was **tested and withdrawn**: it holds in six of the nine season-period cells but
 fails in all three gap-period cells, where Kara Gate (0.163 / 0.165 / 0.100) exceeds Victoria Strait
 (0.134 / 0.153 / 0.089). The sentence now only points at the figure.
+
+## [P15] Final structure
+
+| Change | Effect |
+|---|---|
+| §4.7's Bering–Chukchi 2024 paragraph moved to the end of §4.3's first paragraph | the 0.892 is now explained where the three annual fractions 0.422 / 0.177 / 0.892 are first given, and the "(Section 4.3)" back-reference is gone. Values unchanged. |
+| "Data availability" promoted to a top-level section placed before References | it was a subsection nested under References |
+| bibliography-verification memo moved out of References to `SUPPLEMENTARY.md` §Supplementary Note S1 | 281 words; References now carries a three-line pointer, and `MANUSCRIPT_RSE.md` §References holds **only** the rendered author-year list |
+| p-values kept but disclaimed in §4.6 and in the Table 6 caption | the sentence "p-values assume independent region-years, which the data do not satisfy; ρ is reported descriptively" is now in §4.6; the Table 6 caption says the same at length and states that no inference rests on the p column. Keeping ρ and p with the disclaimer preserves the numbers; deleting them would have removed information the reader can still use descriptively. |
+| title gains ", 2016–2026" | also updated in the `build.md` pandoc invocation |
+
+Word budget after P15: main text 9,308, main text with headings **9,500** — at the target, not over it.
+Four clauses were tightened to absorb the mandated §4.6 disclaimer sentence, with **no value altered**:
+the moved Bering–Chukchi sentence, the §4.6 within-region correlation sentence, the §4.6 availability
+sentence and the §4.7 melt-season signpost. Back matter fell from 449 to 207 words because the memo left.
 

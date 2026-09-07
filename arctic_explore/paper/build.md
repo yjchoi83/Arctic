@@ -19,7 +19,7 @@ recorded but have not been executed here.
       --from=markdown+pipe_tables+tex_math_dollars \
       --citeproc --bibliography=references.bib --csl=elsevier-harvard.csl \
       --resource-path=.:figures \
-      --metadata title="Hazard-timescale observability of Arctic shipping chokepoints: what Sentinel-1 could and could not see" \
+      --metadata title="Hazard-timescale observability of Arctic shipping chokepoints: what Sentinel-1 could and could not see, 2016–2026" \
       --number-sections \
       -o MANUSCRIPT_RSE.docx
 

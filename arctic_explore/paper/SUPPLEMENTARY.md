@@ -54,3 +54,27 @@ package, which is not distributed through the Python Package Index.
 | | sampling | random node pairs on the accepted-node fields |
 | | count | 240,949 pairs across the twenty windows |
 | | rate threshold applied | 4.706 km d⁻¹, from the one-hourly buoy archive (Section 3.2) |
+
+## Supplementary Note S1. Bibliography verification
+
+All in-text citations resolve to keys in `paper/references.bib`, which holds **76 entries, every one verified
+in-session** by retrieval of its DOI through Crossref, by OpenLibrary for the two books, by arXiv for the one
+preprint, or by a live URL check for the two grey-literature items (the IMO POLARIS circular and the Bellona
+report), which carry no DOI and are marked as such. Nothing in the bibliography rests on an unverified
+identifier, and no DOI was inferred or constructed. Rendering the list for submission (Section *Data
+availability*) confirmed that **all 74 in-text citation instances resolve to a key**, and removed two duplicate
+keys that pointed at the DOIs already present under another key.
+
+The 76 entries standing before this package were subsequently **re-verified against an authenticated Semantic Scholar search** (`x-api-key`,
+one request per second, exponential backoff). Sixty-three matched without qualification. Ten were flagged and all
+ten resolve in favour of the bibliography: six are Semantic Scholar recording the Copernicus discussion-paper or
+online-first year rather than the year of record, each settled against Crossref `issued`; three are index defects
+on the two books and on the Kaplan–Meier paper, for which the bibliography carries the better identifier; one was
+an author-string split. Three are not indexed at all, being the two grey-literature items and, at the time of the
+run, the arXiv preprint, which has since been resolved by identifier. **One real defect was found and corrected**:
+the title of `karvonen2022baltic` was truncated and now reads in full. The audit is recorded in
+`scratch/P12/REF_VERIFY.md`.
+
+Cluster composition, per-cluster targets and the section in which each cluster is cited are given in
+`paper/LITERATURE_CLUSTERS.md` and `paper/LITERATURE_MAP.md`. Rendering instructions for the two journal styles
+are in `paper/build.md`.

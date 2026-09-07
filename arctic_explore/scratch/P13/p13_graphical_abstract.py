@@ -52,7 +52,7 @@ def tx(*a, **k):
 # ---------------- title, two lines so it fits the canvas ----------------
 tx(0.5, 0.972, "Hazard-timescale observability of Arctic shipping chokepoints",
    ha="center", va="center", fontsize=13.5, weight="bold")
-tx(0.5, 0.929, "what Sentinel-1 could and could not see",
+tx(0.5, 0.929, "what Sentinel-1 could and could not see, 2016–2026",
    ha="center", va="center", fontsize=11.5, color="0.3")
 
 # ================ LEFT: the metric ================

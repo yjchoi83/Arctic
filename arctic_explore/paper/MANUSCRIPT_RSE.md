@@ -1,8 +1,8 @@
 <!-- GENERATED FILE. Source of record is paper/MANUSCRIPT.md; this copy differs from it
-     only in carrying a rendered reference list in place of the References prose.
-     Rebuild: python3 scratch/P13/make_rse.py   (built 2026-09-07) -->
+     only in carrying a rendered reference list in place of the References pointer.
+     Rebuild: python3 scratch/P13/make_rse.py   (built 2026-09-08) -->
 
-# Hazard-timescale observability of Arctic shipping chokepoints: what Sentinel-1 could and could not see
+# Hazard-timescale observability of Arctic shipping chokepoints: what Sentinel-1 could and could not see, 2016–2026
 
 **Target journal: Remote Sensing of Environment. Fallback: Cold Regions Science and Technology.**
 
@@ -194,7 +194,7 @@ An attempt to express this as a difference-in-differences between treated and un
 
 ### 4.3 Chokepoint hazards are real and Sentinel-1 can retrieve them
 
-The low-resolution drift product cannot be used to establish whether chokepoint convergence occurs. On the 62.5 km OSI-405 grid, Vilkitsky Strait yields **no valid retrieval at all** across 76,075 point-days in ten years, being classified as land or coast throughout; Sannikov, Long Strait and Kara Gate yield a divergence value on 0.1 %, 0.3 % and 0.0 % of point-days respectively, and most of those valid values are flagged as interpolated rather than measured. Only the Bering–Chukchi approach, at 6.8 %, supports a time series. There the fraction of convergence days with a Sentinel-1 acquisition within 24 h was 0.422 in 2022, 0.177 in 2023 and 0.892 in 2024, so the pre-registered expectation that this fraction would remain below 0.25 in every year of the gap is rejected.
+The low-resolution drift product cannot be used to establish whether chokepoint convergence occurs. On the 62.5 km OSI-405 grid, Vilkitsky Strait yields **no valid retrieval at all** across 76,075 point-days in ten years, being classified as land or coast throughout; Sannikov, Long Strait and Kara Gate yield a divergence value on 0.1 %, 0.3 % and 0.0 % of point-days respectively, and most of those valid values are flagged as interpolated rather than measured. Only the Bering–Chukchi approach, at 6.8 %, supports a time series. There the fraction of convergence days with a Sentinel-1 acquisition within 24 h was 0.422 in 2022, 0.177 in 2023 and 0.892 in 2024, so the pre-registered expectation that this fraction would remain below 0.25 in every year of the gap is rejected. The 0.892 of 2024, higher than any pre-loss year, is a denominator artefact and not recovered capability: convergence days are defined against each cell's own ten-year climatology, and 2024 yielded few qualifying days just as the Alaskan corridor was being planned and acquired above its pre-loss rate. The three annual values are noisy estimates, not a trend.
 
 Direct processing of Sentinel-1 pairs reverses the apparent picture. Twenty pairs at Vilkitsky, Sannikov and Long Strait in freeze-up and winter of 2019–2021, matched with a feature-tracking and normalised cross-correlation scheme, produced at least thirty valid vectors in **all twenty cases**, with a mean success rate of 0.510. Pooled over the ten freeze-up pairs the success rate is **0.392**, against 0.628 over the ten winter pairs; the per-strait means range from 0.377 to 0.419 in freeze-up and from 0.484 to 0.779 in winter. Where the coarse product sees nothing, Sentinel-1 itself yields thousands of drift vectors: the hazards are not unobservable, the low-resolution product simply cannot resolve them.
 
@@ -256,14 +256,14 @@ The acquisition plans show the same asymmetry before any acquisition takes place
 
 ### 4.6 The shortfall propagated into an operational product
 
-Availability of the DTU Sentinel-1 drift product, defined as the fraction of days on which at least 5 % of a region's pixels carry a valid vector, correlates with H_state across region-years at a Spearman coefficient of **0.711** (p = 1.7 × 10⁻¹⁸, n = 112), and with H_episode at 0.736 (Fig. 9). It is not merely a cross-sectional contrast: the within-region correlation along the time axis has a median of 0.727 across the sixteen regions. Product availability fell from 0.152 before the loss to 0.031 during it, a decline of 80 %, and stood at 0.033 in the partial 2025 sample. Varying the validity threshold to 2 % and 10 % gives correlations of 0.714 and 0.659, so the result is robust to that choice (Table 6).
+Availability of the DTU Sentinel-1 drift product, defined as the fraction of days on which at least 5 % of a region's pixels carry a valid vector, correlates with H_state across region-years at a Spearman coefficient of **0.711** (p = 1.7 × 10⁻¹⁸, n = 112), and with H_episode at 0.736 (Fig. 9). **p-values assume independent region-years, which the data do not satisfy; ρ is reported descriptively.** The within-region correlation along the time axis has a median of 0.727 across the sixteen regions, so this is not merely a cross-sectional contrast. Availability fell from 0.152 before the loss to 0.031 during it, a decline of 80 %, and was 0.033 in the partial 2025 sample. Varying the validity threshold to 2 % and 10 % gives correlations of 0.714 and 0.659, so the result is robust to that choice (Table 6).
 
 **Figure 9.** Availability of the DTU Sentinel-1 drift product per region-year, defined as the fraction of days with at least 5 % valid pixels; chokepoint-group regions in bold red. Cyan lines mark the loss of Sentinel-1B and the entry of Sentinel-1C into routine operations. The final column is labelled **2025 (partial)** because the product record ends on 1 November 2025, so that year is not a full annual sample and its value is not comparable with the six complete years. `fig09_dtu_availability.png`
 
 
 *Caveat, which must accompany every statement of this result: the DTU product is itself derived from Sentinel-1, so the correlation relates two quantities computed from the same archive and is not independent confirmation. No Sentinel-1-independent product was reachable for this test; Section 6.3 sets out why neither the OSI SAF drift products nor the Norwegian ice-chart archive can serve as one.*
 
-**Table 6.** Sensitivity of the product-consequence result to the validity threshold. Region-years, n = 112.
+**Table 6.** Sensitivity of the product-consequence result to the validity threshold. Region-years, n = 112. p-values assume independent region-years, which the data do not satisfy — cells within a region share satellite orbits and successive years are serially correlated; ρ is reported descriptively and no inference rests on the p column.
 
 | Valid-pixel threshold | ρ with H_state | p | ρ with H_episode | Within-region median ρ | Mean availability |
 |---|---|---|---|---|---|
@@ -283,9 +283,7 @@ Because H counts a hazard as observed when a single acquisition falls inside its
 | Freeze-up | 0.574 / 0.437 / 0.607 | 0.392 | **0.225** | **0.171** | **0.238** |
 | Melt | 0.390 / 0.276 / 0.398 | 0.020 | **0.008** | **0.006** | **0.008** |
 
-The melt-season row is the important one. No acquisition schedule can lift E above about 0.01 in that season, because the limiting factor is the failure of classical C-band feature tracking on a melting surface rather than the observing cadence. In winter and freeze-up the effective values lie between 0.17 and 0.35, so even in the seasons where retrieval works, roughly seven in ten hazard states go unretrieved. Freeze-up is also the only season whose post-gap value exceeds its pre-gap value, which follows from the recovery of acquisition density at Vilkitsky and Long Strait noted in Section 4.5 rather than from any improvement in retrieval. *Caveat: the melt figure comes from a different region and a smaller sample than the winter and freeze-up figures, and all three are upper bounds in the sense of Section 6.6.*
-
-The Bering–Chukchi hazard-observed fraction of 0.892 in 2024 (Section 4.3), higher than any pre-loss year, is a property of the denominator rather than a recovery of capability: convergence days are defined against each cell's own ten-year climatology, and 2024 yielded few qualifying days just as the Alaskan corridor was being planned and acquired above its pre-loss rate. The three annual values are noisy estimates, not a trend.
+The melt-season row is the important one: no acquisition schedule can lift E above about 0.01 there, because the limiting factor is the failure of classical C-band feature tracking on a melting surface rather than the observing cadence. In winter and freeze-up the effective values lie between 0.17 and 0.35, so even in the seasons where retrieval works, roughly seven in ten hazard states go unretrieved. Freeze-up is also the only season whose post-gap value exceeds its pre-gap value, which follows from the recovery of acquisition density at Vilkitsky and Long Strait noted in Section 4.5 rather than from any improvement in retrieval. *Caveat: the melt figure comes from a different region and a smaller sample than the winter and freeze-up figures, and all three are upper bounds in the sense of Section 6.6.*
 
 ## 5. Discussion
 
@@ -354,6 +352,10 @@ Twenty Sentinel-1 pairs at Vilkitsky, Sannikov and Long Strait in freeze-up and 
 These events remain **not validated** against in-situ data. No International Arctic Buoy Programme buoy lay within 100 km of any of the nineteen, even after relaxing the temporal bracket to ±12 h, so no comparison was possible. They are presented as a contact sheet in Fig. A1 for human adjudication, with the decision column of the accompanying table left blank, and no result in the main text depends on them. Their magnitudes, expressed on the buoy baseline as described in Section 3.3, place ten below 1 km, eight between 1 and 3 km and one at or above 5 km. The main-text evidence that strait convergence of navigable magnitude exists in the SAR fields rests instead on the virtual buoy-pair analysis of Section 4.3, which does not depend on the connected-component event definition.
 
 **Figure A1.** Contact sheet of the nineteen candidate strait convergence events, for human adjudication; the decision box on each panel is deliberately blank, as is the decision column of the accompanying table. Panels use the Figure 6 style: cropped to the two-scene footprint overlap, after-scene Extra Wide HH under a semi-transparent divergence raster on the common ± 0.10 d⁻¹ diverging scale, component outlined, graticule, 50 km scale bar and a before-scene thumbnail. Per panel the top line gives event, strait and date and the second line the component area and the centroid distance to the overlap boundary. `figA1_contact_sheet.png`
+
+## Data availability
+
+Sentinel-1 metadata via the Copernicus programme; International Arctic Buoy Programme Level 1 archive; EUMETSAT OSI SAF product OSI-405; Copernicus Marine datasets `cmems_obs-si_glo_phy-drift-north_my_l4_P1D-m` and `cmems_obs-si_arc_phy_my_l3_P1D`; European Space Agency acquisition-segment archives from the Copernicus SentiWiki document library; Norwegian Meteorological Institute ice-chart quicklook archive. Derived tables, figure-generating code, the full analysis pipeline and a per-number provenance trace are in the project repository at https://github.com/yjchoi83/Arctic (directories `arctic_explore/stage5`, `arctic_explore/paper` and `arctic_explore/results`). Gridded H products are held as GeoTIFF in `data/products`: eighteen rasters, 25 km on EPSG:3413, being H_episode and H_state for the ≥ 3 km class in three seasons and three periods. Supplementary Table S1, giving the full pair-processing and matcher parameters of Section 3.6, is in `paper/SUPPLEMENTARY.md`. A deposit folder staged for Zenodo, holding those rasters, the result tables and the figure code with a manifest of sizes and checksums, is in `paper/zenodo/`; it has not been uploaded and its citation block awaits an author line and a minted DOI.
 
 ## References
 
@@ -508,29 +510,3 @@ Yang, Y., Xie, T., Sun, C., Wang, C., Li, J., Zhang, X., 2024. Improvement of Se
 Zakhvatkina, N., Smirnov, V., Bychkova, I., 2019. Satellite SAR Data-based Sea Ice Classification: An Overview. Geosciences 9, 152. https://doi.org/10.3390/geosciences9040152
 
 Zhao, L., Xie, T., Perrie, W., Yang, J., 2023. Deep-Learning-Based Sea Ice Classification With Sentinel-1 and AMSR-2 Data. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing 16, 5514–5525. https://doi.org/10.1109/jstars.2023.3285857
-
-### Bibliography provenance
-All in-text citations resolve to keys in `paper/references.bib`, which holds **76 entries, every one verified
-in-session** by retrieval of its DOI through Crossref, by OpenLibrary for the two books, by arXiv for the one
-preprint, or by a live URL check for the two grey-literature items (the IMO POLARIS circular and the Bellona
-report), which carry no DOI and are marked as such. Nothing in the bibliography rests on an unverified
-identifier, and no DOI was inferred or constructed. Rendering the list for submission (Section *Data
-availability*) confirmed that **all 74 in-text citation instances resolve to a key**, and removed two duplicate
-keys that pointed at the DOIs already present under another key.
-
-The 76 entries standing before this package were subsequently **re-verified against an authenticated Semantic Scholar search** (`x-api-key`,
-one request per second, exponential backoff). Sixty-three matched without qualification. Ten were flagged and all
-ten resolve in favour of the bibliography: six are Semantic Scholar recording the Copernicus discussion-paper or
-online-first year rather than the year of record, each settled against Crossref `issued`; three are index defects
-on the two books and on the Kaplan–Meier paper, for which the bibliography carries the better identifier; one was
-an author-string split. Three are not indexed at all, being the two grey-literature items and, at the time of the
-run, the arXiv preprint, which has since been resolved by identifier. **One real defect was found and corrected**:
-the title of `karvonen2022baltic` was truncated and now reads in full. The audit is recorded in
-`scratch/P12/REF_VERIFY.md`.
-
-Cluster composition, per-cluster targets and the section in which each cluster is cited are given in
-`paper/LITERATURE_CLUSTERS.md` and `paper/LITERATURE_MAP.md`. Rendering instructions for the two journal styles
-are in `paper/build.md`.
-
-### Data availability
-Sentinel-1 metadata via the Copernicus programme; International Arctic Buoy Programme Level 1 archive; EUMETSAT OSI SAF product OSI-405; Copernicus Marine datasets `cmems_obs-si_glo_phy-drift-north_my_l4_P1D-m` and `cmems_obs-si_arc_phy_my_l3_P1D`; European Space Agency acquisition-segment archives from the Copernicus SentiWiki document library; Norwegian Meteorological Institute ice-chart quicklook archive. Derived tables, figure-generating code, the full analysis pipeline and a per-number provenance trace are in the project repository at https://github.com/yjchoi83/Arctic (directories `arctic_explore/stage5`, `arctic_explore/paper` and `arctic_explore/results`). Gridded H products are held as GeoTIFF in `data/products`: eighteen rasters, 25 km on EPSG:3413, being H_episode and H_state for the ≥ 3 km class in three seasons and three periods. Supplementary Table S1, giving the full pair-processing and matcher parameters of Section 3.6, is in `paper/SUPPLEMENTARY.md`. A deposit folder staged for Zenodo, holding those rasters, the result tables and the figure code with a manifest of sizes and checksums, is in `paper/zenodo/`; it has not been uploaded and its citation block awaits an author line and a minted DOI.
