@@ -191,6 +191,22 @@ Availability of the DTU Sentinel-1 drift product, defined as the fraction of day
 | ≥ 5 % | 0.711 | 1.7 × 10⁻¹⁸ | 0.736 | 0.727 | 0.083 |
 | ≥ 10 % | 0.659 | 2.8 × 10⁻¹⁵ | 0.683 | 0.816 | 0.062 |
 
+### 4.7 Effective observability
+
+Because H counts a hazard as observed when a single acquisition falls inside its window, whereas retrieving ice motion requires a pair, the operationally meaningful quantity is the product of H with the probability that a retrieval succeeds. Retrieval success was measured directly on image pairs: 0.628 pooled over ten winter pairs at the three straits and 0.392 pooled over ten freeze-up pairs, against 0.02 measured earlier for melt-season Chukchi pairs conditioned on ice presence. Table 7 combines these with the season-resolved chokepoint H_state values.
+
+**Table 7.** Effective observability E = H_state × retrieval success at the Northern Sea Route chokepoints, ≥ 3 km class, by season and period. H_state is the season-resolved chokepoint mean; retrieval success is measured at the straits for winter and freeze-up and from Chukchi melt-season pairs conditioned on ice presence for melt.
+
+| Season | H_state pre / during / post | Retrieval success | E, pre 2019–21 | E, during 2022–24 | E, post 2025–26 |
+|---|---|---|---|---|---|
+| Winter | 0.549 / 0.376 / 0.466 | 0.628 | **0.345** | **0.236** | **0.293** |
+| Freeze-up | 0.574 / 0.437 / 0.607 | 0.392 | **0.225** | **0.171** | **0.238** |
+| Melt | 0.390 / 0.276 / 0.398 | 0.020 | **0.008** | **0.006** | **0.008** |
+
+The melt-season row is the important one. No acquisition schedule can lift E above about 0.01 in that season, because the limiting factor is the failure of classical C-band feature tracking on a melting surface rather than the observing cadence. In winter and freeze-up the effective values lie between 0.17 and 0.35, so even in the seasons where retrieval works, roughly seven in ten hazard states go unretrieved. Freeze-up is also the only season whose post-gap value exceeds its pre-gap value, which follows from the recovery of acquisition density at Vilkitsky and Long Strait noted in Section 4.5 rather than from any improvement in retrieval. *Caveat: the melt figure comes from a different region and a smaller sample than the winter and freeze-up figures, and all three are upper bounds in the sense of Section 6.6.*
+
+One value in Section 4.3 deserves comment. The hazard-observed fraction at the Bering–Chukchi approach rises to 0.892 in 2024, higher than any pre-loss year, which is not a recovery of capability but a consequence of how the denominator is formed: convergence days are defined against each cell's own ten-year climatology, and 2024 yielded few qualifying days at a time when the Alaskan corridor was being planned and acquired above its pre-loss rate, so a small number of hazard days coincided with unusually dense sampling. The series should be read as three noisy annual estimates rather than as a trend.
+
 ## 5. Discussion
 
 ### 5.1 Two periods, two mechanisms
@@ -210,6 +226,14 @@ The third argument is that observation is not the only bottleneck. Multiplying H
 The metric proposed here is cheap. It requires only acquisition metadata and an externally measured duration distribution, and its closed form makes evaluation over thousands of cells trivial. We would argue that reporting observing capability without reference to the timescale of the phenomenon being observed is no longer defensible when the alternative costs so little. The length-biasing of gaps is not a technicality: using a mean revisit interval in place of the gap distribution systematically flatters the result, because it hides the long gaps in which most hazard onsets actually fall.
 
 Two methodological cautions emerged that generalise beyond this application. Event duration statistics derived from interval-sampled trajectories are left-censored at twice the sampling interval, and a median that coincides with that floor should be read as a property of the sampling rather than of the physics; only magnitude-stratified durations proved stable across sampling rates. And magnitudes measured on different baselines are not comparable without correction, a factor of four in our case, which was large enough to invert a conclusion about whether events of a given class were present at all.
+
+### 5.4 Dependence on a single open mission
+
+Every quantitative statement in this paper concerns Sentinel-1, and that is not an arbitrary scope. For open, free and systematically acquired SAR over the Arctic marine domain there is at present no alternative of comparable coverage, which is why an interruption to one mission propagates as directly as Section 4.6 shows. Three other sources are sometimes offered as mitigation, and it is worth being precise about what each changes.
+
+The RADARSAT Constellation Mission acquires C-band over the Canadian Arctic with a three-satellite revisit and would materially improve the North American sectors, but its catalogue is not openly distributed on the terms that Sentinel-1 is, and its coverage of the Russian Arctic chokepoints that dominate our deficit is not the mission's priority. NISAR adds L-band, which penetrates a melting surface far better than C-band and is therefore the one development that could plausibly attack the melt-season retrieval failure rather than the acquisition cadence; our earlier audit of its first season found dual-polarisation frames genuinely co-located with Sentinel-1 in only 92 unique pairs below 78° N, so the near-term contribution is to physics rather than to routine coverage. Commercial constellations offer short revisit at high resolution and can be tasked onto a specific strait, which suits incident response, but tasked acquisition is by construction not the systematic background coverage that a climatology of observability requires, and the cost model does not support continuous monitoring of every chokepoint.
+
+None of the three removes the finding of Section 4.4, that the marginal value of an additional platform is 0.10 to 0.14 of H and the chokepoint requirement is a factor of two further away. What they change is the composition of the deficit rather than its size: L-band addresses the season in which retrieval fails, and additional C-band capacity addresses the seasons in which it works. We make no recommendation as to procurement; the point is only that the measurement framework of this paper is the one that would let such a comparison be made on the quantity that matters to a navigator.
 
 ## 6. Limitations
 

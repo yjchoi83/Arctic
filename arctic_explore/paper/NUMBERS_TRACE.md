@@ -123,7 +123,12 @@ script); "stage5" and "results" paths are committed. Package column gives the AR
 | rate thresholds 3-h / 1-h | 2.954 / 4.706 km d⁻¹ | `stage5/P1/P1_hazard_windows.md`, `scratch/P1b/step2.log` | P1, P1b |
 | cells / regions / cell-season-year rows | 1,771 / 16 / 56,663 | `scratch/P3/cells.py`, `scratch/P3/P3_cells.csv` | P3 |
 | √area median vs buoy baseline median | 12.2 km vs 49.4 km; ratio 0.248 | `stage5/P9/P9_step1_magnitude.md` §1 | P9 |
-| effective observability winter / melt | 0.18–0.28 / 0.006–0.009 | `stage5/P5/P5_results.md` §2 | P5 |
+| **[P11-A7]** E chokepoints, winter pre/during/post | 0.345 / 0.236 / 0.293 | `scratch/P11/E_table.csv` | P11 |
+| **[P11-A7]** E chokepoints, freeze-up | 0.225 / 0.171 / 0.238 | same | P11 |
+| **[P11-A7]** E chokepoints, melt | 0.008 / 0.006 / 0.008 | same | P11 |
+| **[P11-A7]** retrieval success winter / freeze-up / melt | 0.628 / 0.392 / 0.020 | `scratch/P8/pair_summary.csv`, `stage5/P5/P5_results.md` | P8, P5 |
+| **[P11-A7]** chokepoint H_state3 by season, pre/during/post | see Table 7 | `scratch/P3/P3_region_season_year.csv` | P3 |
+| **[P11-A7]** superseded (was 0.18–0.28 winter, pooled) | replaced by season-resolved E table | — | P5 |
 | freeze-up retrieval success | 0.392 (0.47 assumption ~19 % high) | `scratch/P8/pair_summary.csv` | P8 |
 | chokepoint H by class (Table 3b) | see Table 3b | `scratch/P9/H_by_class_cells.csv` | P9 |
 | Laptev/ESS winter buoy events | 17, from 8 pairs and 14 buoys | `stage5/P1/P1_hazard_windows.md` §2 | P1 |
