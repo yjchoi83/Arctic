@@ -5,18 +5,24 @@ script); "stage5" and "results" paths are committed. Package column gives the AR
 
 ## Figures
 
+**[P12] Figures renumbered to first-citation order.** Figures 4-8 were out of order: the §4.3 panels were
+labelled 7 and 8 while the §4.4-4.6 panels were labelled 4-6. Mapping applied to labels, in-text references,
+PNG file names and `scratch/P9/p10_figs.py`: old 7→4, 8→5, 4→6, 5→7, 6→8. Content is unchanged.
+
 | Figure | File | Produced from | Script | Package |
 |---|---|---|---|---|
 | 1 | `paper/figures/fig01_H_schematic.png` | synthetic illustration only, no data | `scratch/P9/p10_figs.py` | P10 |
 | 2 | `paper/figures/fig02_hazard_timescales.png` | `scratch/P3/step2t_native1h.npz`, `scratch/P1b/events_persist.csv` | same | P1b, P3 |
 | 3 | `paper/figures/fig03_H_state3_maps.png`, `fig03_H_episode3_maps.png` | `scratch/P3/P3_cells.csv` | same | P3 |
-| 4 | `paper/figures/fig04_design_curve.png` | `scratch/P6/ose_region.csv` | same | P6 |
-| 5 | `paper/figures/fig05_planned_vs_acquired.png` | `scratch/P9/planned_vs_acquired.csv` ← `scratch/P8/planned_vs.csv` + `scratch/P2/P2_tables.csv` | same | P8, P2 |
-| 6 | `paper/figures/fig06_dtu_availability.png` | `scratch/P8/dtu_availability.csv` | same | P8 |
-| 7 | `paper/figures/fig07_virtual_pairs.png` | `scratch/P9/virtual_pairs_all.csv.gz` | same | P9 |
-| 8 | `paper/figures/fig08_strait_examples.png` | `results/P8/quicklooks/E00{1,2}_*, E0{10,11}_*`; caption edge-audit values from `results/P9/edge_audit.csv` = `paper/edge_audit.csv` | same | P8, P11 |
-|   | **[P12-6]** panel-order centroid distances to overlap boundary: E002 18.9, E001 76.7, E011 46.0, E010 32.4 km; frac of nodes within 5 km = 0.000 for all four | | | P12 |
+| 4 (was 7) | `paper/figures/fig04_virtual_pairs.png` | `scratch/P9/virtual_pairs_all.csv.gz` | same | P9 |
+| 5 (was 8) | `paper/figures/fig05_strait_examples.png` | `results/P8/quicklooks/E00{1,2}_*, E0{10,11}_*`; caption edge-audit values from `results/P9/edge_audit.csv` = `paper/edge_audit.csv` | same | P8, P11 |
+| 6 (was 4) | `paper/figures/fig06_design_curve.png` | `scratch/P6/ose_region.csv`, `scratch/P11/ose_region_valid.csv` | same | P6, P11 |
+| 7 (was 5) | `paper/figures/fig07_planned_vs_acquired.png` | `scratch/P9/planned_vs_acquired.csv` ← `scratch/P8/planned_vs.csv` + `scratch/P2/P2_tables.csv` | same | P8, P2 |
+| 8 (was 6) | `paper/figures/fig08_dtu_availability.png` | `scratch/P8/dtu_availability.csv` | same | P8 |
 | A1 | `paper/figures/figA1_contact_sheet.png` | `results/P8/quicklooks/*`, `results/P9/qc_table_p9.csv` | same | P8, P9 |
+
+**[P12-6]** Figure 5 caption edge-audit values, panel order: centroid distance to the overlap boundary
+E002 18.9, E001 76.7, E011 46.0, E010 32.4 km; fraction of nodes within 5 km of it 0.000 for all four.
 
 ## Tables
 

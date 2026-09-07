@@ -1,0 +1,197 @@
+{
+ "10.1016/j.rse.2025.115140": [
+  "RSE",
+  2026,
+  "Pan-Arctic winter sea ice classification using Sentinel-1 dual-polarized SAR images",
+  "Remote Sensing of Environment",
+  "Dai Y.; Li X.; Yuan H."
+ ],
+ "10.1016/j.rse.2024.114193": [
+  "RSE",
+  2024,
+  "Arctic Sea ice leads detected using sentinel-1B SAR image and their responses to atmo",
+  "Qu M.; Lei R.; Liu Y.; Li N."
+ ],
+ "10.1109/tgrs.2025.3568031": [
+  "TGRS",
+  2025,
+  "A Stacking Approach for Arctic Sea Ice Lead Classification (SALC) via Sentinel-1 SAR Ima",
+  "IEEE Transactions on Geoscience and Remote Sensing",
+  "Zhao X.; Zhang Y.; Gong J.; Wu Y.; Cheng X.; Heygster G."
+ ],
+ "10.1109/tgrs.2022.3226223": [
+  "TGRS",
+  2022,
+  "Retrieval of Sea Ice Drift From the Central Arctic to the Fram Strait Based on Sequentia",
+  "IEEE Transactions on Geoscience and Remote Sensing",
+  "Qiu Y.; Li X."
+ ],
+ "10.1109/tgrs.2024.3444045": [
+  "TGRS",
+  2024,
+  "Arctic Wintertime Sea Ice Lead Detection From Sentinel-1 SAR Images",
+  "IEEE Transactions on Geoscience and Remote Sensing",
+  "Chen S.; Shokr M.; Zhang L.; Zhang Z.; Hui F.; Cheng X."
+ ],
+ "10.1109/jstars.2024.3403919": [
+  "JSTARS",
+  2024,
+  "Improvement of Sea Ice Drift Extraction Based on Feature Tracking from C-SAR/01 Imagery",
+  "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+  "Yang Y.; Xie T.; Sun C.; Wang C.; Li J.; Zhang X."
+ ],
+ "10.1109/tgrs.2023.3296462": [
+  "TGRS",
+  2023,
+  "Large-Resolution Difference Heterogeneous SAR Image Sea Ice Drift Tracking Using a Smoot",
+  "IEEE Transactions on Geoscience and Remote Sensing",
+  "Men P.; Guo H.; An J.; Li G."
+ ],
+ "10.1109/tgrs.2017.2703084": [
+  "TGRS",
+  2017,
+  "Sea Ice Drift Tracking From Sequential SAR Images Using Accelerated-KAZE Features",
+  "IEEE Transactions on Geoscience and Remote Sensing",
+  "Demchev D.; Volkov V.; Kazakov E.; Alcantarilla P.; Sandven S.; Khmeleva V."
+ ],
+ "10.1109/tgrs.2021.3097885": [
+  "TGRS",
+  2022,
+  "Baltic Sea Ice Concentration Estimation From C-Band Dual-Polarized SAR Imagery by Image ",
+  "IEEE Transactions on Geoscience and Remote Sensing",
+  "Karvonen J."
+ ],
+ "10.1109/tgrs.2019.2892723": [
+  "TGRS",
+  2019,
+  "Estimating Sea Ice Concentration From SAR: Training Convolutional Neural Networks With P",
+  "IEEE Transactions on Geoscience and Remote Sensing",
+  "Cooke C.; Scott K."
+ ],
+ "10.1109/tgrs.2024.3501094": [
+  "TGRS",
+  2024,
+  "Hierarchical Information-Sharing Convolutional Neural Network for the Prediction of Arct",
+  "IEEE Transactions on Geoscience and Remote Sensing",
+  "Koo Y.; Rahnemoonfar M."
+ ],
+ "10.1109/tgrs.2016.2543660": [
+  "TGRS",
+  2016,
+  "Sea Ice Concentration Estimation During Melt From Dual-Pol SAR Scenes Using Deep Convolu",
+  "IEEE Transactions on Geoscience and Remote Sensing",
+  "Wang L.; Scott K.; Xu L.; Clausi D."
+ ],
+ "10.1109/tgrs.2023.3331276": [
+  "TGRS",
+  2023,
+  "Model Ensemble With Dropout for Uncertainty Estimation in Sea Ice Segmentation Using Sen",
+  "IEEE Transactions on Geoscience and Remote Sensing",
+  "Pires de Lima R.; Karimzadeh M."
+ ],
+ "10.1109/jstars.2023.3285857": [
+  "JSTARS",
+  2023,
+  "Deep-Learning-Based Sea Ice Classification With Sentinel-1 and AMSR-2 Data",
+  "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+  "Zhao L.; Xie T.; Perrie W.; Yang J."
+ ],
+ "10.1109/tgrs.2013.2290231": [
+  "TGRS",
+  2014,
+  "Automated Ice\u2013Water Classification Using Dual Polarization SAR Satellite Imagery",
+  "IEEE Transactions on Geoscience and Remote Sensing",
+  "Leigh S.; Zhijie Wang .; Clausi D."
+ ],
+ "10.1109/tgrs.2016.2569450": [
+  "TGRS",
+  2016,
+  "A Depolarization Ratio Anomaly Detector to Identify Icebergs in Sea Ice Using Dual-Polar",
+  "IEEE Transactions on Geoscience and Remote Sensing",
+  "Marino A.; Dierking W.; Wesche C."
+ ],
+ "10.1109/tgrs.2019.2924868": [
+  "TGRS",
+  2019,
+  "Detection of First-Year and Multi-Year Sea Ice from Dual-Polarization SAR Images Under C",
+  "IEEE Transactions on Geoscience and Remote Sensing",
+  "Komarov A.; Buehner M."
+ ],
+ "10.1016/j.rse.2024.114204": [
+  "RSE",
+  2024,
+  "Deep learning techniques for enhanced sea-ice types classification in the Beaufort Sea v",
+  "Remote Sensing of Environment",
+  "Huang Y.; Ren Y.; Li X."
+ ],
+ "10.1109/tgrs.2020.3035029": [
+  "TGRS",
+  2021,
+  "Robustness of SAR Sea Ice Type Classification Across Incidence Angles and Seasons at L-B",
+  "IEEE Transactions on Geoscience and Remote Sensing",
+  "Singha S.; Johansson A.; Doulgeris A."
+ ],
+ "10.1016/j.rse.2026.115360": [
+  "RSE",
+  2026,
+  "Snow effects on altimeter waveforms over sea ice in the Weddell Sea - Part II: sea ice a",
+  "Remote Sensing of Environment",
+  "Zhou L.; Skourup H.; Stroeve J.; Kacimi S.; Arndt S.; Zhu W."
+ ],
+ "10.1109/jstars.2014.2340572": [
+  "JSTARS",
+  2015,
+  "Reliability Measures for Sea Ice Motion Retrieval From Synthetic Aperture Radar Images",
+  "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+  "Hollands T.; Linow S.; Dierking W."
+ ],
+ "10.1109/tgrs.2023.3266158": [
+  "TGRS",
+  2023,
+  "Arctic Sea Ice and Open Water Classification From Spaceborne Fully Polarimetric Syntheti",
+  "IEEE Transactions on Geoscience and Remote Sensing",
+  "Lu Y.; Zhang B.; Perrie W."
+ ],
+ "10.1016/j.rse.2013.08.035": [
+  "RSE",
+  2014,
+  "Towards sea ice classification using simulated RADARSAT Constellation Mission compact",
+  "Dabboor M.; Geldsetzer T."
+ ],
+ "10.1016/j.rse.2020.111910": [
+  "RSE",
+  2020,
+  "Observations of SAR polarimetric parameters of lake and fast sea ice during the early",
+  "Shokr M.; Dabboor M."
+ ],
+ "10.1109/jstars.2023.3295735": [
+  "JSTARS",
+  2023,
+  "Polarimetric SAR Applications of Sea Ice: A Review",
+  "Shokr M.; Dabboor M."
+ ],
+ "10.1109/jstars.2022.3194324": [
+  "JSTARS",
+  2022,
+  "A Meta-Analysis of Sea Ice Monitoring Using Spaceborne Polarimetric SAR: Advances in ",
+  "Lyu H.; Huang W.; Mahdianpari M."
+ ],
+ "10.1016/j.rse.2023.113780": [
+  "RSE",
+  2023,
+  "Unsupervised machine learning detection of iceberg populations within sea ice from du",
+  "Evans B.; Faul A.; Fleming A.; Vaughan D.; Hosking J."
+ ],
+ "10.1016/j.rse.2015.03.012": [
+  "RSE",
+  2015,
+  "Algorithm to retrieve the melt pond fraction and the spectral albedo of Arctic summer",
+  "Zege E.; Malinka A.; Katsev I.; Prikhach A.; Heygster G."
+ ],
+ "10.1016/j.rse.2011.06.006": [
+  "RSE",
+  2011,
+  "Mapping arctic landfast ice extent using L-band synthetic aperture radar interferomet",
+  "Meyer F.; Mahoney A.; Eicken H.; Denny C.; Druckenmiller H."
+ ]
+}

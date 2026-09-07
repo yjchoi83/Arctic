@@ -1,0 +1,6 @@
+rows 34298
+Vilkitsky            point-days   76075 valid      0 ( 0.0%) | divergence computable      0 ( 0.0%) | neighbour-fail      0 | of valid: interpolated 0 measured 0
+Sannikov_DmLaptev    point-days  331687 valid  30119 ( 9.1%) | divergence computable    399 ( 0.1%) | neighbour-fail  29719 | of valid: interpolated 25357 measured 4761
+LongStrait           point-days  139978 valid  35639 (25.5%) | divergence computable    384 ( 0.3%) | neighbour-fail  35255 | of valid: interpolated 34157 measured 1482
+KaraGate             point-days   73032 valid   1750 ( 2.4%) | divergence computable     26 ( 0.0%) | neighbour-fail   1724 | of valid: interpolated 1154 measured 596
+BeringChukchi        point-days  492966 valid  89462 (18.1%) | divergence computable  33489 ( 6.8%) | neighbour-fail  55973 | of valid: interpolated 27452 measured 62010

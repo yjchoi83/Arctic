@@ -1,0 +1,79 @@
+parsed 76 entries
+OK         dabboor2014rcm               via=doi 
+OK         geudtner2021copernicus       via=doi 
+OK         potin2019copernicus          via=doi 
+OK         torres2012gmes               via=doi 
+OK         torres2017evolution          via=doi 
+OK         cheng2020accuracy            via=doi 
+OK         dai2026panarctic             via=doi 
+OK         dierking2013sea              via=doi 
+OK         eriksson2025finnish          via=doi 
+OK         evans2023iceberg             via=doi 
+MISMATCH   karvonen2022baltic           via=doi title 0.85: S2='Baltic Sea Ice Concentration Estimation From C-Band Dual-Polarized SAR Imagery by Image Segmen
+OK         komarov2019detection         via=doi 
+OK         leigh2014automated           via=doi 
+OK         lohse2020mapping             via=doi 
+OK         lyu2022metaanalysis          via=doi 
+OK         shokr2023polarimetric        via=doi 
+OK         zakhvatkina2019satellite     via=doi 
+OK         demchev2017sea               via=doi 
+OK         hollands2015reliability      via=doi 
+OK         howell2022generating         via=doi 
+OK         komarov2014sea               via=doi 
+OK         korosov2017combination       via=doi 
+MISMATCH   lehtiranta2015comparing      via=doi year bib=2015 S2=2014
+MISMATCH   muckenhuber2017open          via=doi year bib=2017 S2=2016
+OK         qiu2022retrieval             via=doi 
+OK         yang2024drift                via=doi 
+MISMATCH   bouillon2015producing        via=doi year bib=2015 S2=2014
+OK         hutchings2008small           via=doi 
+OK         hutchings2011spatial         via=doi 
+OK         itkin2025novel               via=doi 
+OK         marsan2004scale              via=doi 
+OK         oikkonen2017small            via=doi 
+OK         rampal2008scaling            via=doi 
+OK         stern2009spatial             via=doi 
+OK         aksenov2017navigability      via=doi 
+OK         fu2016besetting              via=doi 
+NOT_FOUND  imo2016polaris               via=None no S2 record via DOI/arXiv/title
+OK         kotovirta2009route           via=doi 
+OK         kubat2016compression         via=doi 
+OK         lehtola2019routes            via=doi 
+OK         lensu2019bigdata             via=doi 
+OK         boukabara2016gaps            via=doi 
+OK         howell2022motion             via=doi 
+OK         kaminski2015network          via=doi 
+MISMATCH   kaminski2018mission          via=doi year bib=2018 S2=2017; authors not matched: toudal,vo beck
+OK         langland2004impact           via=doi 
+OK         lavergne2010drift            via=doi 
+OK         lavergne2023osisaf           via=doi 
+OK         sumata2014inter              via=doi 
+OK         sumata2015uncertainty        via=doi 
+OK         wuite2026velocity            via=doi 
+OK         wulf2024panarctic            via=doi 
+OK         wulf2026decade               via=doi 
+MISMATCH   cox1962renewal               via=title(1.00) year bib=1962 S2=2025; authors not matched: cox
+MISMATCH   feller1971introduction       via=title(1.00) year bib=1971 (2nd ed.) S2=1968; authors not matched: feller
+MISMATCH   kaplan1958nonparametric      via=title(1.00) doi bib=10.1080/01621459.1958.10501452 S2=10.1007/978-1-4612-4380-9_25
+OK         turnbull1976empirical        via=doi 
+OK         vardi1989multiplicative      via=doi 
+OK         aksenov2017future            via=doi 
+NOT_FOUND  bellona2025nsr               via=None no S2 record via DOI/arXiv/title
+OK         eguiluz2016quantitative      via=doi 
+OK         gunnarsson2021recent         via=doi 
+OK         melia2016seaice              via=doi 
+MISMATCH   bhattacharjee2024estimation  via=doi year bib=2024 S2=2023
+MISMATCH   korosov2022thermal           via=doi year bib=2022 S2=2021
+OK         lee2020sentinel              via=doi 
+OK         meyer2011landfast            via=doi 
+OK         park2018efficient            via=doi 
+OK         singha2021robustness         via=doi 
+OK         chen2024mmseaice             via=doi 
+OK         huang2024deeplearning        via=doi 
+OK         muckenhuber2016opensource    via=doi 
+NOT_FOUND  opticalflow2025benchmark     via=None no S2 record via DOI/arXiv/title
+OK         stokholm2024autoice          via=doi 
+OK         taleghan2025icefmbench       via=doi 
+OK         zhao2023deeplearning         via=doi 
+
+SUMMARY {'OK': 63, 'MISMATCH': 10, 'NOT_FOUND': 3}

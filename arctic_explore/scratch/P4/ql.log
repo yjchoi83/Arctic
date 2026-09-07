@@ -1,0 +1,109 @@
+candidate events 60 by region: {'LongStrait': 33, 'Sannikov_DmLaptev': 27}
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+1 LongStrait_2025-10-26 dt 23.9 h ['before', 'after']
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+2 LongStrait_2025-10-27 dt 23.9 h ['before', 'after']
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+3 LongStrait_2025-11-24 dt 23.9 h ['before', 'after']
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+4 LongStrait_2025-10-30 dt 23.9 h ['before', 'after']
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+5 LongStrait_2025-11-15 dt 23.8 h ['before', 'after']
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+/d/yj_projects/workspace_yj/Arctic/arctic_explore/scratch/P4/p4_quicklook.py:21: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  t=dt.datetime.utcfromtimestamp(r.tmid)
+wrote 5 events

@@ -1,0 +1,19 @@
+INFO - 2026-09-06T07:56:29Z - Selected dataset version: "202311"
+INFO - 2026-09-06T07:56:29Z - Selected dataset part: "default"
+KaraGate ok  mean availability 0.025
+Vilkitsky ok  mean availability 0.014
+Sannikov_DmLaptev ok  mean availability 0.043
+LongStrait ok  mean availability 0.055
+BeringChukchi ok  mean availability 0.034
+Barents_Svalbard ok  mean availability 0.055
+GreenlandSea_Fram ok  mean availability 0.383
+BaffinBay ok  mean availability 0.274
+LancasterSound ok  mean availability 0.178
+VictoriaStrait ok  mean availability 0.172
+AKcorr_1 ok  mean availability 0.005
+AKcorr_2 ok  mean availability 0.015
+AKcorr_3 ok  mean availability 0.012
+AKcorr_4 ok  mean availability 0.011
+AKcorr_5 ok  mean availability 0.021
+AKcorr_6 ok  mean availability 0.035
+rows 336

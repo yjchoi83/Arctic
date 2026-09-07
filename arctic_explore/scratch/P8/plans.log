@@ -1,0 +1,22 @@
+Sentinel-1A-Acquisition-Segments-2019.zip placemarks kept 43162 rows 9978
+Sentinel-1A-Acquisition-Segments-2020.zip placemarks kept 40982 rows 18541
+Sentinel-1A-Acquisition-Segments-2021.zip placemarks kept 31384 rows 25352
+Sentinel-1A-Acquisition-Segments-2025.zip placemarks kept 50253 rows 36382
+Sentinel-1B-Acquisition-Segments-2019.zip placemarks kept 65786 rows 45749
+Sentinel-1B-Acquisition-Segments-2020.zip placemarks kept 46533 rows 52485
+Sentinel-1B-Acquisition-Segments-2021.zip placemarks kept 39514 rows 58392
+Sentinel-1C-Acquisition-Segments-2025.zip placemarks kept 36649 rows 64347
+total planned region-hits 64347
+year  mode
+2019  EW      15272
+      IW       3690
+2020  EW      12088
+      IW       3250
+2021  EW      10001
+      IW       2748
+2022  EW        233
+      IW         80
+2025  EW      11877
+      IW       4728
+2026  EW        269
+      IW        111

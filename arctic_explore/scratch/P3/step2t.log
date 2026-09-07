@@ -1,0 +1,4 @@
+buoys total 1271 ; native median interval <=1h: 1111
+fixes in fast subset 8399514
+[native1h] step 1.0h THR 4.706 n_ev 137786 pairs 4442 med 2h p90 7h frac<6h 0.858 mag_med 0.97km
+STEP2 DONE

@@ -1,0 +1,3083 @@
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+<!DOCTYPE html>
+<html
+	lang="en"
+	data-page-template="article"
+	
+ data-page-id="ci_506cbbfd2f6d3abf596b3eef03b5c161d17259865bd21a006c0f0ef7cadeac43" data-confluence-content-id="1672913"
+		data-color-scheme="light"
+>
+<head>
+	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta name="color-scheme" content="light">
+
+						<link id="pageTreeSource" rel="preload" href="/web/__pagetree.json" as="fetch" type="application/json" crossorigin="anonymous">
+
+		<meta name="site-path" content="/">
+
+					<link rel="x-site-path" href="/">
+	<link rel="x-root-path" href="/">
+
+	<meta name="site-default-language" content="en">
+		<meta name="site-languages" content="en">
+		<meta name="confluence-content-type" content="page">
+		<meta name="confluence-base-url" content="https://sentiwiki.atlassian.net/wiki">
+		<meta name="confluence-space-key" content="CSWK">
+
+
+
+
+	<link rel="icon" href="/__site/221041cd-2147-445f-83f7-7d08d954cd1d/ESA_logo_simple.svg.png" type="image/svg+xml">
+
+
+
+
+
+
+
+
+
+
+
+		<title>S1 Mission | SentiWiki</title>
+		<meta property="og:title" content="S1 Mission | SentiWiki">
+		<meta property="twitter:title" content="S1 Mission | SentiWiki">
+
+		<link rel="canonical" href="https://sentiwiki.copernicus.eu/web/s1-mission">
+		<meta property="og:url" content="https://sentiwiki.copernicus.eu/web/s1-mission">
+
+		<meta name="description" content="Overview of Sentinel-1 Mission The Sentinel-1 mission is the European Radar Observatory for the Copernicus joint initiative of the European Commission (EC) and…">
+		<meta property="og:description" content="Overview of Sentinel-1 Mission The Sentinel-1 mission is the European Radar Observatory for the Copernicus joint initiative of the European Commission (EC) and…">
+		<meta property="twitter:description" content="Overview of Sentinel-1 Mission The Sentinel-1 mission is the European Radar Observatory for the Copernicus joint initiative of the European Commission (EC) and…">
+
+		<meta property="og:image" content="https://sentiwiki.copernicus.eu/__attachments/a_c688717dd0338265fa4eb7e8e5172b460d3eb0f58fed2701c03b1f7b02e61ef3/image-20230522-072230.png?cb=488982159e7e689259d10e0ce47c2145">
+		<meta property="twitter:image" content="https://sentiwiki.copernicus.eu/__attachments/a_c688717dd0338265fa4eb7e8e5172b460d3eb0f58fed2701c03b1f7b02e61ef3/image-20230522-072230.png?cb=488982159e7e689259d10e0ce47c2145">
+
+	<meta property="og:type" content="website">
+	<meta property="twitter:card" content="summary_large_image">
+
+		<meta name="page-last-modified" content="2026-07-02T09:16:46.116Z">
+
+		<script>
+		(function () {
+			const defaultLanguageMeta = /** @type {string|undefined} */(document.querySelector('meta[name="site-default-language"]')?.content);
+			const availableLanguagesMeta = /** @type {string|undefined} */(document.querySelector('meta[name="site-languages"]')?.content);
+			const fallbackLanguage = defaultLanguageMeta ?? 'en';
+			const supportedLanguagesFromMeta = availableLanguagesMeta?.split(',') ?? [];
+			const supportedLanguages = [...new Set([fallbackLanguage, ...supportedLanguagesFromMeta])].filter(Boolean);
+			const detectedLanguage = new URLSearchParams(self.location.search).get('l') || document.documentElement.lang;
+			const resolvedLanguage = supportedLanguages.includes(detectedLanguage) ? detectedLanguage : fallbackLanguage;
+			document.documentElement.lang = resolvedLanguage;
+			const sheet = new CSSStyleSheet();
+			document.adoptedStyleSheets.push(sheet);
+			// Hide any element with a `data-lang` attribute that does NOT match the detected language
+			sheet.replaceSync('[data-lang]:not([data-lang="' + resolvedLanguage + '"]) { display: none; }');
+		})();
+	</script>
+
+		<script>
+		(function() {
+			/** @typedef {'light'|'dark'} ColorScheme */
+			/** @type {ColorScheme[]} */
+			const availableColorSchemes = document.documentElement.querySelector('meta[name="color-scheme"]').content.split(' ').filter(Boolean);
+			/** @type {ColorScheme|'system'} */
+			const userPreference = localStorage?.getItem('color-scheme-preference') ?? 'system';
+			// Clean-up user preference in case there's nothing to choose from
+			// Fall back to the HTML document's default color theme
+			if (availableColorSchemes.length <= 1 || ![...availableColorSchemes, 'system'].includes(userPreference)) {
+				localStorage?.removeItem('color-scheme-preference');
+				return;
+			}
+			// Override default HTML document with client-side user preference
+			if (userPreference === 'system') {
+				updateThemeAttribute(self.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+			} else {
+				updateThemeAttribute(userPreference)
+			}
+			/** @param {ColorScheme} colorScheme */
+			function updateThemeAttribute(colorScheme) {
+				document.documentElement.setAttribute('data-color-scheme', colorScheme);
+			}
+		})();
+	</script>
+
+		<script>
+		
+		function sortContentSources(a, b) {
+			let result = a.precedence - b.precedence;
+
+			if (result === 0) {
+				result = a.value.localeCompare(b.value);
+			}
+
+			return result;
+		}
+
+		
+		function applyContentSourceOrderToElements({ parent, children }) {
+			const contentSourceElements = [...children];
+
+			contentSourceElements
+				.sort((a, b) => (
+					sortContentSources(
+						{ value: a.dataset.orderValue, precedence: a.dataset.orderPrecedence },
+						{ value: b.dataset.orderValue, precedence: b.dataset.orderPrecedence }
+					)
+				))
+				.forEach((element) => {
+					delete element.dataset.orderValue;
+					delete element.dataset.orderPrecedence;
+				});
+
+			parent.replaceChildren(...contentSourceElements);
+		}
+	</script>
+
+<script>
+	(() => {
+		if (isInAppHelpEnabled()) {
+			document.documentElement.dataset.inAppHelp = 'true';
+
+			if (isTitleHidden()) {
+				document.documentElement.dataset.hideTitle = 'true';
+			}
+		}
+
+		function isInAppHelpEnabled() {
+			return new URLSearchParams(location.search).get('inAppHelp') === 'true';
+		}
+
+		function isTitleHidden() {
+			return new URLSearchParams(location.search).get('title') === 'false';
+		}
+	})();
+</script>
+
+<link rel="stylesheet" href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/in-app-help.css"/>
+<script type="module" src="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/in-app-help.js"></script>
+
+	<link rel="stylesheet" href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/styles.css">
+	<link rel="stylesheet" href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/fonts.css">
+	<link rel="stylesheet" href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/search-styles-bundle.css">
+
+
+	<style>
+		@layer overrides {
+			:root {
+				--theme-headline-font: "Roboto";
+				--theme-text-font: "Roboto";
+				--theme-headline-scale: calc(100 / 100);
+				--theme-text-scale: calc(100 / 100);
+			}
+		}
+	</style>
+
+	<style>
+		@layer overrides {
+			:root, :host {
+					--theme-header-logo-size: 40px;
+					--theme-footer-logo-size: 40px;
+			}
+
+			:root[data-color-scheme='light'],
+			:host([data-color-scheme='light']) {
+					--theme-header-text-color: #FFFFFF;
+					--theme-header-background-color: #0d284f;
+					--theme-footer-text-color: #FFF;
+					--theme-footer-background-color: #0d284f;
+			}
+
+			:root[data-color-scheme='dark'],
+			:host([data-color-scheme='dark']) {
+					--theme-header-text-color: #FFFFFF;
+					--theme-header-background-color: #0a0b0c;
+					--theme-footer-text-color: #FFFFFF;
+					--theme-footer-background-color: #0a0b0c;
+			}
+		}
+	</style>
+
+	 
+
+
+
+
+
+<script data-site-data="content-sources" type="application/json">
+{
+	"collection": {
+		"members": [
+
+
+	{
+	"name": "SentiWiki",
+	"id": "92625472-4650-4eae-857c-0f249472e91f",
+	"key": "CSWK",
+	"path": "/web",
+		"prefix": "/web",
+		"current": true,
+	"versions": {
+		"available": [
+		]
+	},
+	"variants": {
+		"available": [
+		]
+	},
+	"languages": {
+		"available": [
+		]
+	}
+}
+
+		]
+	}
+}
+</script>
+
+
+<script data-theme-placeholder="site" type="application/json">
+	{
+		"id": "131812fa-6c98-411c-8c5a-8623a325fb95",
+		"path": "/",
+		"url": "/",
+		"domain": "sentiwiki.copernicus.eu",
+		"aiSearchEnabled": false,
+		"visibleToSearchEngines": true,
+		"isProtectionEnabled": false,
+		"isPublished": true
+	}
+</script>
+ 
+<script data-config="cookieconsent" type="application/json">
+{
+	"enabled": true,
+	"mode": "opt-in",
+	"heading": "Cookie Notice",
+	"description": "We use cookies which are essential for you to access our website and to provide you with our services and allow us to measure and improve the performance of our website.",
+	"links": [
+	]
+}
+</script>
+
+	<script type="module" src="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/main.js"></script>
+	<script type="module" src="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/page-tree.js" fetchpriority="high"></script>
+	<script type="module" src="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/search-bundle.js"></script>
+
+							<script type="module" src="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/article.js"></script>
+
+		<link rel="stylesheet" href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/ai-actions.css">
+		<script type="module" src="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/ai-actions.js"></script>
+
+
+
+
+
+
+<template data-custom-overrides data-type="code-asset">
+	<link rel="stylesheet" href="/__site/76712f91-90a6-4142-b1a8-fae39cb188f2/code_custom_css_override_asset.css">
+</template>
+
+<template data-custom-overrides data-type="code-asset">
+				<script data-cfasync="false" src="/__site/5f705acf-5afa-46fe-8d05-33fd919c186a/code_custom_js_override_asset.js"></script>
+</template>
+
+<script data-cfasync="false">
+	(() => {
+		if (new URLSearchParams(location.search).has('disable-custom-overrides')) {
+			return;
+		}
+
+		document.querySelectorAll('[data-custom-overrides]').forEach(template => {
+			const type = template.getAttribute('data-type');
+
+			if (type === 'code-asset') {
+				const assetElement = template.content.cloneNode(true).firstElementChild;
+				const appendAsset = () => document.head.appendChild(assetElement);
+
+				if (assetElement.tagName === 'SCRIPT') {
+															if (document.readyState === 'complete') {
+						appendAsset();
+					} else {
+												document.addEventListener('DOMContentLoaded', appendAsset, { once: true });
+					}
+				} else {
+					appendAsset();
+				}
+			}
+		});
+	})();
+</script>
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+			</head>
+<body>
+	<a href="#content" class="skip-link">
+		<i18n-message i18nkey="navigation.skip.to.main.label">Skip to main content</i18n-message>
+	</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+<header data-component="header" class="header">
+
+	<div class="header-site-branding">
+		<i18n-message id="9c17c5a1f6aa7e62-2" class="sr-only" i18nkey="header.home.label"></i18n-message>
+
+		<a href="/" aria-labelledby="9c17c5a1f6aa7e62-2">
+
+
+
+
+		<img class="header-logo header-logo--dark" src="/__site/daf22bbc-3283-4247-8d4c-43dcc8aa2152/esa-brand-dark-transparent.png" alt="">
+
+		<img class="header-logo header-logo--light" src="/__site/daf22bbc-3283-4247-8d4c-43dcc8aa2152/esa-brand-dark-transparent.png" alt="">
+
+		</a>
+
+	</div>
+	<div class="header-content">
+			<div class="header-links">
+				<ul>
+						<li><a href="https://sentiwiki.copernicus.eu">SentiWiki</a></li>
+				</ul>
+			</div>
+
+		<div class="header-pickers">
+
+		</div>
+
+			<div class="header-search">
+				<search-bar quicksearch></search-bar>
+			</div>
+
+
+				<button type="button" aria-controls="drawer-9c17c5a1f6aa7e62-1" aria-haspopup="dialog" aria-expanded="false" class="header-nav-toggle" onclick="self['drawer-9c17c5a1f6aa7e62-1'].showModal()">
+	<svg role="img" aria-hidden="true" data-component="icon" class="icon icon-menu ">
+		<use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#menu"></use>
+	</svg>
+			<i18n-message class="sr-only" i18nkey="navigation.main.label">Main navigation</i18n-message>
+		</button>
+	</div>
+
+	
+
+<dialog id="drawer-9c17c5a1f6aa7e62-1" class="drawer">
+	<header data-component="header" class="header">
+
+	<div class="header-site-branding">
+		<i18n-message id="9c17c5a1f6aa7e62-3" class="sr-only" i18nkey="header.home.label"></i18n-message>
+
+		<a href="/" aria-labelledby="9c17c5a1f6aa7e62-3">
+
+
+
+
+		<img class="header-logo header-logo--dark" src="/__site/daf22bbc-3283-4247-8d4c-43dcc8aa2152/esa-brand-dark-transparent.png" alt="">
+
+		<img class="header-logo header-logo--light" src="/__site/daf22bbc-3283-4247-8d4c-43dcc8aa2152/esa-brand-dark-transparent.png" alt="">
+
+		</a>
+
+	</div>
+
+		<div class="header-content">
+			<button type="button" aria-controls="drawer-9c17c5a1f6aa7e62-1" aria-haspopup="dialog" aria-expanded="true" autofocus class="drawer-toggle" onclick="self['drawer-9c17c5a1f6aa7e62-1'].close()">
+	<svg role="img" aria-hidden="true" data-component="icon" class="icon icon-close ">
+		<use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#close"></use>
+	</svg>
+				<i18n-message class="sr-only" i18nkey="navigation.close.label">Close navigation</i18n-message>
+			</button>
+		</div>
+	</header>
+
+	<div class="drawer-section drawer-search">
+		<search-bar quicksearch></search-bar>
+	</div>
+
+
+	<nav id="drawer-nav" class="drawer-section drawer-nav tree" aria-labelledby="drawer-nav-label">
+		<i18n-message id="drawer-nav-label" class="sr-only" i18nkey="navigation.main.label">Main</i18n-message>
+
+						<copy-page-tree target="articleTree"></copy-page-tree>
+	</nav>
+
+			<div class="drawer-section drawer-links tree">
+<ul  >
+		<li class="tree-item">
+			<div class="tree-item-header">
+				<a id="9c17c5a1f6aa7e62-4" href="https://sentiwiki.copernicus.eu" >SentiWiki</a>
+			</div>
+
+		</li>
+</ul>
+		</div>
+</dialog>
+
+</header>
+		<section class="article-page body">
+		<theme-navigator class="navigator">
+			<button id="navigator-toggle" class="navigator-toggle" aria-controls="navigator-nav" aria-labelledby="navigator-nav-label" aria-expanded="true">
+	<svg role="img" aria-hidden="true" data-component="icon" class="icon icon-menu navigator-icon-closed">
+		<use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#menu"></use>
+	</svg>
+	<svg role="img" aria-hidden="true" data-component="icon" class="icon icon-chevron_left navigator-icon-opened">
+		<use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#chevron_left"></use>
+	</svg>
+			</button>
+						<nav id="navigator-nav" class="navigator-body tree" aria-labelledby="navigator-nav-label">
+				<i18n-message id="navigator-nav-label" class="sr-only" i18nkey="navigation.main.label">Main</i18n-message>
+				<theme-page-tree id="articleTree">
+<ul  >
+		<li class="tree-item">
+			<div class="tree-item-header">
+				<a id="9c17c5a1f6aa7e62-5" href="/web/sentiwiki" >SentiWiki</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+					<button
+						class="tree-action"
+						type="button"
+						aria-expanded="false"
+						aria-labelledby="9c17c5a1f6aa7e62-6"
+aria-busy="true" aria-disabled="true"					></button>
+				<a id="9c17c5a1f6aa7e62-6" href="/web/copernicus-programme" >Copernicus Programme</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+					<button
+						class="tree-action"
+						type="button"
+						aria-expanded="false"
+						aria-labelledby="9c17c5a1f6aa7e62-8"
+aria-busy="true" aria-disabled="true"					></button>
+				<a id="9c17c5a1f6aa7e62-8" href="/web/copernicus-applications" >Copernicus Applications</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+					<button
+						class="tree-action"
+						type="button"
+						aria-expanded="true"
+aria-controls="9c17c5a1f6aa7e62-11"						aria-labelledby="9c17c5a1f6aa7e62-10"
+					></button>
+				<a id="9c17c5a1f6aa7e62-10" href="/web/satellite-missions" >Satellite Missions</a>
+			</div>
+
+<ul  id="9c17c5a1f6aa7e62-11" >
+		<li class="tree-item">
+			<div class="tree-item-header">
+					<button
+						class="tree-action"
+						type="button"
+						aria-expanded="true"
+aria-controls="9c17c5a1f6aa7e62-13"						aria-labelledby="9c17c5a1f6aa7e62-12"
+					></button>
+				<a id="9c17c5a1f6aa7e62-12" href="/web/sentinel-1" >Sentinel-1</a>
+			</div>
+
+<ul  id="9c17c5a1f6aa7e62-13" >
+		<li class="tree-item">
+			<div class="tree-item-header">
+				<a id="9c17c5a1f6aa7e62-14" href="/web/s1-mission" aria-current="page">S1 Mission</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+				<a id="9c17c5a1f6aa7e62-15" href="/web/s1-applications" >S1 Applications</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+				<a id="9c17c5a1f6aa7e62-16" href="/web/s1-products" >S1 Products</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+				<a id="9c17c5a1f6aa7e62-17" href="/web/s1-processing" >S1 Processing</a>
+			</div>
+
+		</li>
+</ul>
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+					<button
+						class="tree-action"
+						type="button"
+						aria-expanded="false"
+						aria-labelledby="9c17c5a1f6aa7e62-18"
+aria-busy="true" aria-disabled="true"					></button>
+				<a id="9c17c5a1f6aa7e62-18" href="/web/sentinel-2" >Sentinel-2</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+					<button
+						class="tree-action"
+						type="button"
+						aria-expanded="false"
+						aria-labelledby="9c17c5a1f6aa7e62-20"
+aria-busy="true" aria-disabled="true"					></button>
+				<a id="9c17c5a1f6aa7e62-20" href="/web/sentinel-3" >Sentinel-3</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+					<button
+						class="tree-action"
+						type="button"
+						aria-expanded="false"
+						aria-labelledby="9c17c5a1f6aa7e62-22"
+aria-busy="true" aria-disabled="true"					></button>
+				<a id="9c17c5a1f6aa7e62-22" href="/web/sentinel-5p" >Sentinel-5P</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+					<button
+						class="tree-action"
+						type="button"
+						aria-expanded="false"
+						aria-labelledby="9c17c5a1f6aa7e62-24"
+aria-busy="true" aria-disabled="true"					></button>
+				<a id="9c17c5a1f6aa7e62-24" href="/web/future-missions" >Future Missions</a>
+			</div>
+
+		</li>
+</ul>
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+					<button
+						class="tree-action"
+						type="button"
+						aria-expanded="false"
+						aria-labelledby="9c17c5a1f6aa7e62-26"
+aria-busy="true" aria-disabled="true"					></button>
+				<a id="9c17c5a1f6aa7e62-26" href="/web/copernicus-operations" >Copernicus Operations</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+					<button
+						class="tree-action"
+						type="button"
+						aria-expanded="false"
+						aria-labelledby="9c17c5a1f6aa7e62-28"
+aria-busy="true" aria-disabled="true"					></button>
+				<a id="9c17c5a1f6aa7e62-28" href="/web/general-information" >General Information</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+					<button
+						class="tree-action"
+						type="button"
+						aria-expanded="false"
+						aria-labelledby="9c17c5a1f6aa7e62-30"
+aria-busy="true" aria-disabled="true"					></button>
+				<a id="9c17c5a1f6aa7e62-30" href="/web/document-library" >Document Library</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+				<a id="9c17c5a1f6aa7e62-32" href="/web/ask-copernicus-ai-data-guide" >Ask Copernicus - AI data guide</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+				<a id="9c17c5a1f6aa7e62-33" href="/web/terms-and-conditions" >Terms and Conditions</a>
+			</div>
+
+		</li>
+</ul>
+				</theme-page-tree>
+			</nav>
+		</theme-navigator>
+
+		<main class="main-content">
+			<div class="topbar">
+
+
+
+
+	<theme-breadcrumbs class="breadcrumbs" >
+		<i18n-message id="9c17c5a1f6aa7e62-34" class="sr-only" i18nkey="breadcrumbs.label">Breadcrumbs</i18n-message>
+		<nav aria-labelledby="9c17c5a1f6aa7e62-34">
+				<ol>
+														<li>
+								<a href="/web/satellite-missions">
+										Satellite Missions
+								</a>
+							</li>
+							<li>
+								<a href="/web/sentinel-1">
+										Sentinel-1
+								</a>
+							</li>
+				</ol>
+		</nav>
+	</theme-breadcrumbs>
+					<ai-actions class="ai-actions"><theme-dropdown></theme-dropdown></ai-actions>
+			</div>
+				<script src="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/breadcrumbs.js"></script>
+		<nav class="toc sticky" data-component="toc" aria-labelledby="9c17c5a1f6aa7e62-35">
+			<h2 class="toc-heading" id="9c17c5a1f6aa7e62-35">
+				<i18n-message i18nkey="page.article.toc.label">On this Page</i18n-message>
+			</h2>
+			<theme-toc for="content"></theme-toc>
+		</nav>
+			<article id="content" tabindex="-1" class="fb-layout-container">
+				<header>
+					<h1>S1 Mission</h1>
+				</header>
+				<section class="article-body fb-layout-body" data-searchable-content>
+			
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+
+	
+	
+
+
+	
+	
+	
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		
+	
+	
+	
+
+	
+		
+		
+			
+
+			
+
+	
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+	
+	
+	
+	
+	<h2 id="Overview-of-Sentinel-1-Mission" style=""><span id="S1Mission-OverviewofSentinel-1Mission"></span>Overview of Sentinel-1 Mission
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#Overview-of-Sentinel-1-Mission">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h2>
+<p>The Sentinel-1 mission is the European Radar Observatory for the Copernicus joint initiative of the European Commission (EC) and the European Space Agency (ESA). Copernicus is a European initiative for the implementation of information services dealing with environment and security. It is based on observation data received from Earth Observation satellites and ground-based information.</p>
+<p>The Sentinel-1 mission comprises a constellation of two sun-synchronous polar-orbiting satellites, sharing the same orbital plane with 180° orbital phasing difference, operating day and night performing C-band synthetic aperture radar imaging, enabling them to acquire imagery regardless of the weather. It operates in four exclusive imaging modes with different resolution (down to 5 m) and coverage (up to 400 km). It provides dual polarisation capability, very short revisit times and rapid product delivery. For each observation, precise measurements of spacecraft position and attitude are available.</p>
+<p>Sentinel-1 works in a pre-programmed operation mode to avoid conflicts and to produce a consistent long-term data archive built for applications based on long time series.</p>
+<p>Sentinel-1 is the first of the five missions that ESA developed for the Copernicus initiative. Its measurement domain covers landscape topography, multi-purpose imagery (land), multi-purpose imagery (ocean), ocean surface winds, ocean topography/currents, ocean wave height and spectrum, sea ice cover, edge and thickness, snow cover, edge and depth, soil moisture and vegetation.</p>
+<p>Sentinel-1 main <a href="/web/s1-applications" data-scope="internal"><strong>Mission Objectives and Applications</strong></a> are:</p>
+<ul>
+ <li>
+  <p><a href="/web/s1-applications#S1-Applications-Land-Monitoring" data-scope="internal">Global land masses monitoring</a></p>
+ </li>
+ <li>
+  <p><a href="/web/s1-applications#S1-Applications-Ice-Monitoring" data-scope="internal">Sea-ice monitoring</a></p>
+ </li>
+ <li>
+  <p><a href="/web/s1-applications#S1-Applications-Land-Monitoring" data-scope="internal">Land-ice monitoring</a></p>
+ </li>
+ <li>
+  <p><a href="/web/s1-applications#S1-Applications-Maritime-Monitoring" data-scope="internal">Ocean &amp; Marine monitoring</a></p>
+ </li>
+ <li>
+  <p><a href="/web/s1-applications#S1-Applications-Maritime-Monitoring" data-scope="internal">Maritime surveillance</a></p>
+ </li>
+ <li>
+  <p><a href="/web/s1-applications#S1-Applications-Emergency-Management" data-scope="internal">Emergency response</a></p>
+ </li>
+</ul>
+<div data-service="external_content" data-autoscale data-ratio="16:9">
+ <div data-placeholder>
+  <template>
+   <smart-link> <a href="https://www.youtube.com/watch?v=FJWzLxdSMyA" data-scope="external" data-display-mode="embedded" rel="external noreferrer"> 
+     <p>https://www.youtube.com/watch?v=FJWzLxdSMyA</p> 
+    </a> </smart-link>
+  </template>
+ </div>
+</div>
+<p style="--text-align: center"><strong>Media 1: Sentinel-1 Radar Mission [Credits: ESA]</strong></p>
+<p>For mission planning information, see the <a href="/web/s1-mission#S1-Mission-Observation-and-Production-Scenarios" data-scope="internal">Observation and Production Scenario</a>.</p>
+<p>
+ <br>
+</p>
+<p><strong>Launch timeline</strong></p>
+<p>Sentinel-1A was launched on 3 April 2014.</p>
+<p>Sentinel-1B was launched on 25 April 2016. The spacecraft experienced an anomaly related to the instrument electronics power supply provided by the satellite platform, leaving it unable to deliver radar data since 23 December 2021, <a href="https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-1/Mission_ends_for_Copernicus_Sentinel-1B_satellite" data-scope="external" rel="external noreferrer"><u>as a consequence, ESA and EC announced the end of the Sentinel-1B mission on 3 August 2022.</u></a></p>
+<p>Sentinel-1C was launched on 5 December 2024.</p>
+<p>Sentinel-1D was launched on 4 November 2025.</p>
+<p>Sentinel-1A end of operations is planned for end of June 2026, as announced <a href="https://sentinels.copernicus.eu/web/sentinel/-/sentinel-1d-user-data-opening-and-future-plans" data-scope="external" rel="external noreferrer"><u>here</u></a>.</p>
+<h3 id="Satellite-Description" style=""><span id="S1Mission-SatelliteDescription"></span>Satellite Description<span id="S1-Mission-Satellite-Description"></span>
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#Satellite-Description">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h3>
+<p>The satellite has been created by an industrial consortium led by Thales Alenia Space Italy as prime contractor, with Astrium Germany being responsible for the CSAR payload, incorporating the central radar electronics sub-system developed by Astrium UK.</p>
+<p>
+ <br>
+</p>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 657px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_c688717dd0338265fa4eb7e8e5172b460d3eb0f58fed2701c03b1f7b02e61ef3/image-20230522-072230.png?cb=488982159e7e689259d10e0ce47c2145" alt="image-20230522-072230.png" data-scope="internal" width="657" height="297">
+   </div>
+   <figcaption>
+    <strong>Figure 1: Schematic View of the Deployed Sentinel-1 A and B Spacecraft. [Credits: TAS-I]</strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<p>The spacecraft is a three-axis, stabilised satellite, yaw/pitch/roll steering (zero Doppler), characterised by sun, star, gyro and magnetic field sensors, a set of four reaction wheels dedicated to orbit and attitude control and three torque rods as actuators to provide steering capabilities on each axis. The satellite is equipped with two solar array wings capable of producing 5 900 W (at end of life) to be stored in a modular battery, the battery capacity was 360 Ah (324 Ah for Sentinel-1A and B).</p>
+<p>The satellite is based on the PRIMA (Piattaforma Italiana Multi Applicativa) bus, building on the experience gained from RADARSAT-2 and COSMO-SKYMED, which use the same bus. The bus provides highly accurate pointing knowledge (better than 0.004°) on each axis, high attitude accuracy (about 0.01° on each axis) and real-time orbit determination together with a dedicated propulsion system for precise orbit control.</p>
+<p>The reference orbit will be maintained within an Earth-fixed orbital tube of a diameter of 120 m (RMS) during normal operation.</p>
+<p>The satellite platform provides features for the management of the attitude and&nbsp; orbit control systems, science data handling with storage capability of 1,410 Gb, propulsion, power, thermal control, spacecraft autonomy and failure detection identification and recovery, and communication with the ground via X-band data downlink and optical data link through EDRS for payload data at 520 Mbit/s; S-band 64 kbps uplink and 128 kbps / 2 Mbps downlink for TM/TC.</p>
+<p>The total mass of the spacecraft at launch is approximately 2 300 kg (including 130 kg fuel).</p>
+<h3 id="Orbit" style=""><span id="S1Mission-Orbit"></span>Orbit<span id="S1-Mission-Orbit"></span>
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#Orbit">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h3>
+<p>Sentinel-1 is in a near-polar, sun-synchronous orbit with a 12 day repeat cycle and 175 orbits per cycle for a single satellite.</p>
+<p>Sentinel-1A and Sentinel-1B shared the same orbital plane with a 180° phasing difference, providing a six-day repeat cycle. After Sentinel-1B end of mission and Sentinel-1C start of operations, the constellation operated as Sentinel-1A and Sentinel-1C with the same characteristics, and is transitioning to Sentinel-1C and Sentinel-1D. The C/D configuration differs slightly from the original A/B pair, introducing a one-day shift in the six-day revisiting pattern of the Sentinel-1 observation timeline.</p>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 340px" data-component="image" data-align="align-center">
+    <img src="https://sentinels.copernicus.eu/documents/247904/283933/s1a-s1b.png/1c082a0f-32dc-4ddc-9339-9c29dbdc873c?t=1396274930336" alt="Sentinel-1 constellation" data-scope="external" width="430" height="416">
+   </div>
+   <figcaption>
+    <strong>Figure 2: Sentinel-1 Constellation [Credits: ESA/ATG medialab]</strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<p>In particular for interferometry, Sentinel-1 requires stringent orbit control. Satellite positioning along the orbit&nbsp;must be&nbsp;accurate,&nbsp;with pointing and timing/synchronisation between interferometric pairs. Orbit positioning control for Sentinel-1 is defined&nbsp;using an orbital Earth fixed "tube", 60 m (RMS) wide in radius, around a nominal operational path. The satellite is kept inside&nbsp;this "tube" for most of its operational lifetime.</p>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 422px" data-component="image" data-align="align-center">
+    <img src="https://sentinels.copernicus.eu/image/image_gallery?uuid=ec72f721-d968-44de-8e1e-d2f242a58ed7&amp;groupId=247904&amp;t=1359606848047" alt="https://sentinels.copernicus.eu/image/image_gallery?uuid=ec72f721-d968-44de-8e1e-d2f242a58ed7&amp;groupId=247904&amp;t=1359606848047" data-scope="external" width="422" height="223">
+   </div>
+   <figcaption>
+    <strong>Figure 3: Sentinel-1 Orbit Tube [Credits: credit: ESA, TAS]</strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<p>The following table contains a summary of useful orbital information for Sentinel-1A and –1B.</p>
+<p><em>Table 1: Orbital information for Sentinel-1 Satellites:</em></p>
+<div class="theme-table" style="--width: 760px;">
+ <table-expand>
+  <scroll-shadow>
+   <table-sort>
+    <div data-component="table" data-align="unset" data-number-column="false">
+     <table>
+      <colgroup>
+       <col style="width: 100px">
+       <col style="width: 111px">
+       <col style="width: 122px">
+       <col style="width: 108px">
+       <col style="width: 123px">
+       <col style="width: 192px">
+      </colgroup>
+      <tbody>
+       <tr>
+        <td style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>Altitude</strong></span></p>
+        </td>
+        <td style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>Inclination</strong></span></p>
+        </td>
+        <td style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>Period</strong></span></p>
+        </td>
+        <td style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>Cycle</strong></span></p>
+        </td>
+        <td style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>Ref. tube deviation</strong></span></p>
+        </td>
+        <td style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>Local Time at Ascending Node</strong></span></p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>693 km</p>
+        </td>
+        <td>
+         <p>98.18°</p>
+        </td>
+        <td>
+         <p>98.6 minutes</p>
+        </td>
+        <td>
+         <p>12 days</p>
+        </td>
+        <td>
+         <p>+- 120 m</p>
+        </td>
+        <td>
+         <p>18:00 hours</p>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </table-sort>
+  </scroll-shadow>
+ </table-expand>
+</div> 
+<h3 id="Geographical-Coverage" style=""><span id="S1Mission-GeographicalCoverage"></span>Geographical Coverage<span id="S1-Mission-Geographical-Coverage"></span>
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#Geographical-Coverage">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h3>
+<p>The Copernicus Sentinel-1 constellation offers an improvement in revisit time over ERS-1/2 and ENVISAT ASAR, and a continuity of wide area coverage with ENVISAT ASAR, but achieving higher resolution and potentially global dual polarisation coverage over landmasses.</p>
+<p>A single Sentinel-1 satellite is potentially able to map the entire world in the Interferometric Wide swath mode once every 12 days, with 175 orbits per cycle. The two-satellite constellation offers a 6 day exact repeat cycle.</p>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 660px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_f0a073476084f03b0dc5cee55f05ed325195a305efec96750aab612109f8925c/image-20230510-144412.png?cb=9ac562c271ed5336a6f497a200de26d1" alt="image-20230510-144412.png" data-scope="internal" width="660" height="324">
+   </div>
+   <figcaption>
+    <strong>Figure 4: Sentinel-1 IW potential world coverage. </strong>
+    <br>
+    <strong>Note that this not reflect the operational baseline</strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<p>Since the orbit track spacing varies with latitude, the revisit rate (ascending/descending) is significantly greater at higher latitudes than at the equator: less than 1 day at the Arctic and provides coverage over Europe and Canada, main shipping routes in 1-3 days and in 3 days at the equator.</p>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 600px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_72fe7028d7d29906942687210043b94bf99560de2706e6833db9acc3dd9779a4/Revisit%20time.jpg?cb=de71d4d28e427d9fb30f95e93b6a3235" alt="Revisit time.jpg" data-scope="internal" width="600" height="329">
+   </div>
+   <figcaption>
+    <strong>Figure 5: Potential Revisit time&nbsp;for S-1A and S-1B in Days per Revisit</strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<p>
+ <br>
+</p>
+<h2 id="SAR-Instrument" style=""><span id="S1Mission-SARInstrument"></span>SAR Instrument<span id="S1-Mission-SAR-Instrument"></span>
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#SAR-Instrument">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h2>
+<p>The C-SAR instrument is designed and developed by EADS Astrium GmbH of Germany. The instrument provides an all-weather, day and night imaging capability to capture measurement data at high and medium resolutions for land, coastal zones and ice observations.</p>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 672px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_30c3dc6bbfb25949a18e3e8c148d656822564d8a88dff7d7ca193c36a5764366/image-20230531-100659.png?cb=79d299ee954230ceb0030d3350335814" alt="image-20230531-100659.png" data-scope="internal" width="672" height="317">
+   </div>
+   <figcaption>
+    <strong>Figure 6: Sentinel-1 Spacecraft</strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<p>The C-SAR instrument is an active phased array antenna providing fast scanning in elevation (to cover the large range of incidence angle and to support ScanSAR operation) and in azimuth (to allow use of TOPS technique to meet the required image performance) with dual-pol capacity.</p>
+<p>It has an internal calibration scheme, where transmit signals are routed into the receiver to allow monitoring of amplitude/phase to facilitate high radiometric stability.</p>
+<p>Sentinel-1's metallised carbon-fibre-reinforced-plastic radiating waveguides ensure good radiometric stability even though these elements are not covered by the internal calibration scheme. The digital chirp generator and selectable receive filter bandwidths allow efficient use of on-board storage considering the ground range resolution dependence on incidence angle.</p>
+<p><em>Table 2: The key parameters of the Sentinel-1 C-SAR instrument include:</em></p>
+<div class="theme-table" style="--width: 760px;">
+ <table-expand>
+  <scroll-shadow>
+   <table-sort>
+    <div data-component="table" data-align="unset" data-number-column="false">
+     <table>
+      <colgroup>
+       <col style="width: 242px">
+       <col style="width: 415px">
+      </colgroup>
+      <tbody>
+       <tr>
+        <td style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>Characteristics</strong></span></p>
+        </td>
+        <td style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>Value</strong></span></p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Centre frequency</p>
+        </td>
+        <td>
+         <p>5.405 GHz (corresponding to a wavelength of ~5.55 cm)</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Bandwidth</p>
+        </td>
+        <td>
+         <p>0-100 MHz (programmable)</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Polarisation</p>
+        </td>
+        <td>
+         <p>HH+HV, VV+VH, VV, HH</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Antenna size</p>
+        </td>
+        <td>
+         <p>12.3 m x 0.821 m</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>RF Peak power (sum od all TRMs, at TRM o/p)</p>
+        </td>
+        <td>
+         <p>4.368 kW, - 4.075 kW (IW, dual polarisations)</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Pulse width</p>
+        </td>
+        <td>
+         <p>5-100 µs (programmable)</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Transmit duty cycle</p>
+        </td>
+        <td>
+         <p>Max 12%, SM 8.5%, IW 9%, EW 5%, WV 0.8%</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Receiver noise figure at module input</p>
+        </td>
+        <td>
+         <p>3.2 dB</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>PRF (Pulse Repetition Frequency)</p>
+        </td>
+        <td>
+         <p>1&nbsp;000 - 3&nbsp;000 Hz (programmable)</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>ADC sampling frequency</p>
+        </td>
+        <td>
+         <p>300 MHz (real sampling) (digital down-sampling after A/D conversion)</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Sampling</p>
+        </td>
+        <td>
+         <p>10 bits</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Data compression</p>
+        </td>
+        <td>
+         <p>FDBAQ (Flexible Dynamic Block Adaptive Quantization)</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Instrument Operation</p>
+        </td>
+        <td>
+         <p>Up to 30 min per orbit (25 min for Sentinel-1A and Sentinel-1B) continuously in any of the imaging modes and for the rest of the orbit in Wave mode</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Total instrument mass (including antenna)</p>
+        </td>
+        <td>
+         <p>945 kg</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>CSAR DC power</p>
+        </td>
+        <td>
+         <p>3870 W (Interferometric Wide-swath Mode, two polarisations)</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>PDHT data storage capacity</p>
+        </td>
+        <td>
+         <p>1410 Gb (End-of-Life)</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Effective PDHT downlink rate</p>
+        </td>
+        <td>
+         <p>Two channels of 260 Mbps each</p>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </table-sort>
+  </scroll-shadow>
+ </table-expand>
+</div>
+<p>The instrument is composed of two major subsystems:</p>
+<ul>
+ <li>
+  <p>the SAR Electronics Subsystem (SES)</p>
+ </li>
+ <li>
+  <p>the SAR Antenna Subsystem (SAS).</p>
+ </li>
+</ul>
+<p>&nbsp;</p>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 600px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_befddf748eea77c8abdd56a2e956a437703eeeb337076fd51ddfb06fb38beae7/image-20230420-145609.png?cb=10f4cc914f733b0fd4ae3603f0acc688" alt="image-20230420-145609.png" data-scope="internal" width="600" height="356">
+   </div>
+   <figcaption>
+    <strong>Figure 7: SAR Instrument Components. [Credits: EADS Astrium, ESA]</strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<p>The radar signal is generated at base band by the chirp generator and up-converted to C-band within the SES. This signal is distributed to the high power amplifiers inside the Electronic Front End (EFE) Transmit/Receive Modules (TRMs) via the beam-forming network of the SAS. Signal radiation and echo reception are performed with the same antenna using slotted waveguide radiators. When receiving, the echo signal is amplified by the low noise amplifiers inside the EFE TRMs and summed up using the same network as for transmit signal distribution. After filtering and down-conversion to base band inside the SES, the echo signal is digitised and formatted for recording.</p>
+<p>The reader interested in more details about the instrument is addressed to the paper <a href="/__attachments/a_ce862ec563ec0407c30958dd8ed0c38e70da2e3e7ac5783230780ae3a0a9c226/GMES_Sentinel_1_mission.pdf?cb=b39c6dd8c6938244514cabc7a41c6c54" data-scope="internal"><u>GMES Sentinel-1 Mission, R.Torres et al., Remote Sensing of Environment 120, pp 9-24, 2012</u></a>.</p>
+<h3 id="Geophysical-Measurements" style=""><span id="S1Mission-GeophysicalMeasurements"></span>Geophysical Measurements<span id="S1-Mission-Geophysical-Measurements"></span>
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#Geophysical-Measurements">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h3>
+<p>Copernicus Sentinel-1's C-band SAR active sensor can observe the Earth's surface at any time of the day or night, regardless of weather and environmental conditions. SAR has the advantage of operating at wavelengths not impeded by cloud cover or lack of illumination.</p>
+<p>Unlike passive optical sensors that require the sun's illumination, an active SAR instrument transmits its own microwave signal to illuminate the Earth's surface at an angle. SAR actively transmits microwave signals towards the Earth and receives a portion of transmitted energy as backscatter from the ground. The returned backscatter echo of the scene is received by the instrument's antenna a short time later at a slightly different location, as the satellite travels along its orbit. The brightness amplitude of the returned signal, along with its phase information, is recorded to construct an image of the scene.</p>
+<p>The SAR instrument provides radar backscatter measurements influenced by the terrain structure and surface roughness. Generally, the more roughness or structure on the ground, the greater the backscatter. Rough surfaces will scatter the energy and return a significant amount back to the antenna resulting in a bright feature. Flat surfaces reflect the signal away resulting in a dark feature. Likewise, more structurally complex targets such as forests will appear brighter as signal interaction with the leaves, branches and trunks will result in a higher proportion of the signal being transmitted back to the sensor.</p>
+<p>The dielectric constant of the materials on the ground also play a factor in the measurements. In the microwave region of the spectrum, most natural materials have a dielectric constant in the range of 3 to 8 when dry, whereas water has a dielectric constant of approximately 80. The dielectric constant indicates the reflectivity and conductivity of materials. Therefore, the presence of moisture in soil and vegetation results in significant reflectivity.</p>
+<p>These properties make SAR very suitable for various applications, including geology and geomorphology, soil moisture, land cover, oceanography and maritime applications and in particular for applications exploiting SAR's polarimetric and interferometric properties.</p>
+<h3 id="Polarimetry" style=""><span id="S1Mission-Polarimetry"></span>Polarimetry<span id="S1-Mission-Polarimetry"></span>
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#Polarimetry">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h3>
+<p>Copernicus Sentinel-1 can collect several different images from the same series of pulses by using its antenna to receive specific polarisations simultaneously. Copernicus Sentinel-1 is a phase-preserving dual polarisation SAR system. It can transmit a signal in either horizontal (H) or vertical (V) polarisation, and then receive in both H and V polarisations. Dual polarisation Level-1 Single Look Complex (SLC) products contain complex values. In addition to the backscatter intensity that can be measured from each single polarisation, the inter-channel phase information allows to perform enhanced analysis of backscattering properties.</p>
+<p>Targets on the ground have distinctive polarisation signatures reflecting different polarisations with different intensities and converting one polarisation into another. For example, volume scatterers (e.g. forest canopy) have different polarisation properties than surface scatterers (e.g. sea surface). Polarimetric techniques such as polarimetric target decomposition (eigenvector-based, model-based, ...) allow the separation of different scattering contributions and can be used to extract information about the scattering process. Dedicated dual-Pol SAR classification techniques allow improved classification of point targets and distributed target areas.</p>
+<p>The following RADARSAT-2 image of Flevoland in the Netherlands shows the difference in intensities from VH (left) and VV (centre). The composite RGB (colour) image on the right was created using the VV channel for red, VH channel for green and the ratio |VV| / |VH| for blue.</p>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 600px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_2643495070a5a00ec0f0b2da0e0b45e90cb8bfb2cf43240525fa286ebfd60f2b/Sentinel-1_User_Guide_SAR_Polarimetry_Figure_1.jpg?cb=da43c19b158cabf9122e6fc40ffbf1de" alt="Sentinel-1_User_Guide_SAR_Polarimetry_Figure_1.jpg" data-scope="internal" width="600" height="172">
+   </div>
+   <figcaption>
+    <strong>Figure 8: Intensities from different polarimetric channels [Credits: MDA and CSA]</strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 1445px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_6a95be211a85092bab9f7a0351ce9b3ac17c8ee1887766eccd8aa6ab8be58aca/polarimetry_fig2.png?cb=f27fe4ff2b487613a99f5cb692a5bc03" alt="polarimetry_fig2.png" data-scope="internal" width="2696" height="616">
+   </div>
+   <figcaption>
+    <strong>Figure 9: Image acquired by Copernicus Sentinel-1A on 2017/11/01 over Brittany region, France, with VV intensity image, VH intensity image, and RGB color composite. Copernicus Sentinel data (2017) processed by CLS.</strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<p>&nbsp;&nbsp;Applications of polarimetry include:</p>
+<ul>
+ <li>
+  <p>agriculture: crop type identification, crop condition monitoring, soil moisture measurement.</p>
+ </li>
+ <li>
+  <p>forestry: biomass estimation, species identification and fire scar mapping.</p>
+ </li>
+ <li>
+  <p>hydrology: monitoring wetlands and snow cover.</p>
+ </li>
+ <li>
+  <p>oceanography: sea ice identification, coastal wind field measurement, oil spill detection.</p>
+ </li>
+ <li>
+  <p>security: ship detection and classification.</p>
+ </li>
+</ul>
+<p>With Copernicus Sentinel-1, dual polarisation acquisitions are collected over land worldwide as well as over priority coastal zones. The Copernicus Sentinel-1 Observation Scenario is made available by ESA <a href="https://omcs.atlassian.net/wiki/spaces/CSWK/pages/407404986" data-scope="external" rel="external noreferrer">here</a>. This scenario provides maps of revisit and coverage on each acquisition mode, including the dual polarisation ones. The availability of dual polarisation Copernicus Sentinel-1 data makes it possible to setup global and routine applications using polarimetric analysis.</p>
+<p>For an introduction to polarimetric concepts, please see the <a href="http://www.nrcan.gc.ca/earth-sciences/geography-boundary/remote-sensing/fundamentals/1025" data-scope="external" rel="external noreferrer">http://www.nrcan.gc.ca/earth-sciences/geography-boundary/remote-sensing/fundamentals/1025</a> chapter of the <a href="http://www.nrcan.gc.ca/earth-sciences/geography-boundary/remote-sensing/fundamentals/1430" data-scope="external" rel="external noreferrer">http://www.nrcan.gc.ca/earth-sciences/geography-boundary/remote-sensing/fundamentals/1430</a> tutorial from the Canadian Centre for Remote Sensing (CCRS).</p>
+<h3 id="Interferometry" style=""><span id="S1Mission-Interferometry"></span>Interferometry<span id="S1-Mission-Interferometry"></span>
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#Interferometry">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h3>
+<p>A SAR signal contains amplitude and phase information. Amplitude is the strength of the radar response and phase is the fraction of one complete sine wave cycle (a single SAR wavelength). The phase of the SAR image is determined primarily by the distance between the satellite antenna and the ground targets.</p>
+<p>Interferometric SAR (InSAR) exploits the phase difference between two complex radar SAR observations of the same area, taken from slightly different sensor positions, and extracts distance information about the Earth's terrain.</p>
+<p>By combining the phase of these two images after coregistration, an interferogram can be generated where phase is highly correlated to the terrain topography and deformation patterns can be mapped. If the phase shift related to topography is removed from the interferograms, the difference between the resulting products will show surface deformation patterns occurred between the two acquisition dates. This methodology is called Differential Interferometry (DInSAR).</p>
+<p>The following interferogram of Bam, Iran shows the terrain deformation following a M6.6 earthquake on December 26th 2003, which killed 26,271 people and injured an additional 30,000. The images were acquired from ENVISAT ASAR on December 3rd 2003 and February 11th 2004 with a baseline (spatial separation between satellite orbits) of 14 m. The coloured fringes map the deformation of the surface of the Earth in the direction of the view from the satellite in units of the radar wavelength (2.8 cm) between colour cycles.</p>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 477px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_7318849365a12446f61825245239f881312a13f18a4be7243ef7220f55f2f432/Interferogram_of_Bam.jpg?cb=10230c42b8a3576db9203d2ec9d1863f" alt="Interferogram_of_Bam.jpg" data-scope="internal" width="477" height="397">
+   </div>
+   <figcaption>
+    <strong>Figure 10: ENVISAT Interferogram of Bam, Iran</strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<p>Persistent Scatterer Interferometry (PSI) is a branch of interferometry that exploits point scatterers, with strong radar backscatter, over a long time period (years) to provide a phase history of the point target over time. Persistent scatterers can be small, usually manmade, features that remain very correlated over time.</p>
+<p>Conventional DInSAR can have limitations with respect to discrimination between the effects of displacement and atmospheric signature. PSI techniques can overcome such limitations by relaxing usual baseline and temporal constraints and maximising the number of useable interferograms, which can then be used to calculate mean trends over time from a large history of interferograms. Only the targets with sufficiently high coherence are considered, resulting in reduced pixel density.</p>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 549px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_ed69b3bbf32ee7cc29349f83d9c965045bb50106aee56ea1c2893cc25cde8228/Terrain_Deformation_Murcia.jpg?cb=9d72fe2c31f70af67c6ab25b1a916f3b" alt="Terrain_Deformation_Murcia.jpg" data-scope="internal" width="549" height="418">
+   </div>
+   <figcaption>
+    <strong>Figure 11: Terrain Deformation Map of Murcia, Spain Using the PSI Technique. The Maximum Subsidence (Red) is About 5 cm per Year. [Credits: Altamira Information TerraFirma project]</strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<p>Applications of InSAR include:</p>
+<ul>
+ <li>
+  <p>geophysical monitoring of natural hazards: earthquakes, volcanoes and landslides</p>
+ </li>
+ <li>
+  <p>time-series analysis of surface deformation: subsidence and structural stability</p>
+ </li>
+ <li>
+  <p>glacier motion analysis</p>
+ </li>
+ <li>
+  <p>digital elevation mapping.</p>
+ </li>
+</ul>
+<p>For an introduction to interferometric concepts, please see ESA's <a href="http://www.esa.int/About_Us/ESA_Publications/InSAR_Principles_Guidelines_for_SAR_Interferometry_Processing_and_Interpretation_br_ESA_TM-19." data-scope="external" rel="external noreferrer">InSAR Principles Guidelines for SAR Interferometry Processing and Interpretation</a>.</p>
+<h2 id="Acquisition-Modes" style=""><span id="S1Mission-AcquisitionModes"></span>Acquisition Modes<span id="S1-Mission-Acquisition-Modes"></span>
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#Acquisition-Modes">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h2>
+<p>Copernicus Sentinel-1 operates in four exclusive acquisition modes:</p>
+<ul>
+ <li>
+  <p><a href="/web/s1-mission#S1-Mission-Stripmap" data-scope="internal">Stripmap (SM)</a></p>
+ </li>
+ <li>
+  <p><a href="/web/s1-mission#S1-Mission-Interferometric-Wide-Swath" data-scope="internal">Interferometric Wide Swath (IW)</a></p>
+ </li>
+ <li>
+  <p><a href="/web/s1-mission#S1-Mission-Extra-Wide-Swath" data-scope="internal">Extra-Wide Swath (EW)</a></p>
+ </li>
+ <li>
+  <p><a href="/web/s1-mission#S1-Mission-Wave" data-scope="internal">Wave (WV)</a></p>
+ </li>
+</ul>
+<p>The SM, IW and EW imaging modes can operate for a maximum duty cycle of 30 min per orbit (25 minutes for Sentinel-1A and Sentinel-1B). The rest of the orbit is operated in WV.</p>
+<p>The Copernicus Sentinel-1 C-band SAR instruments supports operation in single polarisation (HH or VV) and dual polarisation (HH+HV or VV+VH), implemented through one transmit chain (switchable to H or V) and two parallel receive chains for H and V polarisation.</p>
+<p>SM, IW and EW products are available in single (HH or VV) or dual polarisation (HH+HV or VV+VH). WV is single polarisation only (HH or VV).</p>
+<p>The primary mode over land is IW, with VV+VH polarisation: having the Interferometric Wide swath as the one main operational mode satisfies most current service requirements, avoids conflicts and preserves revisit performance, simplifies mission planning, decreases operational costs and builds up a consistent long-term archive.</p>
+<p>Over open ocean, the WV mode, with VV polarisation, is the main operational acquisition mode acquiring vignettes at regular intervals.</p>
+<p>EW mode is used primarily over selected European seas, Arctic and Southern Ocean areas, mainly for sea-ice monitoring services and maritime surveillance, with the capability to cover 400 km wide area at each data-take. SM mode is only used for small islands and on request for extraordinary events such as emergency management.</p>
+<p>For each mode, it is possible to produce products at SAR Level-0, Level-1 SLC, Level-1 GRD and Level-2 OCN.</p>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 907px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_271b0cc159b69f436d557eebf6b0d37c769f6a039edddfd7448f01a376372dbf/image-20230510-131821.png?cb=3a4e56a987cdb8cdbef73962423918ab" alt="image-20230510-131821.png" data-scope="internal" width="907" height="625">
+   </div>
+   <figcaption>
+    <strong>Figure 12: Sentinel-1 Acquisitions Swath Coverage. [Credits: ESA]</strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<p>Read more about the Copernicus Sentinel-1<span style="--color: var(--red, #ff5630);"> </span><a href="/web/s1-mission#S1-Mission-Observation-and-Production-Scenarios" data-scope="internal">Observation and Production Scenario</a>.</p>
+<h4 id="Calibration-Modes" style=""><span id="S1Mission-CalibrationModes"></span>Calibration Modes<span id="S1-Mission-Calibration-Modes"></span>
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#Calibration-Modes">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h4>
+<p>The Sentinel-1 SAR instrument also operates in the Calibration Modes: RF Characterisation mode, Azimuth Notch mode and Elevation Notch mode. However, products from these modes are only used internally and not distributed to the users. Please refer to <a href="/web/mission-performance-cluster" data-scope="internal">Copernicus Sentinel-1 Calibration and Validation</a> for further details.</p>
+<h3 id="Stripmap" style=""><span id="S1Mission-Stripmap"></span>Stripmap<span id="S1-Mission-Stripmap"></span>
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#Stripmap">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h3>
+<p>Stripmap (SM) mode acquires data with an 80 km swath at slightly better than 5 m by 5 m spatial resolution (single look). <em>Six overlapping swaths cover a range of 375 km.</em> The ground swath is illuminated by a continuous sequence of pulses while the antenna beam is pointing to a fixed azimuth angle and an approximately fixed off-nadir angle (this is subject to small variations because of roll steering). SM images have continuous along track image quality at an approximately constant incidence angle.</p>
+<p>&nbsp;<em>Table 3: Main characteristics of Stripmap mode</em></p>
+<div class="theme-table" style="--width: 760px;">
+ <table-expand>
+  <scroll-shadow>
+   <table-sort>
+    <div data-component="table" data-align="unset" data-number-column="false">
+     <table>
+      <colgroup>
+       <col style="width: 339px">
+       <col style="width: 318px">
+      </colgroup>
+      <tbody>
+       <tr>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>Characteristics</strong></span></p>
+        </th>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>Value</strong></span></p>
+        </th>
+       </tr>
+       <tr>
+        <td>
+         <p>Swath width</p>
+        </td>
+        <td>
+         <p>80 km</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Incidence angle range</p>
+        </td>
+        <td>
+         <p>18.3° - 46.8°</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Elevation beams</p>
+        </td>
+        <td>
+         <p>6</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Polarisation options</p>
+        </td>
+        <td>
+         <p>Dual HH+HV, VV+VH
+          <br>
+          Single HH, VV</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Maximum Noise Equivalent Sigma Zero (NESZ)</p>
+        </td>
+        <td>
+         <p>-22 dB</p>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </table-sort>
+  </scroll-shadow>
+ </table-expand>
+</div>
+<p>Stripmap imaging mode operates with one of six predefined elevation beams, each at a different incidence angle.<strong> Table 4</strong> shows the incidence and off-nadir angles for Stripmap beams.</p>
+<p>The incidence angle is the angle between the incident SAR beam and the axis perpendicular to the local geodetic ground surface.</p>
+<p>The off-nadir angle is the look angle between the satellite's nadir position and the SAR beam.</p>
+<p><em>Table 4: Angles for Stripmap mode beams</em></p>
+<div class="theme-table" style="--width: 760px;">
+ <table-expand>
+  <scroll-shadow>
+   <table-sort>
+    <div data-component="table" data-align="unset" data-number-column="false">
+     <table>
+      <colgroup>
+       <col style="width: 111px">
+       <col style="width: 91px">
+       <col style="width: 91px">
+       <col style="width: 91px">
+       <col style="width: 91px">
+       <col style="width: 91px">
+       <col style="width: 91px">
+      </colgroup>
+      <tbody>
+       <tr>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>Beam</strong></span></p>
+        </th>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>S1</strong></span></p>
+        </th>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>S2</strong></span></p>
+        </th>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>S3</strong></span></p>
+        </th>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>S4</strong></span></p>
+        </th>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>S5</strong></span></p>
+        </th>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>S6</strong></span></p>
+        </th>
+       </tr>
+       <tr>
+        <td>
+         <p>Off-nadir angles at
+          <br>
+          min orbit altitude [°]</p>
+        </td>
+        <td>
+         <p>17.93-23.53</p>
+        </td>
+        <td>
+         <p>21.00-26.33</p>
+        </td>
+        <td>
+         <p>26.18-30.99</p>
+        </td>
+        <td>
+         <p>30.87-35.15</p>
+        </td>
+        <td>
+         <p>35.07-38.85</p>
+        </td>
+        <td>
+         <p>37.53-41.01</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Incident angles at min
+          <br>
+          orbit altitude [°]</p>
+        </td>
+        <td>
+         <p>19.99-26.31</p>
+        </td>
+        <td>
+         <p>23.45-29.50</p>
+        </td>
+        <td>
+         <p>29.33-34.85</p>
+        </td>
+        <td>
+         <p>34.71-39.72</p>
+        </td>
+        <td>
+         <p>39.62-44.12</p>
+        </td>
+        <td>
+         <p>42.53-46.73</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Off-nadir angles at
+          <br>
+          max orbit altitude [°]</p>
+        </td>
+        <td>
+         <p>16.45-21.96</p>
+        </td>
+        <td>
+         <p>19.51-24.77</p>
+        </td>
+        <td>
+         <p>24.67-29.45</p>
+        </td>
+        <td>
+         <p>29.34-33.63</p>
+        </td>
+        <td>
+         <p>33.53-37.34</p>
+        </td>
+        <td>
+         <p>35.98-39.51</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Incident angles at max
+          <br>
+          orbit altitude [°]</p>
+        </td>
+        <td>
+         <p>18.32-24.55</p>
+        </td>
+        <td>
+         <p>21.78-27.76</p>
+        </td>
+        <td>
+         <p>27.64-33.13</p>
+        </td>
+        <td>
+         <p>33.00-38.02</p>
+        </td>
+        <td>
+         <p>37.89-42.43</p>
+        </td>
+        <td>
+         <p>40.79-45.04</p>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </table-sort>
+  </scroll-shadow>
+ </table-expand>
+</div>
+<p>Stripmap mode is used to image small islands and in exceptional cases only, to support emergency management actions.</p>
+<h3 id="Interferometric-Wide-Swath" style=""><span id="S1Mission-InterferometricWideSwath"></span>Interferometric Wide Swath&nbsp;<span id="S1-Mission-Interferometric-Wide-Swath"></span>
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#Interferometric-Wide-Swath">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h3>
+<p>The Interferometric Wide (IW) swath mode is the main acquisition mode over land and satisfies the majority of service requirements. It acquires data with a 250 km swath at 5 m by 20 m spatial resolution (single look). IW mode captures three sub-swaths using Terrain Observation with Progressive Scans SAR (TOPSAR<u>)</u>. With the TOPSAR technique, in addition to steering the beam in range as in ScanSAR, the beam is also electronically steered from backward to forward in the azimuth direction for each burst, avoiding scalloping and resulting in homogeneous image quality throughout the swath <sup>[</sup><a href="/web/s1-mission#1_TOPSAR" data-scope="internal"><sup>1</sup></a><sup>]</sup>.</p>
+<p>TOPSAR mode replaces the conventional ScanSAR mode, achieving the same coverage and resolution as ScanSAR, but with a nearly uniform Signal-to-Noise Ratio and Distributed Target Ambiguity Ratio.</p>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 483px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_eb5a7c1b012e60498c7479a1e3b4f75b72f4ddc99d7acf49391bff11f4839c76/image_gallery.jpg?cb=f75242e7f9472b369644996a4f801e77" alt="image_gallery.jpg" data-scope="internal" width="483" height="334">
+   </div>
+   <figcaption>
+    <strong>Figure 13: TOPSAR Sub-Swath Acquisition. [Credits: ESA]</strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<p>The azimuth resolution is reduced compared to SM due to the shorter target illumination time of the burst. Using the sweeping azimuth pattern, each target is seen under the same antenna pattern, independently from its azimuth position in the burst image. By shrinking the azimuth antenna pattern, as seen by a target on the ground, scalloping effects on the image can be reduced.</p>
+<p>The Sentinel-1 C-SAR system is designed to enable TOPS burst synchronization of repeat-pass data-takes supporting the generation of TOPS interferograms and coherence maps. Specifically, for the IW and EW modes, the TOPS burst duration is 0.82 s and 0.54 s (worst case) respectively, with a requirement for achieving a synchronization of less than 5 ms between corresponding bursts. TOPSAR requires high accuracy for image co-registration. A small co-registration error in azimuth can introduce an azimuth phase ramp due to the SAR antenna azimuth beam sweeping causing Doppler centroid frequency variations of 5.5 kHz.</p>
+<p>IW SLC products contain one image per sub-swath and one per polarisation channel, for a total of three (single polarisation) or six (dual polarisation) images in an IW product.</p>
+<p>Each sub-swath image consists of a series of bursts, where each burst has been processed as a separate SLC image. The individually focused complex burst images are included, in azimuth-time order, into a single sub-swath image with black-fill demarcation in between. There is sufficient overlap between adjacent bursts and between sub-swaths to ensure continuous coverage of the ground as provided in GRD products. The images for all bursts in all sub-swaths are resampled to a common pixel spacing grid in range and azimuth while preserving the phase information.</p>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 1206px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_9e22d1bb69084b6b8d0a815aefd3025cdbe0ee49335ae321bf934a443c3bcb6a/IW_SLC_Product.jpg?cb=b3952d4b779e65d4b47a05e7682cd0ad" alt="IW_SLC_Product.jpg" data-scope="internal" width="1206" height="626">
+   </div>
+   <figcaption>
+    <strong>Figure 14: IW SLC Bursts and Sub-Swaths</strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<p>After burst and sub-swath merging, the full product can be created, as is the case for the GRDH products shown in <strong>Figure 15</strong>. The TOPSAR technique greatly reduces scalloping effects over conventional ScanSAR.</p>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 949px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_654133900fef44fd8ef4a2ea0b81866ff64e4716bb7b111598e89f429cc6b5ff/IW_GRD_Product.jpg?cb=83162427b55b11a96de6ed1b0e11dd2b" alt="IW_GRD_Product.jpg" data-scope="internal" width="949" height="596">
+   </div>
+   <figcaption>
+    <strong>Figure 15: IW GRDH Product</strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<p><em>Table 5: Characteristics of Interferometric Wide swath mode</em></p>
+<div class="theme-table" style="--width: 760px;">
+ <table-expand>
+  <scroll-shadow>
+   <table-sort>
+    <div data-component="table" data-align="unset" data-number-column="false">
+     <table>
+      <colgroup>
+       <col style="width: 328px">
+       <col style="width: 329px">
+      </colgroup>
+      <tbody>
+       <tr>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>Characteristics</strong></span></p>
+        </th>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>Value</strong></span></p>
+        </th>
+       </tr>
+       <tr>
+        <td>
+         <p>Swath width</p>
+        </td>
+        <td>
+         <p>250 km</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Incidence angle range</p>
+        </td>
+        <td>
+         <p>29.1° - 46.0°</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Sub-swaths</p>
+        </td>
+        <td>
+         <p>3</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Azimuth steering angle</p>
+        </td>
+        <td>
+         <p>± 0.6°</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Polarisation options</p>
+        </td>
+        <td>
+         <p>Dual HH+HV, VV+VH
+          <br>
+          Single HH, VV</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Maximum Noise Equivalent Sigma Zero (NESZ)</p>
+        </td>
+        <td>
+         <p>-22 dB</p>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </table-sort>
+  </scroll-shadow>
+ </table-expand>
+</div>
+<p><em>Table 6: Angles for Interferometric Wide sub-swaths</em></p>
+<div class="theme-table" style="--width: 760px;">
+ <table-expand>
+  <scroll-shadow>
+   <table-sort>
+    <div data-component="table" data-align="unset" data-number-column="false">
+     <table>
+      <colgroup>
+       <col style="width: 258px">
+       <col style="width: 133px">
+       <col style="width: 133px">
+       <col style="width: 133px">
+      </colgroup>
+      <tbody>
+       <tr>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>Beam</strong></span></p>
+        </th>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>IW1</strong></span></p>
+        </th>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>IW2</strong></span></p>
+        </th>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>IW3</strong></span></p>
+        </th>
+       </tr>
+       <tr>
+        <td>
+         <p>Off-nadir angles at min orbit altitude [°]</p>
+        </td>
+        <td>
+         <p>27.53-32.48</p>
+        </td>
+        <td>
+         <p>32.38-36.96</p>
+        </td>
+        <td>
+         <p>36.87-40.40</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Incident angles at min orbit altitude [°]</p>
+        </td>
+        <td>
+         <p>30.86-36.59</p>
+        </td>
+        <td>
+         <p>36.47-41.85</p>
+        </td>
+        <td>
+         <p>41.75-46.00</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Off-nadir angles at max orbit altitude [°]</p>
+        </td>
+        <td>
+         <p>26.00-30.96</p>
+        </td>
+        <td>
+         <p>30.86-35.43</p>
+        </td>
+        <td>
+         <p>35.35-38.88</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Incident angles at max orbit altitude [°]</p>
+        </td>
+        <td>
+         <p>29.16-34.89</p>
+        </td>
+        <td>
+         <p>34.77-40.15</p>
+        </td>
+        <td>
+         <p>40.04-44.28</p>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </table-sort>
+  </scroll-shadow>
+ </table-expand>
+</div>
+<p><span id="1_TOPSAR"></span>[1] De Zan, F., &amp; Guarnieri, A. M. (2006). TOPSAR: Terrain Observation by Progressive Scans. Geoscience and Remote Sensing, IEEE Transactions on, 44(9), 2352–2360. doi:10.1109/TGRS.2006.873853</p>
+<h3 id="Extra-Wide-Swath" style=""><span id="S1Mission-ExtraWideSwath"></span>Extra Wide Swath <span id="S1-Mission-Extra-Wide-Swath"></span>
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#Extra-Wide-Swath">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h3>
+<p>Similar to the IW mode, the Extra Wide (EW) swath mode employs the TOPSAR technique to acquire data over a wider area than for IW mode using five sub-swaths. EW mode acquires data over a 400 km swath at 20 m by 40 m spatial resolution.</p>
+<p>EW SLC products contain one image per sub-swath and one per polarisation channel, for a total of five (single polarisation) or 10 (dual polarisation) images in an EW product.</p>
+<p>The EW mode is aimed primarily for use over sea-ice, polar zones and certain maritime areas, in particular for ice, oil spill monitoring and security services. Like IW, EW mode can also be used for interferometry since it shares the same characteristics for burst synchronisation, baseline and Doppler stability.</p>
+<p>The table below shows the main characteristics of the Extra Wide swath mode.</p>
+<p><em>Table 7: Characteristics of Extra Wide swath mode</em></p>
+<div class="theme-table" style="--width: 760px;">
+ <table-expand>
+  <scroll-shadow>
+   <table-sort>
+    <div data-component="table" data-align="unset" data-number-column="false">
+     <table>
+      <colgroup>
+       <col style="width: 335px">
+       <col style="width: 322px">
+      </colgroup>
+      <tbody>
+       <tr>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>Characteristics</strong></span></p>
+        </th>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>Value</strong></span></p>
+        </th>
+       </tr>
+       <tr>
+        <td>
+         <p>Swath width</p>
+        </td>
+        <td>
+         <p>410 km</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Incidence angle range</p>
+        </td>
+        <td>
+         <p>18.9° - 47.0°</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Sub-swaths</p>
+        </td>
+        <td>
+         <p>5</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Azimuth steering angle</p>
+        </td>
+        <td>
+         <p>± 0.8°</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Polarisation options</p>
+        </td>
+        <td>
+         <p>Dual HH+HV, VV+VH
+          <br>
+          Single HH, VV</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Maximum Noise Equivalent Sigma Zero (NESZ)</p>
+        </td>
+        <td>
+         <p>-22 dB</p>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </table-sort>
+  </scroll-shadow>
+ </table-expand>
+</div>
+<p>The table below shows the incidence and off-nadir angles for Extra Wide swath mode beams.</p>
+<p><em>Table 8: Angles for Extra Wide sub-swaths</em></p>
+<div class="theme-table" style="--width: 760px;">
+ <table-expand>
+  <scroll-shadow>
+   <table-sort>
+    <div data-component="table" data-align="unset" data-number-column="false">
+     <table>
+      <colgroup>
+       <col style="width: 144px">
+       <col style="width: 89px">
+       <col style="width: 106px">
+       <col style="width: 106px">
+       <col style="width: 106px">
+       <col style="width: 106px">
+      </colgroup>
+      <tbody>
+       <tr>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>Beam</strong></span></p>
+        </th>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>EW1</strong></span></p>
+        </th>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>EW2</strong></span></p>
+        </th>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>EW3</strong></span></p>
+        </th>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>EW4</strong></span></p>
+        </th>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>EW5</strong></span></p>
+        </th>
+       </tr>
+       <tr>
+        <td>
+         <p>Off-nadir angles at
+          <br>
+          min orbit altitude [°]</p>
+        </td>
+        <td>
+         <p>17.94-26.07</p>
+        </td>
+        <td>
+         <p>26.02-30.66</p>
+        </td>
+        <td>
+         <p>30.61-35.10</p>
+        </td>
+        <td>
+         <p>35.06-38.66</p>
+        </td>
+        <td>
+         <p>38.63-41.20</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Incident angles at
+          <br>
+          min orbit altitude [°]</p>
+        </td>
+        <td>
+         <p>20.00-29.20</p>
+        </td>
+        <td>
+         <p>29.15-34.47</p>
+        </td>
+        <td>
+         <p>34.41-39.66</p>
+        </td>
+        <td>
+         <p>39.60-43.89</p>
+        </td>
+        <td>
+         <p>43.86-46.97</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Off-nadir angles at
+          <br>
+          max orbit altitude [°]</p>
+        </td>
+        <td>
+         <p>16.36-24.49</p>
+        </td>
+        <td>
+         <p>24.44-29.08</p>
+        </td>
+        <td>
+         <p>29.03-33.52</p>
+        </td>
+        <td>
+         <p>33.48-37.08</p>
+        </td>
+        <td>
+         <p>37.05-39.62</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Incident angles at
+          <br>
+          max orbit altitude [°]</p>
+        </td>
+        <td>
+         <p>18.22-27.57</p>
+        </td>
+        <td>
+         <p>27.38-33.42</p>
+        </td>
+        <td>
+         <p>32.65-38.05</p>
+        </td>
+        <td>
+         <p>37.84-42.53</p>
+        </td>
+        <td>
+         <p>42.08-45.16</p>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </table-sort>
+  </scroll-shadow>
+ </table-expand>
+</div> 
+<h3 id="Wave" style=""><span id="S1Mission-Wave"></span>Wave<span id="S1-Mission-Wave"></span>
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#Wave">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h3>
+<p>Copernicus Sentinel-1 Wave mode is similar to ERS and Evnisat wave mode imaging but with improved spatial resolution, larger vignettes and a 'leap frog' acquisition pattern as illustrated in the figure below. WV acquisitions consist of several vignettes exclusively in either VV or HH polarisation, with each vignette processed as a separate image. WV mode products can contain any number of vignettes, potentially amounting to an entire data-take. Each vignette is contained in an independent image within the product.</p>
+<p>Wave mode acquires data in 20 km by 20 km vignettes, at 5 m by 5 m spatial resolution, every 100 km along the orbit, acquired alternately on two different incidence angles. Vignettes on the same incidence angle are separated by 200 km. Swaths alternate incident angles between near range and far range (approximately 23° and 36° respectively).</p>
+<p>&nbsp;</p>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 317px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_b0d673cd938384e83e2bc10aa618932fed66c5900d2a193528cad3fe982dc776/WV_mode_acquisitions.jpg?cb=999b5ee92184205dd55a475f6f6f3151" alt="WV_mode_acquisitions.jpg" data-scope="internal" width="317" height="502">
+   </div>
+   <figcaption>
+    <strong>Figure 16: Alternating WV Mode Acquisitions. [Credits: ESA]</strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<p>The Wave mode at VV polarisation is the default mode for acquiring data over open ocean. WV mode is acquired at the same bit rate as SM however, due to the small vignettes, single polarisation and sensing at 100 km intervals, the data volume is much lower. The table below shows the main characteristics of the Wave mode.</p>
+<p><em>Table 9: Characteristics of Wave mode</em></p>
+<div class="theme-table" style="--width: 760px;">
+ <table-expand>
+  <scroll-shadow>
+   <table-sort>
+    <div data-component="table" data-align="unset" data-number-column="false">
+     <table>
+      <colgroup>
+       <col style="width: 335px">
+       <col style="width: 322px">
+      </colgroup>
+      <tbody>
+       <tr>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>Characteristics</strong></span></p>
+        </th>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>Value</strong></span></p>
+        </th>
+       </tr>
+       <tr>
+        <td>
+         <p>Vignette ground coverage</p>
+        </td>
+        <td>
+         <p>20 km x 20 km</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Along track distance between vignettes</p>
+        </td>
+        <td>
+         <p>100 km</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Incidence angle ranges</p>
+        </td>
+        <td>
+         <p>21.6° - 25.1°
+          <br>
+          34.8° - 38.0°</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Elevation beams</p>
+        </td>
+        <td>
+         <p>2</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Polarisation options</p>
+        </td>
+        <td>
+         <p>Single HH, VV</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Maximum Noise Equivalent Sigma Zero (NESZ)</p>
+        </td>
+        <td>
+         <p>-22 dB</p>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </table-sort>
+  </scroll-shadow>
+ </table-expand>
+</div>
+<p>The table below shows the incidence and off-nadir angles for Wave mode beams.</p>
+<p><em>Table 10: Angles for Wave mode</em></p>
+<div class="theme-table" style="--width: 760px;">
+ <table-expand>
+  <scroll-shadow>
+   <table-sort>
+    <div data-component="table" data-align="unset" data-number-column="false">
+     <table>
+      <colgroup>
+       <col style="width: 333px">
+       <col style="width: 166px">
+       <col style="width: 158px">
+      </colgroup>
+      <tbody>
+       <tr>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>Beam</strong></span></p>
+        </th>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>WV1</strong></span></p>
+        </th>
+        <th style="--bg-color: var(--bold-blue, #4c9aff);">
+         <p style="--text-align: center"><span style="--color: var(--white, #fff);"><strong>WV2</strong></span></p>
+        </th>
+       </tr>
+       <tr>
+        <td>
+         <p>Off-nadir angles at min orbit altitude [°]</p>
+        </td>
+        <td>
+         <p>21.03-22.40</p>
+        </td>
+        <td>
+         <p>32.56-33.62</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Incident angles at min orbit altitude [°]</p>
+        </td>
+        <td>
+         <p>23.47-25.03</p>
+        </td>
+        <td>
+         <p>36.67-37.92</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Off-nadir angles at max orbit altitude [°]</p>
+        </td>
+        <td>
+         <p>19.43-20.79</p>
+        </td>
+        <td>
+         <p>30.96-32.02</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>Incident angles at max orbit altitude [°]</p>
+        </td>
+        <td>
+         <p>21.68-23.22</p>
+        </td>
+        <td>
+         <p>34.88-36.13</p>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </table-sort>
+  </scroll-shadow>
+ </table-expand>
+</div> 
+<h2 id="Performance" style=""><span id="S1Mission-Performance"></span>Performance<span id="S1-Mission-Performance"></span>
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#Performance">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h2>
+<h3 id="System-Noise" style=""><span id="S1Mission-SystemNoise"></span>System Noise<span id="S1-Mission-System-Noise"></span>
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#System-Noise">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h3>
+<p>The sensitivity of Sentinel-1 expressed by the noise equivalent sigma naught is specified to be -22 dB or better. The radiometric accuracy of its data products is within a statistical error (3σ) of 1.0 dB. For distributed targets the ambiguity ratio is specified to be -22 dB or better.</p>
+<h3 id="Radiometric-Accuracy" style=""><span id="S1Mission-RadiometricAccuracy"></span>Radiometric Accuracy<span id="S1-Mission-Radiometric-Accuracy"></span>
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#Radiometric-Accuracy">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h3>
+<p>Radiometric accuracy and stability are specified for Sentinel-1 for all measurement modes to be within 1 dB (3σ) and 0.5 dB (3σ) respectively. The accuracy and stability numbers refer to measurement uncertainty of the radar backscattering coefficient using the image intensity excluding the effect of speckle and noise.</p>
+<h3 id="Radiometric-Resolution" style=""><span id="S1Mission-RadiometricResolution"></span>Radiometric Resolution<span id="S1-Mission-Radiometric-Resolution"></span>
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#Radiometric-Resolution">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h3>
+<p>Radiometric resolution refers to the measurement uncertainty of the radar backscattering coefficient using the image intensity arising from speckle and noise for an otherwise perfect system. Radiometric resolution is expressed as the standard deviation of the measurement uncertainty normalised with respect to the mean. For an imaging system with noise bias subtraction, the radiometric resolution is given by:</p>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 544px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_475da28d71bd22f9811e3edf06722f38b31f5e0d2f7921faaff488df6b3416d0/image-20230531-100304.png?cb=aaaedb69a9abf7c4e1b17d142abb6080" alt="image-20230531-100304.png" data-scope="internal" width="512" height="176">
+   </div>
+   <figcaption>
+    <strong>Equation 1: </strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<p>The figure below shows the the radiometric resolution for a radar backscatter coefficient σ0 varying from -26 dB m2&nbsp;m-2&nbsp;up to 0 dB m255 m-2&nbsp;for the different imaging modes of Sentinel-1 over a 150&nbsp;m by 150&nbsp;m spatial resolution product with a NESZ of -22 dB. For comparison, the radiometric resolution of the ENVISAT ASAR Wide swath is also given.</p>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 544px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_f848f51d4f04163d4958596d8fe3d3fabe3b2d21690c9055f89811ce23c6054c/image-20230531-100332.png?cb=503282ba437a162eb953976be45b6d4e" alt="image-20230531-100332.png" data-scope="internal" width="509" height="252">
+   </div>
+   <figcaption>
+    <strong>Figure 17: Radiometric Resolution (in dB) as a Function of the Radar Backscatter Coefficient of a 150 × 150 m Spatial Resolution Product</strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<h2 id="AIS-Instrument" style=""><span id="S1Mission-AISInstrument"></span>AIS Instrument
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#AIS-Instrument">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h2>
+<p>The Sentinel-1C (from December 2024) and Sentinel-1D (launched November 2025) spacecrafts, in addition to the SAR instrument, are equipped with the Automatic Identification System (AIS) signal antenna on board, allowing tracing and identifying vessels.</p>
+<h2 id="Observation-and-Production-Scenarios" style=""><span id="S1Mission-ObservationandProductionScenarios"></span>Observation and Production Scenarios<span id="S1-Mission-Observation-and-Production-Scenarios"></span>
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#Observation-and-Production-Scenarios">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h2>
+<h3 id="SAR-Observation-Scenario" style=""><span id="S1Mission-SARObservationScenario"></span>SAR Observation Scenario <span id="S1-Mission-Observation-Scenario"></span>
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#SAR-Observation-Scenario">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h3>
+<p>Sentinel-1 SAR observation scenario implements a baseline pre-defined mission observation scenario, making optimum use of the SAR duty cycle within the technical constraints of the overall system.</p>
+<p>This scenario aims at fulfilling, during the routine exploitation phase, the observation requirements of the Copernicus services and of ESA/EU member states. In addition, on a best effort basis and with lower priority, a secondary objective is to satisfy other SAR user communities, ensuring continuity of ERS/Envisat, considering requirements from the scientific community, as well as from international partners and cooperation activities.</p>
+<p>The elaboration of a pre-defined observation plan necessitates solving, <em>a priori</em>, the potential conflict among users (e.g. different SAR operation modes or polarisation schemes required over same geographical area).</p>
+<p>During the ramp-up exploitation phase, the Sentinel-1 observation plan gradually evolves in line with the increasing operational capacity. Accordingly, the observations and volume of data available to Sentinel-1 operational users gradually increase during this period.</p>
+<p>Within the predefined observation plan, the Sentinel-1 mission ensures observations fulfilling the following two main categories of services:</p>
+<ul>
+ <li>
+  <p>Monitoring services related to oceans, seas and sea-ice. These services require quasi real-time or near real-time data, typically in less than 3 hours. Quasi real-time services or services requiring data within 1 hour from sensing require reception by local stations. Most of these monitoring types of services require systematic or very frequent (e.g. daily) observations.</p>
+ </li>
+ <li>
+  <p>Services/applications over land. These services or applications cover a wide range of different thematic domains. They generally do not require data in quasi real-time and few of them require data within 3 hours (near real-time) from sensing. Related data are mostly recorded on-board and downloaded to the core ground station network. Products not required in near real-time are available within 24 hours from sensing, in practice the availability of these products is reduced to few hours from sensing.</p>
+ </li>
+</ul>
+<p>The high level Sentinel-1 observation strategy during full operations capacity is based on:</p>
+<ul>
+ <li>
+  <p>the optimal use of the SAR duty cycle for high modes that was set to 25 minutes per orbit during the eclipse season (early May to early August) and 30 minutes per orbit outside the eclipse season until May 2026. These settings took into account various constraints, such as the limited number of X-band RF switches, mode transition times, and maximum downlink times (both per orbit and consecutive). Ongoing model improvements made it possible to remove the acquisition limitation during the eclipse season, resulting in a uniform optimal time of a maximum of 30 minutes per orbit</p>
+ </li>
+ <li>
+  <p>optimal use of single and dual polarisation acquisitions, in line with the available downlink capacity (in practice most observations are now performed in dual polarisation)</p>
+ </li>
+ <li>
+  <p>Wave Mode (WV) continuously operated over open oceans, with lower priority versus the high rate modes</p>
+ </li>
+ <li>
+  <p>Interferometric Wide swath (IW) and Extra Wide swath (EW) modes operated over pre-defined geographical areas:</p>
+  <ul>
+   <li>
+    <p>Over land and coastal areas: pre-defined mode is IW.</p>
+   </li>
+   <li>
+    <p>Over seas and polar areas, and ocean relevant areas, pre-defined mode is either IW or EW.</p>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p>In exceptional cases only, emergency observation requests may alter the pre-defined observation scenario, potentially requiring the use of the Stripmap (SM) mode.</p>
+<p>Over land, the same SAR polarisation scheme is systematically used over a given area, to guarantee time series of data in the same conditions for routine operational services and to allow frequent InSAR. Depending on the area, the selection is either vertical or horizontal, the choice being made according to the main application behind.</p>
+<p>As a general principle, the polarisation scheme uses the following logic:</p>
+<ul>
+ <li>
+  <p>HH-HV or HH polarization for the monitoring of polar environments, sea-ice zones</p>
+ </li>
+ <li>
+  <p>VV-VH or VV polarization for all other observation zones (with an exception for the Baltic Sea observed partially in HH-HV with Sentinel-1B until its end of operations and with Sentinel-1C since mid 2025 during northern winter)</p>
+ </li>
+</ul>
+<p>Please see the <a href="/__attachments/a_7f2812a4f422ab0a80721babb3a2ab405cff8f67ed1f34f14c2e199871544102/COPE-S1OP-EOPG-PL-15-0020%20-%20Sentinel%20HLOP%202021%20-%203.1.pdf?cb=4ee3eb1b133a57d07c9cc2213fb3d8f9" data-scope="internal">Sentinel High Level Operations Plan</a> for specific details about the high level operations concept and strategy of the Sentinel missions.</p>
+<p>Detailed information on the planned Sentinel-1 observations (past and present) in terms of Sentinel-1 acquisitions plans (SAR mode, date, start-stop times, polarization, etc) are provided with KML files available <a href="https://sentiwiki.copernicus.eu/web/document-library#DocumentLibrary-S1APastAcquisitionPlans" data-scope="external" rel="external noreferrer">here</a>.</p>
+<p>Below are the main operational steps in the Sentinel-1 Mission observation scenarios, as they evolved through the history of the mission:</p>
+<p><u><strong>April 2014 to April 2016</strong></u><u> - Sentinel-1A only coverage</u></p>
+<p><u><strong>May 2016 to December 2021</strong></u><u> - Sentinel-1A and Sentinel-1B constellation (ramp-up + full operations) coverage</u></p>
+<p><strong>Following an anomaly to the instrument electronics power supply on December 2021, the Sentinel-1B satellite was unable to deliver radar data. </strong>The end of mission was declared in July 2022 while disposal activities have been completed on September 2024.</p>
+<p>During the time frame September 2022 – April 2025&nbsp;(start of Sentinel-1C operations), the Sentinel-1A observation scenario was adjusted to mitigate the data gap and, to preserve as much as possible, the time series worldwide, as shown in the below maps:</p>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 760px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_0bee2224e891ee4153eddf7d952360d8702ca7e6d5d49ad55dd1c22c19e18708/Sentinel-1-Repeat-Coverage-Frequency-Geometry-2022.png" alt="Sentinel-1-Repeat-Coverage-Frequency-Geometry-2022.png" data-scope="internal" width="3607" height="2456">
+   </div>
+   <figcaption>
+    <strong>Figure 18: Sentinel-1 A Mission Observation Scenario: Repeat and Coverage Frequency</strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 760px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_6d9136f16973e39b8061456a83c16046a392c3226be9a3a9cace1e9430e236f0/Sentinel-1-Mode-Polarisation-Geometry-2022.png" alt="Sentinel-1-Mode-Polarisation-Geometry-2022.png" data-scope="internal" width="3501" height="2475">
+   </div>
+   <figcaption>
+    <strong>Figure 19: Sentinel-1 A Mission Observation Scenario: Mode - Polarisation- Geometry</strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<p><u><strong>May 2025 to June 2026</strong></u><u> - Sentinel-1A and Sentinel-1C constellation coverage</u></p>
+<p><strong>Sentinel-1C was successfully launched on December 2024 and, it is fully operational since early May 2025&nbsp; (end of the commissioning phase). Sentinel-1C allowed to re-establish the 2-satellite constellation configuration with Sentinel-1A.</strong></p>
+<p>The two maps below show an overview of the Sentinel-1A and Sentinel-1C constellation observation plan in terms of SAR mode, polarisation, observation geometry, revisit and coverage frequency. The Wave mode, continuously operated by default over open oceans, is not shown on these maps.</p>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 760px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_5eefc9f455b9803136b256ca86709d7ecc1b34ede5900405341bdca7bb39d4ec/Sentinel-1-Repeat-Coverage-Frequency-Geometry-2025_1.2.jpg?cb=7bc71ac57d50ef2ef2383984ec1dcad5" alt="Sentinel-1-Repeat-Coverage-Frequency-Geometry-2025_1.2.jpg" data-scope="internal" width="862" height="578">
+   </div>
+   <figcaption>
+    <strong>Figure 20: Sentinel-1A + Sentinel-1C Constellation Mission Observation Scenario: Repeat &amp; Coverage Frequency</strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 760px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_6d8273e0b0abba6cf80007a87dfbdefd9c949b5a34f2e810c1479117fe973954/Sentinel-1-Mode-Polarisation-Observation-Geometry-2025_1.2.png" alt="Sentinel-1-Mode-Polarisation-Observation-Geometry-2025_1.2.png" data-scope="internal" width="844" height="597">
+   </div>
+   <figcaption>
+    <strong>Figure 21: Sentinel-1A + Sentinel-1C&nbsp; Constellation Mission Observation Scenario: Mode - Polarisation- Geometry</strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<p>
+ <br>
+</p>
+<p><u><strong>Sentinel-1D was successfully launched on November 2025 </strong></u><strong>and it will be fully operational starting mid April 2026, replicating the Sentinel-1C scenario. As from end of June 2026 it will take over the scenario from S1A, the final two-satellite constellation will consist of Sentinel-1C and Sentinel-1D. </strong>Updated observation scenario maps will follow, once available.</p>
+<p><strong>The Sentinel-1 ground segment operations implement a baseline pre-defined mission production scenario.</strong></p>
+<p>This scenario foresees the systematic processing and online dissemination of all Sentinel-1 data acquired in <strong>IW, EW and SM modes into Level-0 and Level-1 GRD products</strong>.</p>
+<p>GRD products are generated in High Resolution (HR) and Medium Resolution (MR).</p>
+<p>The resolution is dependent upon the amount of multi-looking performed. Level-1 GRD products are available in HR for IW and SM modes and in MR for EW mode.</p>
+<p>This has been incrementally complemented by the systematic processing and online dissemination of the L1 SLC and L2 OCN production, as outlined below.</p>
+<p><u><strong>Level-1 SLC, per mode</strong></u></p>
+<p><em><strong>Wave Mode</strong></em><em> data active since: October 2016 for Sentinel-1B, May 2017 for Sentinel-1A, May 2025 for Sentinel-1C and April 2026 for Sentinel-1D</em></p>
+<p><em><strong>IW mode</strong></em><em> covering all data acquired over specific regional areas, which has evolved during the operations to cover the entire IW acquisition.</em>
+ <br>
+ A summary of the Sentinel-1 systematic SLC IW production milestones and online data access is provided hereafter:</p>
+<ul>
+ <li>
+  <p>For Sentinel-1A</p>
+  <ul>
+   <li>
+    <p>Since 28.07.2015: All IW data over Land and Ice masses are available systematically as SLC</p>
+   </li>
+   <li>
+    <p>Since 14.04.2016: All IW data is available systematically as SLC</p>
+   </li>
+   <li>
+    <p>In addition, all Sentinel-1A data acquired before 28 July 2015 and not originally processed to SLC (i.e. data acquired outside the pre-defined SLC regional areas) has been backwards processed during 2016 and made available for online data access. As a result, Level-1 SLC products are available for all Sentinel-1 data acquired in IW mode.</p>
+   </li>
+   <li>
+    <p>For Sentinel-1B:</p>
+    <ul>
+     <li>
+      <p>Since 26.09.2016 (S1B data access opening): All IW data is available systematically as SLC</p>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <p>For Sentinel-1C</p>
+    <ul>
+     <li>
+      <p>Since 25.03.2025 (S1C data access opening): All IW data is available systematically as SLC</p>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <p>For Sentinel-1D</p>
+    <ul>
+     <li>
+      <p>Since 17.04.2026 (S1D data access opening): All IW data is available systematically as SLC</p>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p><em><strong>EW mode</strong></em><em> over specific regional areas active since: July 2017 for both Sentinel-1A and Sentinel-1B, May 2025 for Sentinel-1C and April 2026 for Sentinel-1D</em></p>
+<p><em><strong>SM mode</strong></em><em> over land masses worldwide data active since: January 2015 for Sentinel-1A, &nbsp;September 2016 for Sentinel-1B, May 2025 for Sentinel-1C and April 2026 for Sentinel-1D</em></p>
+<p><strong>They follow the evolution maps representing how the areas, where the TOPSAR modes Level-1 SLC products are systematically generated, have gradually evolved since the opening of the online data access for Sentinel-1A on 3 October 2014</strong>.</p>
+<details class="expand" data-component="expand">
+ <summary class="expand-control"> IW SLC EVOLUTION MAP - Sentinel-1A </summary>
+ <div class="expand-body">
+  <p>The map represents the evolution of the IW SLC production scenario with start sensing from 2014 to 2015. The IW SLC processing scenario is stabilised and can be considered fixed, unless the nominal seasonal variation.</p>
+  <div class="theme-block-image">
+   <image-lightbox>
+    <div class="block-image" style="--width: 731px" data-component="image" data-align="align-center">
+     <img src="/__attachments/a_cf62824e9d85d16a33a4c2d757aa03b860cf3817976d5c393148630b20f7ef11/iw%20slc%20GIF.gif?cb=e0667292a51fb503e007cd031aae629e" alt="iw slc GIF.gif" data-scope="internal" width="1080" height="810">
+    </div>
+   </image-lightbox>
+  </div>
+ </div>
+</details>
+<details class="expand" data-component="expand">
+ <summary class="expand-control"> EW SLC EVOLUTION MAP - Sentinel-1A </summary>
+ <div class="expand-body">
+  <p>The map represents the evolution of the EW SLC production scenario from 2014 to 2023.</p>
+  <div class="theme-block-image">
+   <image-lightbox>
+    <div class="block-image" style="--width: 730px" data-component="image" data-align="align-center">
+     <img src="/__attachments/a_6da92c99eb61e6ea2455d7243e54b4aef7f67ab5c418aa22f18738bb1b3118a0/ew%20slc%20pres.gif?cb=26bbe0e2ce2b99e1b283ded0910f062c" alt="ew slc pres.gif" data-scope="internal" width="1080" height="810">
+    </div>
+   </image-lightbox>
+  </div>
+ </div>
+</details>
+<p><u><strong>Level-2 Ocean, per mode</strong></u></p>
+<p><em><strong>Wave Mode</strong></em><em> data active since: July 2015 for Sentinel-1A, October 2016 for Sentinel-1B, May 2025 for Sentinel-1C and April 2026 for Sentinel-1D</em></p>
+<p><em><strong>IW and EW mode</strong></em><em> for all data acquired over the area that intersects at least, 20% (lowered to 17% in June 2024) of the following Ocean mask</em></p>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 368px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_cae118471f977758ba73f3012f8e7a77b2c61d4542e7cd3acae26091170ddd0d/image2.png?cb=278d3df988e12f27da104032c248bb5e" alt="image2.png" data-scope="internal" width="448" height="449">
+   </div>
+   <figcaption>
+    <strong>Figure 22 : L2 OCN mask. </strong>
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<p>The geographical areas where Sentinel-1 IW and EW data is systematically processed to Level-2 OCN products and made available for online data access have also evolved over time starting from July 2015 for Sentinel-1A as shown in the below evolution maps. Cut date was October 2016 for Sentinel-1B. Finally the above map is to be considered applicable as it is for Sentinel-1C and Sentinel-1D.</p>
+<p>
+ <br>
+</p>
+<details class="expand" data-component="expand">
+ <summary class="expand-control"> IW OCN EVOLUTION MAP - Sentinel-1A </summary>
+ <div class="expand-body">
+  <p>The map represents the evolution of the IW OCN production scenario from 2015 to 2023.</p>
+  <div class="theme-block-image">
+   <image-lightbox>
+    <div class="block-image" style="--width: 720px" data-component="image" data-align="align-center">
+     <img src="/__attachments/a_517598809e8fce3f48428c2e2993e569df29b8f78391ea0e91b63a65a7e56770/iw%20ocn%20evolution%20map%20gif.gif?cb=57fb07e81c88591151d075b67ed9c057" alt="iw ocn evolution map gif.gif" data-scope="internal" width="720" height="540">
+    </div>
+   </image-lightbox>
+  </div>
+  <p>
+   <br>
+  </p>
+ </div>
+</details>
+<details class="expand" data-component="expand">
+ <summary class="expand-control"> EW OCN EVOLUTION MAP - Sentinel-1A </summary>
+ <div class="expand-body">
+  <p>The map represents the evolution of the EW OCN production scenario from 2015 to 2023.</p>
+  <div class="theme-block-image">
+   <image-lightbox>
+    <div class="block-image" style="--width: 720px" data-component="image" data-align="align-center">
+     <img src="/__attachments/a_ac34ce9f743867e9693a4078976aa93048e3ca74cb1d6482a72887158fd36740/ew%20ocn%20evolution%20map%20gif.gif?cb=d35e033cdab3eaa04afdd0260243cf00" alt="ew ocn evolution map gif.gif" data-scope="internal" width="720" height="540">
+    </div>
+   </image-lightbox>
+  </div>
+  <p>
+   <br>
+  </p>
+ </div>
+</details>
+<p>
+ <br>
+</p>
+<p>In fall 2023, a new auxiliary product developed by ESA, the <a href="/web/s1-products" data-scope="internal">Extended Timing Annotation Dataset </a>(ETAD) for Copernicus Sentinel-1 has been released: it contains analysis-ready layers for removing the atmospheric path delays, the solid Earth tidal deformation, and the Sentinel-1 system specific effects related to the IPF SAR processor.</p>
+<h3 id="AIS-Observation-and-Data-Downlink-Scenario" style=""><span id="S1Mission-AISObservationandDataDownlinkScenario"></span>AIS Observation and Data Downlink Scenario
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#AIS-Observation-and-Data-Downlink-Scenario">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h3>
+<p>The AIS operations are planned as part of the regular mission planning operations, including SAR &amp; AIS instrument scheduling and data downlink planning.</p>
+<p>AIS is operated in conjunction with the SAR&nbsp;High Bit&nbsp;Rate modes (i.e. IW &amp; EW, SM), with the following <strong>Observation Scenario</strong>:</p>
+<ul>
+ <li>
+  <p>The AIS mask currently covers European&nbsp;waters &amp; North Sea&nbsp;</p>
+ </li>
+ <li>
+  <p>When a SAR HBR acquisition intersects the AIS mask, the AIS recording is enabled</p>
+ </li>
+ <li>
+  <p>The AIS recording is further extended in time for 8 minutes before and after the SAR acquisition start and stop</p>
+ </li>
+ <li>
+  <p>No AIS observations over open ocean where SAR Wave Mode observations are planned</p>
+ </li>
+</ul>
+<p>AIS <strong>Data Downlink Scenario:</strong></p>
+<ul>
+ <li>
+  <p>For SAR observations in pass-through mode&nbsp;over European waters &amp; North Sea: AIS and SAR data are downlinked near simultaneously.</p>
+ </li>
+ <li>
+  <p>For SAR observations stored in memory, corresponding AIS will also be stored in memory:&nbsp; SAR and AIS data downlink may not be synchronised.</p>
+ </li>
+</ul>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 760px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_ef57a1dac7b47d1a8d3c3b3df2da820aff78bad6313cf4f327099404bbbc7b39/311ea2a8-45ff-4b51-97fb-d71e93977168.png?cb=8cbf6be8d6e686dee3e406b46cbec563" alt="311ea2a8-45ff-4b51-97fb-d71e93977168.png" data-scope="internal" width="963" height="481">
+   </div>
+   <figcaption>
+    <strong>Sentinel-1C</strong>: First month of AIS data
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<div class="theme-block-image">
+ <image-lightbox>
+  <figure data-component="figure">
+   <div class="block-image" style="--width: 760px" data-component="image" data-align="align-center">
+    <img src="/__attachments/a_9ecb2dfa9a7bc15c2feba1617dc7b20c35abedc14f197421f96a338d2f1edf98/26f10d0f-a6f3-4a65-8e23-8b1dbe82a641.png?cb=f70837d4c24a8d0dcce894fe07ee800f" alt="26f10d0f-a6f3-4a65-8e23-8b1dbe82a641.png" data-scope="internal" width="897" height="255">
+   </div>
+   <figcaption>
+    <strong>AIS acquisition</strong> limited (so far) to:
+    <br>
+    Europe (pass-through)
+    <br>
+    (Extended) Africa
+   </figcaption>
+  </figure>
+ </image-lightbox>
+</div>
+<p>
+ <br>
+</p>
+<h2 id="SAR-Calibration-and-Validation-Activities" style=""><span id="S1Mission-SARCalibrationandValidationActivities"></span>SAR Calibration and Validation Activities<span id="S1-Mission-Calibration-and-Validation-Activities"></span>
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#SAR-Calibration-and-Validation-Activities">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h2>
+<p>Sentinel-1 product commissioning starts right after the launch and encompasses the verification, calibration and geophysical validation of the SAR products. The calibration and validation activities are not limited to commissioning phase, but are carried out routinely during operations. The activities include:</p>
+<ol>
+ <li>
+  <p>IPF and product verification encompasses:</p>
+  <ul>
+   <li>
+    <p>Verification of the L0, L1 and L2 product format and main annotations</p>
+   </li>
+   <li>
+    <p>Product family consistency, e.g. verification of the consistency of measurement for GRD HR, FR and MR.</p>
+   </li>
+   <li>
+    <p>Verification of the main processing algorithms:</p>
+    <ul>
+     <li>
+      <p>Processing algorithm (Doppler estimation, focusing, ground range projection, debursting, swath stitching)</p>
+     </li>
+     <li>
+      <p>Radiometric correction (elevation antenna patterns, TOPS scalloping, range spreading loss, etc.)</p>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <p>IPF normalisation:</p>
+    <ul>
+     <li>
+      <p>Verification of the image dynamic and IPF gain setting</p>
+     </li>
+     <li>
+      <p>Sub-swath radiometric merging</p>
+     </li>
+     <li>
+      <p>Product performance assessment:</p>
+      <ul>
+       <li>
+        <p>Point target impulse response function analysis (spatial resolution and sidelobes)</p>
+       </li>
+       <li>
+        <p>Ambiguity analysis (range and azimuth)</p>
+       </li>
+       <li>
+        <p>Radiometric resolution and equivalent number of loss measurement</p>
+       </li>
+       <li>
+        <p>Noise equivalent radar cross-section assessment</p>
+       </li>
+       <li>
+        <p>Geometric assessment</p>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <p>Burst synchronisation assessment</p>
+   </li>
+  </ul>
+ </li>
+ <li>
+  <p>L1 product <a href="https://sentiwiki.atlassian.net/wiki/spaces/CSWK/pages/283967657#S1Products-S1Level-1Products" data-scope="external" rel="external noreferrer">calibration</a> encompasses:</p>
+  <ul>
+   <li>
+    <p>absolute and relative radiometric calibration</p>
+   </li>
+   <li>
+    <p>polarimetric calibration</p>
+   </li>
+   <li>
+    <p>geometric calibration</p>
+   </li>
+  </ul>
+ </li>
+ <li>
+  <p>L2 geophysical <a href="https://sentiwiki.atlassian.net/wiki/spaces/CSWK/pages/283967657#S1Products-S1Level-2Products" data-scope="external" rel="external noreferrer">validation</a> encompasses:</p>
+  <ul>
+   <li>
+    <p>Verification of the geophysical variables against independent external measures like model data, buoys or other EO data source</p>
+   </li>
+  </ul>
+ </li>
+</ol>
+<p>For more details refer to section <a href="https://sentiwiki.atlassian.net/wiki/spaces/CSWK/pages/283967657" data-scope="external" rel="external noreferrer">Sentinel-1 Products</a>.</p>
+<h2 id="Precise-Orbit-Determination-Service" style=""><span id="S1Mission-PreciseOrbitDeterminationService"></span>Precise Orbit Determination Service<span id="S1-Mission-Precise-Orbit-Determination-Service"></span>
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://sentiwiki.copernicus.eu/web/s1-mission#Precise-Orbit-Determination-Service">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/__theme/b_8ca5a7d7-80f3-41c8-bea7-75cce14ad14f/scroll-sites-help-center-theme/49/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h2>
+<p>The <strong>Copernicus POD (Precise Orbit Determination) Service</strong> for the Sentinel-1 mission provides Precise Orbital products and auxiliary data generated that can be divided up into four categories depending on the associated timeliness.</p>
+<ol>
+ <li>
+  <p>Near Real-Time (NRT): AUX_RESORB Restituted Orbit products are generated based on immediate GPS L0 availability with the near real-time GPS orbits and clocks provided by EGP.</p>
+ </li>
+ <li>
+  <p>Near Real Time Predicted (PRE): AUX_PREORB Predicted Orbit products are computed a certain time ahead of an astronomical event, particularly the ascending node crossing.</p>
+ </li>
+ <li>
+  <p>Short Time Critical (STC): AUX_MOEORB Medium Orbit Ephemerides products make use of the STC products delivered by the EGP with a timeliness of 1 day.</p>
+ </li>
+ <li>
+  <p>Non Time Critical (NTC): AUX_POEORB Precise Orbit Ephemerides products are computed after a number of days to allow for all highly accurate inputs to be available, such as GPS orbits and clocks from IGS.</p>
+ </li>
+</ol>
+<p>Additionally, GNSS L1B RINEX files contain the decoded GPS observations (pseudorange and carrier phase) following the International GNSS Service (IGS) RINEX ICD.</p>
+<p>Performing POD requires making use of the satellite attitude Quaternions files and validating the results obtained against an external reference solution. Quaternions files and the NRT, STC and NTC products generated by the CPOD Service are made available to the user community through the ESA <a href="https://dataspace.copernicus.eu/data-collections/sentinel-data/sentinel-1" data-scope="external" rel="external noreferrer">Copernicus Data Space Ecosystem</a>.</p>
+<p>Details on the official POD products are available in the File Format Specification <a href="/__attachments/a_b8dc779684b2d48bacedd67f1d6c04c7d4d9395d2c75a830b1a95801f753a81b/GMV-CPOD3-FFS-0001-Copernicus-POD-Service-File-Format-Specification.pdf?cb=e837b251fef162ddf98afcf11457aae0" data-scope="internal">File Format Specification</a> document. A brief description of the POD products is included in <a href="/web/s1-processing" data-scope="internal">POD Products Specification</a>.</p>
+<p>
+ <br>
+</p>
+
+
+																				<script>
+						// Mark block images on the first level as breakout so they can grow wider than the article content.
+						document.querySelectorAll('.article-body > .theme-block-image [data-component="image"]').forEach((element) => {
+							const propertyValue = element.style.getPropertyValue('--width');
+							if (!propertyValue) {
+								return;
+							}
+							if (parseInt(propertyValue) >= 760) {
+								element.closest('.theme-block-image').classList.add('theme-block-image--breakout');
+							}
+						});
+
+						// Remove the inline size on page layouts as this would lead to layouts breaking out of the article content.
+						document.querySelectorAll('.article-body [data-component="layout-section"]').forEach((element) => {
+							const propertyValue = element.style.getPropertyValue('--inline-size');
+							if (!propertyValue) {
+								return;
+							}
+							// ONLY for this very specific width (Confluence default)
+							if (parseInt(propertyValue) === 760) {
+								element.style.removeProperty('--inline-size');
+							}
+						})
+
+						// Set the initial state of the navigation toggle to prevent shifting in the UI
+						try {
+							const navigationToggle = document.querySelector('#navigator-toggle');
+							const navigationState = localStorage.getItem('theme-navigation-state');
+
+							if (navigationState === 'collapsed' && navigationToggle) {
+								navigationToggle.setAttribute('aria-expanded', 'false');
+							}
+						} catch (error) {
+							console.error(error);
+						}
+					</script>
+																			</section>
+				<footer>
+
+				</footer>
+			</article>
+		</main>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer data-component="footer" class="footer">
+
+
+
+
+
+		<img class="footer-logo footer-logo--dark" src="/__site/daf22bbc-3283-4247-8d4c-43dcc8aa2152/esa-brand-dark-transparent.png" alt="">
+
+		<img class="footer-logo footer-logo--light" src="/__site/daf22bbc-3283-4247-8d4c-43dcc8aa2152/esa-brand-dark-transparent.png" alt="">
+	<ul class="footer-content">
+		<li><i18n-message i18nkey="footer.copyright.label">Copyright</i18n-message> <current-year></current-year> European Space Agency</li>		<li><i18n-message i18nkey="footer.poweredBy.label">Powered by</i18n-message> <a href="https://www.k15t.com/products/scroll-sites-for-confluence?utm_campaign=k15t-sts-attribution-line&utm_source=k15t-apps" rel="external nofollow">Scroll&nbsp;Sites</a> & <a href="https://www.atlassian.com/software/confluence" rel="external nofollow">Atlassian&nbsp;Confluence</a></li>
+			<li>
+				<button type="button" data-cc="show-preferencesModal">
+					<i18n-message i18nkey="cookieConsent.showPreferences">Manage cookie preferences</i18n-message>
+				</button>
+			</li>
+	</ul>
+
+</footer>
+
+
+</body>
+</html>

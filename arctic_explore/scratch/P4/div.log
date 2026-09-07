@@ -1,0 +1,6 @@
+files 3043
+choke cells 366
+rows 22844 cells with data 59
+                 count    mean     std     min     max
+region                                                
+BeringChukchi  22844.0  0.0181  0.1114 -0.7772  0.8139

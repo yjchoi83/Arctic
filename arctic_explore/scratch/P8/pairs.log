@@ -1,0 +1,20 @@
+Vilkitsky 2019-01 scenes 48 pairs so far 18
+Vilkitsky 2019-10 scenes 10 pairs so far 18
+Vilkitsky 2020-01 scenes 12 pairs so far 18
+Vilkitsky 2020-10 scenes 33 pairs so far 24
+Vilkitsky 2021-01 scenes 41 pairs so far 33
+Vilkitsky 2021-10 scenes 33 pairs so far 38
+Sannikov_DmLaptev 2019-01 scenes 55 pairs so far 55
+Sannikov_DmLaptev 2019-10 scenes 23 pairs so far 62
+Sannikov_DmLaptev 2020-01 scenes 28 pairs so far 70
+Sannikov_DmLaptev 2020-10 scenes 30 pairs so far 75
+Sannikov_DmLaptev 2021-01 scenes 24 pairs so far 76
+Sannikov_DmLaptev 2021-10 scenes 35 pairs so far 78
+LongStrait 2019-01 scenes 58 pairs so far 91
+LongStrait 2019-10 scenes 59 pairs so far 106
+LongStrait 2020-01 scenes 59 pairs so far 121
+LongStrait 2020-10 scenes 42 pairs so far 134
+LongStrait 2021-01 scenes 47 pairs so far 148
+LongStrait 2021-10 scenes 49 pairs so far 161
+TOTAL candidate pairs 161
+Counter({('LongStrait', 'winter'): 42, ('LongStrait', 'freeze-up'): 41, ('Vilkitsky', 'winter'): 27, ('Sannikov_DmLaptev', 'winter'): 26, ('Sannikov_DmLaptev', 'freeze-up'): 14, ('Vilkitsky', 'freeze-up'): 11})
