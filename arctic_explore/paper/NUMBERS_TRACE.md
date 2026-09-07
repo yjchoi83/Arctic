@@ -132,6 +132,8 @@ script); "stage5" and "results" paths are committed. Package column gives the AR
 | **[P11-A7]** retrieval success winter / freeze-up / melt | 0.628 / 0.392 / 0.020 | `scratch/P8/pair_summary.csv`, `stage5/P5/P5_results.md` | P8, P5 |
 | **[P11-A7]** chokepoint H_state3 by season, pre/during/post | see Table 7 | `scratch/P3/P3_region_season_year.csv` | P3 |
 | **[P11-A7]** superseded (was 0.18–0.28 winter, pooled) | replaced by season-resolved E table | — | P5 |
+| **[P12-3]** E ranges quoted in §5.2 and §6.6 | winter 0.236–0.345, freeze-up 0.171–0.238, melt 0.006–0.008 | `scratch/P11/E_table.csv` (= Table 7) | P11, P12 |
+| **[P12-3]** superseded (§5.2 was 0.18–0.28 winter / 0.006–0.009 melt; §6.6 was “order 0.2 winter, 0.01 melt”) | both now read the Table 7 min–max across periods | — | P10 |
 | freeze-up retrieval success | 0.392 (0.47 assumption ~19 % high) | `scratch/P8/pair_summary.csv` | P8 |
 | chokepoint H by class (Table 3b) | see Table 3b | `scratch/P9/H_by_class_cells.csv` | P9 |
 | Laptev/ESS winter buoy events | 17, from 8 pairs and 14 buoys | `stage5/P1/P1_hazard_windows.md` §2 | P1 |
