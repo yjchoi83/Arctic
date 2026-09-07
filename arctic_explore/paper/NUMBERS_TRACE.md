@@ -218,3 +218,17 @@ Source `scratch/P3/P3_region_season_year.csv`, `scratch/P9/H_by_class_cells.csv`
 No value changed; the group is now stated in §2.1, in the Table 1 note, in the Table 3 and Table 3b captions and
 at the first chokepoint count in §4.1.
 
+## [P13-3] NISAR co-location audit, §5.4
+
+| Number | Value | Source |
+|---|---|---|
+| NISAR GCOV frames, four Arctic ROIs, 2026-06-17 to 09-03 | 6,734 | `stage4/REPILOT_RESULTS.md` §R2.2 |
+| of those, dual-polarisation DHDH | 718 | same |
+| within 6 h and in the same ROI | 524 | same |
+| **with footprint overlap ≥ 50 % in EPSG:3413** | 99 co-locations, **92 unique pairs** | same |
+
+The overlap criterion is the operative one: counting on time alone gave 524, an overstatement by a factor of
+five, because Sentinel-1 EW footprints crossing the antimeridian degenerate under longitude-latitude
+intersection. §5.4 now states the 92 figure with its criterion (half-footprint overlap, below 78° N,
+dual-polarisation frames within six hours) rather than the earlier vaguer "genuinely co-located". Value unchanged.
+
